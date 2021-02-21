@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "../components/Layout";
 import Container from "../components/Container";
 import Section from "../components/Section";
@@ -58,11 +59,13 @@ function HomePage({ projects, posts }) {
             </div>
 
             <div className="md:col-span-2 col-span-full">
-              <figure>
-                <img
-                  className="md:mb-3 rounded-full w-32 md:w-full md:rounded"
+              <figure className="w-32 md:w-full">
+                <Image
+                  className="md:mb-3 rounded-full md:rounded"
+                  height={682}
+                  width={682}
+                  alt="A picture of Brian"
                   src="/images/portrait-blue.png"
-                  alt=""
                 />
               </figure>
               <figcaption className="hidden md:block text-sm font-medium text-gray-600 leading-relaxed dark:text-gray-400">
