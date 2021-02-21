@@ -25,7 +25,7 @@ const Bookshelf = ({ books }) => {
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
       <Container size="narrow">
-        <Grid cols="6">
+        <Grid className="grid-cols-6">
           <div className="col-span-full lg:col-start-2 lg:col-end-6">
             <DirectionLink href="/" icon="back" className="mb-8">
               Back to Home

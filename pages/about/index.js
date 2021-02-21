@@ -13,7 +13,7 @@ const About = () => (
       <title>Brian Saunders | About</title>
     </Head>
     <Container size="narrow">
-      <Grid cols="6" className="gap-y-12">
+      <Grid className="grid-cols-6 gap-y-12">
         <div className="col-span-full lg:col-start-2 lg:col-end-6">
           <DirectionLink href="/" icon="back">
             Back to Home

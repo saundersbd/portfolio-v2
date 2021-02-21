@@ -30,7 +30,7 @@ function HomePage({ projects, posts }) {
       </Head>
       <Section className="bg-blue-100 sm:py-24 py-16 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
         <Container size="normal">
-          <Grid cols="6" className="md:gap-x-16 gap-y-8">
+          <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
               <h1 className="sm:text-5xl text-4xl leading-normal font-bold sm:mb-8 mb-6 dark:text-gray-200">
                 Hi, I'm Brian Saunders
@@ -76,10 +76,10 @@ function HomePage({ projects, posts }) {
 
       <Section className="bg-white sm:py-24 py-16 dark:bg-black">
         <Container size="normal">
-          <Grid cols="6" className="lg:gap-x-16 gap-y-4">
+          <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
             <div className="lg:col-span-4 col-span-full">
               <h2 className="text-4xl font-bold mb-8">Projects</h2>
-              <Grid cols="2" className="gap-5 lg:gap-6 mb-12">
+              <Grid className="grid-cols-2 gap-5 lg:gap-6 mb-12">
                 {filteredProjects.map((frontMatter) => (
                   <Project key={frontMatter.title} {...frontMatter}></Project>
                 ))}
