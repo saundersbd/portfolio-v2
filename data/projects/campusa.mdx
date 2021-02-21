@@ -1,0 +1,106 @@
+---
+title: "CampUSA Mobile App"
+description: "Mobile apps that allow people to find and book reservations at RV campsites"
+published: "2020-12-10"
+order: 3
+---
+
+<div className="col-span-full lg:col-start-2 lg:col-end-6 prose prose-lg md:prose-xl dark:prose-dark max-w-none">
+
+# CampUSA
+
+<p className="large">
+  CampUSA is a native app for iOS and Android that lets people book reservations
+  at Thousand Trails campgrounds. When we started working on the project, the
+  majority of campground bookings were handled over the phone. The Thousand
+  Trails company wanted to create a native app experience that would allow
+  people to explore and book campsites while they’re away from their desktop.
+</p>
+
+<PageNote
+  title="Note"
+  description="On this project I partnered with Maria Surawska, a talented visual designer based out of New York City. My role was to define the user experience and strategic direction, as well as facilitate testing. I provided wireframes, clickable prototypes, and designed and facilitated user interviews."
+/>
+
+</div>
+
+<PostImageWide
+  alt="Three screenshots of the CampUSA app"
+  src="/images/projects/campusa/campusa-hero-dark.png"
+  width={1600}
+  height={924}
+/>
+
+<div className="col-span-full lg:col-start-2 lg:col-end-6 prose prose-lg md:prose-xl dark:prose-dark max-w-none">
+
+## The Biggest Challenges
+
+### Integrating with an existing back-end system
+
+Thousand Trails had their own internal team maintaining a back-end and supplying endpoints for their website. We had to figure out which endpoints existed, and which ones would need to be created. Then we had to work with the client team to get what we needed built.
+
+### Limited user testing budget
+
+There wasn't much room in the budget for user testing. We needed to find creative ways to test our ideas throughout the process, and lean on existing knowledge and data provided by the client about their customer base.
+
+## Designing the Navigation
+
+It needed to be really easy to find the campsite you're looking for. We decided to optimize for two user mindsets: those who already knew which campground they’d like to stay at, and those who wanted to explore a little before making their decision.
+
+The first thing I did was familiarize myself with the all the objects in the system. I partnered with back end engineers to learn about all the data that would be supplied, and aligned myself around the proper names for everything and the relationships between the data points.
+
+### I worked with the Thousand Trails back-end team to discover these key facts:
+
+- There weren't many Thousand Trails campgrounds (less than 300).
+- The campgrounds were organized by state and region, but not distributed evenly. States like Florida and California have a lot more campgrounds than Indiana or Illinois.
+- The API was not set up to allow us to filter campgrounds by amenity (oh no). It would be hard to only find places that had pools, for example.
+
+### First Solution
+
+The first thing we tried was implementing a text search feature that could handle every single route that a user wanted to take. If they knew exactly which campground they wanted to see, they could type the name of it and the app would suggest options. If they wanted to search for campgrounds in a state, they could type the state. The hope was the search could get a user in any situation to wherever they need to go. We took this first search iteration into user testing.
+
+With limited budget for user testing, we found an affordable compromise in usertesting.com. The service allows you to capture 15-minute screencasts of people using your app.
+
+I wrote the initial version of the user testing script, gathered input from the project team, and configured and ran the tests. Here are some of the things we learned:
+
+#### Search wasn’t smart enough
+
+If somebody misspelled their entry the search would yield no results. The search couldn’t take a ZIP code. Even though we described that in the placeholder text, people still tried to search for ZIPs.
+
+#### Users had the wrong mental model of the data set
+
+People didn’t realize that the app was only indexing Thousand Trails campgrounds. If they typed a state that had no TT campgrounds in it, the search would yield no results. This was confusing when they searched for a state like Indiana, which they knew had campgrounds in it, and found no results. The problem was that Indiana didn’t have any _Thousand Trails_ campgrounds, and we didn’t successfully communicate that.
+
+In practice, this ended up being a big enough problem that we decided to move in a different direction with the navigation.
+
+### Second Solution
+
+We decided that we were giving users too much freedom with the open-ended text search. In theory, the search bar would give someone immediate access to anything they wanted to see. In practice, we found out that users didn’t always know what they wanted to see. And if users did know what they wanted to see, they still needed to enter the exact term to find it. Plus, we were leaning on text entry, which is not always easy on mobile devices.
+
+Another problem that we didn’t anticipate is that our original search design was bad at showing users what wasn’t there. For example, they would enter the name of a state that they knew had many campgrounds, but they didn’t understand that no results were returned because they were only searching amongst Thousand Trails campgrounds. We hadn't made the scope of the search clear enough.
+
+Since we had only a small quantity of campgrounds and user pathways, the next thing I suggested was switching to a hub-style navigation structure, since hubs can help when people tend to operate in one branch of the navigation structure or do the same task over and over.
+
+The new home screen had two buttons that showed users a list of campgrounds based on the state or region they select. The third option activates the original search functionality, which we decided was valuable enough to keep intact, just not as the _only_ option.
+
+<PostImageNarrow
+  alt="The redesigned home screen showcasing a hub-style navigation that lets you search in three different ways"
+  caption="The redesigned home screen showcasing a hub-style navigation that lets you search in three different ways"
+  src="/images/projects/campusa/campusa-home-dark.png"
+  width={1600}
+  height={1170}
+/>
+
+### Results
+
+We did another round of user testing and found that the simplified navigation structure seemed to eliminate the difficulties that surfaced in the initial round of testing. All twelve participants got to the campgrounds identified in our tasks.
+
+## Summary
+
+I'm proud of the work we did on this project. In the year and three months that I was on the team we took it from a concept to a multi-platform product that is generating revenue for our client. I got a chance to show every skill in my toolkit, including writing, prototyping, animation, user testing and interaction design.
+
+---
+
+If you want to hear about more problems our team solved on this project, send me a message at [saundersbd@gmail.com](mailto:saundersbd@gmail.com).
+
+</div>

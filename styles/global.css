@@ -1,0 +1,46 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800;
+  }
+  [aria-current="page"] {
+    @apply bg-gray-100 text-gray-800;
+  }
+  [aria-current="false"] {
+    @apply bg-white text-gray-500;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      @apply bg-black text-gray-100;
+    }
+    [aria-current="false"] {
+      @apply bg-black text-gray-400;
+    }
+    [aria-current="page"] {
+      @apply bg-gray-800 text-gray-100;
+    }
+  }
+  p.large {
+    @apply text-xl leading-relaxed sm:text-2xl sm:leading-relaxed sm:mb-6 mb-4;
+  }
+  .book-image {
+    position: relative;
+    height: max-content;
+    box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .book-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    bottom: 0;
+    width: 3px;
+    background: rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
