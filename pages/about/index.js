@@ -28,22 +28,13 @@ const About = () => (
             me practice what I enjoy and am good at.
           </p>
           <p className="large mb-12">
-            If you want to get in touch just send me a message at the address
-            listed below.
+            If you want to get in touch just send me a message at{" "}
+            <a href="mailto:saundersbd@gmail.com">saundersbd@gmail.com</a>.
           </p>
-          <Button
-            href="mailto:saundersbd@gmail.com"
-            size="normal"
-            type="secondary"
-            className="sm:w-max w-full"
-          >
-            <Icon icon="mail" className="w-5 mr-2" />
-            Send a message
-          </Button>
 
           <hr className="h-px my-14 bg-gray-400 dark:bg-gray-600 border-0" />
 
-          <h2>Overview</h2>
+          <h2>Experience</h2>
 
           <p>
             I'm a designer living and working in Chicago. I have over 10 years
@@ -60,18 +51,11 @@ const About = () => (
           </p>
 
           <p>
-            Before Paylocity I worked at an agency called Vokal where I focused
-            on designing mobile apps a creating design systems to support
-            cross-platform experiences. Prior to that I worked at Maddock
-            Douglas, an innovation firm in the Chicago suburbs, where I used my
-            prototyping skills to help clients see future opportunities for
-            growth.
-          </p>
-
-          <p>
-            My personal interests include playing musical instruments and
-            reading. I can't always listen to classical music while I work
-            because there's a real risk of getting "too into it."
+            Before Paylocity I worked at an agency called Vokal where I designed
+            cross-platform experiences, and created design systems to support
+            them. Before that I worked at Maddock Douglas, an innovation firm in
+            the Chicago suburbs. At MD I used my prototyping skills to help our
+            clients see future opportunities for growth.
           </p>
 
           <h2>What sets me apart</h2>
@@ -80,15 +64,13 @@ const About = () => (
 
           <p>
             The best thing I ever did for myself was take the time to learn HTML
-            and CSS. We were designing architecture websites in school and were
-            supposed to use Dreamweaver to build our website. I wasn't satisfied
-            because I knew that wasn't the best way to build a website. I spent
-            an afternoon at the library teaching myself how to make a basic
-            website by writing HTML and CSS, and those skills have led to every
-            professional opportunity I've ever had. Today I've expanded my front
-            end skills to include JavaScript frameworks like React and I depend
-            on those skills every day to communicate better with engineers and
-            prototype ideas.
+            and CSS. We were designing architect websites in school and had to
+            use Dreamweaver to build our website. I knew that wasn't how real
+            websites were made, so I spent an afternoon at the library teaching
+            myself how to do it the right way. I taught myself HTML and CSS, and
+            those skills have led to every professional opportunity I've had
+            since. Today I've expanded my front end skills I depend on them to
+            communicate with engineers and prototype ideas.
           </p>
 
           <h3>Formal design background</h3>
@@ -98,23 +80,20 @@ const About = () => (
             education was based on durable principles of good design, rather
             than software skills that would become outdated the second I left
             school. NIU taught me what good looks like, and how to think like a
-            designer across any medium. Typography, grid layouts, and use of
-            color were all core parts of the curriculum. Early on in the program
-            I only wanted to learn more about technology and software, but I've
-            since discovered that they got it right by training me as a designer
-            first. I rely on my passion for learning to teach myself whatever
-            the latest tool happens to be.
+            designer across any medium. Early on in the program I only wanted to
+            learn more software tools, but I've come to realize that they got it
+            right by leading with principles.
           </p>
 
           <h3>Passion for writing</h3>
 
           <p>
-            Writing is the way I clarify my thinking. A lot of times I'll sit
-            down to write documentation and realize that I don't know how to say
-            what's on my mind. That's a red flag, because if I can't write
-            clearly about something it's a sign I'm not thinking about it
-            clearly. For me writing is a test of sorts—if I can write about it,
-            that means I understand it.
+            Writing is how I clarify my thinking. A lot of times I'll sit down
+            to write documentation and realize that I don't know how to say
+            what's on my mind. And I realize that if I can't write clearly about
+            something it's a sign I'm not thinking about it clearly. For me
+            writing is a test of sorts—if I can write about it, that means I
+            understand it.
           </p>
         </div>
         <div className="col-span-full lg:col-start-2 lg:col-end-6">

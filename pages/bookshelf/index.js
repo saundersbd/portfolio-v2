@@ -34,8 +34,7 @@ const Bookshelf = ({ books }) => {
               My Bookshelf
             </h1>
             <p className="sm:text-2xl text-xl font-medium mb-12 sm:leading-relaxed">
-              I thought it would be a good idea to share notes on some of my
-              favorite books I've read recently.
+              Here are some notes from some of my favorite books.
             </p>
 
             <h2 className="text-4xl font-bold mb-8">Books</h2>
