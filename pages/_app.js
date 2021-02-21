@@ -1,5 +1,6 @@
 import GlobalStyles from "../components/GlobalStyles";
 import "../styles/global.css";
+import { Helmet } from "react-helmet";
 
 import Head from "next/head";
 
@@ -7,6 +8,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
+      <Helmet>
+        <html lang="en" />
+      </Helmet>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link
