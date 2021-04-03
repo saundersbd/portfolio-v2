@@ -30,7 +30,7 @@
     "react-helmet": "^6.1.0",
     "remark-slug": "^6.0.0",
     "styled-components": "^5.2.3",
-    "tailwindcss": "^2.0.3",
+    "tailwindcss": "^2.0.4",
     "twin.macro": "^2.3.2"
   },
   "devDependencies": {
