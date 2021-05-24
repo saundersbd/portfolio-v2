@@ -923,9 +923,9 @@
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.2.0.tgz#154dbce2efa3ad067ebd20b7d0aa9aed775e7c97"
 
-"@next/mdx@^10.2.0":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.2.0.tgz#303bcc4ba4a6902aec8e6d2e677ad0b82dcc0336"
+"@next/mdx@^10.2.2":
+  version "10.2.2"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.2.2.tgz#58040a555bd39f80572ff44797703a6ff2c7ddae"
 
 "@next/polyfill-module@10.2.0":
   version "10.2.0"
