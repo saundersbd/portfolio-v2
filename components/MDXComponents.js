@@ -5,6 +5,8 @@ import PostImageWide from "../components/PostImageWide";
 import PostImageNarrow from "../components/PostImageNarrow";
 import PageNote from "../components/PageNote";
 import HrSection from "../components/HrSection";
+import PostColNarrow from "../components/PostColNarrow";
+import PostColWide from "../components/PostColWide";
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -29,6 +31,8 @@ const MDXComponents = {
   Button,
   Icon,
   HrSection,
+  PostColNarrow,
+  PostColWide,
 };
 
 export default MDXComponents;

@@ -5,7 +5,7 @@
     @apply bg-white text-gray-800;
   }
   [aria-current="page"] {
-    @apply bg-gray-100 text-gray-800;
+    @apply bg-gray-200 text-gray-800;
   }
   [aria-current="false"] {
     @apply bg-white text-gray-500;

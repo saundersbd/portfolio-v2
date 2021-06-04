@@ -57,7 +57,7 @@ const Header = () => {
         className="flex sm:flex-row flex-col items-center justify-center sm:justify-between"
       >
         <Link href="/" passHref>
-          <a className="text-lg font-semibold focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 mb-2 dark:text-gray-400">
+          <a className="text-lg font-semibold focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 mb-2 dark:text-gray-400 rounded">
             Brian Saunders
           </a>
         </Link>
