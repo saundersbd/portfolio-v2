@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "iA Quattro";
+  font-stretch: 25% 150%;
+  font-weight: 100 1000;
+  src: url("/fonts/iAWriterQuattroV.ttf") format("truetype-variations");
+}
+
 @tailwind base;
 
 @layer base {
   body {
-    @apply bg-white text-gray-800;
+    @apply bg-white text-gray-800 font-mono !important;
   }
   [aria-current="page"] {
     @apply bg-gray-200 text-gray-800;
@@ -22,7 +29,7 @@
     }
   }
   p.large {
-    @apply text-xl leading-relaxed sm:text-2xl sm:leading-relaxed sm:mb-6 mb-4;
+    @apply text-xl leading-relaxed sm:text-xl sm:leading-loose sm:mb-6 mb-4;
   }
   .book-image {
     position: relative;

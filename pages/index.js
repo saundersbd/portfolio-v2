@@ -36,13 +36,13 @@ function HomePage({ projects, posts }) {
               <h1 className="sm:text-5xl text-4xl leading-normal font-bold sm:mb-8 mb-6 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="sm:text-2xl text-xl font-medium sm:mb-8 mb-6 sm:leading-relaxed dark:text-gray-400">
+              <p className="sm:text-2xl text-xl font-normal sm:mb-8 mb-6 sm:leading-relaxed dark:text-gray-400">
                 I'm a designer who lives and works in Chicago. I love designing
                 software and have extensive experience working at different
                 scales, from smaller independent apps to enterprise software
                 used by millions of people.
               </p>
-              <p className="sm:text-2xl text-xl font-medium sm:mb-12 mb-6 sm:leading-relaxed dark:text-gray-400">
+              <p className="sm:text-2xl text-xl font-normal sm:mb-12 mb-6 sm:leading-relaxed dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I
                 design software that helps employees collaborate and stay
                 connected at work.
@@ -53,7 +53,7 @@ function HomePage({ projects, posts }) {
                 type="primary"
                 className="sm:w-max w-full"
               >
-                <Icon icon="about" className="w-6 mr-3" />
+                <Icon icon="about" className="w-6 mr-2" />
                 More about me
               </Button>
             </div>
@@ -68,7 +68,7 @@ function HomePage({ projects, posts }) {
                   src="/images/portrait-blue.png"
                 />
               </figure>
-              <figcaption className="hidden md:block text-sm font-medium text-gray-600 leading-relaxed dark:text-gray-400">
+              <figcaption className="hidden md:block text-sm font-normal text-gray-600 leading-loose dark:text-gray-400">
                 I have been featured in no publications and have failed to make
                 the 30 Under 30 list thirty separate times.
               </figcaption>
@@ -89,7 +89,7 @@ function HomePage({ projects, posts }) {
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
-              <h2 className="text-4xl font-bold mb-8">Posts</h2>
+              <h2 className="text-4xl font-bold mb-8">Writing</h2>
               <ul>
                 {filteredPosts.map((frontMatter) => (
                   <Post key={frontMatter.title} {...frontMatter}></Post>

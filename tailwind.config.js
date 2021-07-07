@@ -1,5 +1,16 @@
 const colors = require("tailwindcss/colors");
 
+const mono = [
+  'ui-monospace',
+  'SFMono-Regular',
+  'Menlo',
+  'Monaco',
+  'Consolas',
+  'Liberation Mono',
+  'Courier New',
+  'monospace',
+]
+
 module.exports = {
   purge: ["./pages/**/*.js", "./components/**/*.js", "./layouts/**/*.js"],
   important: true,
@@ -21,6 +32,7 @@ module.exports = {
       },
     },
     fontFamily: {
+      mono: ["'iA Quattro'", ...mono],
       sans: [
         "-apple-system",
         "BlinkMacSystemFont",
