@@ -1,18 +1,23 @@
 const colors = require("tailwindcss/colors");
 
 const mono = [
-  'ui-monospace',
-  'SFMono-Regular',
-  'Menlo',
-  'Monaco',
-  'Consolas',
-  'Liberation Mono',
-  'Courier New',
-  'monospace',
-]
+  "ui-monospace",
+  "SFMono-Regular",
+  "Menlo",
+  "Monaco",
+  "Consolas",
+  "Liberation Mono",
+  "Courier New",
+  "monospace",
+];
 
 module.exports = {
-  purge: ["./pages/**/*.js", "./components/**/*.js", "./layouts/**/*.js"],
+  purge: [
+    "./pages/**/*.js",
+    "./components/**/*.js",
+    "./layouts/**/*.js",
+    "./data/**/*.mdx",
+  ],
   important: true,
   theme: {
     colors: {
