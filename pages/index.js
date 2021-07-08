@@ -1,4 +1,7 @@
 import React from "react";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
@@ -10,15 +13,20 @@ import Project from "../components/Project";
 import Post from "../components/Post";
 import Icon from "../components/Icon";
 
-import { getAllFilesFrontMatter } from "../lib/mdx";
+import {
+  postFilePaths,
+  POSTS_PATH,
+  projectFilePaths,
+  PROJECTS_PATH,
+} from "../lib/mdx";
 
-function HomePage({ projects, posts }) {
-  const filteredProjects = projects.sort((a, b) => a.order - b.order);
+function HomePage({ posts, projects }) {
+  const filteredProjects = projects.sort((a, b) => a.data.order - b.data.order);
   const filteredPosts = posts.sort((a, b) => {
-    if (a.published < b.published) {
+    if (a.data.published < b.data.published) {
       return 1;
     }
-    if (a.published > b.published) {
+    if (a.data.published > b.data.published) {
       return -1;
     }
     return 0;
@@ -83,16 +91,24 @@ function HomePage({ projects, posts }) {
             <div className="lg:col-span-4 col-span-full">
               <h2 className="text-4xl font-bold mb-8">Projects</h2>
               <Grid className="grid-cols-2 gap-5 lg:gap-6 mb-12">
-                {filteredProjects.map((frontMatter) => (
-                  <Project key={frontMatter.title} {...frontMatter}></Project>
+                {filteredProjects.map((project) => (
+                  <Project
+                    key={project.data.title}
+                    slug={project.filePath}
+                    {...project.data}
+                  />
                 ))}
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
               <h2 className="text-4xl font-bold mb-8">Writing</h2>
               <ul>
-                {filteredPosts.map((frontMatter) => (
-                  <Post key={frontMatter.title} {...frontMatter}></Post>
+                {filteredPosts.map((post) => (
+                  <Post
+                    key={post.data.title}
+                    slug={post.filePath}
+                    {...post.data}
+                  />
                 ))}
               </ul>
             </div>
@@ -105,9 +121,28 @@ function HomePage({ projects, posts }) {
 
 export default HomePage;
 
-export async function getStaticProps() {
-  const projects = await getAllFilesFrontMatter("projects");
-  const posts = await getAllFilesFrontMatter("posts");
+export function getStaticProps() {
+  const posts = postFilePaths.map((filePath) => {
+    const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
+    const { content, data } = matter(source);
 
-  return { props: { projects, posts } };
+    return {
+      content,
+      data,
+      filePath,
+    };
+  });
+
+  const projects = projectFilePaths.map((filePath) => {
+    const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
+    const { content, data } = matter(source);
+
+    return {
+      content,
+      data,
+      filePath,
+    };
+  });
+
+  return { props: { posts, projects } };
 }

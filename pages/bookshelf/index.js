@@ -1,4 +1,7 @@
 import React from "react";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import Container from "../../components/Container";
@@ -6,14 +9,14 @@ import Grid from "../../components/Grid";
 import Book from "../../components/Book";
 import DirectionLink from "../../components/DirectionLink";
 
-import { getAllFilesFrontMatter } from "../../lib/mdx";
+import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 
 const Bookshelf = ({ books }) => {
   const filteredBooks = books.sort((a, b) => {
-    if (a.title < b.title) {
+    if (a.data.title < b.data.title) {
       return -1;
     }
-    if (a.title > b.title) {
+    if (a.data.title > b.data.title) {
       return 1;
     }
     return 0;
@@ -40,8 +43,12 @@ const Bookshelf = ({ books }) => {
 
             <h2 className="text-4xl font-bold mb-8">Books</h2>
 
-            {filteredBooks.map((frontMatter) => (
-              <Book key={frontMatter.title} {...frontMatter}></Book>
+            {filteredBooks.map((book) => (
+              <Book
+                key={book.data.title}
+                slug={book.filePath}
+                {...book.data}
+              ></Book>
             ))}
           </div>
         </Grid>
@@ -52,8 +59,17 @@ const Bookshelf = ({ books }) => {
 
 export default Bookshelf;
 
-export async function getStaticProps() {
-  const books = await getAllFilesFrontMatter("books");
+export function getStaticProps() {
+  const books = bookFilePaths.map((filePath) => {
+    const source = fs.readFileSync(path.join(BOOKS_PATH, filePath));
+    const { content, data } = matter(source);
+
+    return {
+      content,
+      data,
+      filePath,
+    };
+  });
 
   return { props: { books } };
 }
