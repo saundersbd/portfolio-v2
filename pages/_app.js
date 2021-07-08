@@ -1,3 +1,4 @@
+import { MDXProvider } from "@mdx-js/react";
 import GlobalStyles from "../components/GlobalStyles";
 import "../styles/global.css";
 import "../styles/prose-styles.css";
@@ -5,9 +6,13 @@ import { Helmet } from "react-helmet";
 
 import Head from "next/head";
 
+import Button from "../components/Button";
+
+const components = { Button };
+
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <MDXProvider components={components}>
       <GlobalStyles />
       <Helmet>
         <html lang="en" />
@@ -21,6 +26,6 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-    </>
+    </MDXProvider>
   );
 }
