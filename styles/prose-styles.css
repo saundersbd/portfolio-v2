@@ -1,5 +1,5 @@
 .prose {
-    @apply text-lg leading-loose;
+  @apply text-lg leading-loose;
 }
 
 .prose h1,
@@ -8,5 +8,21 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-    @apply font-sans font-bold;
+  @apply font-sans font-bold;
+}
+
+.prose h1 {
+  @apply leading-normal;
+}
+
+.prose h2 {
+  @apply mb-12;
+}
+
+.prose blockquote {
+  @apply bg-blue-50 border-l-4 border-blue-600 font-normal not-italic py-3 px-4;
+}
+
+.prose p.large {
+  @apply text-xl leading-loose mb-6;
 }

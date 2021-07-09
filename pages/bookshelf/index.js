@@ -36,9 +36,9 @@ const Bookshelf = ({ books }) => {
             <h1 className="sm:text-5xl text-4xl leading-normal font-sans font-bold sm:mb-8 mb-6">
               My Bookshelf
             </h1>
-            <p className="text-xl font-normal mb-12 sm:leading-loose">
-              I wanted to publish some notes and quotes from a few of my
-              favorite books.
+            <p className="text-xl font-normal mb-12 leading-loose">
+              I like to read and thought I'd share thoughts and notes from some
+              of the best books I've read lately.
             </p>
 
             <h2 className="text-4xl font-bold mb-8">Books</h2>

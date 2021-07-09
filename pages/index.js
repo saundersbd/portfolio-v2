@@ -46,9 +46,8 @@ function HomePage({ posts, projects }) {
               </h1>
               <p className="text-xl font-normal sm:mb-8 mb-6 sm:leading-loose dark:text-gray-400">
                 I'm a designer who lives and works in Chicago. I love designing
-                software and have extensive experience working at different
-                scales, from smaller independent apps to enterprise software
-                used by millions of people.
+                software and have experience working at different scales, from
+                smaller apps to enterprise software used by millions of people.
               </p>
               <p className="text-xl font-normal sm:mb-12 mb-6 sm:leading-loose dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I
@@ -78,7 +77,8 @@ function HomePage({ posts, projects }) {
               </figure>
               <figcaption className="hidden md:block text-sm font-normal text-gray-600 leading-loose dark:text-gray-400">
                 I have been featured in no publications and have failed to
-                appear in Forbes' 30 Under 30 list thirty separate times.
+                appear in Forbes' <span className="italic">30 Under 30</span>{" "}
+                list thirty separate times.
               </figcaption>
             </div>
           </Grid>
