@@ -33,12 +33,12 @@ const Bookshelf = ({ books }) => {
             <DirectionLink href="/" icon="back" className="mb-8">
               Back to Home
             </DirectionLink>
-            <h1 className="sm:text-5xl text-4xl leading-normal font-bold sm:mb-8 mb-6">
+            <h1 className="sm:text-5xl text-4xl leading-normal font-sans font-bold sm:mb-8 mb-6">
               My Bookshelf
             </h1>
-            <p className="sm:text-2xl text-xl font-medium mb-12 sm:leading-relaxed">
-              I wanted to publish some notes and quotes from a few of my
-              favorite books.
+            <p className="text-xl font-normal mb-12 leading-loose">
+              I like to read and thought I'd share thoughts and notes from some
+              of the best books I've read lately.
             </p>
 
             <h2 className="text-4xl font-bold mb-8">Books</h2>

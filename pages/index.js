@@ -37,20 +37,19 @@ function HomePage({ posts, projects }) {
       <Head>
         <title>Brian Saunders | Home</title>
       </Head>
-      <Section className="bg-blue-100 sm:py-24 py-16 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
+      <Section className="bg-blue-100 py-16 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
         <Container size="normal">
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="sm:text-5xl text-4xl leading-normal font-bold sm:mb-8 mb-6 dark:text-gray-200">
+              <h1 className="sm:text-5xl text-4xl leading-normal font-sans font-bold sm:mb-8 mb-6 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="sm:text-2xl text-xl font-normal sm:mb-8 mb-6 sm:leading-relaxed dark:text-gray-400">
+              <p className="text-xl font-normal sm:mb-8 mb-6 sm:leading-loose dark:text-gray-400">
                 I'm a designer who lives and works in Chicago. I love designing
-                software and have extensive experience working at different
-                scales, from smaller independent apps to enterprise software
-                used by millions of people.
+                software and have experience working at different scales, from
+                smaller apps to enterprise software used by millions of people.
               </p>
-              <p className="sm:text-2xl text-xl font-normal sm:mb-12 mb-6 sm:leading-relaxed dark:text-gray-400">
+              <p className="text-xl font-normal sm:mb-12 mb-6 sm:leading-loose dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I
                 design software that helps employees collaborate and stay
                 connected at work.
@@ -69,7 +68,7 @@ function HomePage({ posts, projects }) {
             <div className="md:col-span-2 col-span-full">
               <figure className="w-32 md:w-full">
                 <Image
-                  className="md:mb-3 rounded-full md:rounded"
+                  className="md:mb-2 rounded-full md:rounded"
                   height={682}
                   width={682}
                   alt="A picture of Brian"
@@ -77,8 +76,9 @@ function HomePage({ posts, projects }) {
                 />
               </figure>
               <figcaption className="hidden md:block text-sm font-normal text-gray-600 leading-loose dark:text-gray-400">
-                I have been featured in no publications and have failed to make
-                the 30 Under 30 list thirty separate times.
+                I have been featured in no publications and have failed to
+                appear in Forbes' <span className="italic">30 Under 30</span>{" "}
+                list thirty separate times.
               </figcaption>
             </div>
           </Grid>
@@ -89,7 +89,7 @@ function HomePage({ posts, projects }) {
         <Container size="normal">
           <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
             <div className="lg:col-span-4 col-span-full">
-              <h2 className="text-4xl font-bold mb-8">Projects</h2>
+              <h2 className="text-4xl font-sans font-bold mb-8">Projects</h2>
               <Grid className="grid-cols-2 gap-5 lg:gap-6 mb-12">
                 {filteredProjects.map((project) => (
                   <Project
@@ -101,7 +101,7 @@ function HomePage({ posts, projects }) {
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
-              <h2 className="text-4xl font-bold mb-8">Writing</h2>
+              <h2 className="text-4xl font-sans font-bold mb-8">Writing</h2>
               <ul>
                 {filteredPosts.map((post) => (
                   <Post

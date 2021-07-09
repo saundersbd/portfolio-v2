@@ -44,10 +44,10 @@ const About = () => (
           </p>
 
           <p>
-            Right now I am a Senior Product Designer at Paylocity, were I work
+            Right now I am a Senior Product Designer at Paylocity, where I work
             on a product called Community. Community helps teams collaborate and
-            stay aligned at work. Other areas I've worked in at Paylocity
-            include payroll, HR, and analytics.
+            stay aligned at work. Other product areas I've worked in at
+            Paylocity include payroll, HR, and analytics.
           </p>
 
           <p>
@@ -57,6 +57,27 @@ const About = () => (
             the Chicago suburbs. At MD I used my prototyping skills to help our
             clients see future opportunities for growth.
           </p>
+
+          <div>
+            <h3>Skills &amp; Interests</h3>
+            <div className="grid grid-cols-2">
+              <div>
+                <ul className="my-0">
+                  <li>Design systems</li>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                </ul>
+              </div>
+
+              <div>
+                <ul className="my-0">
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <h2>What sets me apart</h2>
 

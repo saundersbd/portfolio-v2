@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const mono = [
   "ui-monospace",
@@ -24,9 +25,13 @@ module.exports = {
       black: "#060606",
       white: "#fff",
       gray: colors.trueGray,
-      blue: colors.lightBlue,
+      blue: colors.sky,
       yellow: colors.yellow,
       purple: colors.indigo,
+    },
+    screens: {
+      xs: "400px",
+      ...defaultTheme.screens,
     },
     container: {
       screens: {
@@ -69,15 +74,6 @@ module.exports = {
             hr: {
               borderColor: theme("colors.gray.300"),
             },
-            blockquote: {
-              borderLeft: "4px solid #000",
-              borderColor: theme("colors.gray.800"),
-              color: theme("colors.gray.600"),
-              fontSize: theme("fontSize.base"),
-              fontWeight: theme("fontWeight.normal"),
-              fontStyle: "italic",
-              padding: ".25rem 1rem",
-            },
             "blockquote p": {
               marginTop: "0px",
               marginBottom: "0px",
@@ -89,9 +85,6 @@ module.exports = {
         },
         xl: {
           css: {
-            h1: {
-              lineHeight: 1.25,
-            },
             blockquote: {
               fontSize: theme("fontSize.lg"),
             },
@@ -99,9 +92,6 @@ module.exports = {
         },
         lg: {
           css: {
-            h1: {
-              lineHeight: 1.25,
-            },
             img: {
               marginBottom: "0px",
             },
