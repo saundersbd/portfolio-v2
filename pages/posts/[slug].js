@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
+import formatDate from "../../lib/formatDate";
 
 import { postFilePaths, POSTS_PATH } from "../../lib/mdx";
 import Head from "next/head";
@@ -30,11 +31,21 @@ const components = {
 };
 
 const Post = ({ source, frontMatter }) => {
+  const publishedDate = frontMatter.published;
+  const formattedPublishedDate = formatDate(publishedDate || "");
+  const editedDate = frontMatter.edited;
+  const formattedEditedDate = formatDate(editedDate || "");
+
   return (
     <PostLayout frontMatter={frontMatter}>
       <Head>
         <title>Brian Saunders | {frontMatter.title}</title>
       </Head>
+      <h1 className="mb-4">{frontMatter.title}</h1>
+      <p className="my-0 mb-8 text-gray-500">
+        Published on {formattedPublishedDate} &middot; Last edited on{" "}
+        {formattedEditedDate}
+      </p>
       <MDXRemote {...source} components={components} />
     </PostLayout>
   );

@@ -19,10 +19,18 @@
   @apply mb-12;
 }
 
+.prose h3 {
+  @apply text-xl;
+}
+
 .prose blockquote {
   @apply bg-blue-50 border-l-4 border-blue-600 font-normal not-italic py-3 px-4;
 }
 
 .prose p.large {
   @apply text-xl leading-loose mb-6;
+}
+
+.prose ol li {
+  @apply ml-2;
 }

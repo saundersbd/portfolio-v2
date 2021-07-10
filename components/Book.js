@@ -14,10 +14,10 @@ const Project = ({ slug, title, description, cover, author }) => (
         </div>
       </div>
 
-      <div className="p-6">
+      <div className="p-4 xs:p-6">
         <h3 className="text-lg font-bold mb-1">{title}</h3>
-        <p className="text-gray-500 font-semibold mb-2">{author}</p>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
+        <p className="text-gray-500 mb-2">{author}</p>
+        <p className="text-base sm:text-lg leading-relaxed sm:leading-relaxed text-gray-700 dark:text-gray-300">
           {description}
         </p>
       </div>

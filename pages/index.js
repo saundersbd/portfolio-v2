@@ -41,15 +41,17 @@ function HomePage({ posts, projects }) {
         <Container size="normal">
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="sm:text-5xl text-4xl leading-normal font-sans font-bold sm:mb-8 mb-6 dark:text-gray-200">
+              <h1 className="sm:text-5xl text-4xl sm:leading-tight leading-normal font-sans font-bold sm:mb-8 mb-6 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="text-xl font-normal sm:mb-8 mb-6 sm:leading-loose dark:text-gray-400">
-                I'm a designer who lives and works in Chicago. I love designing
-                software and have experience working at different scales, from
-                smaller apps to enterprise software used by millions of people.
+              <p className="text-xl font-normal sm:mb-8 mb-6 leading-loose dark:text-gray-400">
+                I'm a great product designer, pretty good ukulele player, and
+                sub-par ceramicist who lives and works in Chicago. I love
+                designing software and have worked on all kinds of things, from
+                design systems to smaller apps to enterprise software used by
+                millions of people.
               </p>
-              <p className="text-xl font-normal sm:mb-12 mb-6 sm:leading-loose dark:text-gray-400">
+              <p className="text-xl font-normal sm:mb-12 mb-6 leading-loose dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I
                 design software that helps employees collaborate and stay
                 connected at work.
@@ -89,7 +91,7 @@ function HomePage({ posts, projects }) {
         <Container size="normal">
           <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
             <div className="lg:col-span-4 col-span-full">
-              <h2 className="text-4xl font-sans font-bold mb-8">Projects</h2>
+              <h2 className="text-4xl font-sans font-bold mb-12">Projects</h2>
               <Grid className="grid-cols-2 gap-5 lg:gap-6 mb-12">
                 {filteredProjects.map((project) => (
                   <Project
@@ -101,7 +103,7 @@ function HomePage({ posts, projects }) {
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
-              <h2 className="text-4xl font-sans font-bold mb-8">Writing</h2>
+              <h2 className="text-4xl font-sans font-bold mb-12">Writing</h2>
               <ul>
                 {filteredPosts.map((post) => (
                   <Post
