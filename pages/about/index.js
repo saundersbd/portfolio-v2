@@ -58,27 +58,6 @@ const About = () => (
             clients see future opportunities for growth.
           </p>
 
-          <div>
-            <h3>Skills &amp; Interests</h3>
-            <div className="grid grid-cols-2">
-              <div>
-                <ul className="my-0">
-                  <li>Design systems</li>
-                  <li>List item 1</li>
-                  <li>List item 1</li>
-                </ul>
-              </div>
-
-              <div>
-                <ul className="my-0">
-                  <li>List item 1</li>
-                  <li>List item 1</li>
-                  <li>List item 1</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
           <h2>What sets me apart</h2>
 
           <h3>Front end knowledge</h3>
