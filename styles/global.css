@@ -54,6 +54,9 @@
     background: rgba(0, 0, 0, 0.06);
     box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
   }
+  .book:hover .book-image-container {
+    @apply bg-blue-100 dark:bg-gray-700 transition !important;
+  }
 }
 
 @tailwind components;

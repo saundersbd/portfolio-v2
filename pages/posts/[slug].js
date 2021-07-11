@@ -40,6 +40,7 @@ const Post = ({ source, frontMatter }) => {
     <PostLayout frontMatter={frontMatter}>
       <Head>
         <title>Brian Saunders | {frontMatter.title}</title>
+        <meta name="description" content={frontMatter.description} />
       </Head>
       <h1 className="mb-4">{frontMatter.title}</h1>
       <p className="my-0 mb-8 text-gray-500">

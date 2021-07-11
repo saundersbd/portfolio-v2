@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Container from "../components/Container";
+import ContainerFull from "../components/ContainerFull";
 
 const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
@@ -52,10 +52,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-10 flex h-24 sm:h-20 items-center bg-white border-b border-gray-300 dark:bg-black dark:border-gray-800">
-      <Container
-        size="normal"
-        className="flex sm:flex-row flex-col items-center justify-center sm:justify-between"
-      >
+      <ContainerFull className="flex sm:flex-row flex-col items-center justify-center sm:justify-between">
         <Link href="/" passHref>
           <a className="text-lg font-semibold focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 mb-3 dark:text-gray-400 rounded">
             Brian Saunders
@@ -64,7 +61,7 @@ const Header = () => {
         <nav>
           <NavLinks activeRoute={activeRoute} />
         </nav>
-      </Container>
+      </ContainerFull>
     </header>
   );
 };

@@ -5,7 +5,7 @@ import path from "path";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import Container from "../components/Container";
+import ContainerFull from "../components/ContainerFull";
 import Section from "../components/Section";
 import Grid from "../components/Grid";
 import Button from "../components/Button";
@@ -36,9 +36,13 @@ function HomePage({ posts, projects }) {
     <Layout className="pt-24 sm:pt-20">
       <Head>
         <title>Brian Saunders | Home</title>
+        <meta
+          name="description"
+          content="The personal website of Brian Saunders, a product designer from Chicago"
+        />
       </Head>
       <Section className="bg-blue-100 py-16 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
-        <Container size="normal">
+        <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
               <h1 className="sm:text-5xl text-4xl sm:leading-tight leading-normal font-sans font-bold sm:mb-8 mb-6 dark:text-gray-200">
@@ -84,11 +88,11 @@ function HomePage({ posts, projects }) {
               </figcaption>
             </div>
           </Grid>
-        </Container>
+        </ContainerFull>
       </Section>
 
       <Section className="bg-white sm:py-24 py-16 dark:bg-black">
-        <Container size="normal">
+        <ContainerFull>
           <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
             <div className="lg:col-span-4 col-span-full">
               <h2 className="text-4xl font-sans font-bold mb-12">Projects</h2>
@@ -115,7 +119,7 @@ function HomePage({ posts, projects }) {
               </ul>
             </div>
           </Grid>
-        </Container>
+        </ContainerFull>
       </Section>
     </Layout>
   );

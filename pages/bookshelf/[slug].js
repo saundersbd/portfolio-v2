@@ -34,6 +34,7 @@ const Book = ({ source, frontMatter }) => {
     <BookLayout frontMatter={frontMatter}>
       <Head>
         <title>Brian Saunders | {frontMatter.title}</title>
+        <meta name="description" content={frontMatter.description} />
       </Head>
       <MDXRemote {...source} components={components} />
     </BookLayout>
