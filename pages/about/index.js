@@ -9,6 +9,10 @@ const About = () => (
   <Layout className="pt-40 pb-12">
     <Head>
       <title>Brian Saunders | About</title>
+      <meta
+        name="description"
+        content="About Brian Saunders, a Chicago-based product designer"
+      />
     </Head>
     <ContainerNarrow>
       <Grid className="grid-cols-6 gap-y-12">
