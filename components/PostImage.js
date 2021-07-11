@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const PostImageWide = ({ alt, className, caption, src, width, height }) => {
+const PostImage = ({ alt, className, caption, src, width, height }) => {
   const img = (
     <>
       <Image alt={alt} height={height} src={src} width={width} />
@@ -9,10 +9,10 @@ const PostImageWide = ({ alt, className, caption, src, width, height }) => {
   );
 
   return (
-    <figure>
+    <figure className="mx-0 md:-mx-8">
       {img}
       {caption && (
-        <figcaption className="mt-2 text-base text-gray-500 dark:text-gray-300">
+        <figcaption className="mx-0 md:mx-8 mt-1 text-base text-gray-500 dark:text-gray-300 leading-loose">
           {caption}
         </figcaption>
       )}
@@ -20,4 +20,4 @@ const PostImageWide = ({ alt, className, caption, src, width, height }) => {
   );
 };
 
-export default PostImageWide;
+export default PostImage;
