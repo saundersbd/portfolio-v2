@@ -1,18 +1,16 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import Container from "../../components/Container";
+import ContainerNarrow from "../../components/ContainerNarrow";
 import Grid from "../../components/Grid";
 import DirectionLink from "../../components/DirectionLink";
-import Button from "../../components/Button";
-import Icon from "../../components/Icon";
 
 const About = () => (
   <Layout className="pt-40 pb-12">
     <Head>
       <title>Brian Saunders | About</title>
     </Head>
-    <Container size="narrow">
+    <ContainerNarrow>
       <Grid className="grid-cols-6 gap-y-12">
         <div className="col-span-full lg:col-start-2 lg:col-end-6">
           <DirectionLink href="/" icon="back">
@@ -129,7 +127,7 @@ const About = () => (
           </DirectionLink>
         </div>
       </Grid>
-    </Container>
+    </ContainerNarrow>
   </Layout>
 );
 
