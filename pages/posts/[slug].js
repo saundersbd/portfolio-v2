@@ -10,24 +10,18 @@ import Head from "next/head";
 import Link from "next/link";
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
-import PostImageWide from "../../components/PostImageWide";
-import PostImageNarrow from "../../components/PostImageNarrow";
+import PostImage from "../../components/PostImage";
 import PageNote from "../../components/PageNote";
 import HrSection from "../../components/HrSection";
-import PostColNarrow from "../../components/PostColNarrow";
-import PostColWide from "../../components/PostColWide";
 import PostLayout from "../../layouts/PostLayout";
 
 const components = {
   Link,
   Button,
   Icon,
-  PostImageWide,
-  PostImageNarrow,
+  PostImage,
   PageNote,
   HrSection,
-  PostColNarrow,
-  PostColWide,
 };
 
 const Post = ({ source, frontMatter }) => {
