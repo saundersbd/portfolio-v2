@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import Container from "../../components/Container";
+import ContainerNarrow from "../../components/ContainerNarrow";
 import Grid from "../../components/Grid";
 import CurrentBook from "../../components/CurrentBook";
 import Book from "../../components/Book";
@@ -28,7 +28,7 @@ const Bookshelf = ({ books }) => {
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <Container size="narrow">
+      <ContainerNarrow>
         <Grid className="grid-cols-6">
           <div className="col-span-full lg:col-start-2 lg:col-end-6">
             <DirectionLink href="/" icon="back" className="mb-8">
@@ -70,7 +70,7 @@ const Bookshelf = ({ books }) => {
             ))}
           </div>
         </Grid>
-      </Container>
+      </ContainerNarrow>
     </Layout>
   );
 };
