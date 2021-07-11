@@ -60,10 +60,22 @@ function HomePage({ posts, projects }) {
                 design software that helps employees collaborate and stay
                 connected at work.
               </p>
-              <Button href="/about" className="sm:w-max w-full">
-                <Icon icon="about" className="w-5 mr-2" />
-                More about me
-              </Button>
+              <div className="flex flex-col xs:flex-row">
+                <Button
+                  href="/about"
+                  className="xs:w-max w-full mb-4 xs:mb-0 mr-0 xs:mr-4"
+                >
+                  <Icon icon="about" className="w-5 mr-2" />
+                  More about me
+                </Button>
+                <Button
+                  href="mailto:saundersbd@gmail.com"
+                  className="xs:w-max w-full"
+                >
+                  <Icon icon="mail" className="w-5 mr-2" />
+                  Email
+                </Button>
+              </div>
             </div>
 
             <div className="md:col-span-2 col-span-full">
