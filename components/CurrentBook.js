@@ -1,10 +1,10 @@
 import React from "react";
 
-const CurrentBook = ({ title, author, description, progress }) => (
+const CurrentBook = ({ title, author, description, url, progress }) => (
   <div className="flex col-span-full flex-col xs:flex-row lg:col-span-1 bg-white rounded-md border border-gray-300 shadow dark:bg-gray-900 dark:border-gray-700 overflow-hidden">
     <div className="flex items-center justify-center bg-gray-100 p-6 dark:bg-gray-800">
       <div className="book-image w-16 sm:w-24 flex-shrink-0 rounded shadow-md overflow-hidden dark:border-gray-800">
-        <img src="/images/books/lincoln-president-elect.jpg" />
+        <img src={url} />
       </div>
     </div>
 

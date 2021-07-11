@@ -39,14 +39,14 @@ const Bookshelf = ({ books }) => {
             </h1>
             <p className="text-xl font-normal mb-12 leading-loose">
               I like to read and thought I'd share thoughts and notes from some
-              of the best books I've read lately. It's a mixture of design and
-              history for the most part.
+              of the best books I've read lately. My reading is a mix of design
+              and history for the most part.
             </p>
 
-            <hr className="mb-12" />
+            <hr className="h-px mb-12 bg-gray-400 dark:bg-gray-600 border-0" />
 
             <div className="mb-16">
-              <h2 className="text-3xl xs:text-4xl font-bold mb-8">
+              <h2 className="text-3xl xs:text-4xl font-bold mb-12">
                 Currently reading
               </h2>
 
@@ -54,11 +54,12 @@ const Bookshelf = ({ books }) => {
                 title="Lincoln President-Elect"
                 author="Harold Holzer"
                 description="A book about the 4-month period between Lincoln's election and when he took office."
+                url="/images/books/lincoln-president-elect.jpg"
                 progress={5}
               />
             </div>
 
-            <h2 className="text-3xl xs:text-4xl font-bold mb-8">Finished</h2>
+            <h2 className="text-3xl xs:text-4xl font-bold mb-12">Finished</h2>
 
             {filteredBooks.map((book) => (
               <Book
