@@ -30,7 +30,7 @@ module.exports = {
       purple: colors.indigo,
     },
     screens: {
-      xs: "400px",
+      xs: "500px",
       ...defaultTheme.screens,
     },
     container: {
@@ -58,6 +58,9 @@ module.exports = {
       ],
     },
     extend: {
+      width: {
+        "1/20": "5%",
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

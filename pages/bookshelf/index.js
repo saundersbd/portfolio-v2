@@ -6,6 +6,7 @@ import Head from "next/head";
 import Layout from "../../components/Layout";
 import Container from "../../components/Container";
 import Grid from "../../components/Grid";
+import CurrentBook from "../../components/CurrentBook";
 import Book from "../../components/Book";
 import DirectionLink from "../../components/DirectionLink";
 
@@ -40,8 +41,20 @@ const Bookshelf = ({ books }) => {
               I like to read and thought I'd share thoughts and notes from some
               of the best books I've read lately.
             </p>
+            <div className="mb-16">
+              <h2 className="text-3xl xs:text-4xl font-bold mb-8">
+                Currently reading
+              </h2>
 
-            <h2 className="text-4xl font-bold mb-8">Books</h2>
+              <CurrentBook
+                title="Lincoln President-Elect"
+                author="Harold Holzer"
+                description="A book about the 4-month period between Lincoln's election and when he took office."
+                progress={5}
+              />
+            </div>
+
+            <h2 className="text-3xl xs:text-4xl font-bold mb-8">Finished</h2>
 
             {filteredBooks.map((book) => (
               <Book
