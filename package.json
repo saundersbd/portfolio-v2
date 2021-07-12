@@ -36,6 +36,8 @@
     "twin.macro": "^2.6.1"
   },
   "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
     "prettier": "^2.3.0"
   },
   "babelMacros": {
