@@ -16,7 +16,7 @@
 }
 
 .prose h2 {
-  @apply mb-12;
+  @apply mb-12 leading-relaxed;
 }
 
 .prose h3 {
