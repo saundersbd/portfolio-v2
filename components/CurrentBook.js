@@ -17,7 +17,7 @@ const CurrentBook = ({ title, author, description, url, progress }) => (
       <div className="progress">
         <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">{`${progress}% complete`}</p>
         <div className="progress-bar w-full h-3 bg-gray-200 dark:bg-gray-700 rounded-sm overflow-hidden">
-          <div className="progress h-3 bg-blue-600 w-1/20"></div>
+          <div className="progress h-3 bg-blue-600 w-3/20"></div>
         </div>
       </div>
     </div>

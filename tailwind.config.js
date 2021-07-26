@@ -60,6 +60,7 @@ module.exports = {
     extend: {
       width: {
         "1/20": "5%",
+        "3/20": "15%",
       },
       typography: (theme) => ({
         DEFAULT: {
