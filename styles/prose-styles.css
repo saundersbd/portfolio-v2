@@ -24,7 +24,7 @@
 }
 
 .prose blockquote {
-  @apply bg-blue-50 border-l-4 border-blue-600 font-normal not-italic py-3 px-4;
+  @apply bg-blue-50 border-l-4 border-blue-600  dark:bg-gray-800 dark:border-gray-600 font-normal not-italic py-3 px-4;
 }
 
 .prose p.large {
