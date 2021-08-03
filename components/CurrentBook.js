@@ -1,13 +1,6 @@
 import React from "react";
 
-const CurrentBook = ({
-  title,
-  author,
-  description,
-  url,
-  progress,
-  barFraction,
-}) => {
+const CurrentBook = ({ title, author, description, url, barFraction }) => {
   const toPercent = (a) => {
     let split = a.split("/");
     let result = parseInt(split[0], 10) / parseInt(split[1], 10);
