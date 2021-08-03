@@ -55,7 +55,7 @@ const Bookshelf = ({ books }) => {
                 author="Harold Holzer"
                 description="A book about the 4-month period between Lincoln's election and when he took office."
                 url="/images/books/lincoln-president-elect.jpg"
-                progress={15}
+                barFraction="5/20"
               />
             </div>
 
