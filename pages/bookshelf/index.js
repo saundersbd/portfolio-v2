@@ -34,19 +34,19 @@ const Bookshelf = ({ books }) => {
             <DirectionLink href="/" icon="back" className="mb-8">
               Back to Home
             </DirectionLink>
-            <h1 className="sm:text-5xl text-4xl leading-normal font-sans font-bold mb-10">
+            <h1 className="mb-10 font-sans text-4xl font-bold leading-normal sm:text-5xl">
               My Bookshelf
             </h1>
-            <p className="text-xl font-normal mb-12 leading-loose">
+            <p className="mb-12 text-xl font-normal leading-loose">
               My reading is usually a mix of design and history. Each page here
               contains some notes and highlights from the book, just so I can
               keep track of things that inspire me.
             </p>
 
-            <hr className="h-px mb-12 bg-gray-400 dark:bg-gray-600 border-0" />
+            <hr className="h-px mb-12 bg-gray-400 border-0 dark:bg-gray-600" />
 
             <div className="mb-16">
-              <h2 className="text-3xl xs:text-4xl font-bold mb-12">
+              <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
                 Currently reading
               </h2>
 
@@ -55,11 +55,11 @@ const Bookshelf = ({ books }) => {
                 author="Harold Holzer"
                 description="A deep dive into the 4-month period between Lincoln's election and when he took office."
                 url="/images/books/lincoln-president-elect.jpg"
-                barFraction="8/20"
+                barFraction="2/5"
               />
             </div>
 
-            <h2 className="text-3xl xs:text-4xl font-bold mb-12">Finished</h2>
+            <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Finished</h2>
 
             {filteredBooks.map((book) => (
               <Book
