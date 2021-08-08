@@ -41,21 +41,21 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="bg-blue-100 py-16 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
+      <Section className="py-16 bg-blue-100 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="sm:text-5xl text-4xl sm:leading-tight leading-normal font-sans font-bold sm:mb-8 mb-6 dark:text-gray-200">
+              <h1 className="mb-6 font-sans text-4xl font-bold leading-normal sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="text-xl font-normal sm:mb-8 mb-6 leading-loose dark:text-gray-400">
+              <p className="mb-6 text-xl font-normal leading-loose sm:mb-8 dark:text-gray-400">
                 I'm a great product designer, pretty good ukulele player, and
                 sub-par ceramicist who lives and works in Chicago. I love
                 designing software and have worked on all kinds of things, from
                 design systems to smaller apps to enterprise software used by
                 millions of people.
               </p>
-              <p className="text-xl font-normal sm:mb-12 mb-6 leading-loose dark:text-gray-400">
+              <p className="mb-6 text-xl font-normal leading-loose sm:mb-12 dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I
                 design software that helps employees collaborate and stay
                 connected at work.
@@ -63,14 +63,14 @@ function HomePage({ posts, projects }) {
               <div className="flex flex-col xs:flex-row">
                 <Button
                   href="/about"
-                  className="xs:w-max w-full mb-4 xs:mb-0 mr-0 xs:mr-4"
+                  className="w-full mb-4 mr-0 xs:w-max xs:mb-0 xs:mr-4"
                 >
                   <Icon icon="about" className="w-5 mr-2" />
                   More about me
                 </Button>
                 <Button
                   href="mailto:saundersbd@gmail.com"
-                  className="xs:w-max w-full"
+                  className="w-full xs:w-max"
                 >
                   <Icon icon="mail" className="w-5 mr-2" />
                   Email
@@ -81,14 +81,14 @@ function HomePage({ posts, projects }) {
             <div className="md:col-span-2 col-span-full">
               <figure className="w-32 md:w-full">
                 <Image
-                  className="md:mb-2 rounded-full md:rounded"
+                  className="rounded-full md:mb-2 md:rounded"
                   height={682}
                   width={682}
                   alt="A picture of Brian"
                   src="/images/portrait-blue.png"
                 />
               </figure>
-              <figcaption className="hidden md:block text-sm font-normal text-gray-600 leading-loose dark:text-gray-400">
+              <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-gray-400">
                 I have been featured in no publications and have failed to
                 appear in Forbes' <span className="italic">30 Under 30</span>{" "}
                 list thirty separate times.
@@ -98,12 +98,12 @@ function HomePage({ posts, projects }) {
         </ContainerFull>
       </Section>
 
-      <Section className="bg-white sm:py-24 py-16 dark:bg-black">
+      <Section className="py-16 bg-white sm:py-24 dark:bg-black">
         <ContainerFull>
           <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
             <div className="lg:col-span-4 col-span-full">
-              <h2 className="text-4xl font-sans font-bold mb-12">Projects</h2>
-              <Grid className="grid-cols-2 gap-5 lg:gap-6 mb-12">
+              <h2 className="mb-12 font-sans text-4xl font-bold">Projects</h2>
+              <Grid className="grid-cols-2 gap-5 mb-12 lg:gap-6">
                 {filteredProjects.map((project) => (
                   <Project
                     key={project.data.title}
@@ -114,7 +114,7 @@ function HomePage({ posts, projects }) {
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
-              <h2 className="text-4xl font-sans font-bold mb-12">Writing</h2>
+              <h2 className="mb-12 font-sans text-4xl font-bold">Writing</h2>
               <ul>
                 {filteredPosts.map((post) => (
                   <Post

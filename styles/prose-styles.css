@@ -1,5 +1,5 @@
 .prose {
-  @apply text-lg leading-loose;
+    @apply text-lg leading-loose;
 }
 
 .prose h1,
@@ -8,33 +8,33 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-  @apply font-sans font-bold;
+    @apply font-sans font-bold;
 }
 
 .prose h1 {
-  @apply leading-normal;
+    @apply leading-normal;
 }
 
 .prose h2 {
-  @apply mb-12 leading-relaxed;
+    @apply mb-12 leading-relaxed;
 }
 
 .prose h3 {
-  @apply text-xl;
+    @apply text-xl;
 }
 
 .prose blockquote {
-  @apply bg-blue-50 border-l-4 border-blue-600  dark:bg-gray-800 dark:border-gray-600 font-normal not-italic py-3 px-4;
+    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600;
 }
 
 .prose p.large {
-  @apply text-xl leading-loose mb-6;
+    @apply mb-6 text-xl leading-loose;
 }
 
 .prose ol li {
-  @apply ml-2;
+    @apply ml-2;
 }
 
 .prose a {
-  @apply px-1 -mx-1 bg-yellow-300 hover:bg-opacity-60 text-gray-900 hover:text-gray-900 dark:bg-opacity-30 dark:hover:bg-yellow-400 dark:hover:bg-opacity-100 dark:text-gray-200 font-medium no-underline rounded transition duration-100 focus:outline-none focus:ring focus:ring-blue-400;
+    @apply px-1 -mx-1 font-medium text-gray-900 no-underline transition duration-100 bg-yellow-300 rounded hover:bg-opacity-60 hover:text-gray-900 dark:bg-opacity-30 dark:hover:bg-yellow-400 dark:hover:bg-opacity-100 dark:text-gray-200 focus:outline-none focus:ring focus:ring-blue-400;
 }

@@ -14,7 +14,7 @@ const PostLayout = ({ children }) => (
               Back to Home
             </DirectionLink>
           </div>
-          <div className="col-span-full lg:col-start-2 lg:col-end-6 prose prose-lg md:prose-xl dark:prose-dark">
+          <div className="prose prose-lg col-span-full lg:col-start-2 lg:col-end-6 md:prose-xl dark:prose-dark">
             {children}
           </div>
           <div className="col-span-full lg:col-start-2 lg:col-end-6">
