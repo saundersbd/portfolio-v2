@@ -7,7 +7,7 @@ const CurrentBook = ({ title, author, description, url, barFraction }) => {
     return result * 100;
   };
 
-  const progressBar = `w-${barFraction}`;
+  const progressBar = `progress h-3 bg-blue-600 w-${barFraction}`;
 
   return (
     <div className="flex flex-col overflow-hidden bg-white border border-gray-300 rounded-md shadow col-span-full xs:flex-row lg:col-span-1 dark:bg-gray-900 dark:border-gray-700">
@@ -28,7 +28,7 @@ const CurrentBook = ({ title, author, description, url, barFraction }) => {
             barFraction
           )}% complete`}</p>
           <div className="w-full h-3 overflow-hidden bg-gray-200 rounded-sm progress-bar dark:bg-gray-700">
-            <div className={`progress h-3 bg-blue-600 ${progressBar}`}></div>
+            <div className={`${progressBar}`}></div>
           </div>
         </div>
       </div>
