@@ -14,7 +14,7 @@ const PostImage = ({ alt, className, caption, src, width, height }) => {
     <figure className="mx-0 md:-mx-8">
       <Zoom>{img}</Zoom>
       {caption && (
-        <figcaption className="mx-0 md:mx-8 mt-1 text-base text-gray-500 dark:text-gray-300 leading-loose">
+        <figcaption className="mx-0 mt-1 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
           {caption}
         </figcaption>
       )}

@@ -12,7 +12,7 @@ const Post = ({ slug, title, description }) => (
         <h3 className="text-lg font-bold">{title}</h3>
       </a>
     </Link>
-    <p className="text-lg text-gray-600 mb-0 dark:text-gray-300 leading-relaxed">
+    <p className="mb-0 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
       {description}
     </p>
   </li>

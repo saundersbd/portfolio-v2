@@ -51,10 +51,10 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 flex h-24 sm:h-20 items-center bg-white border-b border-gray-300 dark:bg-black dark:border-gray-800">
-      <ContainerFull className="flex sm:flex-row flex-col items-center justify-center sm:justify-between">
+    <header className="fixed top-0 left-0 right-0 z-10 flex items-center h-24 bg-white border-b border-gray-300 sm:h-20 dark:bg-black dark:border-gray-800">
+      <ContainerFull className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
         <Link href="/" passHref>
-          <a className="text-lg font-semibold focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 mb-3 dark:text-gray-400 rounded">
+          <a className="mb-3 text-lg font-semibold rounded focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 dark:text-gray-400">
             Brian Saunders
           </a>
         </Link>

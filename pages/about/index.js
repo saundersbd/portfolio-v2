@@ -21,7 +21,7 @@ const About = () => (
             Back to Home
           </DirectionLink>
         </div>
-        <div className="col-span-full lg:col-start-2 lg:col-end-6 prose prose-lg md:prose-xl dark:prose-dark">
+        <div className="prose prose-lg col-span-full lg:col-start-2 lg:col-end-6 md:prose-xl dark:prose-dark">
           <h1>About Me</h1>
 
           <h2>Experience</h2>
@@ -122,7 +122,7 @@ const About = () => (
             .
           </p>
 
-          <hr className="h-px bg-gray-400 dark:bg-gray-600 border-0" />
+          <hr className="h-px bg-gray-400 border-0 dark:bg-gray-600" />
         </div>
 
         <div className="col-span-full lg:col-start-2 lg:col-end-6">

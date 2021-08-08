@@ -38,9 +38,9 @@ const Bookshelf = ({ books }) => {
               My Bookshelf
             </h1>
             <p className="text-xl font-normal mb-12 leading-loose">
-              I like to read and thought I'd share thoughts and notes from some
-              of the best books I've read lately. My reading is a mix of design
-              and history for the most part.
+              My reading is usually a mix of design and history. Each page here
+              contains some notes and highlights from the book, just so I can
+              keep track of things that inspire me.
             </p>
 
             <hr className="h-px mb-12 bg-gray-400 dark:bg-gray-600 border-0" />
@@ -55,7 +55,7 @@ const Bookshelf = ({ books }) => {
                 author="Harold Holzer"
                 description="A deep dive into the 4-month period between Lincoln's election and when he took office."
                 url="/images/books/lincoln-president-elect.jpg"
-                barFraction="5/20"
+                barFraction="8/20"
               />
             </div>
 

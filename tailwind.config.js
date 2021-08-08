@@ -62,6 +62,7 @@ module.exports = {
         "1/20": "5%",
         "3/20": "15%",
         "5/20": "25%",
+        "8/20": "40%",
       },
       typography: (theme) => ({
         DEFAULT: {

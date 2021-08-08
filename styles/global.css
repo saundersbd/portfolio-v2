@@ -1,62 +1,62 @@
 @font-face {
-  font-family: "iA Quattro";
-  font-stretch: 25% 150%;
-  font-weight: 100 1000;
-  src: url("/fonts/iAWriterQuattroV.ttf") format("truetype-variations");
+    font-family: "iA Quattro";
+    font-stretch: 25% 150%;
+    font-weight: 100 1000;
+    src: url("/fonts/iAWriterQuattroV.ttf") format("truetype-variations");
 }
 
 @font-face {
-  font-family: "iA Quattro";
-  font-stretch: 25% 150%;
-  font-style: italic;
-  font-weight: 100 1000;
-  src: url("/fonts/iAWriterQuattroV-Italic.ttf") format("truetype-variations");
+    font-family: "iA Quattro";
+    font-stretch: 25% 150%;
+    font-style: italic;
+    font-weight: 100 1000;
+    src: url("/fonts/iAWriterQuattroV-Italic.ttf") format("truetype-variations");
 }
 
 @tailwind base;
 
 @layer base {
-  body {
-    @apply bg-white text-gray-800 font-mono !important;
-  }
-  [aria-current="page"] {
-    @apply bg-gray-100 text-gray-800;
-  }
-  [aria-current="false"] {
-    @apply bg-white text-gray-800;
-  }
-  @media (prefers-color-scheme: dark) {
     body {
-      @apply bg-black text-gray-100 !important;
-    }
-    [aria-current="false"] {
-      @apply bg-black text-gray-400;
+        @apply bg-white text-gray-800 font-mono !important;
     }
     [aria-current="page"] {
-      @apply bg-gray-800 text-gray-100;
+        @apply text-gray-800 bg-gray-100;
     }
-  }
-  p.large {
-    @apply text-xl leading-loose sm:text-xl sm:mb-6 mb-4;
-  }
-  .book-image {
-    position: relative;
-    height: max-content;
-    box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .book-image::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 3px;
-    bottom: 0;
-    width: 3px;
-    background: rgba(0, 0, 0, 0.06);
-    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-  }
-  .book:hover .book-image-container {
-    @apply bg-blue-100 dark:bg-gray-700 transition !important;
-  }
+    [aria-current="false"] {
+        @apply text-gray-800 bg-white;
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            @apply bg-black text-gray-100 !important;
+        }
+        [aria-current="false"] {
+            @apply text-gray-400 bg-black;
+        }
+        [aria-current="page"] {
+            @apply text-gray-100 bg-gray-800;
+        }
+    }
+    p.large {
+        @apply mb-4 text-xl leading-loose sm:text-xl sm:mb-6;
+    }
+    .book-image {
+        position: relative;
+        height: max-content;
+        box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .book-image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 3px;
+        bottom: 0;
+        width: 3px;
+        background: rgba(0, 0, 0, 0.06);
+        box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+    }
+    .book:hover .book-image-container {
+        @apply bg-blue-100 dark:bg-gray-700 transition !important;
+    }
 }
 
 @tailwind components;
