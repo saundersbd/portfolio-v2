@@ -1,13 +1,18 @@
 import React from "react";
 
-const CurrentBook = ({ title, author, description, url, barFraction }) => {
+const CurrentBook = ({
+  title,
+  author,
+  description,
+  url,
+  progressBarWidth,
+  barClass,
+}) => {
   const toPercent = (a) => {
     let split = a.split("/");
     let result = parseInt(split[0], 10) / parseInt(split[1], 10);
     return result * 100;
   };
-
-  const progressBar = `progress h-3 bg-blue-600 w-${barFraction}`;
 
   return (
     <div className="flex flex-col overflow-hidden bg-white border border-gray-300 rounded-md shadow col-span-full xs:flex-row lg:col-span-1 dark:bg-gray-900 dark:border-gray-700">
@@ -25,10 +30,10 @@ const CurrentBook = ({ title, author, description, url, barFraction }) => {
         </p>
         <div className="progress">
           <p className="mb-1 text-xs text-gray-500 dark:text-gray-400">{`${toPercent(
-            barFraction
+            progressBarWidth
           )}% complete`}</p>
           <div className="w-full h-3 overflow-hidden bg-gray-200 rounded-sm progress-bar dark:bg-gray-700">
-            <div className={`${progressBar}`}></div>
+            <div className={`progress h-3 bg-blue-600 ${barClass}`}></div>
           </div>
         </div>
       </div>

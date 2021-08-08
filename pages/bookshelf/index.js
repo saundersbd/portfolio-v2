@@ -55,7 +55,8 @@ const Bookshelf = ({ books }) => {
                 author="Harold Holzer"
                 description="A deep dive into the 4-month period between Lincoln's election and when he took office."
                 url="/images/books/lincoln-president-elect.jpg"
-                barFraction="2/5"
+                barClass="w-8/20"
+                progressBarWidth="8/20"
               />
             </div>
 
