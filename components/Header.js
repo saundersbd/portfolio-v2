@@ -23,9 +23,7 @@ const NavLinks = ({ activeRoute }) => {
   return (
     <>
       <Link href="/posts" passHref>
-        <NavLink isActive={activeRoute === "Posts"} className="ml-2">
-          Writing
-        </NavLink>
+        <NavLink isActive={activeRoute === "Posts"}>Writing</NavLink>
       </Link>
 
       <Link href="/bookshelf" passHref>
@@ -35,7 +33,9 @@ const NavLinks = ({ activeRoute }) => {
       </Link>
 
       <Link href="/about" passHref>
-        <NavLink isActive={activeRoute === "About"}>About</NavLink>
+        <NavLink isActive={activeRoute === "About"} className="ml-2">
+          About
+        </NavLink>
       </Link>
     </>
   );
