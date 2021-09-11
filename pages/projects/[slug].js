@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
+import slug from "remark-slug";
 
 import { projectFilePaths, PROJECTS_PATH } from "../../lib/mdx";
 import Head from "next/head";
@@ -47,7 +48,7 @@ export const getStaticProps = async ({ params }) => {
   const mdxSource = await serialize(content, {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
-      remarkPlugins: [require("remark-slug")],
+      remarkPlugins: [slug],
       rehypePlugins: [],
     },
     scope: data,

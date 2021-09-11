@@ -45,7 +45,7 @@ const Bookshelf = ({ books }) => {
 
             <hr className="h-px mb-12 bg-gray-400 border-0 dark:bg-gray-600" />
 
-            <div className="mb-16">
+            {/* <div className="mb-16">
               <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
                 Currently reading
               </h2>
@@ -58,7 +58,7 @@ const Bookshelf = ({ books }) => {
                 barClass="w-8/20"
                 progressBarWidth="8/20"
               />
-            </div>
+            </div> */}
 
             <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Finished</h2>
 

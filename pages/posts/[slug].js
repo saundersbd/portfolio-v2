@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import formatDate from "../../lib/formatDate";
+import slug from "remark-slug";
 
 import { postFilePaths, POSTS_PATH } from "../../lib/mdx";
 import Head from "next/head";
@@ -57,7 +58,7 @@ export const getStaticProps = async ({ params }) => {
   const mdxSource = await serialize(content, {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
-      remarkPlugins: [require("remark-slug")],
+      remarkPlugins: [slug],
       rehypePlugins: [],
     },
     scope: data,
