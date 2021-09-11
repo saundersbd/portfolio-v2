@@ -43,7 +43,7 @@ const Bookshelf = ({ books }) => {
               keep track of things that inspire me.
             </p>
 
-            <hr className="h-px mb-12 bg-gray-400 border-0 dark:bg-gray-600" />
+            <hr className="h-px mb-12 bg-gray-300 border-0 dark:bg-gray-600" />
 
             {/* <div className="mb-16">
               <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
@@ -62,13 +62,19 @@ const Bookshelf = ({ books }) => {
 
             <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Finished</h2>
 
-            {filteredBooks.map((book) => (
-              <Book
-                key={book.data.title}
-                slug={book.filePath}
-                {...book.data}
-              ></Book>
-            ))}
+            <div className="mb-8">
+              {filteredBooks.map((book) => (
+                <Book
+                  key={book.data.title}
+                  slug={book.filePath}
+                  {...book.data}
+                ></Book>
+              ))}
+            </div>
+
+            <DirectionLink href="#top" icon="top">
+              Back to top
+            </DirectionLink>
           </div>
         </Grid>
       </ContainerNarrow>

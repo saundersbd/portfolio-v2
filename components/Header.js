@@ -22,10 +22,6 @@ const NavLink = React.forwardRef(
 const NavLinks = ({ activeRoute }) => {
   return (
     <>
-      <Link href="/about" passHref>
-        <NavLink isActive={activeRoute === "About"}>About</NavLink>
-      </Link>
-
       <Link href="/posts" passHref>
         <NavLink isActive={activeRoute === "Posts"} className="ml-2">
           Writing
@@ -36,6 +32,10 @@ const NavLinks = ({ activeRoute }) => {
         <NavLink isActive={activeRoute === "Bookshelf"} className="ml-2">
           Bookshelf
         </NavLink>
+      </Link>
+
+      <Link href="/about" passHref>
+        <NavLink isActive={activeRoute === "About"}>About</NavLink>
       </Link>
     </>
   );
