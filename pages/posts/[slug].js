@@ -29,7 +29,10 @@ const Post = ({ source, frontMatter }) => {
   const publishedDate = frontMatter.published;
   const formattedPublishedDate = formatDate(publishedDate || "");
   const editedDate = frontMatter.edited;
-  const formattedEditedDate = formatDate(editedDate || "");
+  let formattedEditedDate;
+  if (editedDate) {
+    formattedEditedDate = formatDate(editedDate || "");
+  }
 
   return (
     <PostLayout frontMatter={frontMatter}>
@@ -39,8 +42,8 @@ const Post = ({ source, frontMatter }) => {
       </Head>
       <h1 className="mb-4">{frontMatter.title}</h1>
       <p className="my-0 mb-8 text-gray-500">
-        Published on {formattedPublishedDate} &middot; Last edited on{" "}
-        {formattedEditedDate}
+        Published on {formattedPublishedDate}&nbsp;
+        {formattedEditedDate && `\u00B7 Last edited on ${formattedEditedDate}`}
       </p>
       <MDXRemote {...source} components={components} />
     </PostLayout>
