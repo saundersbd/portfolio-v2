@@ -26,9 +26,15 @@ const NavLinks = ({ activeRoute }) => {
         <NavLink isActive={activeRoute === "About"}>About</NavLink>
       </Link>
 
+      <Link href="/posts" passHref>
+        <NavLink isActive={activeRoute === "Posts"} className="ml-2">
+          Writing
+        </NavLink>
+      </Link>
+
       <Link href="/bookshelf" passHref>
         <NavLink isActive={activeRoute === "Bookshelf"} className="ml-2">
-          My Bookshelf
+          Bookshelf
         </NavLink>
       </Link>
     </>
@@ -48,6 +54,10 @@ const Header = () => {
   if (router.pathname.includes("/bookshelf")) {
     activeRoute = "Bookshelf";
     activePath = "/bookshelf";
+  }
+  if (router.pathname.includes("/posts")) {
+    activeRoute = "Posts";
+    activePath = "/posts";
   }
 
   return (

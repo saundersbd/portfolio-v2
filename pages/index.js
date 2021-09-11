@@ -3,6 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import ContainerFull from "../components/ContainerFull";
@@ -116,7 +117,7 @@ function HomePage({ posts, projects }) {
             <div className="lg:col-span-2 col-span-full">
               <h2 className="mb-12 font-sans text-4xl font-bold">Writing</h2>
               <ul>
-                {filteredPosts.map((post) => (
+                {filteredPosts.slice(0, 3).map((post) => (
                   <Post
                     key={post.data.title}
                     slug={post.filePath}
@@ -124,6 +125,11 @@ function HomePage({ posts, projects }) {
                   />
                 ))}
               </ul>
+              <Link href="/posts" passHref>
+                <a className="flex w-max items-center text-gray-700 dark:text-white font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-400}">
+                  More Posts
+                </a>
+              </Link>
             </div>
           </Grid>
         </ContainerFull>
