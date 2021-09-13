@@ -34,9 +34,7 @@ const Bookshelf = ({ books, convertBack }) => {
               book.
             </p>
 
-            <hr className="h-px mb-12 bg-gray-300 border-0 dark:bg-gray-600" />
-
-            <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
+            {/* <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
               Currently reading
             </h2>
             <CurrentBook
@@ -46,9 +44,11 @@ const Bookshelf = ({ books, convertBack }) => {
               url="/images/books/lincoln-president-elect.jpg"
               barClass="w-8/20"
               progressBarWidth="8/20"
-            />
+            /> */}
 
-            <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Bookshelf</h2>
+            {/* <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Bookshelf</h2> */}
+
+            <BookCategoryList books={convertBack} category="Business" />
 
             <BookCategoryList books={convertBack} category="Creative Process" />
 
@@ -59,6 +59,10 @@ const Bookshelf = ({ books, convertBack }) => {
             <BookCategoryList books={convertBack} category="History" />
 
             <BookCategoryList books={convertBack} category="Knowledge" />
+
+            <BookCategoryList books={convertBack} category="Life" />
+
+            <BookCategoryList books={convertBack} category="Systems" />
 
             <BookCategoryList books={convertBack} category="Writing" />
 
