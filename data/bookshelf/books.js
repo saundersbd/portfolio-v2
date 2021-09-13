@@ -1,0 +1,88 @@
+const DATA = [
+  {
+    title: "Notes on the Synthesis of Form",
+    author: "Christopher Alexander",
+    date: "1964",
+    url: "https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512",
+    category: "design",
+  },
+  {
+    title: "The Timeless Way of Building",
+    author: "Christopher Alexander",
+    date: "1979",
+    url: "https://www.amazon.com/Timeless-Way-Building-Christopher-Alexander/dp/0195024028",
+    category: "design",
+  },
+  {
+    title: "The Nature of Order, Book 2",
+    author: "Christopher Alexander",
+    date: "2002",
+    url: "https://www.amazon.com/Process-Creating-Life-Building-Universe/dp/0972652922",
+    category: "design",
+  },
+  {
+    title: "Team of Rivals",
+    author: "Doris Kearns Goodwin",
+    date: "2009",
+    url: "https://www.amazon.com/dp/B002RI98BA/",
+    category: "history",
+  },
+  {
+    title: "Lincoln President Elect",
+    author: "Harold Holzer",
+    date: "2008",
+    url: "https://www.amazon.com/Lincoln-President-Elect-Abraham-Secession-1860-1861-ebook/dp/B001FA0I6K",
+    category: "history",
+  },
+  {
+    title: "Lincoln at Cooper Union",
+    author: "Harold Holzer",
+    date: "2006",
+    url: "https://www.amazon.com/Lincoln-Cooper-Union-President-Schuster-ebook/dp/B000NY12FU",
+    category: "history",
+  },
+  {
+    title: "Thinking in Systems",
+    author: "Donella H. Meadows",
+    date: "2009",
+    url: "https://www.amazon.com/Thinking-Systems-Donella-H-Meadows-ebook/dp/B005VSRFEA",
+    category: "systems",
+  },
+  {
+    title: "On Writing Well",
+    author: "William Zinsser",
+    date: "1976",
+    url: "https://www.amazon.com/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0",
+    category: "writing",
+  },
+  {
+    title: "Design Cybernetics",
+    author: "Thomas Fischer",
+    date: "2019",
+    url: "https://www.amazon.com/Design-Cybernetics-Navigating-Research-Foundations/dp/3030185567",
+    category: "systems",
+  },
+  {
+    title: "Systemantics",
+    author: "John Gall",
+    date: "1977",
+    url: "https://www.amazon.com/SYSTEMANTICS-SYSTEMS-BIBLE-John-Gall-ebook/dp/B00AK1BIDM",
+    category: "systems",
+  },
+  {
+    title: "How to Take Smart Notes",
+    author: "Sonke Ahrens",
+    date: "2017",
+    url: "https://www.amazon.com/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y",
+    category: "knowledge",
+  },
+  {
+    title: "Several Short Sentences About Writing",
+    author: "Verlyn Klinkenborg",
+    date: "2012",
+    url: "https://www.amazon.com/Several-Short-Sentences-About-Writing-ebook/dp/B0078XCQMW",
+    category: "writing",
+  },
+];
+
+export default DATA;
