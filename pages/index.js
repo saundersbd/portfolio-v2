@@ -127,7 +127,7 @@ function HomePage({ posts, projects }) {
               </ul>
               <Link href="/posts" passHref>
                 <a className="flex w-max items-center text-lg text-gray-700 dark:text-white font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-400}">
-                  More Posts
+                  More Posts →
                 </a>
               </Link>
             </div>
