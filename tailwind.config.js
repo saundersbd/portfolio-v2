@@ -28,6 +28,7 @@ module.exports = {
       blue: colors.sky,
       yellow: colors.yellow,
       purple: colors.indigo,
+      green: colors.green,
     },
     screens: {
       xs: "500px",
@@ -63,6 +64,7 @@ module.exports = {
         "3/20": "15%",
         "5/20": "25%",
         "8/20": "40%",
+        "16/20": "80%",
       },
       typography: (theme) => ({
         DEFAULT: {

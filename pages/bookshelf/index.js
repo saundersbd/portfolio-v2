@@ -1,36 +1,23 @@
 import React from "react";
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import ContainerNarrow from "../../components/ContainerNarrow";
+import ContainerFull from "../../components/ContainerFull";
 import Grid from "../../components/Grid";
 import CurrentBook from "../../components/CurrentBook";
-import Book from "../../components/Book";
 import DirectionLink from "../../components/DirectionLink";
+import BookCategoryList from "../../components/BookCategoryList";
 
-import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
+import { __recordsPerPageForIteration } from "airtable/lib/table";
 
-const Bookshelf = ({ books }) => {
-  const filteredBooks = books.sort((a, b) => {
-    if (a.data.title < b.data.title) {
-      return -1;
-    }
-    if (a.data.title > b.data.title) {
-      return 1;
-    }
-    return 0;
-  });
-
+const Bookshelf = ({ convertBack }) => {
   return (
     <Layout className="pt-40 pb-12">
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <ContainerNarrow>
-        <Grid className="grid-cols-6">
-          <div className="col-span-full lg:col-start-2 lg:col-end-6">
+      <ContainerFull>
+        <Grid className="grid-cols-12">
+          <div className="col-span-full md:col-start-3 md:col-end-11">
             <DirectionLink href="/" icon="back" className="mb-8">
               Back to Home
             </DirectionLink>
@@ -38,63 +25,67 @@ const Bookshelf = ({ books }) => {
               My Bookshelf
             </h1>
             <p className="mb-12 text-xl font-normal leading-loose">
-              My reading is usually a mix of design and history. Each page here
-              contains some notes and highlights from the book, just so I can
-              keep track of things that inspire me.
+              This is a place to collect a list of books and articles I've read
+              and enjoyed.
             </p>
 
-            <hr className="h-px mb-12 bg-gray-300 border-0 dark:bg-gray-600" />
+            <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-400 xs:text-2xl">
+              Currently Reading
+            </h2>
+            <CurrentBook
+              title="Design Cybernetics"
+              author="Thomas Fischer"
+              description="Picked up this collection of academic papers because I am interested in conversation theory as it applies to design."
+              imageUrl="/images/books/design-cybernetics.jpg"
+              url="https://www.amazon.com/dp/3030185567"
+              barClass="w-16/20"
+              progressBarWidth="16/20"
+              date="9/14/2021"
+            />
 
-            {/* <div className="mb-16">
-              <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
-                Currently reading
-              </h2>
+            <BookCategoryList books={convertBack} category="Design" />
 
-              <CurrentBook
-                title="Lincoln President-Elect"
-                author="Harold Holzer"
-                description="A deep dive into the 4-month period between Lincoln's election and when he took office."
-                url="/images/books/lincoln-president-elect.jpg"
-                barClass="w-8/20"
-                progressBarWidth="8/20"
-              />
-            </div> */}
+            <BookCategoryList books={convertBack} category="Systems" />
 
-            <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Finished</h2>
+            <BookCategoryList books={convertBack} category="Writing" />
 
-            <div className="mb-8">
-              {filteredBooks.map((book) => (
-                <Book
-                  key={book.data.title}
-                  slug={book.filePath}
-                  {...book.data}
-                ></Book>
-              ))}
-            </div>
+            <BookCategoryList books={convertBack} category="Business" />
+
+            <BookCategoryList books={convertBack} category="Creative Process" />
+
+            <BookCategoryList books={convertBack} category="Fiction" />
+
+            <BookCategoryList books={convertBack} category="History" />
+
+            <BookCategoryList books={convertBack} category="Language" />
+
+            <BookCategoryList books={convertBack} category="Life" />
 
             <DirectionLink href="#top" icon="top">
               Back to top
             </DirectionLink>
           </div>
         </Grid>
-      </ContainerNarrow>
+      </ContainerFull>
     </Layout>
   );
 };
 
 export default Bookshelf;
 
-export function getStaticProps() {
-  const books = bookFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(BOOKS_PATH, filePath));
-    const { content, data } = matter(source);
+export async function getStaticProps() {
+  const Airtable = require("airtable");
 
-    return {
-      content,
-      data,
-      filePath,
-    };
-  });
+  const base = new Airtable({
+    apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
+  }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID);
 
-  return { props: { books } };
+  const table = base(process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME);
+
+  const records = await table.select({ sort: [{ field: "Title" }] }).all();
+
+  const allBooks = JSON.stringify(records);
+  const convertBack = JSON.parse(allBooks);
+
+  return { props: { convertBack } };
 }
