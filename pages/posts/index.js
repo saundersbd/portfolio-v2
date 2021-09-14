@@ -37,7 +37,7 @@ const Posts = ({ posts }) => {
               Writing
             </h1>
 
-            <h2 className="pb-2 mb-12 text-xl font-bold border-b border-gray-300 xs:text-2xl">
+            <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-400 xs:text-2xl">
               2021
             </h2>
             <ul className="mb-16">

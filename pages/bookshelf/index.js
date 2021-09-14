@@ -1,7 +1,4 @@
 import React from "react";
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import ContainerFull from "../../components/ContainerFull";
@@ -10,10 +7,9 @@ import CurrentBook from "../../components/CurrentBook";
 import DirectionLink from "../../components/DirectionLink";
 import BookCategoryList from "../../components/BookCategoryList";
 
-import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 import { __recordsPerPageForIteration } from "airtable/lib/table";
 
-const Bookshelf = ({ books, convertBack }) => {
+const Bookshelf = ({ convertBack }) => {
   return (
     <Layout className="pt-40 pb-12">
       <Head>
@@ -29,22 +25,23 @@ const Bookshelf = ({ books, convertBack }) => {
               My Bookshelf
             </h1>
             <p className="mb-12 text-xl font-normal leading-loose">
-              This is a place to collect a list of books I've read and enjoyed.
+              This is a place to collect a list of books and articles I've read
+              and enjoyed.
             </p>
 
-            {/* <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
-              Currently reading
+            <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-400 xs:text-2xl">
+              Currently Reading
             </h2>
             <CurrentBook
-              title="Lincoln President-Elect"
-              author="Harold Holzer"
-              description="A deep dive into the 4-month period between Lincoln's election and when he took office."
-              url="/images/books/lincoln-president-elect.jpg"
-              barClass="w-8/20"
-              progressBarWidth="8/20"
-            /> */}
-
-            {/* <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Bookshelf</h2> */}
+              title="Design Cybernetics"
+              author="Thomas Fischer"
+              description="Picked up this collection of academic papers because I am interested in conversation theory as it applies to design."
+              imageUrl="/images/books/design-cybernetics.jpg"
+              url="https://www.amazon.com/dp/3030185567"
+              barClass="w-16/20"
+              progressBarWidth="16/20"
+              date="9/14/2021"
+            />
 
             <BookCategoryList books={convertBack} category="Design" />
 
@@ -77,17 +74,6 @@ const Bookshelf = ({ books, convertBack }) => {
 export default Bookshelf;
 
 export async function getStaticProps() {
-  const books = bookFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(BOOKS_PATH, filePath));
-    const { content, data } = matter(source);
-
-    return {
-      content,
-      data,
-      filePath,
-    };
-  });
-
   const Airtable = require("airtable");
 
   const base = new Airtable({
@@ -101,5 +87,5 @@ export async function getStaticProps() {
   const allBooks = JSON.stringify(records);
   const convertBack = JSON.parse(allBooks);
 
-  return { props: { books, convertBack } };
+  return { props: { convertBack } };
 }
