@@ -7,7 +7,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
       <div className="flex items-center mb-1">
         {url ? (
           <a
-            className="font-medium underline rounded hover:text-blue-600 dark:hover:text-gray-300 focus:outline-none focus:ring focus:ring-blue-400"
+            className="font-medium underline rounded hover:text-blue-600 dark:hover:text-gray-300 focus:outline-none focus:ring focus:ring-blue-400 -mx-1 -my-0.5 px-1 py-0.5"
             href={url}
             target="_blank"
           >
@@ -33,17 +33,17 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
           </svg>
         ) : null}
       </div>
-      <div className="text-gray-500 dark:text-gray-400">
+      <div className="flex items-center text-gray-500 dark:text-gray-400">
         {author} ({date})
       </div>
     </div>
     <div className="flex justify-start pr-2 sm:justify-end col-span-full sm:col-span-2">
       {notes ? (
         <Link href={notes} passHref>
-          <a className="flex items-center justify-center px-2 py-1 text-base font-medium text-gray-800 no-underline transition bg-white border border-gray-300 rounded-md shadow-sm w-max hover:no-underline focus:outline-none focus:ring focus:ring-blue-400 hover:shadow hover:bg-gray-50 dark:border-blue-700 dark:bg-blue-700 dark:text-white dark:hover:bg-blue-600 dark:hover:text-white">
+          <a className="flex items-center justify-center px-2 py-1 text-sm font-medium text-gray-800 no-underline transition bg-white border border-gray-300 rounded-md shadow-sm w-max hover:no-underline focus:outline-none focus:ring focus:ring-blue-400 hover:shadow hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-800 dark:hover:border-gray-500 dark:hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 mr-1"
+              className="w-4 h-4 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

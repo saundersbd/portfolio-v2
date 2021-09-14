@@ -17,7 +17,7 @@ const Bookshelf = ({ convertBack }) => {
       </Head>
       <ContainerFull>
         <Grid className="grid-cols-12">
-          <div className="col-span-full md:col-start-3 md:col-end-11">
+          <div className="col-span-full lg:col-start-3 lg:col-end-11">
             <DirectionLink href="/" icon="back" className="mb-8">
               Back to Home
             </DirectionLink>
@@ -29,7 +29,7 @@ const Bookshelf = ({ convertBack }) => {
               and enjoyed.
             </p>
 
-            <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-400 xs:text-2xl">
+            <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
               Currently Reading
             </h2>
             <CurrentBook
