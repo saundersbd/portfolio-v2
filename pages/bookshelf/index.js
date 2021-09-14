@@ -29,9 +29,7 @@ const Bookshelf = ({ books, convertBack }) => {
               My Bookshelf
             </h1>
             <p className="mb-12 text-xl font-normal leading-loose">
-              This is a place to collect the names of books I've read and
-              enjoyed. The books with links lead to notes and thoughts about the
-              book.
+              This is a place to collect a list of books I've read and enjoyed.
             </p>
 
             {/* <h2 className="mb-12 text-3xl font-bold xs:text-4xl">
@@ -48,23 +46,23 @@ const Bookshelf = ({ books, convertBack }) => {
 
             {/* <h2 className="mb-12 text-3xl font-bold xs:text-4xl">Bookshelf</h2> */}
 
+            <BookCategoryList books={convertBack} category="Design" />
+
+            <BookCategoryList books={convertBack} category="Systems" />
+
+            <BookCategoryList books={convertBack} category="Writing" />
+
             <BookCategoryList books={convertBack} category="Business" />
 
             <BookCategoryList books={convertBack} category="Creative Process" />
-
-            <BookCategoryList books={convertBack} category="Design" />
 
             <BookCategoryList books={convertBack} category="Fiction" />
 
             <BookCategoryList books={convertBack} category="History" />
 
-            <BookCategoryList books={convertBack} category="Knowledge" />
+            <BookCategoryList books={convertBack} category="Language" />
 
             <BookCategoryList books={convertBack} category="Life" />
-
-            <BookCategoryList books={convertBack} category="Systems" />
-
-            <BookCategoryList books={convertBack} category="Writing" />
 
             <DirectionLink href="#top" icon="top">
               Back to top

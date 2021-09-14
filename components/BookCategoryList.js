@@ -15,6 +15,8 @@ const BookCategoryList = ({ books, category }) => (
             author={book.fields.Author}
             date={book.fields.Date}
             notes={book.fields.NotesLink}
+            url={book.fields.URL}
+            recommended={book.fields.Recommended}
             key={book.fields.Title}
           />
         ))}
