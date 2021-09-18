@@ -1,5 +1,5 @@
 .prose {
-    @apply text-lg leading-loose;
+    @apply text-lg leading-loose text-gray-800 dark:text-white;
 }
 
 .prose h1,
@@ -24,7 +24,7 @@
 }
 
 .prose blockquote {
-    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600;
+    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600 text-base leading-loose;
 }
 
 .prose p.large {
@@ -33,6 +33,10 @@
 
 .prose ol li {
     @apply ml-2;
+}
+
+.prose ol > li::before {
+    @apply text-gray-800 dark:text-white;
 }
 
 .prose a {
