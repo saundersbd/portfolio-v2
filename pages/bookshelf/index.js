@@ -26,7 +26,8 @@ const Bookshelf = ({ convertBack }) => {
             </h1>
             <p className="mb-12 text-xl font-normal leading-loose">
               This is a place to collect a list of books and articles I've read
-              and enjoyed.
+              and enjoyed. If a book or article has a notes link that means I've
+              written a little about why I like it.
             </p>
 
             <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
@@ -38,9 +39,9 @@ const Bookshelf = ({ convertBack }) => {
               description="Picked up this collection of academic papers because I am interested in conversation theory as it applies to design."
               imageUrl="/images/books/design-cybernetics.jpg"
               url="https://www.amazon.com/dp/3030185567"
-              barClass="w-16/20"
-              progressBarWidth="16/20"
-              date="9/14/2021"
+              barClass="w-18/20"
+              progressBarWidth="18/20"
+              date="9/19/2021"
             />
 
             <BookCategoryList books={convertBack} category="Design" />
@@ -49,15 +50,35 @@ const Bookshelf = ({ convertBack }) => {
 
             <BookCategoryList books={convertBack} category="Writing" />
 
-            <BookCategoryList books={convertBack} category="Business" />
+            <BookCategoryList
+              books={convertBack}
+              category="Management"
+              description="I'm not a manager yet but if I am one day I want to be a good one."
+            />
 
-            <BookCategoryList books={convertBack} category="Creative Process" />
+            <BookCategoryList
+              books={convertBack}
+              category="Creative Process"
+              description="Making Music is worth checking out. It's amazing how many creative techniques from music production are also relevant for product design."
+            />
 
-            <BookCategoryList books={convertBack} category="Fiction" />
+            <BookCategoryList
+              books={convertBack}
+              category="Fiction"
+              description="I'd like to read more fiction over the next year. If you've got any recommendations go ahead and send them over! The following are all books that I've read and enjoyed in the last year."
+            />
 
-            <BookCategoryList books={convertBack} category="History" />
+            <BookCategoryList
+              books={convertBack}
+              category="History"
+              description="You might notice I enjoy reading about Abraham Lincoln. At this point I've run out of books to read about him and have started going directly to the source material."
+            />
 
-            <BookCategoryList books={convertBack} category="Language" />
+            <BookCategoryList
+              books={convertBack}
+              category="Language"
+              description="Most of these books are about the nature of language and communication. Garner's is more of a reference but I use it a lot and wanted to call it out."
+            />
 
             <BookCategoryList books={convertBack} category="Life" />
 
