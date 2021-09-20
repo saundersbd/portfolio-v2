@@ -37,8 +37,8 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-md sm:flex-row md:-mx-8">
-        <div className="flex items-center justify-center w-full py-8 bg-gray-100 sm:w-1/3 sm:py-0">
+      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-md sm:flex-row md:-mx-8 dark:bg-gray-900 dark:border-gray-700">
+        <div className="flex items-center justify-center w-full py-8 bg-gray-100 sm:w-1/3 sm:py-0 dark:bg-gray-800">
           <div className="w-32 overflow-hidden border border-gray-200 rounded book-image">
             <img
               className="my-0"
@@ -49,7 +49,7 @@ const Book = ({ source, frontMatter }) => {
         </div>
         <div className="w-full p-6 sm:w-2/3">
           <h1 className="mb-2 text-3xl leading-relaxed">{frontMatter.title}</h1>
-          <p className="mt-0 mb-4 text-base font-semibold leading-relaxed text-gray-500">
+          <p className="mt-0 mb-4 text-base font-semibold leading-relaxed text-gray-500 dark:text-gray-400">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
