@@ -1,5 +1,5 @@
 .prose {
-    @apply text-lg leading-loose text-gray-800 dark:text-white;
+    @apply text-base sm:text-lg leading-loose text-gray-800 dark:text-white;
 }
 
 .prose h1,
@@ -12,7 +12,7 @@
 }
 
 .prose h1 {
-    @apply leading-normal;
+    @apply leading-relaxed text-3xl xs:text-4xl xs:leading-relaxed;
 }
 
 .prose h2 {
@@ -23,12 +23,20 @@
     @apply text-xl;
 }
 
-.prose blockquote {
-    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600 text-base leading-loose;
+.prose p {
+    @apply text-base leading-loose xs:text-lg xs:leading-loose;
 }
 
 .prose p.large {
-    @apply mb-6 text-xl leading-loose;
+    @apply mb-6 text-base sm:text-lg leading-loose sm:leading-loose;
+}
+
+.prose blockquote {
+    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600;
+}
+
+.prose blockquote p {
+    @apply text-base leading-loose;
 }
 
 .prose ol li {
