@@ -35,6 +35,14 @@
         [aria-current="page"] {
             @apply text-gray-100 bg-gray-800;
         }
+        .light-mode-image {
+            display: none;
+        }
+    }
+    @media (prefers-color-scheme: light) {
+        .dark-mode-image {
+            display: none;
+        }
     }
     p.large {
         @apply mb-4 text-xl leading-loose sm:text-xl sm:mb-6;
