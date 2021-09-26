@@ -57,9 +57,10 @@ function HomePage({ posts, projects }) {
                 millions of people.
               </p>
               <p className="mb-6 text-xl font-normal leading-loose sm:mb-12 dark:text-gray-400">
-                Right now I'm a Senior Product Designer at Paylocity, where I
-                design software that helps employees collaborate and stay
-                connected at work.
+                Right now I'm a Senior Product Designer at Paylocity, where I'm
+                designing software that helps employees collaborate and stay
+                connected at work. I'm also leading a design ops Figma
+                transition!
               </p>
               <div className="flex flex-col xs:flex-row">
                 <Button
@@ -117,7 +118,7 @@ function HomePage({ posts, projects }) {
             <div className="lg:col-span-2 col-span-full">
               <h2 className="mb-12 font-sans text-4xl font-bold">Writing</h2>
               <ul>
-                {filteredPosts.slice(0, 3).map((post) => (
+                {filteredPosts.slice(0, 5).map((post) => (
                   <Post
                     key={post.data.title}
                     slug={post.filePath}
@@ -127,7 +128,8 @@ function HomePage({ posts, projects }) {
               </ul>
               <Link href="/posts" passHref>
                 <a className="flex w-max items-center text-lg text-gray-700 dark:text-white font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-400}">
-                  More Posts →
+                  More Posts
+                  <Icon icon="arrow-right" className="w-4 ml-1" />
                 </a>
               </Link>
             </div>

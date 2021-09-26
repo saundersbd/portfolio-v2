@@ -14,9 +14,6 @@ const Post = ({ slug, title, description, published }) => {
         </a>
       </Link>
       <p className="mb-2 text-gray-500">{formattedPublishedDate}</p>
-      <p className="mb-0 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-        {description}
-      </p>
     </li>
   );
 };
