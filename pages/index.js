@@ -52,9 +52,9 @@ function HomePage({ posts, projects }) {
               <p className="mb-6 text-xl font-normal leading-loose sm:mb-8 dark:text-gray-400">
                 I'm a great product designer, pretty good ukulele player, and
                 sub-par ceramicist who lives and works in Chicago. I love
-                designing software and have worked on all kinds of things, from
-                design systems to smaller apps to enterprise software used by
-                millions of people.
+                designing software and have contributed to all kinds of things,
+                from design systems to smaller apps to enterprise software used
+                by millions of people.
               </p>
               <p className="mb-6 text-xl font-normal leading-loose sm:mb-12 dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I'm

@@ -34,14 +34,14 @@ const Bookshelf = ({ convertBack }) => {
               Currently Reading
             </h2>
             <CurrentBook
-              title="Conceptual Models: Core to Good Design"
-              author="Jeff Johnson"
-              description="Saw a rec for this on Twitter and it seems like an interesting angle to take early in the design process."
-              imageUrl="/images/books/conceptual-models.jpeg"
-              url="https://www.amazon.com/dp/1608457494/"
-              barClass="w-18/20"
-              progressBarWidth="18/20"
-              date="9/26/2021"
+              title="Aready Free"
+              author="Bruce Tift"
+              description="Found this on twitter. It's about the relationship between western psychotherapy and Buddhism."
+              imageUrl="/images/books/already-free.jpeg"
+              url="https://www.amazon.com/dp/B00XQ2Q9PE"
+              barClass="w-3/20"
+              progressBarWidth="3/20"
+              date="10/10/2021"
             />
 
             <BookCategoryList books={convertBack} category="Design" />
