@@ -115,7 +115,9 @@ function HomePage({ posts, projects }) {
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
-              <h2 className="mb-12 font-sans text-4xl font-bold">Writing</h2>
+              <h2 className="mb-12 font-sans text-4xl font-bold">
+                Recent Posts
+              </h2>
               <ul>
                 {filteredPosts.slice(0, 5).map((post) => (
                   <Post
