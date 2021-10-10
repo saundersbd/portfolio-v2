@@ -59,8 +59,7 @@ function HomePage({ posts, projects }) {
               <p className="mb-6 text-xl font-normal leading-loose sm:mb-12 dark:text-gray-400">
                 Right now I'm a Senior Product Designer at Paylocity, where I'm
                 designing software that helps employees collaborate and stay
-                connected at work. I'm also leading a design ops Figma
-                transition!
+                connected at work. I'm also leading a Figma transition!
               </p>
               <div className="flex flex-col xs:flex-row">
                 <Button
