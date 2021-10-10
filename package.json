@@ -35,7 +35,7 @@
     "remark-slug": "^7.0.0",
     "sharp": "^0.28.3",
     "styled-components": "^5.3.1",
-    "tailwindcss": "^2.2.15"
+    "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
     "eslint": "^7.31.0",
