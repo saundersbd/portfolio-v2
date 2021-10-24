@@ -12,7 +12,7 @@
 }
 
 .prose h1 {
-    @apply leading-relaxed text-3xl xs:text-4xl xs:leading-relaxed;
+    @apply leading-relaxed text-3xl xs:text-5xl xs:leading-relaxed;
 }
 
 .prose h2 {

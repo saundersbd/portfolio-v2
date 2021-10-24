@@ -57,7 +57,7 @@ function HomePage({ posts, projects }) {
                 software used by millions of people.
               </p>
               <p className="mb-6 text-xl font-normal leading-loose sm:mb-12 dark:text-gray-400">
-                I'm a Senior Product Designer at Paylocity, where I'm designing
+                I'm a Senior Product Designer at Paylocity, where I design
                 software that helps employees collaborate and stay connected at
                 work. I'm also leading a Figma transition and beginning work
                 managing, editing, and writing for the company UX blog on
