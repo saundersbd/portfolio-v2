@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
 import Layout from "../../components/Layout";
+import Section from "../../components/Section";
 import ContainerNarrow from "../../components/ContainerNarrow";
 import Grid from "../../components/Grid";
 import DirectionLink from "../../components/DirectionLink";
@@ -23,38 +24,51 @@ const Posts = ({ posts }) => {
   });
 
   return (
-    <Layout className="pt-40 pb-12">
+    <Layout className="py-12 pt-0">
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <ContainerNarrow>
-        <Grid className="grid-cols-6">
-          <div className="col-span-full lg:col-start-2 lg:col-end-6">
-            <DirectionLink href="/" icon="back" className="mb-8">
-              Back to Home
-            </DirectionLink>
-            <h1 className="mb-16 font-sans text-4xl font-bold leading-normal sm:text-5xl">
-              Writing
-            </h1>
-
-            <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
-              2021
-            </h2>
-            <ul className="mb-16">
-              {filteredPosts.map((post) => (
-                <Post
-                  key={post.data.title}
-                  slug={post.filePath}
-                  {...post.data}
-                ></Post>
-              ))}
-            </ul>
-            <DirectionLink href="#top" icon="top">
-              Back to top
-            </DirectionLink>
-          </div>
-        </Grid>
-      </ContainerNarrow>
+      <Section className="py-16 bg-navy dark:bg-black dark:text-gray-100 dark:border-gray-800">
+        <ContainerNarrow>
+          <Grid className="grid-cols-6">
+            <div className="col-span-full lg:col-start-2 lg:col-end-6">
+              <h1 className="mb-8 font-sans text-4xl font-bold leading-normal text-center text-white sm:text-5xl">
+                Writing
+              </h1>
+              <p className="text-lg leading-loose text-center text-white">
+                A growing collection of thoughts meeting at the intersection of
+                my life and career.
+              </p>
+            </div>
+          </Grid>
+        </ContainerNarrow>
+      </Section>
+      <Section className="py-16 bg-white">
+        <ContainerNarrow>
+          <Grid className="grid-cols-6">
+            <div className="col-span-full lg:col-start-2 lg:col-end-6">
+              <DirectionLink href="/" icon="back" className="mb-12">
+                Back to Home
+              </DirectionLink>
+              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
+                2021
+              </h2>
+              <ul className="mb-16">
+                {filteredPosts.map((post) => (
+                  <Post
+                    key={post.data.title}
+                    slug={post.filePath}
+                    {...post.data}
+                  ></Post>
+                ))}
+              </ul>
+              <DirectionLink href="#top" icon="top">
+                Back to top
+              </DirectionLink>
+            </div>
+          </Grid>
+        </ContainerNarrow>
+      </Section>
     </Layout>
   );
 };

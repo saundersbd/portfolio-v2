@@ -29,6 +29,17 @@ module.exports = {
       yellow: colors.yellow,
       purple: colors.indigo,
       green: colors.green,
+      beige: {
+        DEFAULT: "#faf5f0",
+      },
+      orange: {
+        lightest: "#fceadd",
+        light: "rgba(234, 126, 49, 0.5)",
+        DEFAULT: "#ea7e31",
+      },
+      navy: {
+        DEFAULT: "#14224e",
+      },
     },
     screens: {
       xs: "500px",

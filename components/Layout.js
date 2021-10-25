@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 
 const Layout = ({ className, children }) => (
-  <div className={className}>
+  <div>
     <Header />
-    {children}
+    <div className={className}>{children}</div>
   </div>
 );
 

@@ -34,7 +34,7 @@ function HomePage({ posts, projects }) {
   });
 
   return (
-    <Layout className="pt-24 sm:pt-20">
+    <Layout>
       <Head>
         <title>Brian Saunders | Home</title>
         <meta
@@ -42,11 +42,11 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="py-16 bg-blue-100 border-b border-blue-100 dark:bg-black dark:text-gray-100 dark:border-gray-800">
+      <Section className="py-16 bg-beige dark:bg-black dark:text-gray-100 dark:border-gray-800">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="mb-6 font-sans text-4xl font-bold leading-normal sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
+              <h1 className="mb-6 font-sans text-5xl font-bold leading-normal sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
               <p className="mb-6 text-xl font-normal leading-loose sm:mb-8 dark:text-gray-400">
@@ -88,7 +88,7 @@ function HomePage({ posts, projects }) {
                   height={682}
                   width={682}
                   alt="A picture of Brian"
-                  src="/images/portrait-square.jpg"
+                  src="/images/portrait-square-blue.jpg"
                 />
               </figure>
               <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-gray-400">
