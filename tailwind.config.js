@@ -34,13 +34,17 @@ module.exports = {
       },
       orange: {
         lightest: "#fceadd",
+        lighter: "rgba(234, 126, 49, 0.35)",
         light: "rgba(234, 126, 49, 0.5)",
         DEFAULT: "#ea7e31",
       },
       navy: {
         lightest: "#F6F9FF",
-        light: "#2E426B",
+        lighter: "#8EA3CD",
+        light: "#264177",
         DEFAULT: "#192F5B",
+        dark: "#182142",
+        darkest: "#0A0C1F",
       },
       teal: {
         DEFAULT: "#117C83",

@@ -9,7 +9,7 @@ import slug from "remark-slug";
 import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 import Head from "next/head";
 import Link from "next/link";
-import Button from "../../components/Button";
+import ButtonSecondary from "../../components/ButtonSecondary";
 import Icon from "../../components/Icon";
 import PostImage from "../../components/PostImage";
 import PageNote from "../../components/PageNote";
@@ -18,12 +18,11 @@ import BookLayout from "../../layouts/BookLayout";
 
 const components = {
   Link,
-  Button,
   Icon,
   PostImage,
   PageNote,
   HrSection,
-  Button,
+  ButtonSecondary,
 };
 
 const Book = ({ source, frontMatter }) => {
@@ -37,9 +36,9 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-md sm:flex-row md:-mx-12 dark:bg-gray-900 dark:border-gray-700">
-        <div className="flex items-center justify-center w-full py-8 bg-navy-lightest sm:w-1/3 sm:py-0 dark:bg-gray-800">
-          <div className="w-32 overflow-hidden border border-gray-200 rounded shadow-md book-image">
+      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-md sm:flex-row md:-mx-20 dark:bg-navy-dark dark:border-navy-light">
+        <div className="flex items-center justify-center w-full py-8 border-r bg-navy-lightest sm:w-1/3 sm:py-0 dark:bg-navy-dark dark:border-navy">
+          <div className="w-32 overflow-hidden border border-gray-200 rounded shadow-md book-image dark:border-navy">
             <img
               className="my-0"
               src={frontMatter.cover}
@@ -49,15 +48,15 @@ const Book = ({ source, frontMatter }) => {
         </div>
         <div className="w-full p-6 sm:w-2/3">
           <h1 className="mb-2 text-3xl leading-relaxed">{frontMatter.title}</h1>
-          <p className="mt-0 mb-4 text-base font-semibold leading-relaxed text-gray-500 dark:text-gray-400">
+          <p className="mt-0 mb-4 text-base font-semibold leading-relaxed text-gray-500 dark:text-navy-lighter">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
           <p className="mt-0 mb-4">{frontMatter.description}</p>
-          <Button className="w-max" href={frontMatter.url}>
+          <ButtonSecondary className="w-max" href={frontMatter.url}>
             <Icon icon="external" className="w-5 mr-2" />
             Amazon Link
-          </Button>
+          </ButtonSecondary>
         </div>
       </div>
 

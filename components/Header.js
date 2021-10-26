@@ -8,7 +8,7 @@ const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
     <a
       className={
-        `flex items-center justify-center flex-grow sm:flex-grow-0 text-sm sm:text-lg font-medium text-center focus:outline-none focus:ring focus:ring-blue-400 px-4 hover:bg-orange-lightest dark:hover:bg-gray-900 ` +
+        `flex items-center justify-center flex-grow sm:flex-grow-0 text-sm sm:text-lg font-medium text-center focus:outline-none focus:ring focus:ring-orange px-4 hover:bg-orange-lightest dark:hover:bg-gray-900 ` +
         `${className}`
       }
       aria-current={`${isActive && "page"}`}
@@ -26,7 +26,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/posts" passHref>
         <NavLink
           isActive={activeRoute === "Posts"}
-          className="py-2 border-t sm:border-t-0 sm:border-l border-orange-light"
+          className="py-2 border-t sm:border-t-0 sm:border-l border-orange-light dark:border-orange-lighter"
         >
           Writing
         </NavLink>
@@ -35,7 +35,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/bookshelf" passHref>
         <NavLink
           isActive={activeRoute === "Bookshelf"}
-          className="py-2 border-t border-l sm:border-t-0 border-orange-light"
+          className="py-2 border-t border-l sm:border-t-0 border-orange-light dark:border-orange-lighter"
         >
           Bookshelf
         </NavLink>
@@ -44,7 +44,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/about" passHref>
         <NavLink
           isActive={activeRoute === "About"}
-          className="py-2 border-t border-l sm:border-t-0 sm:border-r border-orange-light"
+          className="py-2 border-t border-l sm:border-t-0 border-orange-light dark:border-orange-lighter"
         >
           About
         </NavLink>
@@ -74,9 +74,9 @@ const Header = () => {
 
   return (
     <Headroom>
-      <header className="z-10 flex flex-col justify-between h-24 bg-white border-t border-b sm:items-stretch sm:flex-row border-orange-light sm:h-16 dark:bg-black dark:border-gray-800">
+      <header className="z-10 flex flex-col justify-between h-24 bg-white border-t border-b sm:items-stretch sm:flex-row border-orange-light sm:h-16 dark:bg-navy-darkest dark:border-orange-lighter">
         <Link href="/" passHref>
-          <a className="flex items-center justify-center flex-grow px-4 text-xl font-semibold sm:flex-grow-0 sm:mt-0 focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 dark:text-gray-400">
+          <a className="flex items-center justify-center flex-grow px-4 text-xl font-semibold sm:flex-grow-0 sm:mt-0 focus:outline-none focus:ring focus:ring-orange sm:mb-0 dark:text-white">
             Brian Saunders
           </a>
         </Link>

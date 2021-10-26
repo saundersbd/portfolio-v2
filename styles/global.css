@@ -17,7 +17,7 @@
 
 @layer base {
     body {
-        @apply bg-white text-gray-800 font-mono !important;
+        @apply bg-white text-navy-darkest font-mono !important;
     }
     [aria-current="page"] {
         @apply text-gray-800 bg-orange-lightest font-bold;
@@ -27,13 +27,13 @@
     }
     @media (prefers-color-scheme: dark) {
         body {
-            @apply bg-black text-gray-100 !important;
+            @apply bg-navy-darkest text-white !important;
         }
         [aria-current="false"] {
-            @apply text-gray-400 bg-black;
+            @apply text-navy-lighter bg-navy-darkest;
         }
         [aria-current="page"] {
-            @apply text-gray-100 bg-gray-800;
+            @apply bg-navy-dark text-white;
         }
         .light-mode-image {
             display: none;

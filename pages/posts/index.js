@@ -28,7 +28,7 @@ const Posts = ({ posts }) => {
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-black dark:text-gray-100 dark:border-gray-800 border-orange-light">
+      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
@@ -43,14 +43,14 @@ const Posts = ({ posts }) => {
           </Grid>
         </ContainerNarrow>
       </Section>
-      <Section className="py-8 bg-white sm:py-16">
+      <Section className="py-8 bg-white sm:py-16 dark:bg-navy-darkest">
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
               <DirectionLink href="/" icon="back" className="mb-12">
                 Back to Home
               </DirectionLink>
-              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
+              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-navy xs:text-2xl">
                 2021
               </h2>
               <ul className="mb-16">

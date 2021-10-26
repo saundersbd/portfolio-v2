@@ -17,7 +17,7 @@ const Bookshelf = ({ convertBack }) => {
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-black dark:text-gray-100 dark:border-gray-800 border-orange-light">
+      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
@@ -33,7 +33,7 @@ const Bookshelf = ({ convertBack }) => {
           </Grid>
         </ContainerNarrow>
       </Section>
-      <Section className="py-8 bg-white sm:py-16">
+      <Section className="py-8 bg-white sm:py-16 dark:bg-navy-darkest">
         <ContainerFull>
           <Grid className="grid-cols-12">
             <div className="col-span-full lg:col-start-3 lg:col-end-11">
@@ -41,7 +41,7 @@ const Bookshelf = ({ convertBack }) => {
                 Back to Home
               </DirectionLink>
 
-              <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
+              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-navy xs:text-2xl">
                 Currently Reading
               </h2>
               <CurrentBook
@@ -61,35 +61,18 @@ const Bookshelf = ({ convertBack }) => {
 
               <BookCategoryList books={convertBack} category="Writing" />
 
-              <BookCategoryList
-                books={convertBack}
-                category="Management"
-                description="I'm not a manager yet but if I am one day I want to be a good one."
-              />
+              <BookCategoryList books={convertBack} category="Management" />
 
               <BookCategoryList
                 books={convertBack}
                 category="Creative Process"
-                description="Making Music is worth checking out. It's amazing how many creative techniques from music production are also relevant for product design."
               />
 
-              <BookCategoryList
-                books={convertBack}
-                category="Fiction"
-                description="I'd like to read more fiction over the next year. If you've got any recommendations go ahead and send them over! The following are all books that I've read and enjoyed in the last year."
-              />
+              <BookCategoryList books={convertBack} category="Fiction" />
 
-              <BookCategoryList
-                books={convertBack}
-                category="History"
-                description="You might notice I enjoy reading about Abraham Lincoln. At this point I've run out of books to read about him and have started going directly to the source material."
-              />
+              <BookCategoryList books={convertBack} category="History" />
 
-              <BookCategoryList
-                books={convertBack}
-                category="Language"
-                description="Most of these books are about the nature of language and communication. Garner's is more of a reference but I use it a lot and wanted to call it out."
-              />
+              <BookCategoryList books={convertBack} category="Language" />
 
               <BookCategoryList books={convertBack} category="Life" />
 
