@@ -1,3 +1,5 @@
+@tailwind base;
+
 .prose {
     @apply text-base sm:text-lg leading-loose text-gray-800 dark:text-white;
 }
@@ -32,7 +34,7 @@
 }
 
 .prose blockquote {
-    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600;
+    @apply px-4 py-3 not-italic font-normal border-l-4 border-navy bg-navy-lightest dark:bg-navy dark:border-navy-lighter;
 }
 
 .prose blockquote p {
@@ -48,5 +50,9 @@
 }
 
 .prose a {
-    @apply px-1 -mx-1 font-medium text-gray-900 no-underline transition duration-100 bg-yellow-200 rounded hover:bg-opacity-60 hover:text-gray-900 dark:bg-opacity-30 dark:hover:bg-yellow-300 dark:hover:bg-opacity-100 dark:text-gray-200 focus:outline-none focus:ring focus:ring-blue-400;
+    @apply px-1 -mx-1 font-medium text-gray-900 no-underline transition duration-100 bg-yellow-200 rounded hover:bg-opacity-60 hover:text-gray-900 dark:bg-orange-light dark:hover:bg-orange dark:hover:bg-opacity-100 dark:text-white focus:outline-none focus:ring focus:ring-blue-400;
+}
+
+.prose hr {
+    @apply dark:border-navy-light;
 }

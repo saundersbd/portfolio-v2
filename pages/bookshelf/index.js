@@ -1,7 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
+import Section from "../../components/Section";
 import ContainerFull from "../../components/ContainerFull";
+import ContainerNarrow from "../../components/ContainerNarrow";
 import Grid from "../../components/Grid";
 import CurrentBook from "../../components/CurrentBook";
 import DirectionLink from "../../components/DirectionLink";
@@ -11,83 +13,76 @@ import { __recordsPerPageForIteration } from "airtable/lib/table";
 
 const Bookshelf = ({ convertBack }) => {
   return (
-    <Layout className="pt-40 pb-12">
+    <Layout className="">
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <ContainerFull>
-        <Grid className="grid-cols-12">
-          <div className="col-span-full lg:col-start-3 lg:col-end-11">
-            <DirectionLink href="/" icon="back" className="mb-8">
-              Back to Home
-            </DirectionLink>
-            <h1 className="mb-10 font-sans text-4xl font-bold leading-normal sm:text-5xl">
-              My Bookshelf
-            </h1>
-            <p className="mb-12 text-xl font-normal leading-loose">
-              This is a place to collect a list of books and articles I've read
-              and enjoyed. If a book or article has a notes link that means I've
-              written a little about why I like it.
-            </p>
+      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+        <ContainerNarrow>
+          <Grid className="grid-cols-6">
+            <div className="col-span-full lg:col-start-2 lg:col-end-6">
+              <h1 className="mb-4 font-sans text-3xl font-bold leading-normal text-center sm:mb-8 sm:text-5xl">
+                My Bookshelf
+              </h1>
+              <p className="text-base leading-loose text-center sm:leading-loose sm:text-xl">
+                This is a place to collect a list of books and articles I've
+                read and enjoyed. If a book or article has a notes link that
+                means I've written a little about why I like it.
+              </p>
+            </div>
+          </Grid>
+        </ContainerNarrow>
+      </Section>
+      <Section className="py-8 bg-white sm:py-16 dark:bg-navy-darkest">
+        <ContainerFull>
+          <Grid className="grid-cols-12">
+            <div className="col-span-full lg:col-start-3 lg:col-end-11">
+              <DirectionLink href="/" icon="back" className="mb-12">
+                Back to Home
+              </DirectionLink>
 
-            <h2 className="pb-2 mb-6 text-xl font-bold border-b-2 border-gray-300 dark:border-gray-600 xs:text-2xl">
-              Currently Reading
-            </h2>
-            <CurrentBook
-              title="Aready Free"
-              author="Bruce Tift"
-              description="Found this on twitter. It's about the relationship between western psychotherapy and Buddhism."
-              imageUrl="/images/books/already-free.jpeg"
-              url="https://www.amazon.com/dp/B00XQ2Q9PE"
-              barClass="w-3/20"
-              progressBarWidth="3/20"
-              date="10/10/2021"
-            />
+              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-navy xs:text-2xl">
+                Currently Reading
+              </h2>
+              <CurrentBook
+                title="Aready Free"
+                author="Bruce Tift"
+                description="Found this on twitter. It's about the relationship between western psychotherapy and Buddhism."
+                imageUrl="/images/books/already-free.jpeg"
+                url="https://www.amazon.com/dp/B00XQ2Q9PE"
+                barClass="w-3/20"
+                progressBarWidth="3/20"
+                date="10/10/2021"
+              />
 
-            <BookCategoryList books={convertBack} category="Design" />
+              <BookCategoryList books={convertBack} category="Design" />
 
-            <BookCategoryList books={convertBack} category="Systems" />
+              <BookCategoryList books={convertBack} category="Systems" />
 
-            <BookCategoryList books={convertBack} category="Writing" />
+              <BookCategoryList books={convertBack} category="Writing" />
 
-            <BookCategoryList
-              books={convertBack}
-              category="Management"
-              description="I'm not a manager yet but if I am one day I want to be a good one."
-            />
+              <BookCategoryList books={convertBack} category="Management" />
 
-            <BookCategoryList
-              books={convertBack}
-              category="Creative Process"
-              description="Making Music is worth checking out. It's amazing how many creative techniques from music production are also relevant for product design."
-            />
+              <BookCategoryList
+                books={convertBack}
+                category="Creative Process"
+              />
 
-            <BookCategoryList
-              books={convertBack}
-              category="Fiction"
-              description="I'd like to read more fiction over the next year. If you've got any recommendations go ahead and send them over! The following are all books that I've read and enjoyed in the last year."
-            />
+              <BookCategoryList books={convertBack} category="Fiction" />
 
-            <BookCategoryList
-              books={convertBack}
-              category="History"
-              description="You might notice I enjoy reading about Abraham Lincoln. At this point I've run out of books to read about him and have started going directly to the source material."
-            />
+              <BookCategoryList books={convertBack} category="History" />
 
-            <BookCategoryList
-              books={convertBack}
-              category="Language"
-              description="Most of these books are about the nature of language and communication. Garner's is more of a reference but I use it a lot and wanted to call it out."
-            />
+              <BookCategoryList books={convertBack} category="Language" />
 
-            <BookCategoryList books={convertBack} category="Life" />
+              <BookCategoryList books={convertBack} category="Life" />
 
-            <DirectionLink href="#top" icon="top">
-              Back to top
-            </DirectionLink>
-          </div>
-        </Grid>
-      </ContainerFull>
+              <DirectionLink href="#top" icon="top">
+                Back to top
+              </DirectionLink>
+            </div>
+          </Grid>
+        </ContainerFull>
+      </Section>
     </Layout>
   );
 };

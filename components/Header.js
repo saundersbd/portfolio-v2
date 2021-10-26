@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Headroom from "react-headroom";
 import ContainerFull from "../components/ContainerFull";
 
 const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
     <a
       className={
-        `text-lg font-medium py-2 px-3 rounded-md focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 mb-2 hover:bg-gray-100 dark:hover:bg-gray-900 ` +
+        `flex items-center justify-center flex-grow sm:flex-grow-0 text-sm sm:text-lg font-medium text-center focus:outline-none focus:ring focus:ring-orange px-4 hover:bg-orange-lightest dark:hover:bg-gray-900 ` +
         `${className}`
       }
       aria-current={`${isActive && "page"}`}
@@ -23,17 +24,28 @@ const NavLinks = ({ activeRoute }) => {
   return (
     <>
       <Link href="/posts" passHref>
-        <NavLink isActive={activeRoute === "Posts"}>Writing</NavLink>
+        <NavLink
+          isActive={activeRoute === "Posts"}
+          className="py-2 border-t sm:border-t-0 sm:border-l border-orange-light dark:border-orange-lighter"
+        >
+          Writing
+        </NavLink>
       </Link>
 
       <Link href="/bookshelf" passHref>
-        <NavLink isActive={activeRoute === "Bookshelf"} className="ml-2">
+        <NavLink
+          isActive={activeRoute === "Bookshelf"}
+          className="py-2 border-t border-l sm:border-t-0 border-orange-light dark:border-orange-lighter"
+        >
           Bookshelf
         </NavLink>
       </Link>
 
       <Link href="/about" passHref>
-        <NavLink isActive={activeRoute === "About"} className="ml-2">
+        <NavLink
+          isActive={activeRoute === "About"}
+          className="py-2 border-t border-l sm:border-t-0 border-orange-light dark:border-orange-lighter"
+        >
           About
         </NavLink>
       </Link>
@@ -61,18 +73,18 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 flex items-center h-24 bg-white border-b border-gray-300 sm:h-20 dark:bg-black dark:border-gray-800">
-      <ContainerFull className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
+    <Headroom>
+      <header className="z-10 flex flex-col justify-between h-24 bg-white border-t border-b sm:items-stretch sm:flex-row border-orange-light sm:h-16 dark:bg-navy-darkest dark:border-orange-lighter">
         <Link href="/" passHref>
-          <a className="mb-3 text-lg font-semibold rounded focus:outline-none focus:ring focus:ring-blue-400 sm:mb-0 dark:text-gray-400">
+          <a className="flex items-center justify-center flex-grow px-4 text-xl font-semibold sm:flex-grow-0 sm:mt-0 focus:outline-none focus:ring focus:ring-orange sm:mb-0 dark:text-white">
             Brian Saunders
           </a>
         </Link>
-        <nav>
+        <nav className="flex items-stretch justify-center">
           <NavLinks activeRoute={activeRoute} />
         </nav>
-      </ContainerFull>
-    </header>
+      </header>
+    </Headroom>
   );
 };
 
