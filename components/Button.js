@@ -7,7 +7,7 @@ const Button = ({ href, className, children, ...props }) => {
     return (
       <Link href={href} passHref>
         <a
-          className={`${className} flex items-center justify-center text-base font-medium rounded-md transition no-underline hover:no-underline focus:outline-none focus:ring focus:ring-blue-400 shadow-sm hover:shadow py-2 px-3 border border-gray-300 text-gray-800 bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:border-gray-500 dark:hover:bg-gray-800 dark:hover:text-white`}
+          className={`${className} flex items-center justify-center text-base font-medium rounded-md transition no-underline hover:no-underline focus:outline-none focus:ring focus:ring-blue-400 py-2 px-3 text-white bg-navy hover:bg-navy-light dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:border-gray-500 dark:hover:bg-gray-800 dark:hover:text-white`}
         >
           {children}
         </a>
@@ -17,7 +17,7 @@ const Button = ({ href, className, children, ...props }) => {
 
   return (
     <a
-      className={`${className} flex items-center justify-center text-base font-medium rounded-md transition no-underline hover:no-underline focus:outline-none focus:ring focus:ring-blue-400 shadow-sm hover:shadow py-2 px-3 border border-gray-300 text-gray-800 bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:border-gray-500 dark:hover:bg-gray-800 dark:hover:text-white`}
+      className={`${className} flex items-center justify-center text-base font-medium rounded-md transition no-underline hover:no-underline focus:outline-none focus:ring focus:ring-blue-400 py-2 px-3 bg-navy text-white hover:bg-navy-light dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:border-gray-500 dark:hover:bg-gray-800 dark:hover:text-white`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"

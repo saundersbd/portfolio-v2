@@ -20,7 +20,7 @@
         @apply bg-white text-gray-800 font-mono !important;
     }
     [aria-current="page"] {
-        @apply text-orange bg-orange-lightest font-bold;
+        @apply text-gray-800 bg-orange-lightest font-bold;
     }
     [aria-current="false"] {
         @apply text-gray-800 bg-white;

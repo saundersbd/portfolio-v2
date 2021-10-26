@@ -32,7 +32,7 @@
 }
 
 .prose blockquote {
-    @apply px-4 py-3 not-italic font-normal border-l-4 border-blue-600 bg-blue-50 dark:bg-gray-800 dark:border-gray-600;
+    @apply px-4 py-3 not-italic font-normal border-l-4 border-navy bg-navy-lightest dark:bg-gray-800 dark:border-gray-600;
 }
 
 .prose blockquote p {

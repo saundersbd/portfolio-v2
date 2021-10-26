@@ -38,7 +38,12 @@ module.exports = {
         DEFAULT: "#ea7e31",
       },
       navy: {
-        DEFAULT: "#14224e",
+        lightest: "#F6F9FF",
+        light: "#2E426B",
+        DEFAULT: "#192F5B",
+      },
+      teal: {
+        DEFAULT: "#117C83",
       },
     },
     screens: {
