@@ -45,7 +45,7 @@ const Bookshelf = ({ convertBack }) => {
                 Currently Reading
               </h2>
               <CurrentBook
-                title="Aready Free"
+                title="Already Free"
                 author="Bruce Tift"
                 description="Found this on twitter. It's about the relationship between western psychotherapy and Buddhism."
                 imageUrl="/images/books/already-free.jpeg"
