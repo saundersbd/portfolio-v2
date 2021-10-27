@@ -9,7 +9,7 @@ import slug from "remark-slug";
 import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 import Head from "next/head";
 import Link from "next/link";
-import ButtonSecondary from "../../components/ButtonSecondary";
+import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 import PostImage from "../../components/PostImage";
 import PageNote from "../../components/PageNote";
@@ -22,7 +22,7 @@ const components = {
   PostImage,
   PageNote,
   HrSection,
-  ButtonSecondary,
+  Button,
 };
 
 const Book = ({ source, frontMatter }) => {
@@ -36,7 +36,7 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-md sm:flex-row md:-mx-20 dark:bg-navy-dark dark:border-navy-light">
+      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-lg sm:flex-row md:-mx-20 dark:bg-navy-dark dark:border-navy-light">
         <div className="flex items-center justify-center w-full py-8 border-r bg-navy-lightest sm:w-1/3 sm:py-0 dark:bg-navy-dark dark:border-navy">
           <div className="w-32 overflow-hidden border border-gray-200 rounded shadow-md book-image dark:border-navy">
             <img
@@ -53,10 +53,10 @@ const Book = ({ source, frontMatter }) => {
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
           <p className="mt-0 mb-4">{frontMatter.description}</p>
-          <ButtonSecondary className="w-max" href={frontMatter.url}>
+          <Button className="w-max" href={frontMatter.url}>
             <Icon icon="external" className="w-5 mr-2" />
             Amazon Link
-          </ButtonSecondary>
+          </Button>
         </div>
       </div>
 

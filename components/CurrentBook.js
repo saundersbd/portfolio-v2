@@ -17,7 +17,7 @@ const CurrentBook = ({
   };
 
   return (
-    <div className="flex flex-col mb-12 overflow-hidden bg-white border border-gray-300 rounded-md shadow col-span-full xs:flex-row lg:col-span-1 dark:bg-navy-dark dark:border-navy-light">
+    <div className="flex flex-col mb-12 overflow-hidden bg-white border border-gray-300 rounded-lg shadow col-span-full xs:flex-row lg:col-span-1 dark:bg-navy-dark dark:border-navy-light">
       <div className="flex items-center justify-center p-6 border-r bg-navy-lightest dark:bg-navy-dark dark:border-navy">
         <div className="flex-shrink-0 w-16 overflow-hidden rounded shadow-md book-image sm:w-24 dark:border-gray-800">
           <img src={imageUrl} />
