@@ -1,7 +1,7 @@
 @tailwind base;
 
 .prose {
-    @apply text-base sm:text-lg leading-loose text-gray-800 dark:text-white;
+    @apply text-base sm:text-lg leading-loose text-navy-darkest dark:text-white;
 }
 
 .prose h1,
@@ -14,11 +14,11 @@
 }
 
 .prose h1 {
-    @apply leading-relaxed text-3xl xs:text-5xl xs:leading-relaxed;
+    @apply leading-relaxed text-3xl xs:text-5xl xs:leading-normal text-navy-darkest;
 }
 
 .prose h2 {
-    @apply mb-12 leading-relaxed;
+    @apply mb-6 sm:mb-12 leading-relaxed;
 }
 
 .prose h3 {
@@ -26,7 +26,7 @@
 }
 
 .prose p {
-    @apply text-base leading-loose xs:text-lg xs:leading-loose;
+    @apply text-base leading-loose xs:text-lg xs:leading-extra-loose;
 }
 
 .prose p.large {
@@ -38,7 +38,11 @@
 }
 
 .prose blockquote p {
-    @apply text-base leading-loose;
+    @apply text-base leading-extra-loose;
+}
+
+.prose ul li {
+    @apply leading-loose;
 }
 
 .prose ol li {

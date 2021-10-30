@@ -1,29 +1,39 @@
 @font-face {
-    font-family: "iA Quattro";
-    font-stretch: 25% 150%;
-    font-weight: 100 1000;
-    src: url("/fonts/iAWriterQuattroV.ttf") format("truetype-variations");
+    font-family: "Untitled";
+    font-weight: 400;
+    src: url("/fonts/untitled-sans-regular.woff2");
 }
 
 @font-face {
-    font-family: "iA Quattro";
-    font-stretch: 25% 150%;
+    font-family: "Untitled";
     font-style: italic;
-    font-weight: 100 1000;
-    src: url("/fonts/iAWriterQuattroV-Italic.ttf") format("truetype-variations");
+    font-weight: 400;
+    src: url("/fonts/untitled-sans-regular-italic.woff2");
+}
+
+@font-face {
+    font-family: "Untitled";
+    font-weight: 600;
+    src: url("/fonts/untitled-sans-medium.woff2");
+}
+
+@font-face {
+    font-family: "Untitled";
+    font-weight: 700;
+    src: url("/fonts/untitled-sans-bold.woff2");
 }
 
 @tailwind base;
 
 @layer base {
     body {
-        @apply bg-white text-navy-darkest font-mono !important;
+        @apply bg-white text-navy-darkest font-sans !important;
     }
     [aria-current="page"] {
-        @apply text-gray-800 bg-orange-lightest font-bold;
+        @apply text-navy-darkest bg-orange-lightest font-semibold;
     }
     [aria-current="false"] {
-        @apply text-gray-800 bg-white;
+        @apply text-navy-darkest bg-white;
     }
     @media (prefers-color-scheme: dark) {
         body {
@@ -33,7 +43,7 @@
             @apply text-navy-lighter bg-navy-darkest;
         }
         [aria-current="page"] {
-            @apply bg-navy-dark text-white;
+            @apply bg-navy-dark text-white font-semibold;
         }
         .light-mode-image {
             display: none;

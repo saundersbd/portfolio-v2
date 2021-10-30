@@ -7,7 +7,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
       <div className="flex items-center mb-1">
         {url ? (
           <a
-            className="font-medium underline rounded hover:text-blue-600 dark:text-navy-lightest dark:hover:bg-navy-dark dark:hover:text-white focus:outline-none focus:ring focus:ring-orange -mx-1 -my-0.5 px-1 py-0.5"
+            className="flex sm:w-max text-gray-700 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange"
             href={url}
             target="_blank"
           >
@@ -40,7 +40,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
     <div className="flex justify-start pr-2 sm:justify-end col-span-full sm:col-span-2">
       {notes ? (
         <Link href={notes} passHref>
-          <a className="flex items-center justify-center px-2 py-1 text-sm font-medium no-underline transition border rounded-md bg-navy-lightest text-navy border-navy w-max hover:no-underline focus:outline-none focus:ring focus:ring-orange hover:bg-navy hover:text-white dark:border-navy-light dark:bg-navy-dark dark:text-navy-lightest dark:hover:bg-navy dark:hover:text-white">
+          <a className="flex items-center justify-center px-2 py-1 text-sm font-semibold tracking-wide no-underline transition border rounded-md bg-navy-lightest text-navy border-navy w-max hover:no-underline focus:outline-none focus:ring focus:ring-orange hover:bg-navy hover:text-white dark:border-navy-light dark:bg-navy-dark dark:text-navy-lightest dark:hover:bg-navy dark:hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4 mr-1"

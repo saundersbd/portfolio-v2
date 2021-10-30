@@ -43,7 +43,7 @@ const DirectionLink = ({ href, icon, className, children }) => {
       <Link href={href} passHref>
         <a
           className={
-            `flex w-max items-center text-gray-800 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange ` +
+            `flex w-max items-center text-navy-darkest dark:text-white tracking-wide font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange ` +
             `${className}`
           }
         >
@@ -58,7 +58,7 @@ const DirectionLink = ({ href, icon, className, children }) => {
     <a
       href={href}
       className={
-        `flex w-max items-center text-gray-800 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange ` +
+        `flex w-max items-center text-navy-darkest dark:text-white font-semibold tracking-wide hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange ` +
         `${className}`
       }
     >
