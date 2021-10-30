@@ -76,7 +76,7 @@ const Header = () => {
     <Headroom>
       <header className="z-10 flex flex-col justify-between h-24 bg-white border-t border-b sm:items-stretch sm:flex-row border-orange-light sm:h-16 dark:bg-navy-darkest dark:border-orange-lighter">
         <Link href="/" passHref>
-          <a className="flex items-center justify-center flex-grow px-4 text-xl font-semibold sm:flex-grow-0 sm:mt-0 focus:outline-none focus:ring focus:ring-orange sm:mb-0 dark:text-white">
+          <a className="flex items-center justify-center flex-grow px-4 text-xl font-semibold sm:flex-grow-0 sm:mt-0 focus:outline-none focus:ring focus:ring-orange sm:mb-0 dark:text-white hover:underline">
             Brian Saunders
           </a>
         </Link>

@@ -92,7 +92,8 @@ function HomePage({ posts, projects }) {
                 />
               </figure>
               <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-navy-lighter">
-                My work has been featured in my Mom's yearly Christmas card.
+                My work has been featured in no publications aside from my Mom's
+                yearly Christmas card.
               </figcaption>
             </div>
           </Grid>
@@ -130,7 +131,7 @@ function HomePage({ posts, projects }) {
                 ))}
               </ul>
               <Link href="/posts" passHref>
-                <a className="flex w-max items-center text-lg text-gray-700 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-400}">
+                <a className="flex w-max items-center text-navy-darkest dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
                   More Posts
                   <Icon icon="arrow-right" className="w-4 ml-1" />
                 </a>

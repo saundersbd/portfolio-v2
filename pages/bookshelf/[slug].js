@@ -50,7 +50,7 @@ const Book = ({ source, frontMatter }) => {
           <h1 className="mb-4 text-3xl leading-relaxed tracking-wide dark:text-white">
             {frontMatter.title}
           </h1>
-          <p className="mt-0 mb-4 text-base font-semibold leading-relaxed text-gray-500 dark:text-navy-lighter">
+          <p className="mt-0 mb-4 text-base leading-relaxed text-gray-600 dark:text-navy-lighter">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>

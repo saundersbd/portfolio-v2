@@ -25,20 +25,20 @@ const CurrentBook = ({
       </div>
 
       <div className="p-4 xs:p-6">
-        <h3 className="mb-1 text-lg font-bold">
+        <h3 className="mb-1 text-lg font-semibold tracking-wide">
           <a
-            className="underline rounded hover:text-blue-600 dark:hover:text-gray-300 focus:outline-none focus:ring focus:ring-orange -mx-1 -my-0.5 px-1 py-0.5"
+            className="text-navy-darkest dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange"
             href={url}
           >
             {title}
           </a>
         </h3>
-        <p className="mb-2 text-gray-500 dark:text-navy-lighter">{author}</p>
+        <p className="mb-2 text-gray-600 dark:text-navy-lighter">{author}</p>
         <p className="mb-4 text-base leading-relaxed text-gray-700 sm:text-lg sm:leading-relaxed dark:text-navy-lightest">
           {description}
         </p>
         <div className="progress">
-          <p className="mb-1 text-xs text-gray-500 dark:text-navy-lighter">{`${toPercent(
+          <p className="mb-1 text-xs text-gray-600 dark:text-navy-lighter">{`${toPercent(
             progressBarWidth
           )}% complete (${date})`}</p>
           <div className="w-full h-3 overflow-hidden bg-gray-200 rounded-sm xl:w-11/12 progress-bar dark:bg-navy-light">

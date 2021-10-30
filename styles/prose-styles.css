@@ -34,7 +34,7 @@
 }
 
 .prose blockquote {
-    @apply px-6 py-3 not-italic font-normal border-l-4 border-navy bg-navy-lightest dark:bg-navy dark:border-navy-lighter;
+    @apply px-6 py-3 font-normal border-l-4 border-navy bg-navy-lightest dark:bg-navy dark:border-navy-lighter italic;
 }
 
 .prose blockquote p {
