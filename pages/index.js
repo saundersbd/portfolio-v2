@@ -46,17 +46,17 @@ function HomePage({ posts, projects }) {
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="mb-6 font-sans text-4xl font-bold leading-normal sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
+              <h1 className="mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="mb-6 text-base font-normal leading-loose sm:leading-loose sm:text-xl sm:mb-8 dark:text-white">
+              <p className="mb-6 text-base font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-8 dark:text-white">
                 I'm a great product designer, pretty good ukulele player, and
                 sub-par ceramicist who lives and works in Chicago. I love
                 creating software with other people and have contributed to all
                 kinds of things, from design systems to startups to enterprise
                 software used by millions of people.
               </p>
-              <p className="mb-6 text-base font-normal leading-loose sm:leading-loose sm:text-xl sm:mb-12 dark:text-white">
+              <p className="mb-6 text-base font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-12 dark:text-white">
                 I'm a Senior Product Designer at Paylocity, where I design
                 software that helps employees collaborate and stay connected at
                 work. I'm also leading a Figma transition and beginning work
@@ -105,7 +105,9 @@ function HomePage({ posts, projects }) {
         <ContainerFull>
           <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
             <div className="lg:col-span-4 col-span-full">
-              <h2 className="mb-12 font-sans text-4xl font-bold">Projects</h2>
+              <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
+                Projects
+              </h2>
               <Grid className="grid-cols-2 gap-5 mb-12 lg:gap-6">
                 {filteredProjects.map((project) => (
                   <Project
@@ -117,7 +119,7 @@ function HomePage({ posts, projects }) {
               </Grid>
             </div>
             <div className="lg:col-span-2 col-span-full">
-              <h2 className="mb-12 font-sans text-4xl font-bold">
+              <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
                 Recent Posts
               </h2>
               <ul>
@@ -130,7 +132,7 @@ function HomePage({ posts, projects }) {
                 ))}
               </ul>
               <Link href="/posts" passHref>
-                <a className="flex w-max items-center text-lg text-gray-700 dark:text-white font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-400}">
+                <a className="flex w-max items-center text-lg text-gray-700 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-400}">
                   More Posts
                   <Icon icon="arrow-right" className="w-4 ml-1" />
                 </a>

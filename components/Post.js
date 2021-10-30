@@ -9,8 +9,8 @@ const Post = ({ slug, title, description, published }) => {
   return (
     <li className="mb-6">
       <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
-        <a className="flex sm:w-max text-gray-700 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
-          <h3 className="font-bold">{title}</h3>
+        <a className="flex sm:w-max text-gray-700 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange">
+          <h3 className="font-semibold tracking-wide">{title}</h3>
         </a>
       </Link>
       <p className="mb-2 text-gray-500 dark:text-navy-lighter">

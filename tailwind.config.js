@@ -50,6 +50,9 @@ module.exports = {
         DEFAULT: "#117C83",
       },
     },
+    letterSpacing: {
+      wide: ".01em",
+    },
     screens: {
       xs: "500px",
       ...defaultTheme.screens,
@@ -65,6 +68,7 @@ module.exports = {
     fontFamily: {
       mono: ["'iA Quattro'", ...mono],
       sans: [
+        "Untitled",
         "-apple-system",
         "BlinkMacSystemFont",
         "San Francisco",
@@ -79,6 +83,9 @@ module.exports = {
       ],
     },
     extend: {
+      lineHeight: {
+        "extra-loose": "2.25",
+      },
       width: {
         "1/20": "5%",
         "3/20": "15%",
@@ -90,7 +97,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.gray-900"),
+            color: theme("colors.navy.darkest"),
             a: {
               color: theme("colors.blue.700"),
               "&:hover": {

@@ -21,13 +21,13 @@ const Bookshelf = ({ convertBack }) => {
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
-              <h1 className="mb-4 font-sans text-3xl font-bold leading-normal text-center sm:mb-8 sm:text-5xl">
+              <h1 className="mb-4 font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:mb-8 sm:text-5xl">
                 My Bookshelf
               </h1>
               <p className="text-base leading-loose text-center sm:leading-loose sm:text-xl">
                 This is a place to collect a list of books and articles I've
                 read and enjoyed. If a book or article has a notes link that
-                means I've written a little about why I like it.
+                means I've written about why I liked it.
               </p>
             </div>
           </Grid>
