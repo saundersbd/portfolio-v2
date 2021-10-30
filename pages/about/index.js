@@ -129,7 +129,7 @@ const About = () => (
               .
             </p>
 
-            <hr className="h-px bg-gray-400 border-0 dark:bg-gray-600 dark:bg-navy-light" />
+            <hr className="h-px bg-gray-400 border-0 dark:bg-navy-light" />
           </div>
 
           <div className="col-span-full lg:col-start-2 lg:col-end-6">

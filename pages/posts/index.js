@@ -36,8 +36,10 @@ const Posts = ({ posts }) => {
                 Writing
               </h1>
               <p className="text-base leading-loose text-center sm:leading-loose sm:text-xl">
-                A growing collection of thoughts meeting at the intersection of
-                my life and career.
+                A collection of thoughts from the intersection of my life and
+                career. These posts are works-in-progress. The goal this year is
+                to publish more, even if it's not perfect, so I try to get a
+                first draft out and then improve it over time.
               </p>
             </div>
           </Grid>

@@ -14,15 +14,15 @@
 }
 
 .prose h1 {
-    @apply leading-relaxed text-3xl xs:text-5xl xs:leading-normal text-navy-darkest;
+    @apply leading-relaxed text-3xl xs:text-5xl xs:leading-normal text-navy-darkest dark:text-white tracking-wide;
 }
 
 .prose h2 {
-    @apply mb-6 sm:mb-12 leading-relaxed;
+    @apply mb-6 sm:mb-12 leading-relaxed tracking-wide;
 }
 
 .prose h3 {
-    @apply text-xl;
+    @apply text-xl tracking-wide;
 }
 
 .prose p {

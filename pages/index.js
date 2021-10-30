@@ -49,14 +49,14 @@ function HomePage({ posts, projects }) {
               <h1 className="mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="mb-6 text-base font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-8 dark:text-white">
+              <p className="mb-6 text-base font-normal leading-loose sm:leading-loose sm:text-xl sm:mb-8 dark:text-white">
                 I'm a great product designer, pretty good ukulele player, and
                 sub-par ceramicist who lives and works in Chicago. I love
                 creating software with other people and have contributed to all
-                kinds of things, from design systems to startups to enterprise
+                kinds of projects, from design systems to startups to enterprise
                 software used by millions of people.
               </p>
-              <p className="mb-6 text-base font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-12 dark:text-white">
+              <p className="mb-6 text-base font-normal leading-loose sm:leading-loose sm:text-xl sm:mb-12 dark:text-white">
                 I'm a Senior Product Designer at Paylocity, where I design
                 software that helps employees collaborate and stay connected at
                 work. I'm also leading a Figma transition and beginning work
@@ -92,9 +92,7 @@ function HomePage({ posts, projects }) {
                 />
               </figure>
               <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-navy-lighter">
-                I have been featured in no publications and have failed to
-                appear in Forbes' <span className="italic">30 Under 30</span>{" "}
-                list thirty separate times.
+                My work has been featured in my Mom's yearly Christmas card.
               </figcaption>
             </div>
           </Grid>
@@ -108,7 +106,7 @@ function HomePage({ posts, projects }) {
               <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
                 Projects
               </h2>
-              <Grid className="grid-cols-2 gap-5 mb-12 lg:gap-6">
+              <Grid className="grid-cols-2 gap-5 lg:gap-6">
                 {filteredProjects.map((project) => (
                   <Project
                     key={project.data.title}

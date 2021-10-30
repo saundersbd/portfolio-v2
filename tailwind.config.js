@@ -35,7 +35,7 @@ module.exports = {
       orange: {
         lightest: "#fceadd",
         lighter: "rgba(234, 126, 49, 0.35)",
-        light: "rgba(234, 126, 49, 0.5)",
+        light: "rgba(234, 126, 49, 0.4)",
         DEFAULT: "#ea7e31",
       },
       navy: {
@@ -48,6 +48,9 @@ module.exports = {
       },
       teal: {
         DEFAULT: "#117C83",
+      },
+      gold: {
+        DEFAULT: "#F3CF4C",
       },
     },
     letterSpacing: {
