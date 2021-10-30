@@ -19,7 +19,7 @@ const About = () => (
       <ContainerNarrow>
         <Grid className="grid-cols-6">
           <div className="col-span-full lg:col-start-2 lg:col-end-6">
-            <h1 className="font-sans text-3xl font-bold leading-normal text-center sm:text-5xl">
+            <h1 className="font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:text-5xl text-navy-darkest">
               About Me
             </h1>
           </div>

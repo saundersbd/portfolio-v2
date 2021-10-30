@@ -34,11 +34,11 @@
 }
 
 .prose blockquote {
-    @apply px-4 py-3 not-italic font-normal border-l-4 border-navy bg-navy-lightest dark:bg-navy dark:border-navy-lighter;
+    @apply px-6 py-3 not-italic font-normal border-l-4 border-navy bg-navy-lightest dark:bg-navy dark:border-navy-lighter;
 }
 
 .prose blockquote p {
-    @apply text-base leading-extra-loose;
+    @apply text-lg leading-extra-loose;
 }
 
 .prose ul li {
