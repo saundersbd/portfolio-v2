@@ -8,7 +8,7 @@ import Section from "../../components/Section";
 import ContainerNarrow from "../../components/ContainerNarrow";
 import Grid from "../../components/Grid";
 import DirectionLink from "../../components/DirectionLink";
-import Post from "../../components/Post";
+import PostListItem from "../../components/PostListItem";
 
 import { postFilePaths, POSTS_PATH } from "../../lib/mdx";
 
@@ -57,11 +57,11 @@ const Posts = ({ posts }) => {
               </h2>
               <ul className="mb-16">
                 {filteredPosts.map((post) => (
-                  <Post
+                  <PostListItem
                     key={post.data.title}
                     slug={post.filePath}
                     {...post.data}
-                  ></Post>
+                  ></PostListItem>
                 ))}
               </ul>
               <DirectionLink href="#top" icon="top">
