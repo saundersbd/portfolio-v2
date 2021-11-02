@@ -82,9 +82,9 @@ function HomePage({ posts, projects }) {
             </div>
 
             <div className="md:col-span-2 col-span-full">
-              <figure className="w-32 md:w-full">
+              <figure className="w-32 md:mb-1 md:w-full">
                 <Image
-                  className="rounded-full md:mb-2 md:rounded"
+                  className="rounded-full md:rounded"
                   height={682}
                   width={682}
                   alt="A picture of Brian"

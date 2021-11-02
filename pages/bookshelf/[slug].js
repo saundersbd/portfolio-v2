@@ -36,8 +36,8 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col mx-0 overflow-hidden border border-gray-300 rounded-lg sm:flex-row md:-mx-20 dark:bg-navy-dark dark:border-navy-light">
-        <div className="flex items-center justify-center w-full py-8 border-r bg-navy-lightest sm:w-1/3 sm:py-0 dark:bg-navy-dark dark:border-navy">
+      <div className="flex flex-col mx-0 mb-8 overflow-hidden border border-gray-300 rounded-lg sm:mb-12 sm:flex-row md:-mx-20 dark:bg-navy-dark dark:border-navy-light">
+        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0 bg-navy-lightest sm:w-1/3 dark:bg-navy-dark dark:border-navy">
           <div className="w-32 overflow-hidden border border-gray-200 rounded shadow-md book-image dark:border-navy">
             <img
               className="my-0"
@@ -47,14 +47,14 @@ const Book = ({ source, frontMatter }) => {
           </div>
         </div>
         <div className="w-full p-6 sm:w-2/3">
-          <h1 className="mb-4 text-3xl leading-relaxed tracking-wide dark:text-white">
+          <h1 className="mb-4 text-3xl font-bold leading-relaxed tracking-wide dark:text-white">
             {frontMatter.title}
           </h1>
-          <p className="mt-0 mb-4 text-base leading-relaxed text-gray-600 dark:text-navy-lighter">
+          <p className="mt-0 mb-4 text-base font-semibold leading-relaxed text-gray-600 dark:text-navy-lighter">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
-          <p className="mt-0 mb-6 leading-extra-loose">
+          <p className="mt-0 mb-6 text-lg leading-extra-loose">
             {frontMatter.description}
           </p>
           <Button className="w-max" href={frontMatter.url}>
@@ -63,8 +63,9 @@ const Book = ({ source, frontMatter }) => {
           </Button>
         </div>
       </div>
-
-      <MDXRemote {...source} components={components} />
+      <div className="prose prose-lg md:prose-xl dark:prose-dark">
+        <MDXRemote {...source} components={components} />
+      </div>
     </BookLayout>
   );
 };
