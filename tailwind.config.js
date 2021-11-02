@@ -13,13 +13,13 @@ const mono = [
 ];
 
 module.exports = {
+  mode: "jit",
   purge: [
     "./pages/**/*.js",
     "./components/**/*.js",
     "./layouts/**/*.js",
     "./data/**/*.mdx",
   ],
-  important: true,
   theme: {
     colors: {
       black: "#060606",
@@ -182,7 +182,7 @@ module.exports = {
       }),
     },
   },
-  darkMode: "media",
+  darkMode: "class",
   variants: {
     typography: ["responsive", "dark"],
     extend: {

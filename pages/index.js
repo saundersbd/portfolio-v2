@@ -42,21 +42,21 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="py-8 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-12 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
               <h1 className="mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="mb-6 text-base font-normal leading-loose sm:leading-loose sm:text-xl sm:mb-8 dark:text-white">
+              <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-8 dark:text-white">
                 I'm a great product designer, pretty good ukulele player, and
                 sub-par ceramicist who lives and works in Chicago. I love
                 creating software with other people and have contributed to all
                 kinds of projects, from design systems to startups to enterprise
                 software used by millions of people.
               </p>
-              <p className="mb-6 text-base font-normal leading-loose sm:leading-loose sm:text-xl sm:mb-12 dark:text-white">
+              <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-12 dark:text-white">
                 I'm a Senior Product Designer at Paylocity, where I design
                 software that helps employees collaborate and stay connected at
                 work. I'm also leading a Figma transition and beginning work
@@ -92,17 +92,16 @@ function HomePage({ posts, projects }) {
                 />
               </figure>
               <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-navy-lighter">
-                My work has been featured in no publications aside from my Mom's
-                yearly Christmas card.
+                My work has been featured in my Mom's yearly Christmas card.
               </figcaption>
             </div>
           </Grid>
         </ContainerFull>
       </Section>
 
-      <Section className="py-8 bg-white sm:py-16 dark:bg-navy-darkest">
+      <Section className="py-12 bg-white sm:py-16 dark:bg-navy-darkest">
         <ContainerFull>
-          <Grid className="grid-cols-6 lg:gap-x-16 gap-y-4">
+          <Grid className="grid-cols-6 lg:gap-x-16 gap-y-16">
             <div className="lg:col-span-4 col-span-full">
               <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
                 Projects
