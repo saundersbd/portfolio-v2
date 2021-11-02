@@ -5,7 +5,7 @@ import Grid from "../components/Grid";
 import DirectionLink from "../components/DirectionLink";
 
 const PostLayout = ({ children }) => (
-  <Layout className="pt-40 pb-12">
+  <Layout className="py-16">
     <ContainerNarrow>
       <article>
         <Grid className="grid-cols-6 gap-y-12">
@@ -14,7 +14,7 @@ const PostLayout = ({ children }) => (
               Back to Bookshelf
             </DirectionLink>
           </div>
-          <div className="prose prose-lg col-span-full lg:col-start-2 lg:col-end-6 md:prose-xl dark:prose-dark">
+          <div className="col-span-full lg:col-start-2 lg:col-end-6">
             {children}
           </div>
           <div className="col-span-full lg:col-start-2 lg:col-end-6">

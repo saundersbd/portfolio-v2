@@ -34,7 +34,7 @@ const PostImage = ({
           {img}
         </Zoom>
         {caption && (
-          <figcaption className="mx-0 mt-1 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">
+          <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">
             {caption}
           </figcaption>
         )}
@@ -46,7 +46,7 @@ const PostImage = ({
     <figure className="mx-0 md:-mx-8 light-mode-image">
       <Zoom>{img}</Zoom>
       {caption && (
-        <figcaption className="mx-0 mt-1 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">
+        <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">
           {caption}
         </figcaption>
       )}
