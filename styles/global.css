@@ -27,7 +27,7 @@
 
 @layer base {
     [aria-current="page"] {
-        @apply text-navy-darkest bg-orange-lightest font-semibold dark:bg-navy-dark !important;
+        @apply text-navy-darkest bg-orange-lightest font-semibold dark:bg-navy-dark dark:text-white !important;
     }
     [aria-current="false"] {
         @apply text-navy-darkest bg-white dark:bg-navy-darkest;
