@@ -5,7 +5,7 @@ import Grid from "../components/Grid";
 import DirectionLink from "../components/DirectionLink";
 
 const PostLayout = ({ children }) => (
-  <Layout className="pt-40 pb-12">
+  <Layout className="py-16">
     <ContainerNarrow>
       <article>
         <Grid className="grid-cols-6 gap-y-12">

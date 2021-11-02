@@ -26,25 +26,13 @@
 @tailwind base;
 
 @layer base {
-    body {
-        @apply bg-white text-navy-darkest font-sans !important;
-    }
     [aria-current="page"] {
-        @apply text-navy-darkest bg-orange-lightest font-semibold;
+        @apply text-navy-darkest bg-orange-lightest font-semibold dark:bg-navy-dark dark:text-white !important;
     }
     [aria-current="false"] {
-        @apply text-navy-darkest bg-white;
+        @apply text-navy-darkest bg-white dark:bg-navy-darkest;
     }
     @media (prefers-color-scheme: dark) {
-        body {
-            @apply bg-navy-darkest text-white !important;
-        }
-        [aria-current="false"] {
-            @apply text-navy-lighter bg-navy-darkest;
-        }
-        [aria-current="page"] {
-            @apply bg-navy-dark text-white font-semibold;
-        }
         .light-mode-image {
             display: none;
         }

@@ -22,10 +22,12 @@
     "airtable": "^0.11.1",
     "autoprefixer": "^10.3.7",
     "babel-runtime": "^6.26.0",
+    "classnames": "^2.3.1",
     "gray-matter": "^4.0.3",
     "next": "^11.1.2",
     "next-mdx-remote": "^3.0.6",
     "next-remote-watch": "^1.0.0",
+    "next-themes": "^0.0.15",
     "plaiceholder": "^2.0.1",
     "postcss": "^8.3.11",
     "react": "^17.0.2",
@@ -36,7 +38,8 @@
     "remark-slug": "^7.0.1",
     "sharp": "^0.29.2",
     "styled-components": "^5.3.3",
-    "tailwindcss": "^2.2.17"
+    "tailwindcss": "^2.2.17",
+    "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

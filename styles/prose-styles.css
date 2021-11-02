@@ -1,5 +1,3 @@
-@tailwind base;
-
 .prose {
     @apply text-base sm:text-lg leading-loose text-navy-darkest dark:text-white;
 }
@@ -30,7 +28,7 @@
 }
 
 .prose p.large {
-    @apply mb-6 text-base sm:text-lg leading-loose sm:leading-loose;
+    @apply mb-6 text-base sm:text-lg leading-loose sm:leading-loose !important;
 }
 
 .prose blockquote {
