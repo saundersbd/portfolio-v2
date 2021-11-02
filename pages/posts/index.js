@@ -26,7 +26,7 @@ const Posts = ({ posts }) => {
   return (
     <Layout className="py-12 pt-0">
       <Head>
-        <title>Brian Saunders | My Bookshelf</title>
+        <title>Brian Saunders | Writing</title>
       </Head>
       <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerNarrow>
