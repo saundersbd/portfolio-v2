@@ -47,12 +47,12 @@ const Bookshelf = ({ convertBack }) => {
               <CurrentBook
                 title="Already Free"
                 author="Bruce Tift"
-                description="Found this on twitter. It's about the relationship between western psychotherapy and Buddhism."
+                description="It's about the relationship between western psychotherapy and Buddhism."
                 imageUrl="/images/books/already-free.jpeg"
                 url="https://www.amazon.com/dp/B00XQ2Q9PE"
-                barClass="w-3/20"
-                progressBarWidth="3/20"
-                date="10/10/2021"
+                barClass="w-18/20"
+                progressBarWidth="18/20"
+                date="11/17/2021"
               />
 
               <BookCategoryList books={convertBack} category="Design" />
