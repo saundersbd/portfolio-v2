@@ -105,7 +105,7 @@ const Header = () => {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="flex items-center justify-center w-10 h-10 my-4 transition-all bg-gray-200 rounded-lg border-navy-lighter sm:my-0 dark:bg-navy-dark hover:ring-2 ring-gray-300 dark:ring-orange-lighter dark:border-orange-lighter"
+              className="flex items-center justify-center w-10 h-10 my-4 transition-all bg-gray-200 rounded-lg border-navy-lighter sm:my-0 dark:bg-navy-dark focus:outline-none focus:ring focus:ring-orange hover:ring-2 ring-gray-300 dark:ring-orange-lighter dark:border-orange-lighter"
               onClick={() =>
                 setTheme(resolvedTheme === "dark" ? "light" : "dark")
               }
