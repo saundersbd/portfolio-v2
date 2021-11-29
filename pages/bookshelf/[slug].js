@@ -57,7 +57,7 @@ const Book = ({ source, frontMatter }) => {
           <p className="mt-0 mb-6 text-lg leading-loose">
             {frontMatter.description}
           </p>
-          <Button className="w-max" href={frontMatter.url}>
+          <Button className="w-max" href={frontMatter.url} primary>
             <Icon icon="external" className="w-5 mr-2" />
             Amazon Link
           </Button>
