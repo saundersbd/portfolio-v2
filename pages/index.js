@@ -67,6 +67,7 @@ function HomePage({ posts, projects }) {
                 <Button
                   href="/about"
                   className="w-full mb-4 mr-0 xs:w-max xs:mb-0 xs:mr-4"
+                  primary
                 >
                   <Icon icon="about" className="w-5 mr-2" />
                   More about me
@@ -74,6 +75,7 @@ function HomePage({ posts, projects }) {
                 <Button
                   href="mailto:saundersbd@gmail.com"
                   className="w-full xs:w-max"
+                  primary
                 >
                   <Icon icon="mail" className="w-5 mr-2" />
                   Email
