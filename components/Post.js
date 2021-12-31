@@ -1,23 +1,28 @@
 import React from "react";
+import Grid from "../components/Grid";
+import Icon from "../components/Icon";
+
 import Link from "next/link";
-import formatDate from "../lib/formatDate";
 
-const Post = ({ slug, title, description, published }) => {
-  const publishedDate = published;
-  const formattedPublishedDate = formatDate(publishedDate || "");
-
-  return (
-    <li className="mb-6">
-      <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
-        <a className="flex mb-1 sm:w-max text-navy-darkest dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange">
-          <h3 className="text-lg font-semibold tracking-wide">{title}</h3>
-        </a>
-      </Link>
-      <p className="mb-2 text-gray-600 dark:text-navy-lighter">
-        {formattedPublishedDate}
+const PostAlt = ({ slug, title, description }) => (
+  <Grid className="grid-cols-3 mb-8 gap-x-8">
+    <div className="col-span-full sm:col-span-1">
+      <h3 className="pt-3 mb-4 text-xs font-bold leading-relaxed tracking-wider uppercase border-t border-gray-300 sm:mb-0">
+        {title}
+      </h3>
+    </div>
+    <div className="col-span-full sm:col-span-2">
+      <p className="mb-3 text-lg">{description}</p>
+      <p>
+        <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
+          <a className="flex w-max items-center text-gray-500 dark:text-white hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
+            Read more
+            <Icon icon="arrow-right" className="w-4 ml-1" />
+          </a>
+        </Link>
       </p>
-    </li>
-  );
-};
+    </div>
+  </Grid>
+);
 
-export default Post;
+export default PostAlt;

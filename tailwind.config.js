@@ -53,9 +53,6 @@ module.exports = {
         DEFAULT: "#F3CF4C",
       },
     },
-    letterSpacing: {
-      wide: ".01em",
-    },
     screens: {
       xs: "500px",
       ...defaultTheme.screens,

@@ -103,40 +103,55 @@ function HomePage({ posts, projects }) {
 
       <Section className="py-12 bg-white sm:py-16 dark:bg-navy-darkest">
         <ContainerFull>
-          <Grid className="grid-cols-6 lg:gap-x-16 gap-y-16">
-            <div className="lg:col-span-4 col-span-full">
-              <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
-                Projects
-              </h2>
-              <Grid className="grid-cols-2 gap-5 lg:gap-6">
-                {filteredProjects.map((project) => (
-                  <Project
-                    key={project.data.title}
-                    slug={project.filePath}
-                    {...project.data}
-                  />
-                ))}
-              </Grid>
-            </div>
-            <div className="lg:col-span-2 col-span-full">
-              <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
-                Recent Posts
-              </h2>
-              <ul>
-                {filteredPosts.slice(0, 5).map((post) => (
-                  <Post
-                    key={post.data.title}
-                    slug={post.filePath}
-                    {...post.data}
-                  />
-                ))}
-              </ul>
+          <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
+            Writing
+          </h2>
+          <Grid className="grid-cols-3 gap-y-12 sm:gap-y-16 gap-x-16">
+            <div className="col-span-full lg:col-span-1">
+              <p className="mb-4 text-lg font-semibold">
+                I like to write about my experiences as a designer. I like
+                exploring the personal and developmental aspects of being a
+                designer.
+              </p>
               <Link href="/posts" passHref>
-                <a className="flex w-max items-center text-navy-darkest dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
-                  More Posts
+                <a className="flex w-max items-center text-gray-500 dark:text-white hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
+                  View all writing
                   <Icon icon="arrow-right" className="w-4 ml-1" />
                 </a>
               </Link>
+            </div>
+            <div className="col-span-full lg:col-span-2">
+              {filteredPosts.slice(0, 5).map((post) => (
+                <Post
+                  key={post.data.title}
+                  slug={post.filePath}
+                  {...post.data}
+                />
+              ))}
+            </div>
+          </Grid>
+        </ContainerFull>
+      </Section>
+
+      <Section className="pb-12 bg-white sm:pb-16 dark:bg-navy-darkest">
+        <ContainerFull>
+          <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
+            Projects
+          </h2>
+          <Grid className="grid-cols-3 gap-y-12 sm:gap-y-16 gap-x-16">
+            <div className="col-span-full lg:col-span-1">
+              <p className="text-lg font-semibold">
+                A sampling of some work that I've done over the years
+              </p>
+            </div>
+            <div className="col-span-full lg:col-span-2">
+              {filteredProjects.slice(0, 5).map((post) => (
+                <Project
+                  key={post.data.title}
+                  slug={post.filePath}
+                  {...post.data}
+                />
+              ))}
             </div>
           </Grid>
         </ContainerFull>
