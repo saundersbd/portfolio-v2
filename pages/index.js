@@ -109,9 +109,8 @@ function HomePage({ posts, projects }) {
           <Grid className="grid-cols-3 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-1">
               <p className="mb-4 text-lg font-semibold">
-                I like to write about my experiences as a designer. I like
-                exploring the personal and developmental aspects of being a
-                designer.
+                I like to write about the personal and developmental aspects of
+                being a designer.
               </p>
               <Link href="/posts" passHref>
                 <a className="flex w-max items-center text-gray-500 dark:text-white hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
