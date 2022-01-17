@@ -52,7 +52,7 @@
 }
 
 .prose a {
-    @apply px-1 mx-0.5 font-medium text-gray-900 no-underline transition duration-100 bg-yellow-200 rounded hover:bg-opacity-60 hover:text-gray-900 dark:bg-orange-light dark:hover:bg-orange dark:hover:bg-opacity-100 dark:text-white dark:hover:text-white focus:outline-none focus:ring focus:ring-blue-400;
+    @apply px-1 mx-0.5 font-medium text-gray-900 no-underline transition duration-100 bg-orange-lightest rounded hover:bg-opacity-80 hover:text-gray-900 dark:bg-orange-light dark:hover:bg-orange dark:hover:bg-opacity-80 dark:text-white dark:hover:text-white focus:outline-none focus:ring focus:ring-blue-400;
 }
 
 .prose hr {

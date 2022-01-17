@@ -29,6 +29,7 @@ module.exports = {
       yellow: colors.yellow,
       purple: colors.indigo,
       green: colors.green,
+      red: colors.rose,
       beige: {
         DEFAULT: "#faf5f0",
       },

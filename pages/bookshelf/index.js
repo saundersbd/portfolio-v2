@@ -45,14 +45,14 @@ const Bookshelf = ({ convertBack }) => {
                 Currently Reading
               </h2>
               <CurrentBook
-                title="Already Free"
-                author="Bruce Tift"
-                description="It's about the relationship between western psychotherapy and Buddhism."
-                imageUrl="/images/books/already-free.jpeg"
-                url="https://www.amazon.com/dp/B00XQ2Q9PE"
-                barClass="w-18/20"
-                progressBarWidth="18/20"
-                date="11/17/2021"
+                title="The Timeless Way of Building"
+                author="Christopher Alexander"
+                description="Revisiting one of my favorites."
+                imageUrl="/images/books/timeless-way.jpg"
+                url="https://www.amazon.com/dp/0195024028"
+                barClass="w-5/20"
+                progressBarWidth="1/4"
+                date="1/17/2022"
               />
 
               <BookCategoryList books={convertBack} category="Design" />
