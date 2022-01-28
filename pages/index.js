@@ -93,7 +93,7 @@ function HomePage({ posts, projects }) {
                   src="/images/portrait-square-blue.jpg"
                 />
               </figure>
-              <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-navy-lighter">
+              <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-gray-300">
                 My work has been featured in my Mom's yearly Christmas card.
               </figcaption>
             </div>
