@@ -63,8 +63,8 @@
     .book:hover .book-image-container {
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
-    .orange-block-link {
-        @apply flex w-max items-center text-gray-500 dark:text-gray-300 dark:hover:text-white hover:bg-orange-lightest hover:text-navy-darkest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange;
+    .block-link {
+        @apply flex w-max items-center text-blue-600 dark:text-gray-300 dark:hover:text-white hover:bg-orange-lightest hover:text-navy-darkest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange;
     }
 }
 

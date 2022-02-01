@@ -50,9 +50,9 @@ const Bookshelf = ({ convertBack }) => {
                 description="Revisiting one of my favorites."
                 imageUrl="/images/books/timeless-way.jpg"
                 url="https://www.amazon.com/dp/0195024028"
-                barClass="w-5/20"
-                progressBarWidth="1/4"
-                date="1/17/2022"
+                barClass="w-16/20"
+                progressBarWidth="16/20"
+                date="2/01/2022"
               />
 
               <BookCategoryList books={convertBack} category="Design" />

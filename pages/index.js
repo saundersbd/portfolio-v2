@@ -113,7 +113,7 @@ function HomePage({ posts, projects }) {
                 being a designer.
               </p>
               <Link href="/posts" passHref>
-                <a className="flex w-max items-center text-gray-500 dark:text-white hover:bg-orange-lightest dark:hover:bg-navy-dark rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange">
+                <a className="block-link">
                   View all writing
                   <Icon icon="arrow-right" className="w-4 ml-1" />
                 </a>

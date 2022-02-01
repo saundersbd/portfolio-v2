@@ -33,7 +33,7 @@ const CurrentBook = ({
             {title}
           </a>
         </h3>
-        <p className="mb-2 text-gray-600 dark:text-navy-lighter">{author}</p>
+        <p className="mb-2 text-gray-600 dark:text-navy-lighter">by {author}</p>
         <p className="mb-4 text-base leading-relaxed text-gray-700 sm:text-lg sm:leading-relaxed dark:text-navy-lightest">
           {description}
         </p>
@@ -43,7 +43,7 @@ const CurrentBook = ({
           )}% complete (${date})`}</p>
           <div className="w-full h-3 overflow-hidden bg-gray-200 rounded-sm progress-bar dark:bg-navy-light">
             <div
-              className={`progress h-3 bg-navy dark:bg-blue-400 ${barClass}`}
+              className={`progress h-3 bg-blue-600 dark:bg-blue-400 ${barClass}`}
             ></div>
           </div>
         </div>

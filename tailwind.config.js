@@ -13,8 +13,7 @@ const mono = [
 ];
 
 module.exports = {
-  mode: "jit",
-  purge: [
+  content: [
     "./pages/**/*.js",
     "./components/**/*.js",
     "./layouts/**/*.js",
@@ -30,14 +29,16 @@ module.exports = {
       purple: colors.indigo,
       green: colors.green,
       red: colors.rose,
-      beige: {
-        DEFAULT: "#faf5f0",
-      },
       orange: {
         lightest: "#fceadd",
         lighter: "rgba(234, 126, 49, 0.35)",
         light: "rgba(234, 126, 49, 0.4)",
         DEFAULT: "#ea7e31",
+      },
+      beige: {
+        dark: "#e5e1d9",
+        darker: "#DAD7D1",
+        DEFAULT: "#f9f7f8",
       },
       navy: {
         lightest: "#F6F9FF",

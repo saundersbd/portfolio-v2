@@ -62,3 +62,8 @@
 .prose figure figcaption {
     @apply mt-3 leading-loose;
 }
+
+.prose .footnote-backref,
+.prose .footnote-ref {
+    @apply p-0 mx-1 bg-white dark:bg-navy-darkest text-blue-600 dark:text-blue-400 underline;
+}

@@ -41,7 +41,7 @@ const DirectionLink = ({ href, icon, className, children }) => {
   if (isInternalLink) {
     return (
       <Link href={href} passHref>
-        <a className={`orange-block-link ` + `${className}`}>
+        <a className={`block-link ` + `${className}`}>
           {svg}
           {children}
         </a>
@@ -50,7 +50,7 @@ const DirectionLink = ({ href, icon, className, children }) => {
   }
 
   return (
-    <a href={href} className={`orange-block-link ` + `${className}`}>
+    <a href={href} className={`block-link ` + `${className}`}>
       {svg}
       {children}
     </a>
