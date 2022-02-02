@@ -26,8 +26,7 @@ const Bookshelf = ({ convertBack }) => {
               </h1>
               <p className="text-lg leading-loose text-center sm:leading-loose sm:text-xl">
                 This is a place to collect a list of books and articles I've
-                read and enjoyed. If a book or article has a notes link that
-                means I've written about why I liked it.
+                read and enjoyed.
               </p>
             </div>
           </Grid>
