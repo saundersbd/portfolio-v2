@@ -32,7 +32,7 @@ const Posts = ({ posts }) => {
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
-              <h1 className="mb-2 font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:mb-8 sm:text-5xl">
+              <h1 className="mb-2 font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:mb-6 sm:text-5xl">
                 Writing
               </h1>
               <p className="text-lg leading-loose text-center sm:leading-loose sm:text-xl">
@@ -52,9 +52,6 @@ const Posts = ({ posts }) => {
               <DirectionLink href="/" icon="back" className="mb-12">
                 Back to Home
               </DirectionLink>
-              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-gray-300 dark:border-navy xs:text-2xl">
-                2021
-              </h2>
               <ul className="mb-16">
                 {filteredPosts.map((post) => (
                   <PostListItem

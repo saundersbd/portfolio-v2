@@ -59,9 +59,7 @@ function HomePage({ posts, projects }) {
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-12 dark:text-white">
                 I'm a Senior Product Designer at Paylocity, where I design
                 software that helps employees collaborate and stay connected at
-                work. I'm also leading a Figma transition and beginning work
-                managing, editing, and writing for the company UX blog on
-                Medium.
+                work.
               </p>
               <div className="flex flex-col xs:flex-row">
                 <Button
@@ -93,8 +91,8 @@ function HomePage({ posts, projects }) {
                   src="/images/portrait-square-blue.jpg"
                 />
               </figure>
-              <figcaption className="hidden text-sm font-normal leading-loose text-gray-600 md:block dark:text-gray-300">
-                My work has been featured in my Mom's yearly Christmas card.
+              <figcaption className="hidden text-sm font-normal leading-relaxed text-stone-600 md:block dark:text-gray-300">
+                My work has been featured in the family Christmas card.
               </figcaption>
             </div>
           </Grid>

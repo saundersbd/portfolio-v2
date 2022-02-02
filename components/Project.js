@@ -7,7 +7,7 @@ import Link from "next/link";
 const ProjectAlt = ({ slug, title, description }) => (
   <Grid className="grid-cols-3 mb-8 gap-x-8">
     <div className="col-span-full sm:col-span-1">
-      <h3 className="pt-8 sm:pt-3 mt-2 mb-4 text-xs font-bold leading-relaxed tracking-wider uppercase border-t border-beige-dark dark:border-orange-light sm:mb-0">
+      <h3 className="pt-8 sm:pt-3 mt-2 mb-4 text-xs font-bold leading-relaxed tracking-wider uppercase border-t border-stone-200 dark:border-orange-light sm:mb-0">
         {title}
       </h3>
     </div>

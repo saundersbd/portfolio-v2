@@ -105,7 +105,7 @@ const Header = () => {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="flex items-center justify-center w-10 h-10 my-4 transition-all bg-gray-200 rounded-lg border-navy-lighter sm:my-0 dark:bg-navy-dark focus:outline-none focus:ring focus:ring-orange hover:ring-2 ring-gray-300 dark:ring-orange-lighter dark:border-orange-lighter"
+              className="flex items-center justify-center w-10 h-10 my-4 transition-all bg-beige rounded-lg border border-beige-dark sm:my-0 dark:bg-navy-dark focus:outline-none focus:ring focus:ring-orange hover:ring-2 ring-gray-300 dark:ring-orange-lighter dark:border-orange-lighter"
               onClick={() =>
                 setTheme(resolvedTheme === "dark" ? "light" : "dark")
               }
@@ -115,7 +115,7 @@ const Header = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="w-5 h-5 text-gray-800 dark:text-gray-200"
+                  className="w-5 h-5 text-stone-700 dark:text-gray-200"
                 >
                   {resolvedTheme === "dark" ? (
                     <path

@@ -50,25 +50,25 @@ export default function MobileMenu() {
             isMenuRendered && styles.menuRendered
           )}
         >
-          <li className="text-base font-semibold border-b border-orange-light text-navy-darkest dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
             <Link href="/" passHref>
               <a className="flex w-auto py-4">Home</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-orange-light text-navy-darkest dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
             <Link href="/posts" passHref>
               <a className="flex w-auto py-4">Writing</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-orange-light text-navy-darkest dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
             <Link href="/bookshelf" passHref>
               <a className="flex w-auto py-4">My Bookshelf</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-orange-light text-navy-darkest dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
             <Link href="/about" passHref>
               <a className="flex w-auto py-4">About</a>
             </Link>
