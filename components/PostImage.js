@@ -1,7 +1,9 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import { useTheme } from "next-themes";
 
 const PostImage = ({
   alt,
@@ -13,28 +15,29 @@ const PostImage = ({
   darkMode,
   darkSrc,
 }) => {
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
+  useEffect(() => setMounted(true), []);
   const img = (
     <>
       <Image
         alt={alt}
         height={height}
-        src={darkMode ? darkSrc : src}
+        src={`${src}${resolvedTheme}.png`}
         width={width}
       />
     </>
   );
-
-  if (darkMode) {
+  if (mounted) {
     return (
-      <figure className="mx-0 md:-mx-8 dark-mode-image">
-        <Zoom
-          overlayBgColorStart="rgba(6, 6, 6, 0)"
-          overlayBgColorEnd="rgba(6, 6, 6, 0.95)"
-        >
-          {img}
+      <figure className={`mx-0 md:-mx-8 ${resolvedTheme}-mode-image`}>
+        <Zoom>
+          <div className="image-h-full-hack image-block-hack dark:border dark:border-gray-700">
+            {img}
+          </div>
         </Zoom>
         {caption && (
-          <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">
+          <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-400">
             {caption}
           </figcaption>
         )}
@@ -43,7 +46,7 @@ const PostImage = ({
   }
 
   return (
-    <figure className="mx-0 md:-mx-8 light-mode-image">
+    <figure className={`mx-0 md:-mx-8 ${resolvedTheme}-mode-image`}>
       <Zoom>{img}</Zoom>
       {caption && (
         <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">

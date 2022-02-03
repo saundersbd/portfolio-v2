@@ -32,15 +32,11 @@
     [aria-current="false"] {
         @apply text-stone-800 bg-white dark:bg-gray-900;
     }
-    @media (prefers-color-scheme: dark) {
-        .light-mode-image {
-            display: none;
-        }
+    html.dark .light-mode-image {
+        display: none;
     }
-    @media (prefers-color-scheme: light) {
-        .dark-mode-image {
-            display: none;
-        }
+    html.light .dark-mode-image {
+        display: none;
     }
     p.large {
         @apply mb-4 text-xl leading-loose sm:text-xl sm:mb-6;
@@ -65,6 +61,12 @@
     }
     .block-link {
         @apply flex w-max items-center text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 hover:bg-orange-lightest transition hover:text-stone-800 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange-light focus:bg-orange-lightest;
+    }
+    .image-h-full-hack > span {
+        height: 100% !important;
+    }
+    .image-block-hack > span {
+        display: block !important;
     }
 }
 
