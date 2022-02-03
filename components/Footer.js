@@ -2,12 +2,12 @@ import React from "react";
 import Section from "../components/Section";
 
 const Footer = () => (
-  <Section className="flex flex-col items-center justify-between px-4 py-8 pr-8 text-center border-t sm:px-6 sm:text-left sm:py-6 sm:flex-row border-orange-light bg-gold dark:bg-gray-900">
+  <Section className="flex flex-col items-center justify-between px-4 py-8 pr-8 text-center border-t sm:px-6 sm:text-left sm:py-6 sm:flex-row border-gold bg-gold dark:bg-gray-900 dark:border-orange-light">
     <div>
       <p className="mb-6 text-base sm:mb-0">
         Designed, written, and built by{" "}
         <a
-          className="font-semibold underline"
+          className="font-semibold underline focus:outline-none focus:ring focus:ring-orange rounded"
           href="mailto:saundersbd@gmail.com"
         >
           Brian Saunders

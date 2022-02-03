@@ -57,9 +57,9 @@ function HomePage({ posts, projects }) {
                 software used by millions of people.
               </p>
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-12 dark:text-white">
-                I'm a Senior Product Designer at Paylocity, where I design
-                software that helps employees collaborate and stay connected at
-                work.
+                Right now I'm a Senior Product Designer at Paylocity, where I
+                create software that helps employees collaborate and stay
+                connected at work.
               </p>
               <div className="flex flex-col xs:flex-row">
                 <Button
@@ -76,7 +76,7 @@ function HomePage({ posts, projects }) {
                   primary
                 >
                   <Icon icon="mail" className="w-5 mr-2" />
-                  Email
+                  Send a message
                 </Button>
               </div>
             </div>
@@ -104,9 +104,9 @@ function HomePage({ posts, projects }) {
           <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
             Writing
           </h2>
-          <Grid className="grid-cols-3 gap-y-12 sm:gap-y-16 gap-x-16">
-            <div className="col-span-full lg:col-span-1">
-              <p className="mb-4 text-lg font-semibold">
+          <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
+            <div className="col-span-full lg:col-span-2">
+              <p className="mb-4 text-lg">
                 I like to write about the personal and developmental aspects of
                 being a designer.
               </p>
@@ -117,7 +117,7 @@ function HomePage({ posts, projects }) {
                 </a>
               </Link>
             </div>
-            <div className="col-span-full lg:col-span-2">
+            <div className="col-span-full lg:col-span-3">
               {filteredPosts.slice(0, 5).map((post) => (
                 <Post
                   key={post.data.title}
@@ -135,13 +135,11 @@ function HomePage({ posts, projects }) {
           <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
             Projects
           </h2>
-          <Grid className="grid-cols-3 gap-y-12 sm:gap-y-16 gap-x-16">
-            <div className="col-span-full lg:col-span-1">
-              <p className="text-lg font-semibold">
-                A sampling of some work that I've done over the years
-              </p>
-            </div>
+          <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
+              <p className="text-lg">A sampling of some work that I've done</p>
+            </div>
+            <div className="col-span-full lg:col-span-3">
               {filteredProjects.slice(0, 5).map((post) => (
                 <Project
                   key={post.data.title}

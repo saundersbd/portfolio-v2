@@ -11,7 +11,7 @@ const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
     <a
       className={
-        `flex items-center justify-center flex-grow sm:flex-grow-0 text-sm sm:text-lg font-normal tracking-wide text-center focus:outline-none focus:ring focus:ring-orange px-5 py-4 hover:bg-orange-lightest dark:hover:bg-gray-900 dark:text-white hover:z-10 ` +
+        `flex items-center justify-center flex-grow sm:flex-grow-0 text-sm sm:text-lg font-normal tracking-wide text-center focus:outline-none focus:ring focus:ring-orange px-5 py-4 hover:bg-orange-lightest dark:hover:bg-gray-900 dark:text-white hover:z-10 focus:z-10 ` +
         `${className}`
       }
       aria-current={`${isActive && "page"}`}

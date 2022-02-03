@@ -46,29 +46,29 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            "absolute flex flex-col bg-beige dark:bg-navy-darkest border-t border-orange-light dark:border-orange-lighter",
+            "absolute flex flex-col bg-beige dark:bg-gray-900 border-t border-orange-light dark:border-orange-lighter",
             isMenuRendered && styles.menuRendered
           )}
         >
-          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
             <Link href="/" passHref>
               <a className="flex w-auto py-4">Home</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
             <Link href="/posts" passHref>
               <a className="flex w-auto py-4">Writing</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
             <Link href="/bookshelf" passHref>
               <a className="flex w-auto py-4">My Bookshelf</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-orange-light text-stone-800 dark:text-white dark:border-orange-lighter">
+          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
             <Link href="/about" passHref>
               <a className="flex w-auto py-4">About</a>
             </Link>

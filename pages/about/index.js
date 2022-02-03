@@ -29,6 +29,11 @@ const About = () => (
     <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
       <ContainerNarrow>
         <Grid className="grid-cols-6 gap-y-12">
+          <div className="col-span-full lg:col-start-2 lg:col-end-6">
+            <DirectionLink href="/" icon="back">
+              Back to Home
+            </DirectionLink>
+          </div>
           <div className="prose prose-lg col-span-full lg:col-start-2 lg:col-end-6 md:prose-xl dark:prose-dark">
             <h2>Experience</h2>
 
