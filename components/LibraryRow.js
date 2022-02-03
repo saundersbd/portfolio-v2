@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
-  <li className="grid items-center grid-cols-1 gap-2 py-3 border-b border-stone-200 dark:border-navy-light sm:grid-cols-12">
+  <li className="grid items-center grid-cols-1 gap-2 py-3 border-b border-stone-200 dark:border-gray-700 sm:grid-cols-12">
     <div className="flex flex-col justify-center col-span-full sm:col-span-10">
       <div className="flex items-center mb-1">
         {url ? (
@@ -33,14 +33,14 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
           </svg>
         ) : null}
       </div>
-      <div className="flex items-center text-stone-500 dark:text-navy-lighter">
+      <div className="flex items-center text-stone-500 dark:text-gray-400">
         {author} ({date})
       </div>
     </div>
     <div className="flex justify-start pr-2 sm:justify-end col-span-full sm:col-span-2">
       {notes ? (
         <Link href={notes} passHref>
-          <a className="flex items-center justify-center px-2 py-1 text-sm font-semibold tracking-wide no-underline transition border rounded bg-stone-100 text-stone-800 border-stone-100 w-max hover:no-underline focus:outline-none focus:ring focus:ring-orange hover:bg-stone-200 dark:border-navy-light dark:bg-navy-dark dark:text-navy-lightest dark:hover:bg-navy dark:hover:text-white">
+          <a className="flex items-center justify-center px-2 py-1 text-sm font-semibold tracking-wide no-underline transition border rounded bg-stone-100 text-stone-800 border-stone-100 w-max hover:no-underline focus:outline-none focus:ring focus:ring-orange hover:bg-stone-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-navy dark:hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4 mr-1"

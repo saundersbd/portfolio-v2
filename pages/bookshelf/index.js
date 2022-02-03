@@ -17,7 +17,7 @@ const Bookshelf = ({ convertBack }) => {
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
@@ -32,7 +32,7 @@ const Bookshelf = ({ convertBack }) => {
           </Grid>
         </ContainerNarrow>
       </Section>
-      <Section className="py-8 bg-white sm:py-16 dark:bg-navy-darkest">
+      <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
         <ContainerFull>
           <Grid className="grid-cols-12">
             <div className="col-span-full lg:col-start-3 lg:col-end-11">
@@ -40,7 +40,7 @@ const Bookshelf = ({ convertBack }) => {
                 Back to Home
               </DirectionLink>
 
-              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-stone-200 dark:border-navy xs:text-2xl">
+              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-stone-200 dark:border-gray-700 xs:text-2xl">
                 Currently Reading
               </h2>
               <CurrentBook

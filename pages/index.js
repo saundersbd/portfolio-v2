@@ -42,7 +42,7 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="py-12 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-12 border-b sm:py-16 bg-beige dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
@@ -84,7 +84,7 @@ function HomePage({ posts, projects }) {
             <div className="md:col-span-2 col-span-full">
               <figure className="w-32 md:mb-1 md:w-full">
                 <Image
-                  className="rounded-full md:rounded"
+                  className="rounded-full md:rounded dark:opacity-75"
                   height={682}
                   width={682}
                   alt="A picture of Brian"
@@ -99,7 +99,7 @@ function HomePage({ posts, projects }) {
         </ContainerFull>
       </Section>
 
-      <Section className="py-12 bg-white sm:py-16 dark:bg-navy-darkest">
+      <Section className="py-12 bg-white sm:py-16 dark:bg-gray-900">
         <ContainerFull>
           <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
             Writing
@@ -130,7 +130,7 @@ function HomePage({ posts, projects }) {
         </ContainerFull>
       </Section>
 
-      <Section className="pb-12 bg-white sm:pb-16 dark:bg-navy-darkest">
+      <Section className="pb-12 bg-white sm:pb-16 dark:bg-gray-900">
         <ContainerFull>
           <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
             Projects

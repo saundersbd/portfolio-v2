@@ -17,8 +17,8 @@ const CurrentBook = ({
   };
 
   return (
-    <div className="flex flex-col mb-12 overflow-hidden bg-white border border-stone-200 rounded-lg shadow col-span-full xs:flex-row lg:col-span-1 dark:bg-navy-dark dark:border-navy-light">
-      <div className="flex items-center justify-center p-6 border-r bg-beige border-stone-200 dark:bg-navy-dark dark:border-navy">
+    <div className="flex flex-col mb-12 overflow-hidden bg-white border border-stone-200 rounded-lg shadow col-span-full xs:flex-row lg:col-span-1 dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex items-center justify-center p-6 border-r bg-beige border-stone-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="flex-shrink-0 w-16 overflow-hidden rounded shadow-md book-image sm:w-24 dark:border-gray-800">
           <img src={imageUrl} />
         </div>
@@ -33,17 +33,17 @@ const CurrentBook = ({
             {title}
           </a>
         </h3>
-        <p className="mb-2 text-gray-600 dark:text-navy-lighter">by {author}</p>
+        <p className="mb-2 text-gray-600 dark:text-gray-400">by {author}</p>
         <p className="mb-4 text-base leading-relaxed text-gray-700 sm:text-lg sm:leading-relaxed dark:text-navy-lightest">
           {description}
         </p>
         <div className="progress">
-          <p className="mb-1 text-xs text-gray-600 dark:text-navy-lighter">{`${toPercent(
+          <p className="mb-1 text-xs text-stone-500 dark:text-gray-400">{`${toPercent(
             progressBarWidth
           )}% complete (${date})`}</p>
-          <div className="w-full h-3 overflow-hidden bg-stone-200 rounded-sm progress-bar dark:bg-navy-light">
+          <div className="w-full h-3 overflow-hidden bg-stone-200 rounded-sm progress-bar dark:bg-gray-700">
             <div
-              className={`progress h-3 bg-blue-600 dark:bg-blue-400 ${barClass}`}
+              className={`progress h-3 bg-blue-600 dark:bg-blue-500 ${barClass}`}
             ></div>
           </div>
         </div>

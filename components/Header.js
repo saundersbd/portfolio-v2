@@ -93,7 +93,7 @@ const Header = () => {
 
   return (
     <Headroom>
-      <header className="flex bg-white border-t-0 border-b sm:border-t sm:p-0 sm:items-stretch border-orange-light dark:bg-navy-darkest dark:border-orange-lighter">
+      <header className="flex bg-white border-t-0 border-b sm:border-t sm:p-0 sm:items-stretch border-orange-light dark:bg-gray-900 dark:border-orange-lighter">
         <ContainerFull>
           <nav className="relative flex items-center justify-between w-full">
             <div>
@@ -105,7 +105,7 @@ const Header = () => {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="flex items-center justify-center w-10 h-10 my-4 transition-all bg-beige rounded-lg border border-beige-dark sm:my-0 dark:bg-navy-dark focus:outline-none focus:ring focus:ring-orange hover:ring-2 ring-gray-300 dark:ring-orange-lighter dark:border-orange-lighter"
+              className="flex items-center justify-center w-10 h-10 my-4 transition-all bg-beige rounded-lg border border-beige-dark sm:my-0 dark:bg-gray-800 focus:outline-none focus:ring focus:ring-orange hover:ring-2 ring-gray-300 dark:ring-orange-lighter dark:border-orange-lighter"
               onClick={() =>
                 setTheme(resolvedTheme === "dark" ? "light" : "dark")
               }

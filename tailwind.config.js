@@ -23,7 +23,7 @@ module.exports = {
     colors: {
       black: "#060606",
       white: "#fff",
-      gray: colors.slate,
+      gray: colors.gray,
       stone: colors.stone,
       blue: colors.sky,
       yellow: colors.yellow,

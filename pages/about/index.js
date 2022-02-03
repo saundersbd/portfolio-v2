@@ -15,7 +15,7 @@ const About = () => (
         content="About Brian Saunders, a Chicago-based product designer"
       />
     </Head>
-    <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-navy-darkest dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+    <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
       <ContainerNarrow>
         <Grid className="grid-cols-6">
           <div className="col-span-full lg:col-start-2 lg:col-end-6">
@@ -26,7 +26,7 @@ const About = () => (
         </Grid>
       </ContainerNarrow>
     </Section>
-    <Section className="py-8 bg-white sm:py-16 dark:bg-navy-darkest">
+    <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
       <ContainerNarrow>
         <Grid className="grid-cols-6 gap-y-12">
           <div className="prose prose-lg col-span-full lg:col-start-2 lg:col-end-6 md:prose-xl dark:prose-dark">
@@ -108,28 +108,7 @@ const About = () => (
               means I understand it.
             </p>
 
-            <h2>About this site</h2>
-
-            <p>
-              I built this site myself using Next.js. A lot of the content comes
-              from MDX files so I am using{" "}
-              <a
-                target="_blank"
-                href="https://github.com/hashicorp/next-mdx-remote"
-              >
-                next-mdx-remote
-              </a>{" "}
-              to manage that. The site is being developed{" "}
-              <a
-                target="_blank"
-                href="http://github.com/saundersbd/portfolio-v2/"
-              >
-                in the open
-              </a>
-              .
-            </p>
-
-            <hr className="h-px bg-gray-400 border-0 dark:bg-navy-light" />
+            <hr className="h-px bg-gray-400 border-0 dark:bg-gray-700" />
           </div>
 
           <div className="col-span-full lg:col-start-2 lg:col-end-6">
