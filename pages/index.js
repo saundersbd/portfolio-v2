@@ -13,6 +13,7 @@ import Button from "../components/Button";
 import Project from "../components/Project";
 import Post from "../components/Post";
 import Icon from "../components/Icon";
+import HrSection from "../components/HrSection";
 
 import {
   postFilePaths,
@@ -46,7 +47,7 @@ function HomePage({ posts, projects }) {
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
+              <h1 className="mt-0 sm:-mt-2 mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl dark:text-white">
@@ -85,8 +86,8 @@ function HomePage({ posts, projects }) {
               <figure className="w-32 md:mb-1 md:w-full">
                 <Image
                   className="rounded-full md:rounded dark:opacity-75 transition"
-                  height={682}
-                  width={682}
+                  height={800}
+                  width={800}
                   alt="A picture of Brian"
                   src="/images/portrait-square-blue.jpg"
                 />
@@ -99,11 +100,12 @@ function HomePage({ posts, projects }) {
         </ContainerFull>
       </Section>
 
-      <Section className="py-12 bg-white sm:py-16 dark:bg-gray-900">
+      <Section className="pt-12 bg-white sm:pt-16 dark:bg-gray-900">
         <ContainerFull>
-          <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
+          <h2 className="mb-6 font-sans text-4xl font-bold tracking-wide">
             Writing
           </h2>
+          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
               <p className="mb-4 text-lg leading-loose">
@@ -130,16 +132,19 @@ function HomePage({ posts, projects }) {
         </ContainerFull>
       </Section>
 
+      <HrSection className="text-xl" />
+
       <Section className="pb-12 bg-white sm:pb-16 dark:bg-gray-900">
         <ContainerFull>
-          <h2 className="mb-12 font-sans text-4xl font-bold tracking-wide">
+          <h2 className="mb-6 font-sans text-4xl font-bold tracking-wide">
             Projects
           </h2>
+          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
               <p className="mb-4 text-lg leading-loose">
                 <Link href="mailto:saundersbd@gmail.com" passHref>
-                  <a className="text-blue-600 underline rounded hover:bg-orange-lightest transition hover:text-stone-800 -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange-light focus:bg-orange-lightest dark:hover:bg-gray-800 dark:hover:text-blue-300">
+                  <a className="text-blue-600 underline rounded hover:bg-orange-lightest transition hover:text-stone-800 -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange focus:bg-orange-lightest dark:hover:bg-gray-800 dark:hover:text-blue-300">
                     Send me a message
                   </a>
                 </Link>{" "}
