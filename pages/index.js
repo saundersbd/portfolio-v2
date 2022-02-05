@@ -105,7 +105,7 @@ function HomePage({ posts, projects }) {
           <h2 className="mb-6 font-sans text-4xl font-bold tracking-wide">
             Writing
           </h2>
-          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange"></div>
+          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange dark:bg-orange-lighter"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
               <p className="mb-4 text-lg leading-loose">
@@ -139,7 +139,7 @@ function HomePage({ posts, projects }) {
           <h2 className="mb-6 font-sans text-4xl font-bold tracking-wide">
             Projects
           </h2>
-          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange"></div>
+          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange dark:bg-orange-lighter"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
               <p className="mb-4 text-lg leading-loose">
