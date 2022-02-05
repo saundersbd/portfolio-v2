@@ -37,8 +37,8 @@ const Book = ({ source, frontMatter }) => {
       </Head>
 
       <div className="flex flex-col mx-0 mb-8 overflow-hidden border border-beige-dark rounded-lg sm:mb-12 sm:flex-row md:-mx-20 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0 bg-beige sm:w-1/3 dark:bg-gray-800 dark:border-gray-700">
-          <div className="w-32 overflow-hidden border border-gray-200 rounded shadow-md book-image dark:border-navy">
+        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0 bg-stone-100 sm:w-1/3 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-32 overflow-hidden border border-stone-200 rounded shadow-md book-image dark:border-navy">
             <img
               className="my-0"
               src={frontMatter.cover}
@@ -55,9 +55,15 @@ const Book = ({ source, frontMatter }) => {
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
           <p className="mt-0 mb-6  leading-loose">{frontMatter.description}</p>
-          <Button className="w-max" href={frontMatter.url} primary>
+          <Button
+            className="w-max bg-stone-100 border border-stone-200 hover:border-stone-300 hover:bg-stone-200"
+            href={frontMatter.url}
+            primary
+          >
             <Icon icon="external" className="w-5 mr-2" />
-            View on Amazon
+            {frontMatter.url.includes("amazon")
+              ? "View on Amazon"
+              : "View article"}
           </Button>
         </div>
       </div>

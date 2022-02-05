@@ -42,7 +42,7 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="py-12 border-b sm:py-16 bg-beige dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-12 border-b sm:py-16 bg-stone-100 dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
@@ -64,7 +64,7 @@ function HomePage({ posts, projects }) {
               <div className="flex flex-col xs:flex-row">
                 <Button
                   href="/about"
-                  className="w-full mb-4 mr-0 xs:w-max xs:mb-0 xs:mr-4"
+                  className="w-full mb-4 mr-0 xs:w-max xs:mb-0 xs:mr-4 bg-stone-200 border-stone-300 hover:bg-stone-300"
                   primary
                 >
                   <Icon icon="about" className="w-5 mr-2" />
@@ -72,7 +72,7 @@ function HomePage({ posts, projects }) {
                 </Button>
                 <Button
                   href="mailto:saundersbd@gmail.com"
-                  className="w-full xs:w-max"
+                  className="w-full xs:w-max bg-stone-200 border-stone-300 hover:bg-stone-300"
                   primary
                 >
                   <Icon icon="mail" className="w-5 mr-2" />
@@ -84,7 +84,7 @@ function HomePage({ posts, projects }) {
             <div className="md:col-span-2 col-span-full">
               <figure className="w-32 md:mb-1 md:w-full">
                 <Image
-                  className="rounded-full md:rounded dark:opacity-75"
+                  className="rounded-full md:rounded dark:opacity-75 transition"
                   height={682}
                   width={682}
                   alt="A picture of Brian"
