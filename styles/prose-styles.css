@@ -12,19 +12,19 @@
 }
 
 .prose h1 {
-    @apply leading-relaxed text-3xl xs:text-5xl xs:leading-normal text-stone-800 dark:text-white tracking-wide;
+    @apply leading-relaxed text-3xl xs:text-4xl xs:leading-tight text-stone-800 dark:text-white;
 }
 
 .prose h2 {
-    @apply mb-6 sm:mb-12 leading-relaxed tracking-wide;
+    @apply mb-6 sm:mb-12 leading-relaxed;
 }
 
 .prose h3 {
-    @apply text-xl tracking-wide;
+    @apply text-xl;
 }
 
 .prose p {
-    @apply text-base leading-loose xs:text-lg xs:leading-extra-loose;
+    @apply text-base leading-loose xs:text-lg xs:leading-loose;
 }
 
 .prose p.large {
@@ -32,11 +32,11 @@
 }
 
 .prose blockquote {
-    @apply px-6 py-3 font-normal border-l-4 border-beige-darker bg-beige dark:bg-gray-800 dark:border-blue-500 italic;
+    @apply px-6 py-2 font-normal border-l-4 border-beige-darker bg-beige dark:bg-gray-800 dark:border-blue-500 italic;
 }
 
 .prose blockquote p {
-    @apply text-lg leading-extra-loose;
+    @apply text-lg leading-loose my-2;
 }
 
 .prose ul li {
@@ -47,7 +47,8 @@
     @apply ml-2;
 }
 
-.prose ol > li::before {
+.prose ol > li::before,
+.prose ul > li::before {
     @apply text-stone-800 dark:text-white;
 }
 

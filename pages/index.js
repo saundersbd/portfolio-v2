@@ -49,14 +49,14 @@ function HomePage({ posts, projects }) {
               <h1 className="mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
-              <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-8 dark:text-white">
+              <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl dark:text-white">
                 I'm a great product designer, pretty good ukulele player, and
                 sub-par ceramicist who lives and works in Chicago. I love
                 creating software with other people and have contributed to all
                 kinds of projects, from design systems to startups to enterprise
                 software used by millions of people.
               </p>
-              <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-12 dark:text-white">
+              <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-8 dark:text-white">
                 Right now I'm a Senior Product Designer at Paylocity, where I
                 create software that helps employees collaborate and stay
                 connected at work.
@@ -106,7 +106,7 @@ function HomePage({ posts, projects }) {
           </h2>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
-              <p className="mb-4 text-lg">
+              <p className="mb-4 text-lg leading-loose">
                 I like to write about the personal and developmental aspects of
                 being a designer.
               </p>
@@ -137,7 +137,14 @@ function HomePage({ posts, projects }) {
           </h2>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
-              <p className="text-lg">A sampling of some work that I've done</p>
+              <p className="mb-4 text-lg leading-loose">
+                <Link href="mailto:saundersbd@gmail.com" passHref>
+                  <a className="text-blue-600 underline rounded hover:bg-orange-lightest transition hover:text-stone-800 -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange-light focus:bg-orange-lightest dark:hover:bg-gray-800 dark:hover:text-blue-300">
+                    Send me a message
+                  </a>
+                </Link>{" "}
+                to request more recent and detailed case studies.
+              </p>
             </div>
             <div className="col-span-full lg:col-span-3">
               {filteredProjects.slice(0, 5).map((post) => (

@@ -47,16 +47,14 @@ const Book = ({ source, frontMatter }) => {
           </div>
         </div>
         <div className="w-full p-6 sm:w-2/3">
-          <h1 className="mb-1 text-3xl font-bold leading-relaxed tracking-wide dark:text-white">
+          <h1 className="mb-2 text-3xl font-bold dark:text-white">
             {frontMatter.title}
           </h1>
           <p className="mt-0 mb-4 text-base leading-relaxed text-stone-500 dark:text-gray-400">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
-          <p className="mt-0 mb-6 text-lg leading-loose">
-            {frontMatter.description}
-          </p>
+          <p className="mt-0 mb-6  leading-loose">{frontMatter.description}</p>
           <Button className="w-max" href={frontMatter.url} primary>
             <Icon icon="external" className="w-5 mr-2" />
             View on Amazon
