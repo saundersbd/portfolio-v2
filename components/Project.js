@@ -1,28 +1,18 @@
 import React from "react";
-import Grid from "../components/Grid";
-import Icon from "../components/Icon";
-
 import Link from "next/link";
 
-const ProjectAlt = ({ slug, title, description }) => (
-  <Grid className="grid-cols-5 mb-4 sm:mb-8 gap-x-8">
-    <div className="col-span-full sm:col-span-2">
-      <h3 className="pt-4 sm:pt-3 mt-2 mb-4 sm:text-xs font-bold leading-relaxed sm:tracking-wider sm:uppercase sm:border-t border-stone-200 dark:border-orange-light sm:mb-0">
-        {title}
-      </h3>
-    </div>
-    <div className="col-span-full sm:col-span-3">
-      <p className="mb-3 text-lg sm:text-base leading-relaxed">{description}</p>
-      <p>
-        <Link href={`/projects/${slug.replace(/\.mdx?$/, "")}`} passHref>
-          <a className="block-link text-lg sm:text-base">
-            Read more
-            <Icon icon="arrow-right" className="w-4 ml-1" />
-          </a>
-        </Link>
-      </p>
-    </div>
-  </Grid>
+const ProjectTile = ({ slug, title, description }) => (
+  <div className="col-span-full sm:col-span-1 flex flex-col p-6 bg-white border border-stone-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+    <h3 className="mb-2 text-lg font-semibold">{title}</h3>
+    <p className="flex flex-grow mb-6 text-stone-600 dark:text-gray-300">
+      {description}
+    </p>
+    <Link href={`/projects/${slug.replace(/\.mdx?$/, "")}`} passHref>
+      <a className="flex justify-center items-center p-3 bg-stone-100 border border-stone-200 rounded-full font-semibold transition hover:bg-stone-200 dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-orange">
+        Read more
+      </a>
+    </Link>
+  </div>
 );
 
-export default ProjectAlt;
+export default ProjectTile;

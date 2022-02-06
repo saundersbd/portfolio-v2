@@ -53,7 +53,9 @@ module.exports = {
         DEFAULT: "#117C83",
       },
       gold: {
+        lightest: "rgba(240, 192, 0, 0.15)",
         DEFAULT: "#F3CF4C",
+        dark: "#F0C000",
       },
     },
     screens: {

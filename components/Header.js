@@ -29,7 +29,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/" passHref>
         <NavLink
           isActive={activeRoute === "Home"}
-          className="py-2 border-t sm:border-t-0 sm:border-l border-orange-light dark:border-orange-lighter"
+          className="py-2 border-t sm:border-t-0 sm:border-l border-gold-dark dark:border-orange-lighter"
         >
           Home
         </NavLink>
@@ -38,7 +38,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/posts" passHref>
         <NavLink
           isActive={activeRoute === "Posts"}
-          className="py-2 border-t sm:border-t-0 sm:border-l border-orange-light dark:border-orange-lighter"
+          className="py-2 border-t sm:border-t-0 sm:border-l border-gold-dark dark:border-orange-lighter"
         >
           Writing
         </NavLink>
@@ -47,7 +47,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/bookshelf" passHref>
         <NavLink
           isActive={activeRoute === "Bookshelf"}
-          className="py-2 border-t border-l sm:border-t-0 border-orange-light dark:border-orange-lighter"
+          className="py-2 border-t border-l sm:border-t-0 border-gold-dark dark:border-orange-lighter"
         >
           Bookshelf
         </NavLink>
@@ -56,7 +56,7 @@ const NavLinks = ({ activeRoute }) => {
       <Link href="/about" passHref>
         <NavLink
           isActive={activeRoute === "About"}
-          className="py-2 border-t border-l border-r sm:border-t-0 border-orange-light dark:border-orange-lighter"
+          className="py-2 border-t border-l border-r sm:border-t-0 border-gold-dark dark:border-orange-lighter"
         >
           About
         </NavLink>
@@ -93,7 +93,7 @@ const Header = () => {
 
   return (
     <Headroom>
-      <header className="flex bg-white border-t-0 border-b sm:border-t sm:p-0 sm:items-stretch border-orange-light dark:bg-gray-900 dark:border-orange-lighter">
+      <header className="flex bg-white border-t-0 border-b sm:p-0 sm:items-stretch border-gold-dark dark:bg-gray-900 dark:border-orange-lighter">
         <ContainerFull>
           <nav className="relative flex items-center justify-between w-full">
             <div>

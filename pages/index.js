@@ -43,11 +43,11 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="py-12 border-b sm:py-16 bg-stone-100 dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-12 border-b sm:py-16 bg-stone-100 dark:bg-gray-900 dark:text-gray-100 border-gold-dark dark:border-orange-lighter">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="mt-0 sm:-mt-2 mb-6 font-sans text-4xl font-bold leading-normal tracking-wide sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
+              <h1 className="mt-0 sm:-mt-2 mb-6 font-sans text-4xl font-bold leading-normal sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl dark:text-white">
@@ -105,7 +105,7 @@ function HomePage({ posts, projects }) {
           <h2 className="mb-6 font-sans text-4xl font-bold tracking-wide">
             Writing
           </h2>
-          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange dark:bg-orange-lighter"></div>
+          <div className="hidden sm:block w-10 h-1 mb-8 bg-gold-dark dark:bg-orange-lighter"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
               <p className="mb-4 text-lg leading-loose">
@@ -139,12 +139,12 @@ function HomePage({ posts, projects }) {
           <h2 className="mb-6 font-sans text-4xl font-bold tracking-wide">
             Projects
           </h2>
-          <div className="hidden sm:block w-10 h-1 mb-8 bg-orange dark:bg-orange-lighter"></div>
+          <div className="hidden sm:block w-10 h-1 mb-8 bg-gold-dark dark:bg-orange-lighter"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
               <p className="mb-4 text-lg leading-loose">
                 <Link href="mailto:saundersbd@gmail.com" passHref>
-                  <a className="text-blue-600 underline rounded hover:bg-orange-lightest transition hover:text-stone-800 -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange focus:bg-orange-lightest dark:hover:bg-gray-800 dark:hover:text-blue-300">
+                  <a className="text-blue-600 underline rounded hover:bg-orange-lightest transition hover:text-stone-800 -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange dark:hover:bg-gray-800 dark:hover:text-blue-300">
                     Send me a message
                   </a>
                 </Link>{" "}
@@ -152,13 +152,15 @@ function HomePage({ posts, projects }) {
               </p>
             </div>
             <div className="col-span-full lg:col-span-3">
-              {filteredProjects.slice(0, 5).map((post) => (
-                <Project
-                  key={post.data.title}
-                  slug={post.filePath}
-                  {...post.data}
-                />
-              ))}
+              <Grid className="grid-cols-2 gap-4">
+                {filteredProjects.slice(0, 5).map((post) => (
+                  <Project
+                    key={post.data.title}
+                    slug={post.filePath}
+                    {...post.data}
+                  />
+                ))}
+              </Grid>
             </div>
           </Grid>
         </ContainerFull>

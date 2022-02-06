@@ -12,7 +12,9 @@ const PostAlt = ({ slug, title, description }) => (
       </h3>
     </div>
     <div className="col-span-full sm:col-span-3">
-      <p className="mb-3 text-lg sm:text-base leading-relaxed">{description}</p>
+      <p className="mb-3 text-lg sm:text-base sm:leading-relaxed">
+        {description}
+      </p>
       <p>
         <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
           <a className="block-link text-lg sm:text-base">
