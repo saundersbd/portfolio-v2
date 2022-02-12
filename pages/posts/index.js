@@ -28,7 +28,7 @@ const Posts = ({ posts }) => {
       <Head>
         <title>Brian Saunders | Writing</title>
       </Head>
-      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-6 border-b sm:py-16 bg-beige dark:bg-gray-900 dark:text-gray-100 border-gold-dark dark:border-orange-lighter">
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
