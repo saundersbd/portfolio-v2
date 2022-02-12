@@ -27,7 +27,7 @@
 
 @layer base {
     [aria-current="page"] {
-        @apply text-stone-800 bg-gold-lightest font-semibold dark:bg-gray-800 dark:text-white !important;
+        @apply text-stone-800 bg-orange-lightest font-semibold dark:bg-gray-800 dark:text-white !important;
     }
     [aria-current="false"] {
         @apply text-stone-800 bg-white dark:bg-gray-900;
