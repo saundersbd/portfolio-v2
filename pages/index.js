@@ -51,16 +51,16 @@ function HomePage({ posts, projects }) {
                 Hi, I'm Brian Saunders
               </h1>
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl dark:text-white">
-                I'm a great product designer, pretty good ukulele player, and
-                sub-par ceramicist who lives and works in Chicago. I love
+                I'm a great product design leader, pretty good ukulele player,
+                and sub-par ceramicist who lives and works in Chicago. I love
                 creating software with other people and have contributed to all
                 kinds of projects, from design systems to startups to enterprise
                 software used by millions of people.
               </p>
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl sm:mb-8 dark:text-white">
-                Right now I'm a Senior Product Designer at Paylocity, where I
-                create software that helps employees collaborate and stay
-                connected at work.
+                Right now I'm a Product Design Lead at Paylocity, where I lead a
+                team of designers creating software that helps employees
+                collaborate and stay connected at work.
               </p>
               <div className="flex flex-col xs:flex-row">
                 <Button

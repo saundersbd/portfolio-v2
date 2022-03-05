@@ -38,20 +38,12 @@ const About = () => (
             <h2>Experience</h2>
 
             <p>
-              Right now I am a Senior Product Designer at{" "}
+              Right now I am a Product Design Lead at{" "}
               <a target="_blank" href="https://www.paylocity.com">
                 Paylocity
               </a>
-              , where I work on a product called{" "}
-              <a
-                target="_blank"
-                href="https://www.paylocity.com/our-products/modern-workforce-solutions/"
-              >
-                Community
-              </a>
-              . Community helps teams collaborate and stay aligned at work.
-              Other product areas I've worked in at Paylocity include payroll,
-              HR, and analytics.
+              , where I am leading a team defining the future of the mobile
+              application.
             </p>
 
             <p>

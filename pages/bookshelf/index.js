@@ -51,7 +51,7 @@ const Bookshelf = ({ convertBack }) => {
                 url="https://www.amazon.com/dp/0195024028"
                 barClass="w-16/20"
                 progressBarWidth="16/20"
-                date="2/01/2022"
+                date="3/05/22"
               />
 
               <BookCategoryList books={convertBack} category="Design" />
