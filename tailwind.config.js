@@ -22,7 +22,7 @@ module.exports = {
   theme: {
     colors: {
       black: "#060606",
-      white: "#fff",
+      white: "#fefff8",
       gray: colors.gray,
       stone: colors.stone,
       blue: colors.sky,
@@ -32,9 +32,9 @@ module.exports = {
       red: colors.rose,
       orange: {
         lightest: "#fceadd",
-        lighter: "rgba(234, 126, 49, 0.35)",
-        light: "rgba(234, 126, 49, 0.4)",
-        DEFAULT: "#ea7e31",
+        lighter: "rgba(232, 106, 80, 0.35)",
+        light: "rgba(232, 106, 80, 0.4)",
+        DEFAULT: "#e86a50",
       },
       beige: {
         dark: "#e5e1d9",
@@ -56,6 +56,12 @@ module.exports = {
         lightest: "rgba(240, 192, 0, 0.15)",
         DEFAULT: "#F3CF4C",
         dark: "#F0C000",
+      },
+      pebble: {
+        DEFAULT: "#f1f1ec",
+      },
+      lightBlue: {
+        DEFAULT: "#4898c9",
       },
     },
     screens: {

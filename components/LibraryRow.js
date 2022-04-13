@@ -40,7 +40,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
     <div className="flex justify-start pr-2 sm:justify-end col-span-full sm:col-span-2">
       {notes ? (
         <Link href={notes} passHref>
-          <a className="flex items-center justify-center px-2 py-1 text-sm font-semibold tracking-wide no-underline transition border rounded bg-stone-100 text-stone-800 border-stone-200 w-max hover:no-underline focus:outline-none focus:ring focus:ring-orange hover:bg-stone-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-navy dark:hover:text-white">
+          <a className="flex items-center justify-center px-2 py-1 text-sm font-semibold tracking-wide no-underline transition border rounded bg-pebble text-stone-800 border-stone-200 w-max hover:no-underline focus:outline-none focus:ring focus:ring-orange hover:bg-stone-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-navy dark:hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4 mr-1"

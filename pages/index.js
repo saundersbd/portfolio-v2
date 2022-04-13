@@ -43,7 +43,7 @@ function HomePage({ posts, projects }) {
           content="The personal website of Brian Saunders, a product designer from Chicago"
         />
       </Head>
-      <Section className="py-12 border-b sm:py-16 bg-stone-100 dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
+      <Section className="py-12 border-b sm:py-16 bg-pebble dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
