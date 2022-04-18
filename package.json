@@ -37,7 +37,7 @@
     "remark-slug": "^7.0.1",
     "sharp": "^0.30.3",
     "styled-components": "^5.3.5",
-    "tailwindcss": "^3.0.22",
+    "tailwindcss": "^3.0.24",
     "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
