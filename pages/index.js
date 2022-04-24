@@ -65,7 +65,7 @@ function HomePage({ posts, projects }) {
               <div className="flex flex-col xs:flex-row">
                 <Button
                   href="/about"
-                  className="w-full mb-4 mr-0 xs:w-max xs:mb-0 xs:mr-4 bg-stone-200 border-stone-300 hover:bg-stone-300"
+                  className="w-full mb-4 mr-0 xs:w-max xs:mb-0 xs:mr-4 bg-pebble-dark border-pebble-darker hover:bg-pebble-darker"
                   primary
                 >
                   <Icon icon="about" className="w-5 mr-2" />
@@ -73,7 +73,7 @@ function HomePage({ posts, projects }) {
                 </Button>
                 <Button
                   href="mailto:saundersbd@gmail.com"
-                  className="w-full xs:w-max bg-stone-200 border-stone-300 hover:bg-stone-300"
+                  className="w-full xs:w-max bg-pebble-dark border-pebble-darker hover:bg-pebble-darker"
                   primary
                 >
                   <Icon icon="mail" className="w-5 mr-2" />

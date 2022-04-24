@@ -59,6 +59,8 @@ module.exports = {
       },
       pebble: {
         DEFAULT: "#f1f1ec",
+        dark: "hsla(60, 15%, 88%, 1)",
+        darker: "hsla(60, 15%, 82%, 1)",
       },
       lightBlue: {
         DEFAULT: "#4898c9",

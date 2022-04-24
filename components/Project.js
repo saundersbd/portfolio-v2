@@ -8,7 +8,7 @@ const ProjectTile = ({ slug, title, description }) => (
       {description}
     </p>
     <Link href={`/projects/${slug.replace(/\.mdx?$/, "")}`} passHref>
-      <a className="flex justify-center items-center p-3 bg-pebble border border-stone-200 rounded-full font-semibold transition hover:bg-stone-200 dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-orange">
+      <a className="flex justify-center items-center p-3 bg-pebble border border-pebble-dark rounded-full font-semibold transition hover:bg-pebble-dark dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-orange">
         Read more
       </a>
     </Link>
