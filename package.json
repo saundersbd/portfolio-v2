@@ -20,7 +20,7 @@
     "@next/mdx": "^12.1.1",
     "@tailwindcss/typography": "^0.5.2",
     "airtable": "^0.11.3",
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.5",
     "babel-runtime": "^6.26.0",
     "classnames": "^2.3.1",
     "gray-matter": "^4.0.3",
