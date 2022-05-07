@@ -89,7 +89,7 @@ function HomePage({ posts, projects }) {
                   height={800}
                   width={800}
                   alt="A picture of Brian"
-                  src="/images/portrait-square-blue.jpg"
+                  src="/images/portrait-square.jpg"
                 />
               </figure>
               <figcaption className="hidden text-sm font-normal leading-relaxed text-stone-600 md:block dark:text-gray-300">
