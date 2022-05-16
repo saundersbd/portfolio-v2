@@ -8,7 +8,7 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-    @apply font-sans font-bold;
+    @apply font-sans font-semibold;
 }
 
 .prose h1 {

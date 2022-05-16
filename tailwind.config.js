@@ -81,7 +81,7 @@ module.exports = {
     fontFamily: {
       mono: ["'iA Quattro'", ...mono],
       sans: [
-        "Untitled",
+        "Inter",
         "-apple-system",
         "BlinkMacSystemFont",
         "San Francisco",

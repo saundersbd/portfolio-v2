@@ -1,33 +1,10 @@
-@font-face {
-    font-family: "Untitled";
-    font-weight: 400;
-    src: url("/fonts/untitled-sans-regular.woff2");
-}
-
-@font-face {
-    font-family: "Untitled";
-    font-style: italic;
-    font-weight: 400;
-    src: url("/fonts/untitled-sans-regular-italic.woff2");
-}
-
-@font-face {
-    font-family: "Untitled";
-    font-weight: 600;
-    src: url("/fonts/untitled-sans-medium.woff2");
-}
-
-@font-face {
-    font-family: "Untitled";
-    font-weight: 700;
-    src: url("/fonts/untitled-sans-bold.woff2");
-}
+@import url("https://rsms.me/inter/inter.css");
 
 @tailwind base;
 
 @layer base {
     [aria-current="page"] {
-        @apply text-stone-800 bg-orange-lightest font-semibold dark:bg-gray-800 dark:text-white !important;
+        @apply text-stone-800 bg-orange-lightest dark:bg-gray-800 dark:text-white !important;
     }
     [aria-current="false"] {
         @apply text-stone-800 bg-white dark:bg-gray-900;

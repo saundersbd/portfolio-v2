@@ -27,14 +27,14 @@ const CurrentBook = ({
       <div className="flex-grow p-4 xs:p-6">
         <h3 className="mb-1 text-lg font-semibold tracking-wide">
           <a
-            className="text-stone-800 dark:text-white font-semibold hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange"
+            className="text-stone-800 dark:text-white font-medium hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange"
             href={url}
           >
             {title}
           </a>
         </h3>
-        <p className="mb-2 text-gray-600 dark:text-gray-400">by {author}</p>
-        <p className="mb-4 text-base leading-relaxed text-gray-700 sm:text-lg sm:leading-relaxed dark:text-navy-lightest">
+        <p className="mb-2 text-stone-800 dark:text-gray-400">by {author}</p>
+        <p className="mb-4 text-base leading-relaxed text-stone-800 sm:text-lg sm:leading-relaxed dark:text-navy-lightest">
           {description}
         </p>
         <div className="progress">

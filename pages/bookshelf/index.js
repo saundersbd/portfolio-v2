@@ -21,13 +21,9 @@ const Bookshelf = ({ convertBack }) => {
         <ContainerNarrow>
           <Grid className="grid-cols-6">
             <div className="col-span-full lg:col-start-2 lg:col-end-6">
-              <h1 className="mb-2 font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:mb-6 sm:text-5xl">
+              <h1 className="font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:text-5xl">
                 My Bookshelf
               </h1>
-              <p className="text-lg leading-loose text-center sm:leading-loose sm:text-xl">
-                This is a place to collect the books and articles I've read and
-                enjoyed.
-              </p>
             </div>
           </Grid>
         </ContainerNarrow>
@@ -51,7 +47,7 @@ const Bookshelf = ({ convertBack }) => {
                 url="https://www.amazon.com/dp/0195024028"
                 barClass="w-16/20"
                 progressBarWidth="16/20"
-                date="3/05/22"
+                date="5/16/22"
               />
 
               <BookCategoryList books={convertBack} category="Design" />

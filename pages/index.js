@@ -47,7 +47,7 @@ function HomePage({ posts, projects }) {
         <ContainerFull>
           <Grid className="grid-cols-6 md:gap-x-16 gap-y-8">
             <div className="md:col-span-4 col-span-full">
-              <h1 className="mt-0 sm:-mt-2 mb-6 font-sans text-4xl font-bold leading-normal sm:text-5xl sm:leading-tight sm:mb-8 dark:text-gray-200">
+              <h1 className="mt-0 sm:-mt-2 mb-6 font-sans text-4xl font-bold leading-normal sm:text-5xl sm:leading-tight dark:text-gray-200">
                 Hi, I'm Brian Saunders
               </h1>
               <p className="mb-6 text-lg font-normal leading-loose sm:leading-extra-loose sm:text-xl dark:text-white">
@@ -108,7 +108,7 @@ function HomePage({ posts, projects }) {
           <div className="hidden sm:block w-10 h-1 mb-8 bg-orange dark:bg-orange-lighter"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
-              <p className="mb-4 text-lg leading-loose">
+              <p className="mb-4 text-lg leading-relaxed">
                 I like to write about the personal and developmental aspects of
                 being a designer.
               </p>
@@ -132,7 +132,7 @@ function HomePage({ posts, projects }) {
         </ContainerFull>
       </Section>
 
-      <HrSection className="text-xl" />
+      <HrSection className="text-sm" />
 
       <Section className="pb-12 bg-white sm:pb-16 dark:bg-gray-900">
         <ContainerFull>
@@ -142,7 +142,7 @@ function HomePage({ posts, projects }) {
           <div className="hidden sm:block w-10 h-1 mb-8 bg-orange dark:bg-orange-lighter"></div>
           <Grid className="grid-cols-5 gap-y-12 sm:gap-y-16 gap-x-16">
             <div className="col-span-full lg:col-span-2">
-              <p className="mb-4 text-lg leading-loose">
+              <p className="mb-4 text-lg leading-relaxed">
                 <Link href="mailto:saundersbd@gmail.com" passHref>
                   <a className="text-blue-600 underline rounded hover:bg-orange-lightest transition hover:text-stone-800 -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange dark:hover:bg-gray-800 dark:hover:text-blue-300">
                     Send me a message
