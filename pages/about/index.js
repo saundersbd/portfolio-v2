@@ -15,17 +15,6 @@ const About = () => (
         content="About Brian Saunders, a Chicago-based product designer"
       />
     </Head>
-    <Section className="py-6 border-b sm:py-16 bg-pebble dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
-      <ContainerNarrow>
-        <Grid className="grid-cols-6">
-          <div className="col-span-full lg:col-start-2 lg:col-end-6">
-            <h1 className="font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:text-5xl text-stone-800 dark:text-white">
-              About Me
-            </h1>
-          </div>
-        </Grid>
-      </ContainerNarrow>
-    </Section>
     <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
       <ContainerNarrow>
         <Grid className="grid-cols-6 gap-y-12">
@@ -33,6 +22,9 @@ const About = () => (
             <DirectionLink href="/" icon="back">
               Back to Home
             </DirectionLink>
+          </div>
+          <div className="col-span-full lg:col-start-2 lg:col-end-6">
+            <h1 className="text-3xl sm:text-5xl font-bold">About me</h1>
           </div>
           <div className="prose prose-lg col-span-full lg:col-start-2 lg:col-end-6 md:prose-xl dark:prose-dark">
             <h2>Experience</h2>

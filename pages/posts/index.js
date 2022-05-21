@@ -28,23 +28,6 @@ const Posts = ({ posts }) => {
       <Head>
         <title>Brian Saunders | Writing</title>
       </Head>
-      <Section className="py-6 border-b sm:py-16 bg-pebble dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
-        <ContainerNarrow>
-          <Grid className="grid-cols-6">
-            <div className="col-span-full lg:col-start-2 lg:col-end-6">
-              <h1 className="mb-2 font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:mb-6 sm:text-5xl">
-                Writing
-              </h1>
-              <p className="text-lg leading-loose text-center sm:leading-loose sm:text-xl">
-                A collection of thoughts from the intersection of my life and
-                career. These posts are works-in-progress. The goal this year is
-                to publish more, even if it's not perfect, so I try to get a
-                first draft out and then improve it over time.
-              </p>
-            </div>
-          </Grid>
-        </ContainerNarrow>
-      </Section>
       <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
         <ContainerNarrow>
           <Grid className="grid-cols-6">
@@ -52,6 +35,18 @@ const Posts = ({ posts }) => {
               <DirectionLink href="/" icon="back" className="mb-12">
                 Back to Home
               </DirectionLink>
+              <div className="mb-6 sm:mb-12 border-b border-stone-300 dark:border-gray-600 pb-6 sm:pb-12">
+                <h1 className="text-3xl sm:text-5xl font-bold mb-2 sm:mb-6">
+                  Writing
+                </h1>
+                <p className="leading-relaxed">
+                  This is a collection of thoughts from the intersection of my
+                  life and career. These posts are works-in-progress. The goal
+                  this year is to publish more, even if it's not perfect, so
+                  I'll try to get first drafts out and then improve them over
+                  time.
+                </p>
+              </div>
               <ul className="mb-16">
                 {filteredPosts.map((post) => (
                   <PostListItem

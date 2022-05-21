@@ -17,17 +17,6 @@ const Bookshelf = ({ convertBack }) => {
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <Section className="py-6 border-b sm:py-16 bg-pebble dark:bg-gray-900 dark:text-gray-100 border-orange-light dark:border-orange-lighter">
-        <ContainerNarrow>
-          <Grid className="grid-cols-6">
-            <div className="col-span-full lg:col-start-2 lg:col-end-6">
-              <h1 className="font-sans text-3xl font-bold leading-normal tracking-wide text-center sm:text-5xl">
-                My Bookshelf
-              </h1>
-            </div>
-          </Grid>
-        </ContainerNarrow>
-      </Section>
       <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
         <ContainerFull>
           <Grid className="grid-cols-12">
@@ -36,18 +25,27 @@ const Bookshelf = ({ convertBack }) => {
                 Back to Home
               </DirectionLink>
 
+              <div className="mb-6 sm:mb-12">
+                <h1 className="text-3xl sm:text-5xl font-bold mb-2 sm:mb-6">
+                  My bookshelf
+                </h1>
+                <p className="leading-relaxed">
+                  This is a list of books that I've read and enjoyed.
+                </p>
+              </div>
+
               <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-stone-200 dark:border-gray-700 xs:text-2xl">
                 Currently Reading
               </h2>
               <CurrentBook
-                title="The Timeless Way of Building"
-                author="Christopher Alexander"
-                description="Revisiting one of my favorites."
-                imageUrl="/images/books/timeless-way.jpg"
-                url="https://www.amazon.com/dp/0195024028"
-                barClass="w-16/20"
-                progressBarWidth="16/20"
-                date="5/16/22"
+                title="Lincoln at Gettysburg: The Words that Remade America"
+                author="Garry Wills"
+                description="It's a long book about a short speech."
+                imageUrl="/images/books/lincoln-at-gettysburg.jpeg"
+                url="https://www.amazon.com/dp/B00AK78PH8"
+                barClass="w-5/20"
+                progressBarWidth="5/20"
+                date="5/21/22"
               />
 
               <BookCategoryList books={convertBack} category="Design" />
