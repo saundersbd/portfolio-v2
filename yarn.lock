@@ -3771,10 +3771,10 @@ react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz"
 
-react-medium-image-zoom@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-4.4.0.tgz#aa9f63dc08ffc2c2c919f16f3918f13951998a41"
-  integrity sha512-Y+1enQKyeM/ASAmvlKkLw0USbHePP5dbdjNSclHDBvzGLD8+tUqgxjjtTS54tMvvll7OSxTThVaXxrvO0uYO6A==
+react-medium-image-zoom@^4.4.3:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-4.4.3.tgz#d5e3074becef7be4bfe35ebcd291eac462093bf5"
+  integrity sha512-I928Z6mEMRUup4CPa+XtASiSuFzdVb1ecztXpF7xAJddXv4XZSE4n5gleZNYCn5wEU1LQY5LiN4aNW4KgrOVIA==
   dependencies:
     focus-options-polyfill "1.5.1"
     tslib "^2.4.0"
