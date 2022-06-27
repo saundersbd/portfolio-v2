@@ -41,7 +41,7 @@
     "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.18.0",
     "eslint-config-next": "^12.1.6",
     "prettier": "^2.7.1"
   }
