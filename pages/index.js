@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/future/image";
 import Layout from "../components/Layout";
 import ContainerFull from "../components/ContainerFull";
 import Section from "../components/Section";
@@ -83,9 +83,9 @@ function HomePage({ posts, projects }) {
             </div>
 
             <div className="md:col-span-2 col-span-full">
-              <figure className="w-32 md:mb-1 md:w-full">
+              <figure className="md:mb-2">
                 <Image
-                  className="rounded-full md:rounded dark:opacity-75 transition"
+                  className="w-32 md:w-full rounded-full md:rounded dark:opacity-75 transition"
                   height={800}
                   width={800}
                   alt="A picture of Brian"
