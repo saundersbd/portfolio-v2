@@ -38,14 +38,14 @@ const Bookshelf = ({ convertBack }) => {
                 Currently Reading
               </h2>
               <CurrentBook
-                title="Lincoln at Gettysburg: The Words that Remade America"
-                author="Garry Wills"
-                description="It's a long book about a short speech."
-                imageUrl="/images/books/lincoln-at-gettysburg.jpeg"
-                url="https://www.amazon.com/dp/B00AK78PH8"
+                title="Team of Rivals"
+                author="Doris Kearns Goodwin"
+                description="Revisiting one of my favorites."
+                imageUrl="/images/books/team-of-rivals.jpg"
+                url="https://www.amazon.com/Team-Rivals-Political-Abraham-Lincoln-ebook/dp/B000N2HBSO"
                 barClass="w-5/20"
                 progressBarWidth="5/20"
-                date="5/21/22"
+                date="7/04/22"
               />
 
               <BookCategoryList books={convertBack} category="Design" />

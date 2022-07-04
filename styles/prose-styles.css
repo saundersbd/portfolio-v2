@@ -60,6 +60,10 @@
     @apply dark:border-gray-700;
 }
 
+.prose img {
+    @apply my-0;
+}
+
 .prose figure figcaption {
     @apply mt-3 leading-loose;
 }

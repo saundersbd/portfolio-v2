@@ -37,8 +37,8 @@ const Book = ({ source, frontMatter }) => {
       </Head>
 
       <div className="flex flex-col mx-0 mb-8 overflow-hidden border border-beige-dark rounded-lg sm:mb-12 sm:flex-row md:-mx-20 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0 bg-stone-100 sm:w-1/3 dark:bg-gray-800 dark:border-gray-700">
-          <div className="w-32 overflow-hidden border border-stone-200 rounded shadow-md book-image dark:border-navy">
+        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0  sm:w-1/3 bg-pebble border-stone-200 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-32 overflow-hidden border rounded shadow-md book-image dark:border-gray-800">
             <img
               className="my-0"
               src={frontMatter.cover}
