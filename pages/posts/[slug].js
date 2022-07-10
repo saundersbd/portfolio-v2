@@ -40,8 +40,8 @@ const Post = ({ source, frontMatter }) => {
         <title>Brian Saunders | {frontMatter.title}</title>
         <meta name="description" content={frontMatter.description} />
       </Head>
-      <h1 className="mb-8">{frontMatter.title}</h1>
-      <p className="my-0 mb-12 text-base text-gray-600 dark:text-navy-lighter">
+      <h1 className="mb-4">{frontMatter.title}</h1>
+      <p className="my-0 mb-12 text-gray-600 dark:text-navy-lighter">
         Published on {formattedPublishedDate}&nbsp;
         {formattedEditedDate && `\u00B7 Last edited on ${formattedEditedDate}`}
       </p>

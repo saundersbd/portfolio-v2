@@ -5,16 +5,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { useTheme } from "next-themes";
 
-const PostImage = ({
-  alt,
-  className,
-  caption,
-  src,
-  width,
-  height,
-  darkMode,
-  darkSrc,
-}) => {
+const PostImage = ({ alt, caption, src, width, height }) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
   useEffect(() => setMounted(true), []);
@@ -34,7 +25,7 @@ const PostImage = ({
       <figure className={`mx-0 md:-mx-8 ${resolvedTheme}-mode-image`}>
         <Zoom>{img}</Zoom>
         {caption && (
-          <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-400">
+          <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
             {caption}
           </figcaption>
         )}
@@ -46,7 +37,7 @@ const PostImage = ({
     <figure className={`mx-0 md:-mx-8 ${resolvedTheme}-mode-image`}>
       <Zoom>{img}</Zoom>
       {caption && (
-        <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-navy-lighter">
+        <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
           {caption}
         </figcaption>
       )}

@@ -1,10 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import Section from "../../components/Section";
-import ContainerFull from "../../components/ContainerFull";
-import ContainerNarrow from "../../components/ContainerNarrow";
-import Grid from "../../components/Grid";
 import CurrentBook from "../../components/CurrentBook";
 import DirectionLink from "../../components/DirectionLink";
 import BookCategoryList from "../../components/BookCategoryList";
@@ -13,69 +9,48 @@ import { __recordsPerPageForIteration } from "airtable/lib/table";
 
 const Bookshelf = ({ convertBack }) => {
   return (
-    <Layout className="">
+    <Layout>
       <Head>
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
-      <Section className="py-8 bg-white sm:py-16 dark:bg-gray-900">
-        <ContainerFull>
-          <Grid className="grid-cols-12">
-            <div className="col-span-full lg:col-start-3 lg:col-end-11">
-              <DirectionLink href="/" icon="back" className="mb-12">
-                Back to Home
-              </DirectionLink>
+      <div className="py-8 sm:py-16">
+        <DirectionLink href="/" icon="back" className="mb-12">
+          Back to Home
+        </DirectionLink>
+        <div>
+          <CurrentBook
+            title="Team of Rivals"
+            author="Doris Kearns Goodwin"
+            description="Revisiting one of my favorites."
+            imageUrl="/images/books/team-of-rivals.jpg"
+            url="https://www.amazon.com/Team-Rivals-Political-Abraham-Lincoln-ebook/dp/B000N2HBSO"
+            barClass="w-5/20"
+            progressBarWidth="5/20"
+            date="7/04/22"
+          />
 
-              <div className="mb-6 sm:mb-12">
-                <h1 className="text-3xl sm:text-5xl font-bold mb-2 sm:mb-6">
-                  My bookshelf
-                </h1>
-                <p className="leading-relaxed">
-                  This is a list of books that I've read and enjoyed.
-                </p>
-              </div>
+          <BookCategoryList books={convertBack} category="Design" />
 
-              <h2 className="pb-2 mb-8 text-xl font-bold border-b-2 border-stone-200 dark:border-gray-700 xs:text-2xl">
-                Currently Reading
-              </h2>
-              <CurrentBook
-                title="Team of Rivals"
-                author="Doris Kearns Goodwin"
-                description="Revisiting one of my favorites."
-                imageUrl="/images/books/team-of-rivals.jpg"
-                url="https://www.amazon.com/Team-Rivals-Political-Abraham-Lincoln-ebook/dp/B000N2HBSO"
-                barClass="w-5/20"
-                progressBarWidth="5/20"
-                date="7/04/22"
-              />
+          <BookCategoryList books={convertBack} category="Systems" />
 
-              <BookCategoryList books={convertBack} category="Design" />
+          <BookCategoryList books={convertBack} category="Writing" />
 
-              <BookCategoryList books={convertBack} category="Systems" />
+          <BookCategoryList books={convertBack} category="Management" />
 
-              <BookCategoryList books={convertBack} category="Writing" />
+          <BookCategoryList books={convertBack} category="Creative Process" />
 
-              <BookCategoryList books={convertBack} category="Management" />
+          <BookCategoryList books={convertBack} category="Fiction" />
 
-              <BookCategoryList
-                books={convertBack}
-                category="Creative Process"
-              />
+          <BookCategoryList books={convertBack} category="History" />
 
-              <BookCategoryList books={convertBack} category="Fiction" />
+          <BookCategoryList books={convertBack} category="Language" />
 
-              <BookCategoryList books={convertBack} category="History" />
-
-              <BookCategoryList books={convertBack} category="Language" />
-
-              <BookCategoryList books={convertBack} category="Life" />
-
-              <DirectionLink href="#top" icon="top">
-                Back to top
-              </DirectionLink>
-            </div>
-          </Grid>
-        </ContainerFull>
-      </Section>
+          <BookCategoryList books={convertBack} category="Life" />
+        </div>
+        <DirectionLink href="#top" icon="top" className="mt-12">
+          Back to top
+        </DirectionLink>
+      </div>
     </Layout>
   );
 };

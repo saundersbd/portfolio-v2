@@ -34,7 +34,7 @@ export default function MobileMenu() {
   return (
     <>
       <button
-        className={cn(styles.burger, "visible sm:hidden my-4 -ml-3")}
+        className={cn(styles.burger, "visible sm:hidden")}
         aria-label="Toggle menu"
         type="button"
         onClick={toggleMenu}
@@ -46,29 +46,29 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            "absolute flex flex-col bg-beige dark:bg-gray-900 border-t border-orange-light dark:border-orange-lighter",
+            "absolute flex flex-col bg-white dark:bg-gray-900  p-8",
             isMenuRendered && styles.menuRendered
           )}
         >
-          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
+          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
             <Link href="/" passHref>
               <a className="flex w-auto py-4">Home</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
+          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
             <Link href="/posts" passHref>
               <a className="flex w-auto py-4">Writing</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
+          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
             <Link href="/bookshelf" passHref>
               <a className="flex w-auto py-4">My Bookshelf</a>
             </Link>
           </li>
 
-          <li className="text-base font-semibold border-b border-stone-300 text-stone-800 dark:text-white dark:border-gray-800">
+          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
             <Link href="/about" passHref>
               <a className="flex w-auto py-4">About</a>
             </Link>

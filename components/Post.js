@@ -1,30 +1,24 @@
 import React from "react";
-import Grid from "../components/Grid";
-import Icon from "../components/Icon";
 
 import Link from "next/link";
 
-const PostAlt = ({ slug, title, description }) => (
-  <Grid className="grid-cols-5 mb-4 sm:mb-8 gap-x-8">
-    <div className="col-span-full sm:col-span-2">
-      <h3 className="pt-4 sm:pt-3 mt-2 mb-4 sm:text-xs font-bold leading-relaxed sm:tracking-wider sm:uppercase sm:border-t border-stone-200 dark:border-orange-light sm:mb-0">
-        {title}
-      </h3>
-    </div>
-    <div className="col-span-full sm:col-span-3">
-      <p className="mb-3 text-lg sm:text-base sm:leading-relaxed">
-        {description}
-      </p>
-      <p>
-        <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
-          <a className="block-link text-lg sm:text-base">
-            Read more
-            <Icon icon="arrow-right" className="w-4 ml-1" />
-          </a>
-        </Link>
-      </p>
-    </div>
-  </Grid>
+const PostAlt = ({ slug, title, description, published }) => (
+  <div className="mb-2 sm:mb-4">
+    <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
+      <a className="block rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 -m-2 p-2 sm:-m-4 sm:p-4 transition-all">
+        <h3 className="text-sm font-bold underline mb-1">
+          {title}
+          <span className="inline-block text-xs border border-gray-300 dark:border-purple-700 dark:text-gray-100 rounded-full ml-2 px-2 py-1">
+            {published.slice(0, 4)}
+          </span>
+        </h3>
+
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          {description}
+        </p>
+      </a>
+    </Link>
+  </div>
 );
 
 export default PostAlt;
