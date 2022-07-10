@@ -1,30 +1,18 @@
 import React from "react";
 import Layout from "../components/Layout";
-import ContainerNarrow from "../components/ContainerNarrow";
-import Grid from "../components/Grid";
 import DirectionLink from "../components/DirectionLink";
 
 const PostLayout = ({ children }) => (
-  <Layout className="py-16">
-    <ContainerNarrow>
-      <article>
-        <Grid className="grid-cols-6 gap-y-12">
-          <div className="col-span-full lg:col-start-2 lg:col-end-6">
-            <DirectionLink href="/bookshelf" icon="back">
-              Back to Bookshelf
-            </DirectionLink>
-          </div>
-          <div className="col-span-full lg:col-start-2 lg:col-end-6">
-            {children}
-          </div>
-          <div className="col-span-full lg:col-start-2 lg:col-end-6">
-            <DirectionLink href="#top" icon="top">
-              Back to top
-            </DirectionLink>
-          </div>
-        </Grid>
-      </article>
-    </ContainerNarrow>
+  <Layout>
+    <div className="py-8 sm:py-16">
+      <DirectionLink href="/bookshelf" icon="back" className="mb-12">
+        Back to bookshelf
+      </DirectionLink>
+      <article className="prose prose-lg">{children}</article>
+      <DirectionLink href="#top" icon="top" className="mt-12">
+        Back to top
+      </DirectionLink>
+    </div>
   </Layout>
 );
 

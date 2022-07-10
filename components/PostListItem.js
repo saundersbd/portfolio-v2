@@ -1,23 +1,17 @@
 import React from "react";
 import Link from "next/link";
-import formatDate from "../lib/formatDate";
 
-const Post = ({ slug, title, description, published }) => {
-  const publishedDate = published;
-  const formattedPublishedDate = formatDate(publishedDate || "");
-
+const Post = ({ slug, title, description }) => {
   return (
-    <li className="mb-6 sm:mb-10">
-      <div className="flex flex-col justify-between sm:items-center sm:flex-row">
-        <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
-          <a className="flex mb-1 sm:w-max text-stone-800 dark:text-white font-medium hover:bg-orange-lightest dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange">
-            <h3 className="text-lg font-medium tracking-wide">{title}</h3>
-          </a>
-        </Link>
-        <p>{formattedPublishedDate}</p>
-      </div>
+    <li className="mb-6">
+      <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
+        <a className="flex mb-2 sm:w-max text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 underline hover:no-underline focus:outline-none focus:ring focus:ring-orange-500">
+          <h3 className="text-sm font-bold tracking-wide">{title}</h3>
+        </a>
+      </Link>
+
       {description ? (
-        <p className="mt-1 leading-relaxed sm:leading-relaxed dark:text-gray-400">
+        <p className="mt-1 text-sm leading-relaxed sm:leading-relaxed text-gray-600 dark:text-gray-300">
           {description}
         </p>
       ) : null}

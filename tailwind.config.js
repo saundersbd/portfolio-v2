@@ -24,47 +24,15 @@ module.exports = {
       black: "#060606",
       white: "#fefff8",
       gray: colors.gray,
+      darkGray: colors.slate,
       stone: colors.stone,
       blue: colors.sky,
       yellow: colors.yellow,
       purple: colors.indigo,
       green: colors.green,
       red: colors.rose,
-      orange: {
-        lightest: "#fceadd",
-        lighter: "rgba(232, 106, 80, 0.35)",
-        light: "rgba(232, 106, 80, 0.4)",
-        DEFAULT: "#e86a50",
-      },
-      beige: {
-        dark: "#e5e1d9",
-        darker: "#DAD7D1",
-        DEFAULT: "#f9f7f8",
-      },
-      navy: {
-        lightest: "#F6F9FF",
-        lighter: "#8EA3CD",
-        light: "#264177",
-        DEFAULT: "#192F5B",
-        dark: "#182142",
-        darkest: "#0A0C1F",
-      },
-      teal: {
-        DEFAULT: "#117C83",
-      },
-      gold: {
-        lightest: "rgba(240, 192, 0, 0.15)",
-        DEFAULT: "#F3CF4C",
-        dark: "#F0C000",
-      },
-      pebble: {
-        DEFAULT: "#f1f1ec",
-        dark: "hsla(60, 15%, 88%, 1)",
-        darker: "hsla(60, 15%, 82%, 1)",
-      },
-      lightBlue: {
-        DEFAULT: "#4898c9",
-      },
+      orange: colors.orange,
+      cyan: colors.blue,
     },
     screens: {
       xs: "500px",
@@ -81,7 +49,7 @@ module.exports = {
     fontFamily: {
       mono: ["'iA Quattro'", ...mono],
       sans: [
-        "Inter",
+        "iA Writer Quattro S",
         "-apple-system",
         "BlinkMacSystemFont",
         "San Francisco",
@@ -94,6 +62,17 @@ module.exports = {
         "Arial",
         "sans-serif",
       ],
+    },
+    fontSize: {
+      xs: ".8125rem",
+      sm: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
     },
     extend: {
       lineHeight: {

@@ -1,5 +1,5 @@
 .prose {
-    @apply text-base sm:text-lg leading-loose text-stone-800 dark:text-white;
+    @apply text-base sm:text-lg leading-loose text-black dark:text-white;
 }
 
 .prose h1,
@@ -12,19 +12,19 @@
 }
 
 .prose h1 {
-    @apply leading-relaxed text-3xl xs:text-4xl xs:leading-tight text-stone-800 dark:text-white;
+    @apply leading-relaxed text-3xl xs:text-4xl xs:leading-tight text-black dark:text-white;
 }
 
 .prose h2 {
-    @apply mb-6 sm:mb-12 leading-relaxed;
+    @apply mb-6 sm:mb-8 leading-relaxed;
 }
 
 .prose h3 {
-    @apply text-xl;
+    @apply text-lg;
 }
 
 .prose p {
-    @apply text-base leading-loose xs:text-lg xs:leading-loose;
+    @apply text-base leading-loose;
 }
 
 .prose p.large {
@@ -32,28 +32,28 @@
 }
 
 .prose blockquote {
-    @apply px-6 py-2 font-normal border-l-4 border-beige-darker bg-beige dark:bg-gray-800 dark:border-blue-500 italic;
+    @apply px-6 py-2 font-normal border-l-4 border-gray-300 bg-gray-100 dark:bg-gray-800 dark:border-purple-500 italic;
 }
 
 .prose blockquote p {
-    @apply text-lg leading-loose my-2;
+    @apply text-base leading-loose my-2;
 }
 
 .prose ul li {
-    @apply leading-loose;
+    @apply text-base leading-loose;
 }
 
 .prose ol li {
-    @apply ml-2;
+    @apply text-base leading-loose ml-2;
 }
 
 .prose ol > li::before,
 .prose ul > li::before {
-    @apply text-stone-800 dark:text-white;
+    @apply text-black dark:text-white;
 }
 
 .prose a {
-    @apply text-lightBlue hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 underline;
+    @apply text-blue-600 hover:text-blue-500 dark:text-purple-500 dark:hover:text-purple-400 underline;
 }
 
 .prose hr {
@@ -65,7 +65,7 @@
 }
 
 .prose figure figcaption {
-    @apply mt-3 leading-loose;
+    @apply mt-2 leading-loose text-sm;
 }
 
 .prose .footnote-backref,

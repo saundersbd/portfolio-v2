@@ -3,7 +3,7 @@ import React from "react";
 const HrSection = ({ className }) => (
   <div
     className={
-      `text-sm text-center my-12 text-stone-800 dark:text-gray-400 ` +
+      `text-sm text-center my-12 text-black dark:text-gray-500 ` +
       `${className}`
     }
   >

@@ -37,7 +37,7 @@ const Book = ({ source, frontMatter }) => {
       </Head>
 
       <div className="flex flex-col mx-0 mb-8 overflow-hidden border border-beige-dark rounded-lg sm:mb-12 sm:flex-row md:-mx-20 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0  sm:w-1/3 bg-pebble border-stone-200 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0  sm:w-1/3 bg-gray-100 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
           <div className="w-32 overflow-hidden border rounded shadow-md book-image dark:border-gray-800">
             <img
               className="my-0"
@@ -47,19 +47,15 @@ const Book = ({ source, frontMatter }) => {
           </div>
         </div>
         <div className="w-full p-6 sm:w-2/3">
-          <h1 className="mb-2 text-3xl font-bold dark:text-white">
+          <h1 className="mb-2 !text-3xl font-bold dark:text-white">
             {frontMatter.title}
           </h1>
-          <p className="mt-0 mb-4 text-base leading-relaxed text-stone-500 dark:text-gray-400">
+          <p className="mt-0 mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-300">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
           <p className="mt-0 mb-6  leading-loose">{frontMatter.description}</p>
-          <Button
-            className="w-max bg-stone-100 border border-stone-200 hover:border-stone-300 hover:bg-stone-200"
-            href={frontMatter.url}
-            primary
-          >
+          <Button href={frontMatter.url}>
             <Icon icon="external" className="w-5 mr-2" />
             {frontMatter.url.includes("amazon")
               ? "View on Amazon"

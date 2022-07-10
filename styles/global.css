@@ -1,13 +1,38 @@
-@import url("https://rsms.me/inter/inter.css");
+@font-face {
+    font-family: "iA Writer Quattro S";
+    src: url("/fonts/iAWriterQuattroS-Regular.woff2"),
+        url("/fonts/iAWriterQuattroS-Regular.woff");
+}
+
+@font-face {
+    font-family: "iA Writer Quattro S";
+    src: url("/fonts/iAWriterQuattroS-Italic.woff2"),
+        url("/fonts/iAWriterQuattroS-Italic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "iA Writer Quattro S";
+    src: url("/fonts/iAWriterQuattroS-Bold.woff2"),
+        url("/fonts/iAWriterQuattroS-Bold.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "iA Writer Quattro S";
+    src: url("/fonts/iAWriterQuattroS-BoldItalic.woff2"),
+        url("/fonts/iAWriterQuattroS-BoldItalic.woff");
+    font-weight: bold;
+    font-style: italic;
+}
 
 @tailwind base;
 
 @layer base {
     [aria-current="page"] {
-        @apply text-stone-800 bg-orange-lightest dark:bg-gray-800 dark:text-white !important;
+        @apply text-black dark:text-white bg-gray-200 dark:bg-gray-700 font-bold !important;
     }
     [aria-current="false"] {
-        @apply text-stone-800 bg-white dark:bg-gray-900;
     }
     html.dark .light-mode-image {
         display: none;
@@ -37,10 +62,22 @@
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
     .block-link {
-        @apply flex w-max items-center text-lightBlue dark:text-blue-400 dark:hover:text-blue-300 hover:bg-orange-lightest transition hover:text-stone-800 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange focus:bg-orange-lightest;
+        @apply flex w-max items-center text-sm font-bold text-blue-600 dark:text-purple-400 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange-500;
+    }
+    a {
+        @apply focus:outline-none focus:ring focus:ring-orange-500;
     }
 }
 
 @tailwind components;
+
+@layer components {
+    [role="switch"] .on {
+        display: none;
+    }
+    [role="switch"] .off {
+        display: none;
+    }
+}
 
 @tailwind utilities;
