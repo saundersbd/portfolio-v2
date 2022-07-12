@@ -17,6 +17,15 @@ const Bookshelf = ({ convertBack }) => {
         <DirectionLink href="/" icon="back" className="mb-12">
           Back to Home
         </DirectionLink>
+        <div className="mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
+            My bookshelf
+          </h1>
+          <p className="text-sm sm:text-base sm:leading-relaxed">
+            This is a collection of books I've read and enjoyed. Some of the
+            books have notes or highlights that stood out to me.
+          </p>
+        </div>
         <div>
           <CurrentBook
             title="Team of Rivals"

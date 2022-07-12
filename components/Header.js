@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Headroom from "react-headroom";
 
 import MobileMenu from "../components/MobileMenu";
 import Button from "./Button";
@@ -93,7 +94,7 @@ const DarkModeToggle = () => {
         onClick={(e) => toggleStatus(e)}
         onKeyPress={(e) => toggleStatus(e)}
       >
-        <div className="p-1 rounded-full bg-white shadow-sm transition-all">
+        <div className="p-1 rounded-full bg-white bg-gradient-to-r from-gray-50 to-white shadow-sm transition-all">
           {resolvedTheme === "dark" ? darkModeIcon : lightModeIcon}
         </div>
         <span className="on" aria-hidden={darkMode}>
@@ -133,35 +134,37 @@ const Header = () => {
   }
 
   return (
-    <header className="relative flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-800">
-      <div>
-        <MobileMenu />
-        <nav className="hidden sm:flex">
-          <NavLinks activeRoute={activeRoute} />
-        </nav>
-      </div>
-      <div className="flex items-center">
-        {mounted && <DarkModeToggle />}
-        <Button href="mailto:saundersbd@gmail.com">
-          <svg
-            className="w-4 text-black dark:text-gray-200 mr-2"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.60254 4.70685L7.99984 7.9055L14.3972 4.70681C14.3489 3.86653 13.6523 3.20001 12.7999 3.20001H3.19988C2.34749 3.20001 1.65078 3.86656 1.60254 4.70685Z"
-              fill="currentColor"
-            />
-            <path
-              d="M14.4001 6.49432L8.00006 9.69432L1.6001 6.49437V11.2C1.6001 12.0837 2.31644 12.8 3.2001 12.8H12.8001C13.6838 12.8 14.4001 12.0837 14.4001 11.2V6.49432Z"
-              fill="currentColor"
-            />
-          </svg>
-          Contact
-        </Button>
-      </div>
-    </header>
+    <Headroom pinStart={44}>
+      <header className="relative flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-900">
+        <div>
+          <MobileMenu />
+          <nav className="hidden sm:flex">
+            <NavLinks activeRoute={activeRoute} />
+          </nav>
+        </div>
+        <div className="flex items-center">
+          {mounted && <DarkModeToggle />}
+          <Button href="mailto:saundersbd@gmail.com">
+            <svg
+              className="w-4 text-black dark:text-gray-200 mr-2"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.60254 4.70685L7.99984 7.9055L14.3972 4.70681C14.3489 3.86653 13.6523 3.20001 12.7999 3.20001H3.19988C2.34749 3.20001 1.65078 3.86656 1.60254 4.70685Z"
+                fill="currentColor"
+              />
+              <path
+                d="M14.4001 6.49432L8.00006 9.69432L1.6001 6.49437V11.2C1.6001 12.0837 2.31644 12.8 3.2001 12.8H12.8001C13.6838 12.8 14.4001 12.0837 14.4001 11.2V6.49432Z"
+                fill="currentColor"
+              />
+            </svg>
+            Contact
+          </Button>
+        </div>
+      </header>
+    </Headroom>
   );
 };
 

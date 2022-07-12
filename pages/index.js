@@ -3,11 +3,11 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/future/image";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
 import Post from "../components/Post";
+import DirectionLink from "../components/DirectionLink";
 
 import {
   postFilePaths,
@@ -65,10 +65,18 @@ function HomePage({ posts, projects }) {
           <div className="bg-gray-100 dark:bg-gray-700 px-4 py-2">
             <h2 className="text-sm font-bold leading-6">Writing</h2>
           </div>
-          <div className="p-4 sm:p-8">
+          <div className="p-4 sm:p-8 bg-white dark:bg-gray-900">
             {filteredPosts.slice(0, 5).map((post) => (
               <Post key={post.data.title} slug={post.filePath} {...post.data} />
             ))}
+            <DirectionLink
+              href="/posts"
+              icon="right"
+              iconRight
+              className="mt-6"
+            >
+              View all posts
+            </DirectionLink>
           </div>
         </div>
       </section>
@@ -78,7 +86,7 @@ function HomePage({ posts, projects }) {
           <div className="bg-gray-100 dark:bg-gray-700 px-4 py-2">
             <h2 className="text-sm font-bold leading-6">Projects</h2>
           </div>
-          <div className="p-4 sm:p-8">
+          <div className="p-4 sm:p-8 bg-white dark:bg-gray-900">
             {filteredProjects.slice(0, 5).map((post) => (
               <Project
                 key={post.data.title}

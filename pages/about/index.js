@@ -51,14 +51,14 @@ const About = () => (
           The best thing I ever did for myself was take the time to learn HTML
           and CSS. We were designing our first websites in school and were
           supposed to use Dreamweaver to build them. I knew that wasn't how real
-          websites were made, so I spent an afternoon at the library teaching
-          myself how to do it the right way. I learned HTML and CSS, and those
-          skills have led to every professional opportunity I've had since.
-          After school I hacked together wordpress themes and started learning
-          more PHP, and eventually I slowly began to teach myself Javascript
-          too. I've continued to expand my front end skills and I depend on them
-          to communicate with engineers and prototype ideas every day. I built
-          this website myself using React and{" "}
+          websites should be made, so I spent an afternoon at the library
+          teaching myself how to do it the right way. I learned HTML and CSS,
+          and those skills have led to every professional opportunity I've had
+          since. After school I hacked together wordpress themes and started
+          learning PHP, and eventually I began to teach myself Javascript. I've
+          continued to expand my front end skills and I depend on them to
+          communicate with engineers and prototype ideas every day. I built this
+          website myself using React and{" "}
           <a target="_blank" href="https://nextjs.org">
             Next.js
           </a>
@@ -86,6 +86,7 @@ const About = () => (
           understand it.
         </p>
       </div>
+      <hr className="mt-12" />
       <DirectionLink href="#top" icon="top" className="mt-12">
         Back to top
       </DirectionLink>

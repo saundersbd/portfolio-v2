@@ -34,6 +34,9 @@
     }
     [aria-current="false"] {
     }
+    html {
+        @apply bg-gradient-to-r from-purple-500 to-blue-500 dark:from-purple-800 dark:to-blue-800 bg-blue-500;
+    }
     html.dark .light-mode-image {
         display: none;
     }
