@@ -26,7 +26,7 @@ const Posts = ({ posts }) => {
         <title>Brian Saunders | Writing</title>
       </Head>
       <div className="py-8 sm:py-16">
-        <DirectionLink href="/" icon="back" className="mb-12">
+        <DirectionLink href="/" icon="arrow-left" className="mb-12">
           Back to Home
         </DirectionLink>
         <div>
@@ -72,7 +72,7 @@ const Posts = ({ posts }) => {
               ))}
           </ul>
         </div>
-        <DirectionLink href="#top" icon="top">
+        <DirectionLink href="#top" icon="arrow-up">
           Back to top
         </DirectionLink>
       </div>

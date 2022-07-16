@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import DirectionLink from "../../components/DirectionLink";
 
 const About = () => (
-  <Layout className="pb-16">
+  <Layout>
     <Head>
       <title>Brian Saunders | About</title>
       <meta
@@ -13,7 +13,7 @@ const About = () => (
       />
     </Head>
     <div className="py-8 sm:py-16">
-      <DirectionLink href="/" icon="back" className="mb-12">
+      <DirectionLink href="/" icon="arrow-left" className="mb-12">
         Back to Home
       </DirectionLink>
       <div className="prose prose-lg dark:prose-dark">
@@ -87,7 +87,7 @@ const About = () => (
         </p>
       </div>
       <hr className="mt-12" />
-      <DirectionLink href="#top" icon="top" className="mt-12">
+      <DirectionLink href="#top" icon="arrow-up" className="mt-12">
         Back to top
       </DirectionLink>
     </div>

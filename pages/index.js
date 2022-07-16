@@ -71,7 +71,7 @@ function HomePage({ posts, projects }) {
             ))}
             <DirectionLink
               href="/posts"
-              icon="right"
+              icon="arrow-right"
               iconRight
               className="mt-6"
             >

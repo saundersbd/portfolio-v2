@@ -3,12 +3,14 @@ import Ribbon from "../components/Ribbon";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const Layout = ({ children }) => (
+const Layout = ({ className, children }) => (
   <div>
     <Ribbon />
     <div className="bg-gradient-to-b from-white to-gray-50 dark:from-gray-900  dark:to-gray-900 rounded-2xl shadow-lg overflow-hidden">
       <Header />
-      <div className="max-w-2xl mx-auto px-6 sm:px-4">{children}</div>
+      <div className={`max-w-2xl mx-auto px-6 sm:px-4 ${className}`}>
+        {children}
+      </div>
     </div>
     <Footer />
   </div>

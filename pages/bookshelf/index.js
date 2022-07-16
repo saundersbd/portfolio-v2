@@ -14,7 +14,7 @@ const Bookshelf = ({ convertBack }) => {
         <title>Brian Saunders | My Bookshelf</title>
       </Head>
       <div className="py-8 sm:py-16">
-        <DirectionLink href="/" icon="back" className="mb-12">
+        <DirectionLink href="/" icon="arrow-left" className="mb-12">
           Back to Home
         </DirectionLink>
         <div className="mb-8 sm:mb-12">
@@ -56,7 +56,7 @@ const Bookshelf = ({ convertBack }) => {
 
           <BookCategoryList books={convertBack} category="Life" />
         </div>
-        <DirectionLink href="#top" icon="top" className="mt-12">
+        <DirectionLink href="#top" icon="arrow-up" className="mt-12">
           Back to top
         </DirectionLink>
       </div>
