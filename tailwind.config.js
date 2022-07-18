@@ -48,7 +48,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      mono: ["'iA Quattro'", ...mono],
+      mono: ["'iA Writer Mono S'", ...mono],
       sans: [
         "iA Writer Quattro S",
         "-apple-system",

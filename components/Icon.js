@@ -4,6 +4,7 @@ import {
   arrowUp,
   arrowRight,
   doc,
+  external,
   globe,
   ID,
   lightBulb,
@@ -30,6 +31,9 @@ const Icon = ({ icon, className }) => {
   }
   if (icon === "doc") {
     icon = doc;
+  }
+  if (icon === "external") {
+    icon = external;
   }
   if (icon === "globe") {
     icon = globe;

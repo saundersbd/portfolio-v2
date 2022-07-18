@@ -10,6 +10,7 @@ import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 import Head from "next/head";
 import Link from "next/link";
 import Button from "../../components/Button";
+import Blockquote from "../../components/Blockquote";
 import Icon from "../../components/Icon";
 import PostImage from "../../components/PostImage";
 import PageNote from "../../components/PageNote";
@@ -23,6 +24,7 @@ const components = {
   PageNote,
   HrSection,
   Button,
+  Blockquote,
 };
 
 const Book = ({ source, frontMatter }) => {
@@ -36,8 +38,8 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col mx-0 mb-8 overflow-hidden border border-beige-dark rounded-lg sm:mb-12 sm:flex-row md:-mx-20 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex items-center justify-center w-full py-0 pt-8 border-r sm:pt-0  sm:w-1/3 bg-gray-100 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-col mx-0 mb-8 overflow-hidden border rounded-lg border-beige-dark sm:mb-12 sm:flex-row md:-mx-20 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex items-center justify-center w-full py-0 pt-8 bg-gray-100 border-r border-gray-200 sm:pt-0 sm:w-1/3 dark:bg-gray-800 dark:border-gray-700">
           <div className="w-32 overflow-hidden border rounded shadow-md book-image dark:border-gray-800">
             <img
               className="my-0"
@@ -54,16 +56,16 @@ const Book = ({ source, frontMatter }) => {
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
-          <p className="mt-0 mb-6  leading-loose">{frontMatter.description}</p>
+          <p className="mt-0 mb-6 leading-loose">{frontMatter.description}</p>
           <Button href={frontMatter.url}>
-            <Icon icon="external" className="w-5 mr-2" strokeWidth="2" />
+            <Icon icon="external" className="w-4 mr-1.5" />
             {frontMatter.url.includes("amazon")
               ? "View on Amazon"
               : "View article"}
           </Button>
         </div>
       </div>
-      <div className="prose prose-lg md:prose-xl dark:prose-dark">
+      <div>
         <MDXRemote {...source} components={components} />
       </div>
     </BookLayout>

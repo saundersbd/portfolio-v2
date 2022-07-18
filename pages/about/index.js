@@ -24,8 +24,7 @@ const About = () => (
           <a target="_blank" href="https://www.paylocity.com">
             Paylocity
           </a>
-          , where I am leading a team defining the future of the mobile
-          application.
+          , where I am leading the design of the new mobile apps.
         </p>
 
         <p>

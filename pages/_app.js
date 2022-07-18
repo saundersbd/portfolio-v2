@@ -6,8 +6,9 @@ import "../styles/prose-styles.css";
 import Head from "next/head";
 
 import Button from "../components/Button";
+import Blockquote from "../components/Blockquote";
 
-const components = { Button };
+const components = { Button, Blockquote };
 
 export default function App({ Component, pageProps }) {
   return (

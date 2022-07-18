@@ -26,6 +26,19 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "iA Writer Mono S";
+    src: url("/fonts/iAWriterMonoS-Regular.woff2"),
+        url("/fonts/iAWriterMonoS-Regular.woff");
+}
+
+@font-face {
+    font-family: "iA Writer Mono S";
+    src: url("/fonts/iAWriterMonoS-Italic.woff2"),
+        url("/fonts/iAWriterMonoS-Italic.woff");
+    font-style: italic;
+}
+
 @tailwind base;
 
 @layer base {
@@ -65,7 +78,7 @@
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
     .block-link {
-        @apply flex w-max items-center text-sm font-bold text-blue-600 dark:text-purple-400 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-500 focus:bg-blue-50;
+        @apply flex w-max items-center text-sm font-bold text-blue-600 dark:text-purple-400 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-900;
     }
     a {
         @apply focus:outline-none focus:ring focus:ring-blue-500;
