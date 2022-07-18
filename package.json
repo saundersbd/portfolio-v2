@@ -18,7 +18,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^2.1.2",
     "@next/mdx": "^12.2.0",
-    "@tailwindcss/typography": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.4",
     "airtable": "^0.11.4",
     "autoprefixer": "^10.4.6",
     "babel-runtime": "^6.26.0",
