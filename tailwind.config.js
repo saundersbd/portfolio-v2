@@ -33,6 +33,7 @@ module.exports = {
       red: colors.rose,
       orange: colors.orange,
       cyan: colors.blue,
+      transparent: colors.transparent,
     },
     screens: {
       xs: "500px",

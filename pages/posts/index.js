@@ -26,12 +26,12 @@ const Posts = ({ posts }) => {
         <title>Brian Saunders | Writing</title>
       </Head>
       <div className="py-8 sm:py-16">
-        <DirectionLink href="/" icon="back" className="mb-12">
+        <DirectionLink href="/" className="mb-12" direction="left">
           Back to Home
         </DirectionLink>
         <div>
           <div className="mb-8 sm:mb-12">
-            <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
+            <h1 className="mb-4 text-2xl font-bold sm:text-4xl sm:mb-6">
               Writing
             </h1>
             <p className="text-sm sm:text-base sm:leading-relaxed">
@@ -42,7 +42,7 @@ const Posts = ({ posts }) => {
             </p>
           </div>
 
-          <h2 className="mb-8 text-xl font-bold pb-1 border-b border-gray-200">
+          <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
             2022
           </h2>
           <ul className="mb-16">
@@ -57,7 +57,7 @@ const Posts = ({ posts }) => {
               ))}
           </ul>
 
-          <h2 className="mb-8 text-xl font-bold pb-1 border-b border-gray-200">
+          <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
             2021
           </h2>
           <ul className="mb-16">
@@ -72,7 +72,7 @@ const Posts = ({ posts }) => {
               ))}
           </ul>
         </div>
-        <DirectionLink href="#top" icon="top">
+        <DirectionLink href="#top" direction="top">
           Back to top
         </DirectionLink>
       </div>

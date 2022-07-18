@@ -7,12 +7,13 @@ import Headroom from "react-headroom";
 
 import MobileMenu from "../components/MobileMenu";
 import Button from "./Button";
+import Icon from "./Icon";
 
 const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
     <a
       className={
-        `inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-orange-500 ` +
+        `inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-blue-500 ` +
         `${className}`
       }
       aria-current={`${isActive && "page"}`}
@@ -88,13 +89,15 @@ const DarkModeToggle = () => {
         aria-checked={darkMode}
         aria-label="Toggle dark mode"
         tabIndex={0}
-        className={`${
-          resolvedTheme === "dark" ? "justify-end" : "justify-start"
-        } flex w-12 p-1 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 bg-blue-500 transition-all hover:cursor-pointer focus:outline-none focus:ring focus:ring-orange-500 shadow-inner`}
+        className="relative w-12 h-8 p-1 transition-all bg-blue-500 rounded-full shadow-inner bg-gradient-to-r from-orange-400 to-yellow-400 dark:from-purple-500 dark:to-blue-500 hover:cursor-pointer focus:outline-none focus:ring focus:ring-blue-500"
         onClick={(e) => toggleStatus(e)}
         onKeyPress={(e) => toggleStatus(e)}
       >
-        <div className="p-1 rounded-full bg-white bg-gradient-to-r from-gray-50 to-white shadow-sm transition-all">
+        <div
+          className={`${
+            resolvedTheme === "dark" ? "right-1" : "right-5"
+          } absolute p-1 transition-all rounded-full bg-white bg-gradient-to-r from-gray-50 to-white shadow-sm`}
+        >
           {resolvedTheme === "dark" ? darkModeIcon : lightModeIcon}
         </div>
         <span className="on" aria-hidden={darkMode}>
@@ -135,7 +138,7 @@ const Header = () => {
 
   return (
     <Headroom pinStart={44}>
-      <header className="relative flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-900">
+      <header className="relative flex items-center justify-between p-4 bg-white border-b border-gray-300 dark:border-gray-800 dark:bg-gray-900">
         <div>
           <MobileMenu />
           <nav className="hidden sm:flex">
@@ -144,23 +147,9 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           {mounted && <DarkModeToggle />}
-          <Button href="mailto:saundersbd@gmail.com">
-            <svg
-              className="w-4 text-black dark:text-gray-200 mr-2"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.60254 4.70685L7.99984 7.9055L14.3972 4.70681C14.3489 3.86653 13.6523 3.20001 12.7999 3.20001H3.19988C2.34749 3.20001 1.65078 3.86656 1.60254 4.70685Z"
-                fill="currentColor"
-              />
-              <path
-                d="M14.4001 6.49432L8.00006 9.69432L1.6001 6.49437V11.2C1.6001 12.0837 2.31644 12.8 3.2001 12.8H12.8001C13.6838 12.8 14.4001 12.0837 14.4001 11.2V6.49432Z"
-                fill="currentColor"
-              />
-            </svg>
-            Contact
+          <Button href="/about/resume">
+            <Icon className="w-4 mr-1.5" />
+            View my CV
           </Button>
         </div>
       </header>

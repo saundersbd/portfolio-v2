@@ -50,25 +50,25 @@ export default function MobileMenu() {
             isMenuRendered && styles.menuRendered
           )}
         >
-          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
+          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
             <Link href="/" passHref>
               <a className="flex w-auto py-4">Home</a>
             </Link>
           </li>
 
-          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
+          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
             <Link href="/posts" passHref>
               <a className="flex w-auto py-4">Writing</a>
             </Link>
           </li>
 
-          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
+          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
             <Link href="/bookshelf" passHref>
               <a className="flex w-auto py-4">My Bookshelf</a>
             </Link>
           </li>
 
-          <li className="text-base font-bold border-b border-gray-300 text-black dark:text-white dark:border-gray-700">
+          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
             <Link href="/about" passHref>
               <a className="flex w-auto py-4">About</a>
             </Link>

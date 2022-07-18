@@ -56,7 +56,7 @@ const Book = ({ source, frontMatter }) => {
           </p>
           <p className="mt-0 mb-6  leading-loose">{frontMatter.description}</p>
           <Button href={frontMatter.url}>
-            <Icon icon="external" className="w-5 mr-2" />
+            <Icon icon="external" className="w-5 mr-2" strokeWidth="2" />
             {frontMatter.url.includes("amazon")
               ? "View on Amazon"
               : "View article"}

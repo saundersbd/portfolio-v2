@@ -35,7 +35,7 @@
     [aria-current="false"] {
     }
     html {
-        @apply bg-gradient-to-r from-purple-500 to-blue-500 dark:from-purple-800 dark:to-blue-800 bg-blue-500;
+        @apply bg-black;
     }
     html.dark .light-mode-image {
         display: none;
@@ -65,10 +65,10 @@
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
     .block-link {
-        @apply flex w-max items-center text-sm font-bold text-blue-600 dark:text-purple-400 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-orange-500;
+        @apply flex w-max items-center text-sm font-bold text-blue-600 dark:text-purple-400 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-500 focus:bg-blue-50;
     }
     a {
-        @apply focus:outline-none focus:ring focus:ring-orange-500;
+        @apply focus:outline-none focus:ring focus:ring-blue-500;
     }
 }
 
@@ -80,6 +80,16 @@
     }
     [role="switch"] .off {
         display: none;
+    }
+    .project-link:hover .badge {
+        @apply bg-gray-50 border-gray-300 dark:bg-gray-700 dark:border-gray-600 transition-all;
+    }
+    .project-link:focus .badge {
+        @apply bg-white;
+    }
+    .post-link:hover .year-pill,
+    .post-link:focus .year-pill {
+        @apply bg-white dark:bg-purple-700 dark:text-white transition-all;
     }
 }
 
