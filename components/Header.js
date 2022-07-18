@@ -89,14 +89,14 @@ const DarkModeToggle = () => {
         aria-checked={darkMode}
         aria-label="Toggle dark mode"
         tabIndex={0}
-        className="relative h-8 w-12 p-1 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 bg-blue-500 dark:from-purple-500 dark:to-blue-500 transition-all hover:cursor-pointer focus:outline-none focus:ring focus:ring-blue-500 shadow-inner"
+        className="relative w-12 h-8 p-1 transition-all bg-blue-500 rounded-full shadow-inner bg-gradient-to-r from-orange-400 to-yellow-400 dark:from-purple-500 dark:to-blue-500 hover:cursor-pointer focus:outline-none focus:ring focus:ring-blue-500"
         onClick={(e) => toggleStatus(e)}
         onKeyPress={(e) => toggleStatus(e)}
       >
         <div
           className={`${
             resolvedTheme === "dark" ? "right-1" : "right-5"
-          } absolute p-1 rounded-full bg-white bg-gradient-to-r from-gray-50 to-white shadow-sm transition-all`}
+          } absolute p-1 transition-all rounded-full bg-white bg-gradient-to-r from-gray-50 to-white shadow-sm`}
         >
           {resolvedTheme === "dark" ? darkModeIcon : lightModeIcon}
         </div>
@@ -138,7 +138,7 @@ const Header = () => {
 
   return (
     <Headroom pinStart={44}>
-      <header className="relative flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-900">
+      <header className="relative flex items-center justify-between p-4 bg-white border-b border-gray-300 dark:border-gray-800 dark:bg-gray-900">
         <div>
           <MobileMenu />
           <nav className="hidden sm:flex">

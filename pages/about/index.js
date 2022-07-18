@@ -13,7 +13,7 @@ const About = () => (
       />
     </Head>
     <div className="py-8 sm:py-16">
-      <DirectionLink href="/" icon="arrow-left" className="mb-12">
+      <DirectionLink href="/" className="mb-12" direction="left">
         Back to Home
       </DirectionLink>
       <div className="prose prose-lg dark:prose-dark">
@@ -87,7 +87,7 @@ const About = () => (
         </p>
       </div>
       <hr className="mt-12" />
-      <DirectionLink href="#top" icon="arrow-up" className="mt-12">
+      <DirectionLink href="#top" className="mt-12" direction="top">
         Back to top
       </DirectionLink>
     </div>

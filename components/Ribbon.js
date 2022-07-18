@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 
 const Ribbon = () => (
-  <div className="w-full py-3 flex items-center justify-center text-center text-white text-xs dark:text-gray-200 leading-5">
+  <div className="flex items-center justify-center w-full py-2 text-xs leading-5 text-center text-white dark:text-gray-200">
     Latest post:{" "}
     <Link href="/posts/noticing-habit">
-      <a className="mr-1 underline focus:outline-none focus:ring focus:ring-blue-500 hover:opacity-80 transition-all">
+      <a className="mr-1 underline transition-all focus:outline-none focus:ring focus:ring-blue-500 hover:opacity-80">
         Developing a Noticing Habit
       </a>
     </Link>{" "}

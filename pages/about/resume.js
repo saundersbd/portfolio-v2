@@ -16,14 +16,14 @@ const Resume = () => (
       />
     </Head>
     <div className="py-8 sm:py-16">
-      <DirectionLink href="/" icon="arrow-left" className="mb-12">
+      <DirectionLink href="/" className="mb-12" direction="left">
         Back to Home
       </DirectionLink>
       <div className="leading-relaxed dark:text-gray-200">
-        <h1 className="font-bold text-5xl mb-4 dark:text-white leading-tight sm:leading-relaxed">
+        <h1 className="mb-4 text-5xl font-bold leading-tight dark:text-white sm:leading-relaxed">
           Brian Saunders
         </h1>
-        <div className="flex flex-col sm:flex-row text-transparent mb-12 text-gray-600 dark:text-gray-300">
+        <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-300">
           <div className="flex items-center mr-3">
             <Icon icon="ID" className="w-5 mr-1" />
             Product Design Lead
@@ -38,14 +38,14 @@ const Resume = () => (
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold mb-6 dark:text-white">Experience</h2>
+        <h2 className="mb-6 text-3xl font-bold dark:text-white">Experience</h2>
 
         <div className="mb-6">
-          <h3 className="text-xl font-bold mb-2 dark:text-white">
+          <h3 className="mb-2 text-xl font-bold dark:text-white">
             Product Design Lead, Paylocity
           </h3>
-          <p className="mb-3 text-gray-500 dark:text-gray-400 font-bold text-sm">
-            June 2016–Present (Chicago, IL/Remote)
+          <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
+            June 2016–Present (Chicago, IL / Remote)
           </p>
           <p className="mb-3">
             I'm a Product Design Lead at Paylocity. Right now I'm leading the
@@ -63,10 +63,10 @@ const Resume = () => (
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-bold mb-2 dark:text-white">
+          <h3 className="mb-2 text-xl font-bold dark:text-white">
             Interaction Designer, Vokal
           </h3>
-          <p className="mb-3 text-gray-500 dark:text-gray-400 font-bold text-sm">
+          <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
             April 2014–February 2016 (Chicago, IL)
           </p>
           <p>
@@ -74,38 +74,36 @@ const Resume = () => (
             apps, but most often I was asked to design flexible systems for
             products with Android, iOS, and web components. The tight timelines
             and design constraints necessitated that we work with design systems
-            in order to apply a design langauge to apps on many platforms. Much
+            in order to apply a design language to apps on many platforms. Much
             of my work was around designing these systems, and figuring out how
-            to make them work in the early days of design systems.
+            to make them work in the early days of design systems when not a lot
+            of standards were established.
           </p>
         </div>
 
         <div className="mb-12">
-          <h3 className="text-xl font-bold mb-2 dark:text-white">
+          <h3 className="mb-2 text-xl font-bold dark:text-white">
             User Experience Designer, Maddock Douglas
           </h3>
-          <p className="mb-3 text-gray-500 dark:text-gray-400 font-bold text-sm">
+          <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
             2010–2014 (Elmhurst, IL)
           </p>
           <p>
             Maddock Douglas was a creative agency that specialized in helping
             their clients identify market opportunities and see future trends
-            before they happened. It was a great first job for me because I got
-            to do a little bit of everything. Most of my work involved using my
-            front-end prototyping and design skills to visualize conceptual
-            products for our clients. I also worked on an extensive design
-            system for the Blue Cross and Blue Shield of Michigan retail and
-            consumer portals.
+            before they happened. It was a great first job because I got to do a
+            little bit of everything. Most of my work involved design and
+            front-end prototyping to visualize product concepts for our clients.
+            I also worked on a comprehensive design system for the Blue Cross
+            and Blue Shield of Michigan retail and consumer portals.
           </p>
         </div>
 
         <HrSection className="text-lg" />
 
-        <h2 className="text-3xl font-bold mb-6 dark:text-white">
-          Education &amp; Skills
-        </h2>
+        <h2 className="mb-6 text-3xl font-bold dark:text-white">Education</h2>
         <div className="mb-6">
-          <h3 className="text-xl font-bold mb-2 dark:text-white">
+          <h3 className="mb-2 text-xl font-bold dark:text-white">
             BFA Visual Communications, Northern Illinois University
           </h3>
           <p className="mb-3">
@@ -114,8 +112,8 @@ const Resume = () => (
           </p>
         </div>
 
+        <h2 className="mb-6 text-3xl font-bold dark:text-white">Skills</h2>
         <div className="mb-12">
-          <h3 className="text-xl font-bold mb-2 dark:text-white">Skills</h3>
           <div className="flex flex-wrap bg-clip-content">
             <Tag>Figma</Tag>
             <Tag>Design Systems</Tag>
@@ -126,9 +124,9 @@ const Resume = () => (
         </div>
       </div>
 
-      <hr className="border-none h-px bg-gray-300 dark:bg-gray-700" />
+      <hr className="h-px bg-gray-300 border-none dark:bg-gray-700" />
 
-      <DirectionLink href="#top" icon="arrow-up" className="mt-12">
+      <DirectionLink href="#top" className="mt-12" direction="top">
         Back to top
       </DirectionLink>
     </div>

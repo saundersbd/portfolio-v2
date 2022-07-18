@@ -38,43 +38,38 @@ function HomePage({ posts, projects }) {
         />
       </Head>
 
-      <section className="my-8 sm:my-16 px-4 sm:px-8">
+      <section className="px-4 my-8 sm:my-16 sm:px-8">
         <Image
-          className="w-16 sm:w-20 mb-4 rounded-full dark:opacity-75"
+          className="w-16 mb-4 rounded-full sm:w-20 dark:opacity-75"
           height={800}
           width={800}
           alt="A picture of Brian"
           src="/images/portrait-square.jpg"
         />
-        <h1 className="mb-1 text-2xl sm:text-3xl font-bold">Brian Saunders</h1>
-        <p className="mb-4 sm:mb-8 text-base sm:text-lg text-gray-500 dark:text-gray-400">
+        <h1 className="mb-1 text-2xl font-bold sm:text-3xl">Brian Saunders</h1>
+        <p className="mb-4 text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
           Product designer with front-end expertise
         </p>
-        <p className="mb-4 sm:leading-relaxed text-sm sm:text-base">
+        <p className="mb-4 text-sm sm:leading-relaxed sm:text-base">
           I'm a great product design leader, pretty good ukulele player, and
           sub-par ceramicist who lives and works in Chicago.
         </p>
-        <p className="sm:leading-relaxed text-sm sm:text-base">
+        <p className="text-sm sm:leading-relaxed sm:text-base">
           Right now I’m a Product Design Lead at Paylocity, where I am leading
           the design for the company’s next generation mobile apps.
         </p>
       </section>
 
       <section className="pb-8">
-        <div className="flex flex-col border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-          <div className="bg-gray-100 dark:bg-gray-700 px-4 py-2">
+        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg dark:border-gray-700">
+          <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6">Writing</h2>
           </div>
-          <div className="p-4 sm:p-8 bg-white dark:bg-gray-900">
+          <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
             {filteredPosts.slice(0, 5).map((post) => (
               <Post key={post.data.title} slug={post.filePath} {...post.data} />
             ))}
-            <DirectionLink
-              href="/posts"
-              icon="arrow-right"
-              iconRight
-              className="mt-6"
-            >
+            <DirectionLink href="/posts" className="mt-6" direction="right">
               View all posts
             </DirectionLink>
           </div>
@@ -82,11 +77,11 @@ function HomePage({ posts, projects }) {
       </section>
 
       <section className="pb-16">
-        <div className="flex flex-col border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
-          <div className="bg-gray-100 dark:bg-gray-700 px-4 py-2">
+        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg dark:border-gray-700">
+          <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6">Projects</h2>
           </div>
-          <div className="p-4 sm:p-8 bg-white dark:bg-gray-900">
+          <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
             {filteredProjects.slice(0, 5).map((post) => (
               <Project
                 key={post.data.title}

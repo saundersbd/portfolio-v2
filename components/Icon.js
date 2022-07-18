@@ -6,6 +6,7 @@ import {
   doc,
   globe,
   ID,
+  lightBulb,
   mailOutline,
   mailSolid,
   mobile,
@@ -35,6 +36,9 @@ const Icon = ({ icon, className }) => {
   }
   if (icon === "ID") {
     icon = ID;
+  }
+  if (icon === "light-bulb") {
+    icon = lightBulb;
   }
   if (icon === "mailOutline") {
     icon = mailOutline;
