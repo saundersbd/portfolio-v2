@@ -6,7 +6,7 @@ const PostLayout = ({ children }) => (
   <Layout>
     <div className="py-8 sm:py-16">
       <DirectionLink href="/" className="mb-12" direction="left">
-        Back to Home
+        Back to home
       </DirectionLink>
       <article className="prose dark:prose-dark">{children}</article>
       <DirectionLink href="#top" className="mt-12" direction="top">

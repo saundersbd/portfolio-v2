@@ -57,7 +57,10 @@ const Book = ({ source, frontMatter }) => {
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
           <p className="mt-0 mb-6 leading-loose">{frontMatter.description}</p>
-          <Button href={frontMatter.url}>
+          <Button
+            href={frontMatter.url}
+            className="dark:!bg-gray-700 dark:!border-gray-600 dark:!text-white dark:hover:!bg-gray-800 dark:hover:!border-gray-700"
+          >
             <Icon icon="external" className="w-4 mr-1.5" />
             {frontMatter.url.includes("amazon")
               ? "View on Amazon"

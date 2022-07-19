@@ -13,7 +13,7 @@ const Badge = ({ icon, className, small, medium }) => {
   }
   return (
     <div
-      className={`${size} badge flex items-center justify-center border border-gray-200 dark:border-gray-700 dark:bg-gray-800 + ${className}`}
+      className={`${size} badge shadow-sm flex items-center justify-center border border-gray-200 dark:border-gray-700 dark:bg-gray-800 + ${className}`}
     >
       <Icon className="w-5 text-gray-600 dark:text-gray-300" icon={icon} />
     </div>

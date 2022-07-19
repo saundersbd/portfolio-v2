@@ -2,7 +2,7 @@ import React from "react";
 import LibraryRow from "./LibraryRow";
 
 const BookCategoryList = ({ books, category }) => (
-  <div className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg dark:border-gray-700">
+  <div className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
     <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
       <h2 className="text-sm font-bold leading-6">{category}</h2>
     </div>

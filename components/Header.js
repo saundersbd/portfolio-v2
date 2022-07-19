@@ -13,7 +13,7 @@ const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
     <a
       className={
-        `inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-blue-500 ` +
+        `inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-blue-500 dark:focus:bg-gray-800 focus:bg-blue-50 ` +
         `${className}`
       }
       aria-current={`${isActive && "page"}`}
@@ -83,7 +83,7 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <div className="mr-4">
+    <div className="mr-2">
       <div
         role="switch"
         aria-checked={darkMode}
@@ -146,11 +146,13 @@ const Header = () => {
           </nav>
         </div>
         <div className="flex items-center">
+          <Link href="/about/resume">
+            <a className="flex items-center px-1 mr-4 text-sm rounded hover:underline focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-800">
+              <Icon className="w-4 mr-1.5" />
+              View my CV
+            </a>
+          </Link>
           {mounted && <DarkModeToggle />}
-          <Button href="/about/resume">
-            <Icon className="w-4 mr-1.5" />
-            View my CV
-          </Button>
         </div>
       </header>
     </Headroom>

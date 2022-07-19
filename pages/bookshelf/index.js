@@ -28,14 +28,13 @@ const Bookshelf = ({ convertBack }) => {
         </div>
         <div>
           <CurrentBook
-            title="Team of Rivals"
-            author="Doris Kearns Goodwin"
-            description="Revisiting one of my favorites."
-            imageUrl="/images/books/team-of-rivals.jpg"
-            url="https://www.amazon.com/Team-Rivals-Political-Abraham-Lincoln-ebook/dp/B000N2HBSO"
-            barClass="w-5/20"
-            progressBarWidth="5/20"
-            date="7/04/22"
+            title="Sin and Syntax"
+            author="Constance Hale"
+            imageUrl="/images/books/sin-and-syntax.jpg"
+            url="https://www.amazon.com/dp/B00BH0VUHY/"
+            barClass="w-3/20"
+            progressBarWidth="3/20"
+            date="7/19/22"
           />
 
           <BookCategoryList books={convertBack} category="Design" />

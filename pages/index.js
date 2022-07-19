@@ -51,17 +51,18 @@ function HomePage({ posts, projects }) {
           Product designer with front-end expertise
         </p>
         <p className="mb-4 text-sm sm:leading-relaxed sm:text-base">
-          I'm a great product design leader, pretty good ukulele player, and
-          sub-par ceramicist who lives and works in Chicago.
+          I&rsquo;m a great product design leader, pretty good ukulele strummer,
+          and sub-par ceramicist who lives and works in Chicago.
         </p>
         <p className="text-sm sm:leading-relaxed sm:text-base">
-          Right now I’m a Product Design Lead at Paylocity, where I am leading
-          the design for the company’s next generation mobile apps.
+          Right now I&rsquo;m a Product Design Lead at Paylocity, where
+          I&rsquo;m leading the design for the company&rsquo;s next generation
+          mobile apps.
         </p>
       </section>
 
       <section className="pb-8">
-        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg dark:border-gray-700">
+        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6">Writing</h2>
           </div>
@@ -77,7 +78,7 @@ function HomePage({ posts, projects }) {
       </section>
 
       <section className="pb-16">
-        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg dark:border-gray-700">
+        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6">Projects</h2>
           </div>
