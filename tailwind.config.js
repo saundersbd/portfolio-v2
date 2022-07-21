@@ -63,6 +63,7 @@ module.exports = {
         "Arial",
         "sans-serif",
       ],
+      serif: ["Newsreader", "IBM Plex Serif", "serif"],
     },
     fontSize: {
       xxs: ".8rem",

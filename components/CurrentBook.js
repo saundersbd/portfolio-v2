@@ -24,7 +24,7 @@ const CurrentBook = ({
         </div>
       </div>
 
-      <div className="flex-grow p-6 bg-gray-900">
+      <div className="flex-grow p-6 bg-white dark:bg-gray-900">
         <h2 className="mb-2 text-sm text-gray-600 dark:text-gray-300">
           Currently reading...
         </h2>

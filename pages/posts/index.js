@@ -35,10 +35,7 @@ const Posts = ({ posts }) => {
               Writing
             </h1>
             <p className="text-sm sm:text-base sm:leading-relaxed">
-              This is a collection of thoughts from the intersection of my life
-              and career. These posts are works-in-progress. The goal this year
-              is to publish more, even if it's not perfect, so I'll try to get
-              first drafts out and then improve them over time.
+              The goal this year is to publish more, even if it's not perfect.
             </p>
           </div>
 

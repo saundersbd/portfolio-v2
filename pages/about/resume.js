@@ -25,16 +25,18 @@ const Resume = () => (
         </h1>
         <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-300">
           <div className="flex items-center mr-3">
-            <Icon icon="ID" className="w-5 mr-1" />
+            <Icon icon="ID" className="w-5 mr-1.5" />
             Product Design Lead
           </div>
           <div className="flex items-center mr-3">
-            <Icon icon="globe" className="w-5 mr-1" />
+            <Icon icon="globe" className="w-5 mr-1.5" />
             Chicago, IL
           </div>
           <div className="flex items-center">
-            <Icon icon="mailSolid" className="w-5 mr-1" />
-            saundersbd@gmail.com
+            <Icon icon="mailSolid" className="w-5 mr-1.5" />
+            <a className="hover:underline" href="mailto:saundersbd@gmail.com">
+              saundersbd@gmail.com
+            </a>
           </div>
         </div>
 

@@ -38,25 +38,19 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col mx-0 mb-8 overflow-hidden border rounded-lg border-beige-dark sm:mb-12 sm:flex-row md:-mx-20 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex items-center justify-center w-full py-0 pt-8 bg-gray-100 border-r border-gray-200 sm:pt-0 sm:w-1/3 dark:bg-gray-800 dark:border-gray-700">
-          <div className="w-32 overflow-hidden border rounded shadow-md book-image dark:border-gray-800">
-            <img
-              className="my-0"
-              src={frontMatter.cover}
-              alt="The book cover"
-            />
-          </div>
+      <div className="flex flex-col items-center p-6 mx-0 mb-8 overflow-hidden border rounded-lg sm:p-8 sm:items-start border-beige-dark sm:mb-12 sm:flex-row md:-mx-16 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md sm:mr-8 sm:mb-0 book-image dark:border-gray-800">
+          <img className="my-0" src={frontMatter.cover} alt="The book cover" />
         </div>
-        <div className="w-full p-6 sm:w-2/3">
+        <div>
           <h1 className="mb-2 !text-3xl font-bold dark:text-white">
             {frontMatter.title}
           </h1>
-          <p className="mt-0 mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-300">
+          <p className="mt-0 mb-2 text-base leading-relaxed text-gray-500 dark:text-gray-300">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
-          <p className="mt-0 mb-6 leading-loose">{frontMatter.description}</p>
+          <p className="mt-0 mb-4 leading-loose">{frontMatter.description}</p>
           <Button
             href={frontMatter.url}
             className="dark:!bg-gray-700 dark:!border-gray-600 dark:!text-white dark:hover:!bg-gray-800 dark:hover:!border-gray-700"
