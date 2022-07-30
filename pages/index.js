@@ -46,15 +46,17 @@ function HomePage({ posts, projects }) {
           alt="A picture of Brian"
           src="/images/portrait-square.jpg"
         />
-        <h1 className="mb-1 text-2xl font-bold sm:text-3xl">Brian Saunders</h1>
+        <h1 className="mb-1 text-2xl font-bold font-display sm:text-4xl">
+          Brian Saunders
+        </h1>
         <p className="mb-4 text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
           Product designer with front-end expertise
         </p>
-        <p className="mb-4 text-sm sm:leading-relaxed sm:text-base">
+        <p className="mb-4 text-sm sm:leading-relaxed sm:text-lg">
           I&rsquo;m a great product design leader, pretty good ukulele strummer,
           and sub-par ceramicist who lives and works in Chicago.
         </p>
-        <p className="text-sm sm:leading-relaxed sm:text-base">
+        <p className="text-sm sm:leading-relaxed sm:text-lg">
           Right now I&rsquo;m a Product Design Lead at Paylocity, where
           I&rsquo;m leading the design for the company&rsquo;s next generation
           mobile apps.
@@ -64,7 +66,9 @@ function HomePage({ posts, projects }) {
       <section className="pb-8">
         <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
-            <h2 className="text-sm font-bold leading-6">Writing</h2>
+            <h2 className="text-sm font-bold leading-6 font-display">
+              Writing
+            </h2>
           </div>
           <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
             {filteredPosts.slice(0, 5).map((post) => (
@@ -80,7 +84,9 @@ function HomePage({ posts, projects }) {
       <section className="pb-16">
         <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
-            <h2 className="text-sm font-bold leading-6">Projects</h2>
+            <h2 className="text-sm font-bold leading-6 font-display">
+              Projects
+            </h2>
           </div>
           <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
             {filteredProjects.slice(0, 5).map((post) => (

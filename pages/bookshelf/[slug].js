@@ -11,6 +11,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Button from "../../components/Button";
 import Blockquote from "../../components/Blockquote";
+import Reference from "../../components/Reference";
 import Icon from "../../components/Icon";
 import PostImage from "../../components/PostImage";
 import PageNote from "../../components/PageNote";
@@ -25,6 +26,7 @@ const components = {
   HrSection,
   Button,
   Blockquote,
+  Reference,
 };
 
 const Book = ({ source, frontMatter }) => {
@@ -43,14 +45,16 @@ const Book = ({ source, frontMatter }) => {
           <img className="my-0" src={frontMatter.cover} alt="The book cover" />
         </div>
         <div>
-          <h1 className="mb-2 !text-3xl font-bold dark:text-white">
+          <h1 className="mb-2 !text-3xl !sm:text-4xl !leading-snug font-bold dark:text-white">
             {frontMatter.title}
           </h1>
           <p className="mt-0 mb-2 text-base leading-relaxed text-gray-500 dark:text-gray-300">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
-          <p className="mt-0 mb-4 leading-loose">{frontMatter.description}</p>
+          <p className="mt-0 mb-4 !text-base leading-loose">
+            {frontMatter.description}
+          </p>
           <Button
             href={frontMatter.url}
             className="dark:!bg-gray-700 dark:!border-gray-600 dark:!text-white dark:hover:!bg-gray-800 dark:hover:!border-gray-700"

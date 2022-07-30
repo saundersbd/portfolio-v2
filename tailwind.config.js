@@ -50,7 +50,6 @@ module.exports = {
     fontFamily: {
       mono: ["'iA Writer Mono S'", ...mono],
       sans: [
-        "iA Writer Quattro S",
         "-apple-system",
         "BlinkMacSystemFont",
         "San Francisco",
@@ -64,6 +63,20 @@ module.exports = {
         "sans-serif",
       ],
       serif: ["Newsreader", "IBM Plex Serif", "serif"],
+      display: [
+        "Albert Sans",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "San Francisco",
+        "Helvetica Neue",
+        "Helvetica",
+        "Ubuntu",
+        "Roboto",
+        "Noto",
+        "Segoe UI",
+        "Arial",
+        "sans-serif",
+      ],
     },
     fontSize: {
       xxs: ".8rem",

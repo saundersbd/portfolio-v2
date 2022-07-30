@@ -20,7 +20,7 @@ const Resume = () => (
         Back to Home
       </DirectionLink>
       <div className="leading-relaxed dark:text-gray-200">
-        <h1 className="mb-4 text-5xl font-bold leading-tight dark:text-white sm:leading-relaxed">
+        <h1 className="mb-4 text-5xl font-bold leading-tight dark:text-white sm:leading-relaxed font-display">
           Brian Saunders
         </h1>
         <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-300">
@@ -40,10 +40,12 @@ const Resume = () => (
           </div>
         </div>
 
-        <h2 className="mb-6 text-3xl font-bold dark:text-white">Experience</h2>
+        <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
+          Experience
+        </h2>
 
         <div className="mb-6">
-          <h3 className="mb-2 text-xl font-bold dark:text-white">
+          <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
             Product Design Lead, Paylocity
           </h3>
           <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
@@ -65,7 +67,7 @@ const Resume = () => (
         </div>
 
         <div className="mb-6">
-          <h3 className="mb-2 text-xl font-bold dark:text-white">
+          <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
             Interaction Designer, Vokal
           </h3>
           <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
@@ -84,7 +86,7 @@ const Resume = () => (
         </div>
 
         <div className="mb-12">
-          <h3 className="mb-2 text-xl font-bold dark:text-white">
+          <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
             User Experience Designer, Maddock Douglas
           </h3>
           <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
@@ -101,9 +103,9 @@ const Resume = () => (
           </p>
         </div>
 
-        <HrSection className="text-lg" />
-
-        <h2 className="mb-6 text-3xl font-bold dark:text-white">Education</h2>
+        <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
+          Education
+        </h2>
         <div className="mb-6">
           <h3 className="mb-2 text-xl font-bold dark:text-white">
             BFA Visual Communications, Northern Illinois University
@@ -114,7 +116,9 @@ const Resume = () => (
           </p>
         </div>
 
-        <h2 className="mb-6 text-3xl font-bold dark:text-white">Skills</h2>
+        <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
+          Skills
+        </h2>
         <div className="mb-12">
           <div className="flex flex-wrap bg-clip-content">
             <Tag>Figma</Tag>

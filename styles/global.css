@@ -1,51 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@1,6..72&display=swap");
-
-@font-face {
-    font-family: "iA Writer Quattro S";
-    src: url("/fonts/iAWriterQuattroS-Regular.woff2"),
-        url("/fonts/iAWriterQuattroS-Regular.woff");
-}
-
-@font-face {
-    font-family: "iA Writer Quattro S";
-    src: url("/fonts/iAWriterQuattroS-Italic.woff2"),
-        url("/fonts/iAWriterQuattroS-Italic.woff");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "iA Writer Quattro S";
-    src: url("/fonts/iAWriterQuattroS-Bold.woff2"),
-        url("/fonts/iAWriterQuattroS-Bold.woff");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "iA Writer Quattro S";
-    src: url("/fonts/iAWriterQuattroS-BoldItalic.woff2"),
-        url("/fonts/iAWriterQuattroS-BoldItalic.woff");
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "iA Writer Mono S";
-    src: url("/fonts/iAWriterMonoS-Regular.woff2"),
-        url("/fonts/iAWriterMonoS-Regular.woff");
-}
-
-@font-face {
-    font-family: "iA Writer Mono S";
-    src: url("/fonts/iAWriterMonoS-Italic.woff2"),
-        url("/fonts/iAWriterMonoS-Italic.woff");
-    font-style: italic;
-}
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
 @tailwind base;
 
 @layer base {
     [aria-current="page"] {
-        @apply text-black dark:text-white bg-gray-200 dark:bg-gray-700 font-bold !important;
+        @apply text-black dark:text-white bg-gray-200 dark:bg-gray-700 font-semibold !important;
     }
     [aria-current="false"] {
     }

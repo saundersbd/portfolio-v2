@@ -8,11 +8,11 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-    @apply font-sans font-semibold;
+    @apply font-display font-semibold;
 }
 
 .prose h1 {
-    @apply leading-relaxed text-3xl xs:text-4xl xs:leading-tight text-black dark:text-white;
+    @apply leading-relaxed font-bold text-3xl xs:text-4xl xs:leading-tight text-black dark:text-white;
 }
 
 .prose h2 {
@@ -24,7 +24,7 @@
 }
 
 .prose p {
-    @apply text-base leading-loose;
+    @apply text-lg leading-loose;
 }
 
 .prose p.large {
@@ -36,6 +36,10 @@
 
 .prose blockquote p {
     @apply text-base leading-loose my-0;
+}
+
+.prose p.reference p {
+    @apply text-base;
 }
 
 .prose ul li {
