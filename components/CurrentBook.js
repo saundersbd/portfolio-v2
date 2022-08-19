@@ -44,7 +44,7 @@ const CurrentBook = ({
           <p className="mb-1.5 text-xs text-gray-500 dark:text-gray-400">{`${toPercent(
             progressBarWidth
           )}% complete (${date})`}</p>
-          <div className="w-full h-2 overflow-hidden bg-gray-100 rounded-sm sm:w-1/2 progress-bar dark:bg-gray-700">
+          <div className="w-full h-2 overflow-hidden bg-gray-100 rounded-sm sm:w-1/3 progress-bar dark:bg-gray-700">
             <div
               className={`progress h-2 bg-blue-500 dark:bg-purple-500 ${barClass}`}
             ></div>
