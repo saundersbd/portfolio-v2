@@ -10,7 +10,7 @@ const DirectionLink = ({ href, className, children, direction }) => {
       return (
         <Link href={href} passHref>
           <a className={`block-link ` + `${className}`}>
-            <Icon icon="arrow-left" className="w-4 mr-1" />
+            <Icon icon="arrow-hook-left" className="w-4 mr-1" />
             {children}
           </a>
         </Link>

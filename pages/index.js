@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import Project from "../components/Project";
 import Post from "../components/Post";
 import DirectionLink from "../components/DirectionLink";
+import Icon from "../components/Icon";
 
 import {
   postFilePaths,
@@ -46,7 +47,7 @@ function HomePage({ posts, projects }) {
           alt="A picture of Brian"
           src="/images/portrait-square.jpg"
         />
-        <h1 className="mb-1 text-2xl font-bold font-display sm:text-4xl">
+        <h1 className="mb-1 text-3xl font-bold font-display sm:text-4xl">
           Brian Saunders
         </h1>
         <p className="mb-4 text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
@@ -56,10 +57,18 @@ function HomePage({ posts, projects }) {
           I&rsquo;m a great product design leader, pretty good ukulele strummer,
           and sub-par ceramicist who lives and works in Chicago.
         </p>
-        <p className="text-sm sm:leading-relaxed sm:text-lg">
+        <p className="mb-8 text-sm sm:leading-relaxed sm:text-lg">
           Right now I&rsquo;m a Principal Designer at Paylocity, where I&rsquo;m
           leading the design for our next generation of mobile apps.
         </p>
+
+        <a
+          href="mailto:saundersbd@gmail.com"
+          className="flex items-center px-4 py-3 text-sm font-medium text-gray-800 transition-all bg-white border border-gray-300 rounded-lg shadow-sm sm:text-base hover:bg-gray-100 dark:text-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 w-max focus:outline-none focus:ring focus:ring-blue-500 hover:shadow-none"
+        >
+          <Icon icon="chat" className="w-5 mr-2" />
+          saundersbd@gmail.com
+        </a>
       </section>
 
       <section className="pb-8">

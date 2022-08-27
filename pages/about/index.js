@@ -20,11 +20,11 @@ const About = () => (
         <h2>Experience</h2>
 
         <p>
-          Right now I am a Product Design Lead at{" "}
+          Right now I am a Principal Product Designer at{" "}
           <a target="_blank" href="https://www.paylocity.com">
             Paylocity
           </a>
-          , where I am leading the design of the new mobile apps.
+          , where I'm leading the design of the new mobile apps.
         </p>
 
         <p>

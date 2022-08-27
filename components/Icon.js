@@ -1,8 +1,10 @@
 import React from "react";
 import {
+  arrowHookLeft,
   arrowLeft,
   arrowUp,
   arrowRight,
+  chat,
   doc,
   external,
   globe,
@@ -20,6 +22,9 @@ const Icon = ({ icon, className }) => {
   if (!icon) {
     icon = doc;
   }
+  if (icon === "arrow-hook-left") {
+    icon = arrowHookLeft;
+  }
   if (icon === "arrow-left") {
     icon = arrowLeft;
   }
@@ -28,6 +33,9 @@ const Icon = ({ icon, className }) => {
   }
   if (icon === "arrow-right") {
     icon = arrowRight;
+  }
+  if (icon === "chat") {
+    icon = chat;
   }
   if (icon === "doc") {
     icon = doc;

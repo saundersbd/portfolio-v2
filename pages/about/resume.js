@@ -26,7 +26,7 @@ const Resume = () => (
         <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-300">
           <div className="flex items-center mr-3">
             <Icon icon="ID" className="w-5 mr-1.5" />
-            Product Design Lead
+            Principal Product Designer
           </div>
           <div className="flex items-center mr-3">
             <Icon icon="globe" className="w-5 mr-1.5" />
@@ -46,14 +46,14 @@ const Resume = () => (
 
         <div className="mb-6">
           <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
-            Product Design Lead, Paylocity
+            Principal Product Designer, Paylocity
           </h3>
           <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
             June 2016–Present (Chicago, IL / Remote)
           </p>
           <p className="mb-3">
-            I'm a Product Design Lead at Paylocity. Right now I'm leading the
-            design for the company's next generation mobile apps.
+            I'm a Principal Product Designer at Paylocity. Right now I'm leading
+            the design for our next generation of mobile apps.
           </p>
           <p>
             Previously I helped grow Paylocity's Community product from around
