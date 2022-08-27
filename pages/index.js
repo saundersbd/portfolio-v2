@@ -50,16 +50,15 @@ function HomePage({ posts, projects }) {
           Brian Saunders
         </h1>
         <p className="mb-4 text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
-          Product designer with front-end expertise
+          Product design leader with front-end expertise
         </p>
         <p className="mb-4 text-sm sm:leading-relaxed sm:text-lg">
           I&rsquo;m a great product design leader, pretty good ukulele strummer,
           and sub-par ceramicist who lives and works in Chicago.
         </p>
         <p className="text-sm sm:leading-relaxed sm:text-lg">
-          Right now I&rsquo;m a Product Design Lead at Paylocity, where
-          I&rsquo;m leading the design for the company&rsquo;s next generation
-          mobile apps.
+          Right now I&rsquo;m a Principal Designer at Paylocity, where I&rsquo;m
+          leading the design for our next generation of mobile apps.
         </p>
       </section>
 

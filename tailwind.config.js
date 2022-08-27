@@ -50,6 +50,7 @@ module.exports = {
     fontFamily: {
       mono: ["'iA Writer Mono S'", ...mono],
       sans: [
+        "Inter",
         "-apple-system",
         "BlinkMacSystemFont",
         "San Francisco",

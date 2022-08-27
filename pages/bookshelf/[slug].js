@@ -52,7 +52,7 @@ const Book = ({ source, frontMatter }) => {
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>
-          <p className="mt-0 mb-4 !text-base leading-loose">
+          <p className="mt-0 mb-4 !text-base !leading-relaxed">
             {frontMatter.description}
           </p>
           <Button
