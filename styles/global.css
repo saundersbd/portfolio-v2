@@ -10,7 +10,7 @@
     [aria-current="false"] {
     }
     html {
-        @apply bg-black;
+        @apply bg-gray-900;
     }
     html.dark .light-mode-image {
         display: none;
@@ -40,7 +40,7 @@
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
     .block-link {
-        @apply flex w-max items-center text-sm font-bold text-blue-600 dark:text-purple-400 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-900;
+        @apply flex w-max items-center text-sm font-bold text-[#42b883] hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-900;
     }
     a {
         @apply focus:outline-none focus:ring focus:ring-blue-500;
@@ -64,7 +64,7 @@
     }
     .post-link:hover .year-pill,
     .post-link:focus .year-pill {
-        @apply bg-white dark:bg-purple-700 dark:text-white transition-all;
+        @apply bg-white dark:bg-[#42B883] dark:text-black transition-all;
     }
 }
 

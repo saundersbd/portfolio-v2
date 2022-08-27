@@ -1,7 +1,7 @@
 import React from "react";
 
 const Tag = ({ children }) => (
-  <span className="mr-1.5 mb-1.5 px-1 py-0.5 rounded text-gray-800 dark:text-white text-sm bg-blue-100 dark:bg-blue-60 dark:bg-gradient-to-tr dark:from-blue-700 dark:to-blue-600">
+  <span className="mr-1.5 mb-1.5 px-1 py-0.5 rounded text-gray-800 dark:text-white text-sm bg-[#D9F2E7] dark:bg-[#42B883]">
     {children}
   </span>
 );

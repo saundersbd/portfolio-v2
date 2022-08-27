@@ -64,9 +64,9 @@ function HomePage({ posts, projects }) {
 
         <a
           href="mailto:saundersbd@gmail.com"
-          className="flex items-center px-4 py-3 text-sm font-medium text-gray-800 transition-all bg-white border border-gray-300 rounded-lg shadow-sm sm:text-base hover:bg-gray-100 dark:text-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 w-max focus:outline-none focus:ring focus:ring-blue-500 hover:shadow-none"
+          className="flex items-center px-3 py-2 text-sm font-medium text-gray-800 transition-all bg-white border border-gray-300 rounded-lg shadow-sm sm:text-base hover:bg-gray-100 dark:text-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 w-max focus:outline-none focus:ring focus:ring-blue-500 hover:shadow-none"
         >
-          <Icon icon="chat" className="w-5 mr-2" />
+          <Icon icon="chat" className="w-5 mr-1.5" />
           saundersbd@gmail.com
         </a>
       </section>
@@ -89,7 +89,7 @@ function HomePage({ posts, projects }) {
         </div>
       </section>
 
-      <section className="pb-16">
+      <section>
         <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6 font-display">

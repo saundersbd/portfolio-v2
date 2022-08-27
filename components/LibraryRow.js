@@ -16,7 +16,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
             {recommended ? (
               <Icon
                 icon="thumbs-up"
-                className="inline-block w-5 h-5 pt-1 ml-1 text-green-600 dark:text-green-300"
+                className="inline-block w-5 h-5 pt-1 ml-1 text-[#42b883] dark:text-green-300"
               />
             ) : null}
           </a>

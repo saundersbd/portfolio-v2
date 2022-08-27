@@ -3,7 +3,7 @@ const arrowHookLeft = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={2}
+    strokeWidth={2.5}
     stroke="currentColor"
   >
     <path
@@ -19,7 +19,7 @@ const arrowLeft = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={2}
+    strokeWidth={2.5}
     stroke="currentColor"
   >
     <path
@@ -35,7 +35,7 @@ const arrowUp = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={2}
+    strokeWidth={2.5}
     stroke="currentColor"
   >
     <path
@@ -51,7 +51,7 @@ const arrowRight = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={2}
+    strokeWidth={2.5}
     stroke="currentColor"
   >
     <path

@@ -6,7 +6,6 @@ import { useTheme } from "next-themes";
 import Headroom from "react-headroom";
 
 import MobileMenu from "../components/MobileMenu";
-import Button from "./Button";
 import Icon from "./Icon";
 
 const NavLink = React.forwardRef(
@@ -66,7 +65,7 @@ const darkModeIcon = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    className="w-4 text-purple-700"
+    className="w-4 text-gray-900"
   >
     <path
       fillRule="evenodd"
@@ -95,7 +94,7 @@ const DarkModeToggle = () => {
         aria-checked={darkMode}
         aria-label="Toggle dark mode"
         tabIndex={0}
-        className="relative w-12 h-8 p-1 transition-all bg-gray-600 rounded-full shadow-inner hover:cursor-pointer focus:outline-none focus:ring focus:ring-blue-500"
+        className="relative w-12 h-8 p-1 transition-all bg-[#42b883] rounded-full shadow-inner hover:cursor-pointer focus:outline-none focus:ring focus:ring-blue-500"
         onClick={(e) => toggleStatus(e)}
         onKeyPress={(e) => toggleStatus(e)}
       >
@@ -153,7 +152,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <Link href="/about/resume">
-            <a className="flex items-center px-1 mr-4 text-sm font-medium rounded sm:text-base hover:underline focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-800">
+            <a className="flex items-center px-1 mr-4 text-sm font-medium rounded hover:underline focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-800">
               <Icon className="w-4 mr-1.5" />
               View my CV
             </a>
