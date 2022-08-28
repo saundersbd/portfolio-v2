@@ -6,7 +6,7 @@ import Badge from "../components/Badge";
 const Project = ({ slug, title, description, projectType }) => (
   <div className="mb-2 sm:mb-4">
     <Link href={`/projects/${slug.replace(/\.mdx?$/, "")}`} passHref>
-      <a className="flex items-center p-2 -m-2 transition-all rounded-lg project-link hover:bg-gray-100 dark:hover:bg-gray-800 sm:-m-4 sm:p-4 focus:bg-blue-50 dark:focus:bg-gray-800">
+      <a className="flex items-center p-2 -m-2 transition-all rounded-lg project-link hover:bg-gray-100 dark:hover:bg-gray-800 sm:-m-4 sm:p-4 focus:bg-mint-50 dark:focus:bg-gray-800">
         <Badge
           icon={projectType}
           className="hidden mr-4 sm:flex"

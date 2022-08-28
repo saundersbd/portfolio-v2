@@ -12,7 +12,7 @@ const NavLink = React.forwardRef(
   ({ isActive, href, className, children }, ref) => (
     <a
       className={
-        `inline-block mr-2 text-base font-medium leading-6 px-3 py-1 rounded-full text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-blue-500 dark:focus:bg-gray-800 focus:bg-blue-50 ` +
+        `inline-block mr-2 text-base font-medium leading-6 px-3 py-1 rounded-full text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-mint-400 dark:focus:bg-gray-800 focus:bg-mint-50 ` +
         `${className}`
       }
       aria-current={`${isActive && "page"}`}
@@ -94,7 +94,7 @@ const DarkModeToggle = () => {
         aria-checked={darkMode}
         aria-label="Toggle dark mode"
         tabIndex={0}
-        className="relative w-12 h-8 p-1 transition-all bg-[#42b883] rounded-full shadow-inner hover:cursor-pointer focus:outline-none focus:ring focus:ring-blue-500"
+        className="relative w-12 h-8 p-1 transition-all rounded-full shadow-inner bg-mint-400 hover:cursor-pointer focus:outline-none focus:ring focus:ring-mint-400"
         onClick={(e) => toggleStatus(e)}
         onKeyPress={(e) => toggleStatus(e)}
       >
@@ -152,7 +152,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <Link href="/about/resume">
-            <a className="flex items-center px-1 mr-4 text-sm font-medium rounded hover:underline focus:ring focus:ring-blue-500 focus:bg-blue-50 dark:focus:bg-gray-800">
+            <a className="flex items-center px-1 mr-4 text-sm font-medium rounded hover:underline focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800">
               <Icon className="w-4 mr-1.5" />
               View my CV
             </a>

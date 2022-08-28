@@ -16,7 +16,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
             {recommended ? (
               <Icon
                 icon="thumbs-up"
-                className="inline-block w-5 h-5 pt-1 ml-1 text-[#42b883] dark:text-green-300"
+                className="inline-block w-5 h-5 pt-1 ml-1 text-mint-400 dark:text-mint-300"
               />
             ) : null}
           </a>
@@ -31,7 +31,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
 
     {notes ? (
       <Link href={notes} passHref>
-        <a className="flex items-center justify-center px-2 py-2 text-sm font-bold tracking-wide text-black no-underline transition-all border border-gray-200 rounded-lg shadow-sm w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">
+        <a className="flex items-center justify-center px-2 py-2 text-sm font-bold tracking-wide text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">
           <Icon icon="doc" className="w-4 mr-1.5" />
           Notes
         </a>

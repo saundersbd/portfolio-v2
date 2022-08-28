@@ -64,7 +64,7 @@ function HomePage({ posts, projects }) {
 
         <a
           href="mailto:saundersbd@gmail.com"
-          className="flex items-center px-3 py-2 text-sm font-medium text-gray-800 transition-all bg-white border border-gray-300 rounded-lg shadow-sm sm:text-base hover:bg-gray-100 dark:text-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 w-max focus:outline-none focus:ring focus:ring-blue-500 hover:shadow-none"
+          className="flex items-center px-3 py-3 text-sm font-medium text-gray-800 transition-all bg-white border border-gray-300 rounded-lg shadow-sm sm:text-base hover:bg-[#E5F6EE] dark:text-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 w-max focus:outline-none focus:ring focus:ring-mint-400 hover:shadow-none"
         >
           <Icon icon="chat" className="w-5 mr-1.5" />
           saundersbd@gmail.com

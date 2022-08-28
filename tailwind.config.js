@@ -34,6 +34,14 @@ module.exports = {
       orange: colors.orange,
       cyan: colors.blue,
       transparent: colors.transparent,
+      mint: {
+        50: "#ebf7f2",
+        100: "#aee1c9",
+        200: "#81d0ac",
+        300: "#52be8d",
+        400: "#3ca877",
+        500: "#339267",
+      },
     },
     screens: {
       xs: "500px",

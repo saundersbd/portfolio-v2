@@ -30,7 +30,7 @@ const CurrentBook = ({
         </h2>
         <h3 className="mb-2 text-lg font-semibold tracking-wide">
           <a
-            className="mb-2 text-base font-bold text-black underline transition-all rounded dark:text-white hover:opacity-80 focus:outline-none focus:ring focus:ring-orange focus:bg-blue-50"
+            className="mb-2 text-base font-semibold text-black underline transition-all rounded dark:text-white hover:opacity-80 focus:outline-none focus:ring focus:ring-orange focus:bg-mint-50 dark:focus:bg-gray-900"
             href={url}
           >
             {title}
@@ -45,7 +45,9 @@ const CurrentBook = ({
             progressBarWidth
           )}% complete (${date})`}</p>
           <div className="w-full h-2 overflow-hidden bg-gray-100 rounded-sm sm:w-1/3 progress-bar dark:bg-gray-700">
-            <div className={`progress h-2 bg-[#42b883] ${barClass}`}></div>
+            <div
+              className={`progress h-2 bg-mint-400 dark:bg-mint-300 ${barClass}`}
+            ></div>
           </div>
         </div>
       </div>
