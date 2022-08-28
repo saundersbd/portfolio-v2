@@ -17,6 +17,27 @@ const About = () => (
         Back to Home
       </DirectionLink>
       <div className="prose dark:prose-dark">
+        <h1>About me</h1>
+        <p>
+          My whole life has been defined by a sense of curiosity and a
+          excitement about learning new things. I came by a lot of my curiosity
+          naturally as a side effect of growing up with teachers for parents. My
+          parents encouraged me to read and took me and my sister on lots of
+          educational vacations, and that sparked a lifelong interest in
+          history. Music was also important in our house growing up, and music
+          education is a tradition that goes back for generations on both sides
+          of the family.
+        </p>
+
+        <p>
+          I'm the designer who is always experimenting with new tools and
+          reading constantly so that I can become a more well-rounded thinker.
+          Design is a learning profession—if you don't absolutely love to learn
+          new things I don't believe you can be successful in the long run. It
+          brings me a lot of joy to learn something exciting and then share that
+          knowledge with my coworkers.
+        </p>
+
         <h2>Experience</h2>
 
         <p>
@@ -24,7 +45,8 @@ const About = () => (
           <a target="_blank" href="https://www.paylocity.com">
             Paylocity
           </a>
-          , where I'm leading the design of the new mobile apps.
+          , where I'm leading the design for the company's new native mobile
+          apps as we transition away from a hybrid app.
         </p>
 
         <p>
@@ -32,8 +54,8 @@ const About = () => (
           <a target="_blank" href="https://www.vokal.io">
             Vokal
           </a>{" "}
-          where I designed cross-platform experiences, and created design
-          systems to support them. Before that I worked at Maddock Douglas, an
+          where I created cross-platform experiences, and the design systems
+          required to support them. Before that I worked at Maddock Douglas, an
           innovation firm in the Chicago suburbs. At MD I used my prototyping
           skills to help our clients see future opportunities for growth.
         </p>
@@ -46,13 +68,13 @@ const About = () => (
           The best thing I ever did for myself was take the time to learn HTML
           and CSS. We were designing our first websites in school and were
           supposed to use Dreamweaver to build them. I knew that wasn't the
-          proper way to make a website, so I spent an afternoon at the library
-          teaching myself how to write HTML and CSS. After school I learned PHP
-          through designing and building Wordpress themes, and eventually I
-          taught myself Javascript. These skills have led to every professional
-          opportunity I've had since. I've continued to expand my front end
-          skills and depend on them to communicate with developers and prototype
-          ideas every day. I built this website my using React and{" "}
+          proper way to make a website, so rather than learn Dreamweaver I
+          learned how to write HTML and CSS. After school I taught myself PHP by
+          hacking together Wordpress themes, and eventually I taught learned
+          Javascript. These skills have led to every professional opportunity
+          I've ever had. I've continued to expand my front end skills and depend
+          on them to communicate with engineering teams and prototype ideas
+          every day. I built this website using React and{" "}
           <a target="_blank" href="https://nextjs.org">
             Next.js
           </a>
@@ -75,7 +97,9 @@ const About = () => (
 
         <p>
           Writing is a sort of test for me. If I find that I can write about
-          something clearly, that usually means I understand it.
+          something clearly, that usually means I understand it. I know I have a
+          long way to go on my writing journey, but I'm passionate about it and
+          enjoy the process.
         </p>
       </div>
       <hr className="mt-12" />
