@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  about,
   arrowHookLeft,
   arrowLeft,
   arrowUp,
@@ -21,6 +22,9 @@ import {
 const Icon = ({ icon, className }) => {
   if (!icon) {
     icon = doc;
+  }
+  if (icon === "about") {
+    icon = about;
   }
   if (icon === "arrow-hook-left") {
     icon = arrowHookLeft;

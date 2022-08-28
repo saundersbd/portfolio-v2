@@ -4,7 +4,6 @@ import Layout from "../../components/Layout";
 import DirectionLink from "../../components/DirectionLink";
 import Icon from "../../components/Icon";
 import Tag from "../../components/Tag";
-import HrSection from "../../components/HrSection";
 
 const Resume = () => (
   <Layout>
@@ -33,7 +32,7 @@ const Resume = () => (
             Chicago, IL
           </div>
           <div className="flex items-center">
-            <Icon icon="mailSolid" className="w-5 mr-1.5" />
+            <Icon icon="mailOutline" className="w-5 mr-1.5" />
             <a className="hover:underline" href="mailto:saundersbd@gmail.com">
               saundersbd@gmail.com
             </a>

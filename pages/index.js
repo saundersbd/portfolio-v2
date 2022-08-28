@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
 import Image from "next/future/image";
+import Link from "next/link";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
 import Post from "../components/Post";
@@ -57,18 +58,32 @@ function HomePage({ posts, projects }) {
           I&rsquo;m a great product design leader, pretty good ukulele strummer,
           and sub-par ceramicist who lives and works in Chicago.
         </p>
-        <p className="mb-8 text-sm sm:leading-relaxed sm:text-lg">
+        <p className="mb-4 text-sm sm:mb-8 sm:leading-relaxed sm:text-lg">
           Right now I&rsquo;m a Principal Designer at Paylocity, where I&rsquo;m
           leading the design for our next generation of mobile apps.
         </p>
 
-        <a
-          href="mailto:saundersbd@gmail.com"
-          className="flex items-center px-3 py-3 text-sm font-medium text-gray-800 transition-all bg-white border border-gray-300 rounded-lg shadow-sm sm:text-base hover:bg-[#E5F6EE] dark:text-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 w-max focus:outline-none focus:ring focus:ring-mint-400 hover:shadow-none"
-        >
-          <Icon icon="chat" className="w-5 mr-1.5" />
-          saundersbd@gmail.com
-        </a>
+        <div className="flex flex-col text-sm sm:text-base sm:flex-row">
+          <Link href="/about" passHref>
+            <a className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400">
+              <Icon icon="about" className="w-5 mr-1.5" />
+              More about me
+            </a>
+          </Link>
+          <Link href="/about/resume" passHref>
+            <a className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400">
+              <Icon className="w-5 mr-1.5" />
+              View my CV
+            </a>
+          </Link>
+          <a
+            href="mailto:saundersbd@gmail.com"
+            className="flex items-center underline rounded underline-offset-2 hover:text-mint-400"
+          >
+            <Icon icon="mailOutline" className="w-5 mr-1.5" />
+            saundersbd@gmail.com
+          </a>
+        </div>
       </section>
 
       <section className="pb-8">

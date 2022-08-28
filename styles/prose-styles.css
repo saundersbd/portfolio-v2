@@ -43,11 +43,11 @@
 }
 
 .prose ul li {
-    @apply text-base leading-loose;
+    @apply text-lg leading-loose;
 }
 
 .prose ol li {
-    @apply text-base leading-loose ml-2;
+    @apply text-lg leading-loose ml-2;
 }
 
 .prose ol > li::before,
