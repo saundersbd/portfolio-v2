@@ -64,7 +64,7 @@
     }
     .post-link:hover .year-pill,
     .post-link:focus .year-pill {
-        @apply bg-white dark:bg-[#42B883] dark:text-black transition-all;
+        @apply bg-white dark:bg-mint-500 dark:text-black transition-all;
     }
 }
 

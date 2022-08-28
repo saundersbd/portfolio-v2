@@ -20,7 +20,7 @@ class MyDocument extends Document {
             type="image/svg+xml"
           />
         </Head>
-        <body className="font-sans text-black bg-blue-500 dark:text-white">
+        <body className="font-sans text-black bg-gray-900 dark:text-white dark:bg-gray-800">
           <Main />
           <NextScript />
         </body>

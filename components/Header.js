@@ -94,7 +94,7 @@ const DarkModeToggle = () => {
         aria-checked={darkMode}
         aria-label="Toggle dark mode"
         tabIndex={0}
-        className="relative w-12 h-8 p-1 transition-all rounded-full shadow-inner bg-mint-400 hover:cursor-pointer focus:outline-none focus:ring focus:ring-mint-400"
+        className="relative w-12 h-8 p-1 transition-all rounded-full shadow-inner bg-mint-500 hover:cursor-pointer focus:outline-none focus:ring focus:ring-mint-400"
         onClick={(e) => toggleStatus(e)}
         onKeyPress={(e) => toggleStatus(e)}
       >
