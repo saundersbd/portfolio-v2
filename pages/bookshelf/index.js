@@ -32,9 +32,9 @@ const Bookshelf = ({ convertBack }) => {
             author="Jack M. Bickham"
             imageUrl="/images/books/scene-and-structure.jpg"
             url="https://www.amazon.com/Scene-Structure-Elements-Fiction-Writing/dp/0898799066"
-            barClass="w-5/20"
-            progressBarWidth="5/20"
-            date="8/19/22"
+            barClass="w-10/20"
+            progressBarWidth="10/20"
+            date="8/29/22"
           />
 
           <BookCategoryList books={convertBack} category="Design" />

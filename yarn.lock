@@ -3768,10 +3768,10 @@ react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz"
 
-react-medium-image-zoom@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.0.1.tgz#f2965d334d361be4b406a6db38fd63da81bab766"
-  integrity sha512-ol1ELK6W4yEHG1cmYo09TCuP9sqOA87/6Xt9+l0vHTV+p+wrrallrkWGduHo1T0Iukmg6Ndm0qMQO63h7mOT/A==
+react-medium-image-zoom@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.0.2.tgz#2ec051205e7bfc53759f8a3a1bfd1c594f96100c"
+  integrity sha512-DGdsNaixDgXnEFFpCV6YHJYG4VQOvzs3PHS3h+nfIV82GO0cWetXrBQFGA77DMGODe6DuBX2SQPqZAQVKpLdcw==
 
 react-side-effect@^2.1.0:
   version "2.1.1"

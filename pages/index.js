@@ -86,7 +86,7 @@ function HomePage({ posts, projects }) {
         </div>
       </section>
 
-      <section className="pb-8">
+      <section className="pb-6 sm:pb-8">
         <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6 font-display">

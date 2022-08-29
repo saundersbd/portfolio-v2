@@ -6,7 +6,7 @@ const Post = ({ slug, title, description }) => {
     <li className="mb-6">
       <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
         <a className="flex mb-1 sm:w-max text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 underline focus:outline-none focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-900">
-          <h3 className="text-base font-semibold tracking-wide font-display">
+          <h3 className="text-sm font-semibold tracking-wide sm:text-base font-display">
             {title}
           </h3>
         </a>

@@ -24,13 +24,10 @@ const CurrentBook = ({
         </div>
       </div>
 
-      <div className="flex-grow p-6 bg-white dark:bg-gray-900">
-        <h2 className="mb-2 text-sm text-gray-600 dark:text-gray-300">
-          Currently reading...
-        </h2>
-        <h3 className="mb-2 text-lg font-semibold tracking-wide">
+      <div className="flex flex-col justify-center flex-grow p-6 bg-white dark:bg-gray-900">
+        <h3 className="mb-3 text-lg font-semibold tracking-wide">
           <a
-            className="mb-2 text-base font-semibold text-black underline transition-all rounded dark:text-white hover:opacity-80 focus:outline-none focus:ring focus:ring-orange focus:bg-mint-50 dark:focus:bg-gray-900"
+            className="mb-2 text-base font-semibold text-black underline transition-all rounded underline-offset-2 dark:text-white focus:outline-none focus:ring focus:ring-orange focus:bg-mint-50 dark:focus:bg-gray-900"
             href={url}
           >
             {title}
@@ -44,7 +41,7 @@ const CurrentBook = ({
           <p className="mb-1.5 text-xs text-gray-500 dark:text-gray-400">{`${toPercent(
             progressBarWidth
           )}% complete (${date})`}</p>
-          <div className="w-full h-2 overflow-hidden bg-gray-100 rounded-sm sm:w-1/3 progress-bar dark:bg-gray-700">
+          <div className="w-full h-2 overflow-hidden bg-gray-200 rounded-sm sm:w-1/3 progress-bar dark:bg-gray-700">
             <div
               className={`progress h-2 bg-mint-400 dark:bg-mint-300 ${barClass}`}
             ></div>

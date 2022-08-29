@@ -19,7 +19,7 @@ const Resume = () => (
         Back to Home
       </DirectionLink>
       <div className="leading-relaxed dark:text-gray-200">
-        <h1 className="mb-4 text-5xl font-bold leading-tight dark:text-white sm:leading-relaxed font-display">
+        <h1 className="mb-4 text-4xl font-bold leading-tight sm:text-5xl dark:text-white sm:leading-relaxed font-display">
           Brian Saunders
         </h1>
         <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-300">
@@ -44,10 +44,10 @@ const Resume = () => (
         </h2>
 
         <div className="mb-6">
-          <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
+          <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             Principal Product Designer, Paylocity
           </h3>
-          <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
             June 2016–Present (Chicago, IL / Remote)
           </p>
           <p className="mb-3">
@@ -66,10 +66,10 @@ const Resume = () => (
         </div>
 
         <div className="mb-6">
-          <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
+          <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             Interaction Designer, Vokal
           </h3>
-          <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
             April 2014–February 2016 (Chicago, IL)
           </p>
           <p>
@@ -84,11 +84,11 @@ const Resume = () => (
           </p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="mb-2 text-xl font-bold font-display dark:text-white">
+        <div className="mb-10">
+          <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             User Experience Designer, Maddock Douglas
           </h3>
-          <p className="mb-3 text-sm font-bold text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
             2010–2014 (Elmhurst, IL)
           </p>
           <p>
@@ -105,8 +105,8 @@ const Resume = () => (
         <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
           Education
         </h2>
-        <div className="mb-6">
-          <h3 className="mb-2 text-xl font-bold dark:text-white">
+        <div className="mb-10">
+          <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             BFA Visual Communications, Northern Illinois University
           </h3>
           <p className="mb-3">
