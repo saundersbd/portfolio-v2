@@ -24,7 +24,7 @@
 }
 
 .prose p {
-    @apply text-lg leading-loose;
+    @apply text-gray-700 dark:text-gray-300 text-lg leading-loose;
 }
 
 .prose p.large {

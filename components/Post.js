@@ -1,24 +1,36 @@
 import React from "react";
+import formatDate from "../lib/formatDate";
 
 import Link from "next/link";
 
-const PostAlt = ({ slug, title, description, published }) => (
-  <div className="mb-2 sm:mb-4">
-    <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
-      <a className="block p-2 -m-2 transition-all rounded-lg post-link hover:bg-gray-100 dark:hover:bg-gray-800 sm:-m-4 sm:p-4 focus:bg-mint-50 dark:focus:bg-gray-800">
-        <h3 className="mb-1 text-sm font-semibold underline sm:text-base font-display">
-          {title}
-          <span className="year-pill inline-block align-top py-0 font-normal text-xxs text-gray-500 border border-gray-300 dark:border-mint-500 dark:text-gray-300 rounded-full ml-2 px-1.5">
-            {published.slice(0, 4)}
-          </span>
-        </h3>
+const PostAlt = ({ slug, title, description, published }) => {
+  const formattedPublishedDate = formatDate(published || "");
 
-        <p className="text-sm text-gray-600 dark:text-gray-300">
-          {description}
-        </p>
-      </a>
-    </Link>
-  </div>
-);
+  return (
+    <div className="mb-2 sm:mb-4">
+      <Link href={`/posts/${slug.replace(/\.mdx?$/, "")}`} passHref>
+        <a className="flex items-start p-2 -m-2 transition-all rounded-lg post-link hover:bg-gray-100 dark:hover:bg-gray-800 sm:-m-4 sm:p-4 focus:bg-gray-50 dark:focus:bg-gray-800">
+          <div className="badge hidden w-[54px] h-[54px] mr-4 sm:flex flex-col flex-shrink-0 items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl">
+            <div className="leading-snug text-gray-500 dark:text-gray-400 text-xxs">
+              {formattedPublishedDate.slice(0, 3)}
+            </div>
+            <div className="font-semibold dark:text-gray-100">
+              {formattedPublishedDate.slice(3, 6)}
+            </div>
+          </div>
+          <div className="flex-grow">
+            <h3 className="mb-2 text-sm font-semibold underline sm:text-base font-display">
+              {title}
+            </h3>
+
+            <p className="text-sm text-gray-600 dark:text-gray-300">
+              {description}
+            </p>
+          </div>
+        </a>
+      </Link>
+    </div>
+  );
+};
 
 export default PostAlt;

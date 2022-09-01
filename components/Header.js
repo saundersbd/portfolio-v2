@@ -152,7 +152,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <Link href="/about/resume">
-            <a className="flex items-center px-1 mr-4 text-sm font-medium underline rounded underline-offset-2 focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800">
+            <a className="flex items-center px-1 mr-4 text-sm font-medium rounded hover:underline underline-offset-2 focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800">
               <Icon className="w-4 mr-1.5" />
               View my CV
             </a>

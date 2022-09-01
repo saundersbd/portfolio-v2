@@ -41,7 +41,7 @@ const Post = ({ source, frontMatter, posts }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
       <h1 className="mb-4">{frontMatter.title}</h1>
-      <p className="my-0 mb-12 italic text-gray-600 dark:text-gray-300">
+      <p className="my-0 mb-12 italic !text-gray-500 dark:!text-gray-400">
         Published on {formattedPublishedDate}&nbsp;
         {formattedEditedDate && `\u00B7 Last edited on ${formattedEditedDate}`}
       </p>

@@ -52,7 +52,8 @@ const Resume = () => (
           </p>
           <p className="mb-3">
             I'm a Principal Product Designer at Paylocity. Right now I'm leading
-            the design for our next generation of mobile apps.
+            the design for our next generation of mobile apps. This is full
+            stack project that involves extensive design systems work.
           </p>
           <p>
             Previously I helped grow Paylocity's Community product from around
@@ -116,7 +117,7 @@ const Resume = () => (
         </div>
 
         <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
-          Skills
+          Skills &amp; interests
         </h2>
         <div className="mb-12">
           <div className="flex flex-wrap bg-clip-content">
