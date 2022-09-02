@@ -3,7 +3,7 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
-import formatDate from "../../lib/formatDate";
+import formatDate from "../../lib/formatLongDate";
 import slug from "remark-slug";
 
 import { postFilePaths, POSTS_PATH } from "../../lib/mdx";
@@ -41,8 +41,8 @@ const Post = ({ source, frontMatter, posts }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
       <h1 className="mb-4">{frontMatter.title}</h1>
-      <p className="my-0 mb-12 italic !text-gray-500 dark:!text-gray-400">
-        Published on {formattedPublishedDate}&nbsp;
+      <p className="my-0 mb-12 !text-gray-500 dark:!text-gray-400">
+        {formattedPublishedDate}&nbsp;
         {formattedEditedDate && `\u00B7 Last edited on ${formattedEditedDate}`}
       </p>
       <MDXRemote {...source} components={components} />

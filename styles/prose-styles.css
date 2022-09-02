@@ -32,10 +32,41 @@
 }
 
 .prose blockquote {
+    @apply py-2 pt-4 pl-0 font-sans italic font-normal dark:text-gray-200 border-none;
+}
+
+.prose blockquote:before {
+    content: "";
+    @apply block w-full h-0.5 mb-4 bg-mint-500;
 }
 
 .prose blockquote p {
-    @apply text-base leading-loose my-0;
+    @apply text-lg sm:text-xl mb-4 leading-9 my-0 text-gray-600 dark:text-gray-300;
+}
+
+.prose blockquote p:last-of-type {
+    @apply mb-0;
+}
+
+.prose blockquote p:first-of-type:before {
+    content: "“";
+    margin: 0 0.2em 0 -0.6em;
+}
+
+.prose blockquote p:last-of-type:after {
+    content: "”";
+}
+
+.prose blockquote > p:first-of-type:before {
+    @apply text-gray-400;
+    font-size: 1.2em;
+    line-height: 0;
+}
+
+.prose blockquote > p:last-of-type:after {
+    @apply text-gray-400;
+    font-size: 1.2em;
+    line-height: 0;
 }
 
 .prose p.reference p {
