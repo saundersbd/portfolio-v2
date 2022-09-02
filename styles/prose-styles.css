@@ -37,7 +37,7 @@
 
 .prose blockquote:before {
     content: "";
-    @apply block w-full h-0.5 mb-4 bg-mint-500;
+    @apply block w-full h-0.5 mb-4 bg-mint-200;
 }
 
 .prose blockquote p {
