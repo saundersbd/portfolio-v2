@@ -8,7 +8,7 @@ const PostLayout = ({ children }) => (
       <DirectionLink href="/bookshelf" className="mb-12" direction="left">
         Back to bookshelf
       </DirectionLink>
-      <article className="prose dark:prose-dark">{children}</article>
+      <article className="article">{children}</article>
       <DirectionLink href="#top" className="mt-12" direction="top">
         Back to top
       </DirectionLink>

@@ -10,7 +10,6 @@ import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 import Head from "next/head";
 import Link from "next/link";
 import Button from "../../components/Button";
-import Blockquote from "../../components/Blockquote";
 import Reference from "../../components/Reference";
 import Icon from "../../components/Icon";
 import PostImage from "../../components/PostImage";
@@ -25,7 +24,6 @@ const components = {
   PageNote,
   HrSection,
   Button,
-  Blockquote,
   Reference,
 };
 
@@ -40,15 +38,15 @@ const Book = ({ source, frontMatter }) => {
         <meta name="description" content={frontMatter.description} />
       </Head>
 
-      <div className="flex flex-col items-center p-6 mx-0 mb-8 overflow-hidden border rounded-lg sm:p-8 sm:items-start border-beige-dark sm:mb-12 sm:flex-row md:-mx-16 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md sm:mr-8 sm:mb-0 book-image dark:border-gray-800">
+      <div className="flex flex-col items-center p-6 mx-0 mb-8 overflow-hidden border border-gray-300 rounded-lg sm:p-8 sm:items-start sm:mb-12 sm:flex-row md:-mx-16 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md sm:mr-6 sm:mb-0 book-image dark:border-gray-800">
           <img className="my-0" src={frontMatter.cover} alt="The book cover" />
         </div>
         <div>
-          <h1 className="mb-2 !text-3xl !sm:text-4xl !leading-snug font-bold dark:text-white">
+          <h1 className="!mb-4 !text-3xl !sm:text-4xl !leading-snug font-bold dark:text-white">
             {frontMatter.title}
           </h1>
-          <p className="mt-0 mb-2 text-base leading-relaxed text-gray-500 dark:text-gray-300">
+          <p className="mt-0 !mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-300">
             By {frontMatter.author}
             {frontMatter.edited && " · Updated on " + formattedEditedDate}
           </p>

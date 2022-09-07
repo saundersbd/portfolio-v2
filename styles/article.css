@@ -1,0 +1,118 @@
+.article h1 {
+    @apply mb-8 text-2xl sm:text-4xl font-semibold;
+}
+
+.article h1 + p {
+    @apply -mt-2 mb-6;
+}
+
+.article h2 {
+    @apply mb-4 text-xl font-medium;
+}
+
+.article p + h2,
+.article blockquote + h2 {
+    @apply mt-8;
+}
+
+.article h3 {
+    @apply mb-2 font-semibold;
+}
+
+.article h2 + h3 {
+    @apply mt-6;
+}
+
+.article p + h3 {
+    @apply mt-8;
+}
+
+.article p {
+    @apply text-base mb-3 text-gray-700 dark:text-gray-300 leading-relaxed;
+}
+
+.article a {
+    @apply text-mint-500 dark:text-mint-300 hover:text-mint-400 dark:hover:text-mint-200 underline;
+}
+
+.article ol,
+.article ul {
+    @apply mb-6 text-gray-700 dark:text-gray-300;
+}
+
+.article p + ul {
+    @apply -mt-2;
+}
+
+.article ol {
+    @apply list-decimal ml-5 p-0;
+}
+
+.article li {
+    @apply list-disc ml-5 p-0;
+}
+
+.article ol li,
+.article ul li {
+    @apply mb-2;
+}
+
+.article blockquote {
+    @apply mb-4 py-2 pt-4 pl-0 font-sans italic font-normal dark:text-gray-300 border-none;
+}
+
+.article blockquote:before {
+    content: "";
+    @apply block w-full h-0.5 mb-4 bg-gray-300 dark:bg-gray-600;
+}
+
+.article blockquote p {
+    @apply text-base sm:text-lg mb-4 leading-8 my-0 text-gray-600 dark:text-gray-300;
+}
+
+.article blockquote p:last-of-type {
+    @apply mb-0;
+}
+
+.article blockquote p:first-of-type:before {
+    content: "“";
+    margin: 0 0.2em 0 -0.6em;
+}
+
+.article blockquote p:last-of-type:after {
+    content: "”";
+}
+
+.article blockquote > p:first-of-type:before {
+    @apply text-gray-400;
+    font-size: 1.2em;
+    line-height: 0;
+}
+
+.article blockquote > p:last-of-type:after {
+    @apply text-gray-400;
+    font-size: 1.2em;
+    line-height: 0;
+}
+
+.article p.reference p {
+    @apply text-base mb-8;
+}
+
+.article hr {
+    @apply my-8 border-gray-300 dark:border-gray-700;
+}
+
+/* Images */
+
+.article figure {
+    @apply mb-8;
+}
+
+.article p + figure {
+    @apply mt-8;
+}
+
+.article figure figcaption {
+    @apply mt-2 text-xxs sm:text-sm;
+}

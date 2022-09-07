@@ -16,10 +16,10 @@ const About = () => (
       <DirectionLink href="/" className="mb-12" direction="left">
         Back to Home
       </DirectionLink>
-      <div className="prose dark:prose-dark">
+      <div className="article">
         <h1>About me</h1>
         <p>
-          My whole life has been defined by a sense of curiosity and a
+          My whole life has been defined by a sense of curiosity and an
           excitement about learning new things. I came by a lot of my curiosity
           naturally as a side effect of growing up with teachers for parents. My
           parents encouraged me to read and took me and my sister on lots of
@@ -30,12 +30,11 @@ const About = () => (
         </p>
 
         <p>
-          I'm the designer who is always experimenting with new tools and
-          reading constantly so that I can become a more well-rounded thinker.
-          Design is a learning profession—if you don't absolutely love to learn
-          new things I don't believe you can be successful in the long run. It
-          brings me a lot of joy to learn something exciting and then share that
-          knowledge with my coworkers.
+          I'm a designer who is always experimenting with new tools and reading
+          so I can become a more well-rounded thinker. Design is a learning
+          profession—if you don't absolutely love to learn new things you can't
+          be successful in the long run. It brings me a lot of joy to learn
+          something new and share it with others.
         </p>
 
         <h2>Experience</h2>

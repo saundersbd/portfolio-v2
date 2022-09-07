@@ -1,14 +1,13 @@
 import { MDXProvider } from "@mdx-js/react";
 import { ThemeProvider } from "next-themes";
 import "../styles/global.css";
-import "../styles/prose-styles.css";
+import "../styles/article.css";
 
 import Head from "next/head";
 
 import Button from "../components/Button";
-import Blockquote from "../components/Blockquote";
 
-const components = { Button, Blockquote };
+const components = { Button };
 
 export default function App({ Component, pageProps }) {
   return (
