@@ -17,7 +17,7 @@ const Project = ({ slug, title, description, published, projectType }) => {
             medium
           />
           <div className="flex-grow">
-            <h3 className="mb-2 text-sm font-semibold underline sm:text-base font-display">
+            <h3 className="mb-1 text-sm font-semibold underline sm:text-base font-display">
               {title}
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-300">
