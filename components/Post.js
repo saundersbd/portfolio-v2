@@ -19,7 +19,7 @@ const PostAlt = ({ slug, title, description, published }) => {
             </div>
           </div>
           <div className="flex-grow">
-            <h3 className="mb-2 text-sm font-semibold underline sm:text-base font-display">
+            <h3 className="mb-1 text-sm font-semibold underline sm:text-base font-display">
               {title}
             </h3>
 
