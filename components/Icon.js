@@ -5,6 +5,7 @@ import {
   arrowLeft,
   arrowUp,
   arrowRight,
+  beaker,
   chat,
   doc,
   external,
@@ -15,6 +16,7 @@ import {
   mailSolid,
   mobile,
   puzzle,
+  rocket,
   thumbsUp,
   users,
 } from "./icons";
@@ -37,6 +39,9 @@ const Icon = ({ icon, className }) => {
   }
   if (icon === "arrow-right") {
     icon = arrowRight;
+  }
+  if (icon === "beaker") {
+    icon = beaker;
   }
   if (icon === "chat") {
     icon = chat;
@@ -67,6 +72,9 @@ const Icon = ({ icon, className }) => {
   }
   if (icon === "component") {
     icon = puzzle;
+  }
+  if (icon === "rocket") {
+    icon = rocket;
   }
   if (icon === "thumbs-up") {
     icon = thumbsUp;
