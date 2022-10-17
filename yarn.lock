@@ -3773,10 +3773,10 @@ react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz"
 
-react-medium-image-zoom@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.0.2.tgz#2ec051205e7bfc53759f8a3a1bfd1c594f96100c"
-  integrity sha512-DGdsNaixDgXnEFFpCV6YHJYG4VQOvzs3PHS3h+nfIV82GO0cWetXrBQFGA77DMGODe6DuBX2SQPqZAQVKpLdcw==
+react-medium-image-zoom@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.1.1.tgz#5369853c9a2ae9b09702deb91483267dabe7893c"
+  integrity sha512-6YVFpFy2zmFxSLHV5qOxmyH1QJIKCCbGU6STFr05iokvXhNO7yDS7rR3jlr9SV4QUgwrGLAWkmiqF2UPP2wmXA==
 
 react-side-effect@^2.1.0:
   version "2.1.1"
