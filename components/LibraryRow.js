@@ -24,7 +24,7 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
           title
         )}
       </div>
-      <div className="flex items-center text-sm text-gray-500 dark:text-gray-300">
+      <div className="flex items-center text-sm text-gray-700 dark:text-gray-300">
         {author} ({date})
       </div>
     </div>

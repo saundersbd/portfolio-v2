@@ -32,13 +32,13 @@ const CurrentBook = ({
           >
             {title}
           </a>
-          <span className="ml-1.5 text-sm font-normal text-gray-600 dark:text-gray-300">
+          <span className="ml-1.5 text-sm font-normal text-gray-700 dark:text-gray-300">
             by {author}
           </span>
         </h3>
 
         <div className="progress">
-          <p className="mb-1.5 text-xs text-gray-500 dark:text-gray-400">{`${toPercent(
+          <p className="mb-1.5 text-xs text-gray-700 dark:text-gray-400">{`${toPercent(
             progressBarWidth
           )}% complete (${date})`}</p>
           <div className="w-full h-2 overflow-hidden bg-gray-200 rounded-sm sm:w-1/3 progress-bar dark:bg-gray-700">

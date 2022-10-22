@@ -59,8 +59,8 @@ function HomePage({ posts, projects }) {
           and sub-par ceramicist who lives and works in Chicago.
         </p>
         <p className="mb-4 text-sm sm:mb-8 sm:leading-relaxed sm:text-lg">
-          Right now I&rsquo;m a Principal Designer at Paylocity, where I&rsquo;m
-          leading the design for our next generation of mobile apps.
+          Right now I&rsquo;m Principal Designer at Paylocity, where I&rsquo;m
+          leading the design for its next generation of mobile apps.
         </p>
 
         <div className="flex flex-col text-sm sm:text-base sm:flex-row">

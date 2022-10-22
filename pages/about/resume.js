@@ -47,7 +47,7 @@ const Resume = () => (
           <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             Principal Product Designer, Paylocity
           </h3>
-          <p className="mb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-400">
             June 2016–Present (Chicago, IL / Remote)
           </p>
           <p className="mb-3">
@@ -70,7 +70,7 @@ const Resume = () => (
           <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             Interaction Designer, Vokal
           </h3>
-          <p className="mb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-400">
             April 2014–February 2016 (Chicago, IL)
           </p>
           <p>
@@ -89,7 +89,7 @@ const Resume = () => (
           <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
             User Experience Designer, Maddock Douglas
           </h3>
-          <p className="mb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-400">
             2010–2014 (Elmhurst, IL)
           </p>
           <p>
