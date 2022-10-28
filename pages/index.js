@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
-import Image from "next/future/image";
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
@@ -64,17 +64,21 @@ function HomePage({ posts, projects }) {
         </p>
 
         <div className="flex flex-col text-sm sm:text-base sm:flex-row">
-          <Link href="/about" passHref>
-            <a className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400">
-              <Icon icon="about" className="w-5 mr-1.5" />
-              More about me
-            </a>
+          <Link
+            href="/about"
+            className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400"
+            passHref
+          >
+            <Icon icon="about" className="w-5 mr-1.5" />
+            More about me
           </Link>
-          <Link href="/about/resume" passHref>
-            <a className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400">
-              <Icon className="w-5 mr-1.5" />
-              View my CV
-            </a>
+          <Link
+            href="/about/resume"
+            className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400"
+            passHref
+          >
+            <Icon className="w-5 mr-1.5" />
+            View my CV
           </Link>
           <a
             href="mailto:saundersbd@gmail.com"

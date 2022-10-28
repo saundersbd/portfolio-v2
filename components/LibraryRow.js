@@ -30,11 +30,13 @@ const LibraryRow = ({ author, title, date, url, notes, recommended }) => (
     </div>
 
     {notes ? (
-      <Link href={notes} passHref>
-        <a className="flex items-center justify-center px-2 py-2 text-sm font-semibold tracking-wide text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">
-          <Icon icon="doc" className="w-4 mr-1.5" />
-          Notes
-        </a>
+      <Link
+        href={notes}
+        className="flex items-center justify-center px-2 py-2 text-sm font-semibold tracking-wide text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+        passHref
+      >
+        <Icon icon="doc" className="w-4 mr-1.5" />
+        Notes
       </Link>
     ) : null}
   </li>
