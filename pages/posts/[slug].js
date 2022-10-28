@@ -33,11 +33,12 @@ const Post = ({ source, frontMatter, posts }) => {
   if (editedDate) {
     formattedEditedDate = formatDate(editedDate || "");
   }
+  const title = `Brian Saunders | ${frontMatter.title}`;
 
   return (
     <PostLayout frontMatter={frontMatter}>
       <Head>
-        <title>Brian Saunders | {frontMatter.title}</title>
+        <title>{title}</title>
         <meta name="description" content={frontMatter.description} />
       </Head>
       <h1 className="mb-4">{frontMatter.title}</h1>

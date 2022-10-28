@@ -26,10 +26,11 @@ const components = {
 };
 
 const Project = ({ source, frontMatter }) => {
+  const title = `Brian Saunders | ${frontMatter.title}`;
   return (
     <ProjectLayout frontMatter={frontMatter}>
       <Head>
-        <title>Brian Saunders | {frontMatter.title}</title>
+        <title>{title}</title>
         <meta name="description" content={frontMatter.description} />
       </Head>
       <MDXRemote {...source} components={components} />

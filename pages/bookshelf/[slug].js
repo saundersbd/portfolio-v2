@@ -31,11 +31,12 @@ const components = {
 const Book = ({ source, frontMatter }) => {
   const editedDate = frontMatter.edited;
   const formattedEditedDate = formatDate(editedDate || "");
+  const title = `Brian Saunders | ${frontMatter.title}`;
 
   return (
     <BookLayout frontMatter={frontMatter}>
       <Head>
-        <title>Brian Saunders | {frontMatter.title}</title>
+        <title>{title}</title>
         <meta name="description" content={frontMatter.description} />
       </Head>
 
