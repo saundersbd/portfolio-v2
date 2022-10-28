@@ -5,6 +5,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import formatDate from "../../lib/formatDate";
 import slug from "remark-slug";
+import Image from "next/image";
 
 import { bookFilePaths, BOOKS_PATH } from "../../lib/mdx";
 import Head from "next/head";
@@ -39,8 +40,13 @@ const Book = ({ source, frontMatter }) => {
       </Head>
 
       <div className="flex flex-col items-center p-6 mx-0 mb-8 overflow-hidden border border-gray-300 rounded-lg sm:p-8 sm:items-start sm:mb-12 sm:flex-row md:-mx-16 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md sm:mr-6 sm:mb-0 book-image dark:border-gray-800">
-          <img className="my-0" src={frontMatter.cover} alt="The book cover" />
+        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md h-36 sm:mr-6 sm:mb-0 book-image dark:border-gray-800">
+          <Image
+            src={frontMatter.cover}
+            alt="The book cover"
+            fill
+            className="object-cover"
+          />
         </div>
         <div>
           <h1 className="!mb-4 !text-3xl !sm:text-4xl !leading-snug font-bold dark:text-white">
