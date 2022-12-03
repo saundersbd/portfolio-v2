@@ -16,7 +16,7 @@ const About = () => (
       <DirectionLink href="/" className="mb-12" direction="left">
         Back to Home
       </DirectionLink>
-      <div className="article">
+      <div className="prose dark:prose-invert prose-blockquote:font-normal prose-h1:font-semibold prose-h2:font-semibold">
         <h1>About me</h1>
         <p>
           My whole life has been defined by a sense of curiosity and an
@@ -61,7 +61,7 @@ const About = () => (
 
         <h2>My background</h2>
 
-        <h3>Front-end knowledge</h3>
+        <h4>Front-end knowledge</h4>
 
         <p>
           The best thing I ever did for myself was take the time to learn HTML
@@ -80,7 +80,7 @@ const About = () => (
           .
         </p>
 
-        <h3>Design education</h3>
+        <h4>Design education</h4>
 
         <p>
           I went to school for traditional graphic design. My education was
@@ -92,7 +92,7 @@ const About = () => (
           fundamentals.
         </p>
 
-        <h3>Passion for writing</h3>
+        <h4>Passion for writing</h4>
 
         <p>
           Writing is a sort of test for me. If I find that I can write about

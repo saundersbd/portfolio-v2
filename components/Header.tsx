@@ -43,6 +43,9 @@ const NavLinks = ({ activeRoute }: { activeRoute: string }) => {
       <Link href="/posts" passHref legacyBehavior>
         <NavLink isActive={activeRoute === "Posts"} value="Writing" />
       </Link>
+      <Link href="/projects" passHref legacyBehavior>
+        <NavLink isActive={activeRoute === "Projects"} value="Projects" />
+      </Link>
       <Link href="/bookshelf" passHref legacyBehavior>
         <NavLink isActive={activeRoute === "Bookshelf"} value="Bookshelf" />
       </Link>
@@ -149,6 +152,10 @@ const Header = () => {
   if (router.pathname.includes("/posts")) {
     activeRoute = "Posts";
     activePath = "/posts";
+  }
+  if (router.pathname.includes("/projects")) {
+    activeRoute = "Projects";
+    activePath = "/projects";
   }
 
   return (

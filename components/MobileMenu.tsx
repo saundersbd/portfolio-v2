@@ -67,8 +67,14 @@ export default function MobileMenu() {
           </li>
 
           <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
+            <Link href="/projects" className="flex w-auto py-4" passHref>
+              Projects
+            </Link>
+          </li>
+
+          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
             <Link href="/bookshelf" className="flex w-auto py-4" passHref>
-              My Bookshelf
+              Bookshelf
             </Link>
           </li>
 

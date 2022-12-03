@@ -10,13 +10,9 @@ import Project from "../components/Project";
 import Post from "../components/Post";
 import DirectionLink from "../components/DirectionLink";
 import Icon from "../components/Icon";
+import Badge from "../components/Badge";
 
-import {
-  postFilePaths,
-  POSTS_PATH,
-  projectFilePaths,
-  PROJECTS_PATH,
-} from "../lib/mdx";
+import { postFilePaths, POSTS_PATH } from "../lib/mdx";
 
 interface HomeProps {
   posts: Array<PostContentProps>;
@@ -50,7 +46,6 @@ interface ProjectProps {
 }
 
 function HomePage({ posts, projects }: HomeProps) {
-  const filteredProjects = projects.sort((a, b) => a.data.order - b.data.order);
   const filteredPosts = posts.sort((a, b) => {
     if (a.data.published < b.data.published) {
       return 1;
@@ -122,13 +117,13 @@ function HomePage({ posts, projects }: HomeProps) {
       </section>
 
       <section className="pb-6 sm:pb-8">
-        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
+        <div className="flex flex-col overflow-hidden border border-gray-300 shadow-sm rounded-xl dark:border-gray-700">
           <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
             <h2 className="text-sm font-bold leading-6 font-display">
               Writing
             </h2>
           </div>
-          <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
+          <div className="p-4 bg-white sm:p-8 dark:bg-gray-800">
             <h3 className="flex items-center px-4 mb-4 -mt-0 sm:mb-6 sm:-mt-2">
               <hr className="w-full h-px bg-gray-200 border-none dark:bg-gray-700" />
               <span className="px-2 pl-3 text-sm font-semibold text-center text-gray-500 dark:text-gray-400">
@@ -146,24 +141,23 @@ function HomePage({ posts, projects }: HomeProps) {
         </div>
       </section>
 
-      <section>
-        <div className="flex flex-col overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-700">
-          <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
-            <h2 className="text-sm font-bold leading-6 font-display">
-              Projects
-            </h2>
-          </div>
-          <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
-            {filteredProjects.slice(0, 5).map((post) => (
-              <Project
-                key={post.data.title}
-                slug={post.filePath}
-                {...post.data}
-              />
-            ))}
-          </div>
+      <Link
+        href="projects"
+        className="flex items-center p-8 transition-all bg-white border border-gray-300 shadow-sm dark:bg-gray-800 rounded-xl dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700"
+      >
+        <div className="flex-grow">
+          <h3 className="mb-1 text-sm font-semibold underline sm:text-base font-display">
+            Projects
+          </h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            A summary of my favorite work over the years.
+          </p>
         </div>
-      </section>
+        <Icon
+          icon="arrow-right"
+          className="w-8 text-gray-300 dark:text-gray-500"
+        />
+      </Link>
     </Layout>
   );
 }
@@ -182,16 +176,5 @@ export function getStaticProps() {
     };
   });
 
-  const projects = projectFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
-    const { content, data } = matter(source);
-
-    return {
-      content,
-      data,
-      filePath,
-    };
-  });
-
-  return { props: { posts, projects } };
+  return { props: { posts } };
 }

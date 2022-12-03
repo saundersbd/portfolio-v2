@@ -56,18 +56,6 @@
     [role="switch"] .off {
         display: none;
     }
-    .project-link:hover .badge,
-    .post-link:hover .badge {
-        @apply bg-gray-200 dark:bg-gray-700 transition-all;
-    }
-    .project-link:focus .badge,
-    .post-link:focus .badge {
-        @apply bg-gray-200 dark:bg-gray-700 dark:border-gray-600;
-    }
-    .post-link:hover .year-pill,
-    .post-link:focus .year-pill {
-        @apply bg-white dark:bg-mint-500 dark:text-black transition-all;
-    }
 }
 
 @tailwind utilities;
