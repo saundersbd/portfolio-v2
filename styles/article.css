@@ -19,6 +19,10 @@
     @apply mb-2 font-semibold;
 }
 
+.article h4 {
+    @apply mb-2 font-semibold text-gray-600 text-sm;
+}
+
 .article h2 + h3 {
     @apply mt-6;
 }
@@ -28,7 +32,7 @@
 }
 
 .article p {
-    @apply text-base mb-3 text-gray-700 dark:text-gray-300 leading-relaxed;
+    @apply text-base mb-4 text-gray-700 dark:text-gray-300 leading-relaxed;
 }
 
 .article a {
@@ -58,16 +62,11 @@
 }
 
 .article blockquote {
-    @apply mb-4 py-2 pt-4 pl-0 font-sans italic font-normal dark:text-gray-300 border-none;
-}
-
-.article blockquote:before {
-    content: "";
-    @apply block w-full h-0.5 mb-4 bg-gray-300 dark:bg-gray-600;
+    @apply mb-4 py-1 pl-6 font-sans italic font-normal dark:text-gray-200 border-l-4 border-gray-200 dark:border-gray-600 text-base;
 }
 
 .article blockquote p {
-    @apply text-base sm:text-lg mb-4 leading-8 my-0 text-gray-600 dark:text-gray-300;
+    @apply mb-4 my-0 dark:text-gray-200 leading-relaxed;
 }
 
 .article blockquote p:last-of-type {
@@ -93,6 +92,14 @@
     @apply text-gray-400;
     font-size: 1.2em;
     line-height: 0;
+}
+
+.article h3 + blockquote {
+    @apply my-6;
+}
+
+.article blockquote + h3 {
+    @apply mt-6;
 }
 
 .article p.reference p {

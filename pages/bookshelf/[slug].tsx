@@ -56,7 +56,7 @@ const Book = ({ source, frontMatter }: BookPageProps) => {
       </Head>
 
       <div className="flex flex-col items-center p-6 mx-0 mb-8 overflow-hidden border border-gray-300 rounded-lg sm:p-8 sm:items-start sm:mb-12 sm:flex-row md:-mx-16 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md h-36 sm:mr-6 sm:mb-0 book-image dark:border-gray-800">
+        <div className="flex-shrink-0 w-24 mb-8 mr-0 overflow-hidden border rounded shadow-md h-36 sm:mr-6 sm:mb-0 book-image dark:border-gray-800 not-prose">
           <Image
             src={frontMatter.cover}
             alt="The book cover"
@@ -65,7 +65,7 @@ const Book = ({ source, frontMatter }: BookPageProps) => {
           />
         </div>
         <div>
-          <h1 className="!mb-4 !text-3xl !sm:text-4xl !leading-snug font-bold dark:text-white">
+          <h1 className="!mb-4 !text-3xl !sm:text-4xl !leading-snug font-semibold dark:text-white">
             {frontMatter.title}
           </h1>
           <p className="mt-0 !mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-300">
@@ -77,7 +77,7 @@ const Book = ({ source, frontMatter }: BookPageProps) => {
           </p>
           <Button
             href={frontMatter.url}
-            className="dark:!bg-gray-700 dark:!border-gray-600 dark:!text-white dark:hover:!bg-gray-800 dark:hover:!border-gray-700"
+            className="dark:!bg-gray-700 dark:!border-gray-600 dark:!text-white dark:hover:!bg-gray-800 dark:hover:!border-gray-700 not-prose"
           >
             <Icon icon="external" className="w-4 mr-1.5" />
             {frontMatter.url.includes("amazon")

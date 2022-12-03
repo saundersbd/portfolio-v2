@@ -20,7 +20,7 @@ const PostImage = ({ alt, caption, src, width, height }: ImageProps) => {
 
   if (mounted) {
     return (
-      <figure className={`mx-0 md:-mx-8 ${resolvedTheme}-mode-image`}>
+      <figure className={`mx-0 md:-mx-8 ${resolvedTheme}-mode-image not-prose`}>
         <Zoom>
           <Image
             alt={alt}
@@ -31,7 +31,7 @@ const PostImage = ({ alt, caption, src, width, height }: ImageProps) => {
           />
         </Zoom>
         {caption && (
-          <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
+          <figcaption className="mx-0 mt-2 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
             {caption}
           </figcaption>
         )}

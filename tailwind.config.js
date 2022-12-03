@@ -14,11 +14,8 @@ const mono = [
 
 module.exports = {
   content: [
-    "./pages/**/*.js",
     "./pages/**/*.tsx",
-    "./components/**/*.js",
     "./components/**/*.tsx",
-    "./layouts/**/*.js",
     "./layouts/**/*.tsx",
     "./data/**/*.mdx",
   ],
@@ -116,89 +113,6 @@ module.exports = {
         "16/20": "80%",
         "18/20": "90%",
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme("colors.navy.darkest"),
-            a: {
-              color: theme("colors.blue.700"),
-              "&:hover": {
-                color: theme("colors.blue.500"),
-              },
-            },
-            img: {
-              marginBottom: "0px",
-            },
-            hr: {
-              borderColor: theme("colors.gray.300"),
-            },
-            "blockquote p": {
-              marginTop: "0px",
-              marginBottom: "0px",
-            },
-            "h3 + blockquote": {
-              marginTop: "1.5rem",
-            },
-          },
-        },
-        xl: {
-          css: {
-            blockquote: {
-              fontSize: theme("fontSize.lg"),
-            },
-          },
-        },
-        lg: {
-          css: {
-            img: {
-              marginBottom: "0px",
-            },
-            blockquote: {
-              padding: ".25rem 1rem",
-            },
-            "h3 + blockquote": {
-              marginTop: "1.5rem",
-            },
-          },
-        },
-        dark: {
-          css: {
-            color: theme("colors.white"),
-            a: {
-              color: theme("colors.blue.700"),
-              fontWeight: theme("fontWeight.normal"),
-              "&:hover": {
-                color: theme("colors.blue.600"),
-              },
-            },
-            h1: {
-              color: theme("colors.white"),
-            },
-            h2: {
-              color: theme("colors.white"),
-            },
-            h3: {
-              color: theme("colors.white"),
-            },
-            h4: {
-              color: theme("colors.gray.400"),
-            },
-            blockquote: {
-              color: theme("colors.white"),
-              borderColor: theme("colors.gray.500"),
-            },
-            figcaption: {
-              color: theme("colors.white"),
-            },
-            hr: {
-              borderColor: theme("colors.gray.600"),
-            },
-            "strong, em": {
-              color: theme("colors.white"),
-            },
-          },
-        },
-      }),
     },
   },
   darkMode: "class",
