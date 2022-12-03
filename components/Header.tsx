@@ -88,8 +88,8 @@ const darkModeIcon = (
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
-  const toggleStatus = (e) => {
-    if (e.charCode === 32) {
+  const toggleStatus = (e: React.KeyboardEvent | React.MouseEvent) => {
+    if (e.nativeEvent instanceof KeyboardEvent) {
       e.preventDefault();
       console.log("Space bar");
     }
