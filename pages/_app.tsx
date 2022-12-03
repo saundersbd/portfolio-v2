@@ -1,4 +1,5 @@
 import React from "react";
+import type { AppProps } from "next/app";
 import { MDXProvider } from "@mdx-js/react";
 import { ThemeProvider } from "next-themes";
 import "../styles/global.css";
@@ -22,7 +23,7 @@ const components = {
   Reference,
 };
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <MDXProvider components={components}>
