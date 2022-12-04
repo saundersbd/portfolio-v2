@@ -43,7 +43,7 @@ export default async function HomePage() {
             More about me
           </Link>
           <Link
-            href="/about/resume"
+            href="/resume"
             className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400"
             passHref
           >
