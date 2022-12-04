@@ -15,8 +15,8 @@ const mono = [
 module.exports = {
   content: [
     "./pages/**/*.tsx",
-    "./components/**/*.tsx",
-    "./layouts/**/*.tsx",
+    "./app/**/*.tsx",
+    "./src/components/**/*.tsx",
     "./data/**/*.mdx",
   ],
   theme: {
@@ -115,7 +115,6 @@ module.exports = {
       },
     },
   },
-  darkMode: "class",
   variants: {
     typography: ["responsive", "dark"],
     extend: {
