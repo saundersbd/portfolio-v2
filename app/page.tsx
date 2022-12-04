@@ -86,7 +86,7 @@ export default async function HomePage() {
                 />
               );
             })}
-            <DirectionLink href="/posts" className="mt-6" direction="right">
+            <DirectionLink href="/blog" className="mt-6" direction="right">
               View all posts
             </DirectionLink>
           </div>
