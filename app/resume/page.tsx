@@ -31,7 +31,7 @@ export default function AboutPage() {
       </h2>
 
       <div className="mb-6">
-        <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
+        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
           Principal Product Designer, Paylocity
         </h3>
         <p className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-400">
@@ -55,7 +55,7 @@ export default function AboutPage() {
       </div>
 
       <div className="mb-6">
-        <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
+        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
           Interaction Designer, Vokal
         </h3>
         <p className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-400">
@@ -74,7 +74,7 @@ export default function AboutPage() {
       </div>
 
       <div className="mb-10">
-        <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
+        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
           User Experience Designer, Maddock Douglas
         </h3>
         <p className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-400">
@@ -91,11 +91,9 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
-        Education
-      </h2>
+      <h2 className="mb-6 text-3xl font-bold dark:text-white">Education</h2>
       <div className="mb-10">
-        <h3 className="mb-2 text-xl font-semibold leading-snug font-display dark:text-white">
+        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
           BFA Visual Communications, Northern Illinois University
         </h3>
         <p className="mb-3">
@@ -104,7 +102,7 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
+      <h2 className="mb-6 text-3xl font-bold dark:text-white">
         Skills &amp; interests
       </h2>
       <div className="mb-12">

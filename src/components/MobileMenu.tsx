@@ -56,31 +56,46 @@ export default function MobileMenu() {
             isMenuRendered && styles.menuRendered
           )}
         >
-          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
+          <li
+            onClick={toggleMenu}
+            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+          >
             <Link href="/" className="flex w-auto py-4" passHref>
               Home
             </Link>
           </li>
 
-          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
-            <Link href="/posts" className="flex w-auto py-4" passHref>
+          <li
+            onClick={toggleMenu}
+            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+          >
+            <Link href="/blog" className="flex w-auto py-4" passHref>
               Writing
             </Link>
           </li>
 
-          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
+          <li
+            onClick={toggleMenu}
+            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+          >
             <Link href="/projects" className="flex w-auto py-4" passHref>
               Projects
             </Link>
           </li>
 
-          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
+          <li
+            onClick={toggleMenu}
+            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+          >
             <Link href="/bookshelf" className="flex w-auto py-4" passHref>
               Bookshelf
             </Link>
           </li>
 
-          <li className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700">
+          <li
+            onClick={toggleMenu}
+            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+          >
             <Link href="/about" className="flex w-auto py-4" passHref>
               About
             </Link>

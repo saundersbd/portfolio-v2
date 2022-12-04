@@ -35,14 +35,17 @@ const CurrentBook = ({
             fill
             className="object-cover"
             alt="An image of the book cover"
+            sizes="(min-width: 60em) 24vw,
+            (min-width: 28em) 45vw,
+            100vw"
           />
         </div>
       </div>
 
-      <div className="flex flex-col justify-center flex-grow p-6 bg-white dark:bg-gray-900">
+      <div className="flex flex-col justify-center flex-grow p-4 bg-white sm:p-6 dark:bg-gray-900">
         <h3 className="mb-3 text-lg font-semibold tracking-wide">
           <a
-            className="mb-2 text-base font-semibold text-black underline transition-all rounded underline-offset-2 dark:text-white focus:outline-none focus:ring focus:ring-orange focus:bg-mint-50 dark:focus:bg-gray-900"
+            className="mb-2 text-sm font-semibold text-black underline transition-all rounded underline-offset-2 dark:text-white focus:outline-none focus:ring focus:ring-orange focus:bg-mint-50 dark:focus:bg-gray-900"
             href={url}
           >
             {title}

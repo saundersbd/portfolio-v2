@@ -136,7 +136,7 @@ export default async function BookshelfPage() {
                       key={Title}
                       className="flex flex-col items-start pb-4 mb-4 border-b border-gray-200 sm:flex-row sm:items-center dark:border-gray-700 last:border-none last:mb-0"
                     >
-                      <div className="flex-grow mb-3 mr-0 sm:mr-4 sm:mb-0">
+                      <div className="flex-grow mb-0 mr-0 sm:mr-4">
                         <div className="flex items-center mb-1">
                           {URL ? (
                             <a
@@ -165,7 +165,7 @@ export default async function BookshelfPage() {
                       {NotesLink ? (
                         <Link
                           href={NotesLink}
-                          className="flex items-center justify-center px-2 py-2 text-sm font-semibold tracking-wide text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                          className="flex items-center justify-center px-2 py-2 mt-3 text-sm font-semibold tracking-wide text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                           passHref
                         >
                           <Icon icon="doc" className="w-4 mr-1.5" />

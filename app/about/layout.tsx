@@ -6,7 +6,7 @@ export default function AboutLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="py-24">
+    <section className="py-8 sm:py-24">
       <article className="prose dark:prose-invert prose-blockquote:font-normal prose-h1:font-semibold prose-h2:font-semibold">
         {children}
       </article>

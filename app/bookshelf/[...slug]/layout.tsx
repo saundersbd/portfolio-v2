@@ -14,9 +14,6 @@ export default function BookLayout({
         {children}
       </article>
       <hr className="my-8" />
-      <DirectionLink direction="top" href="#top">
-        Back to top
-      </DirectionLink>
     </>
   );
 }
