@@ -16,6 +16,27 @@ export default async function BlogPage() {
           more. I've been trying to hit publish even if the writing isn't
           perfect.
         </p>
+
+        <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
+          2023
+        </h2>
+        <ul className="mb-12">
+          {posts
+            .filter(
+              (post) => post?.frontMatter?.published.slice(0, 4) === "2023"
+            )
+            .map((post) => {
+              return (
+                <PostListItem
+                  key={post?.slug}
+                  title={post?.frontMatter?.title}
+                  description={post?.frontMatter?.description}
+                  slug={post?.slug}
+                />
+              );
+            })}
+        </ul>
+
         <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
           2022
         </h2>

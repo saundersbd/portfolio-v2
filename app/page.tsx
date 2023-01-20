@@ -68,13 +68,6 @@ export default async function HomePage() {
             </h2>
           </div>
           <div className="p-4 bg-white sm:p-8 dark:bg-gray-800">
-            <h3 className="flex items-center px-4 mb-4 -mt-0 sm:mb-6 sm:-mt-2">
-              <hr className="w-full h-px bg-gray-200 border-none dark:bg-gray-700" />
-              <span className="px-2 pl-3 text-sm font-semibold text-center text-gray-500 dark:text-gray-400">
-                2022
-              </span>
-              <hr className="w-full h-px bg-gray-200 border-none dark:bg-gray-700" />
-            </h3>
             {posts.slice(0, 5).map((post) => {
               return (
                 <PostAlt
