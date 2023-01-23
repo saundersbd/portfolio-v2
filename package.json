@@ -27,7 +27,7 @@
     "gray-matter": "^4.0.3",
     "hasha": "^5.2.2",
     "next": "^13.1.2",
-    "next-mdx-remote": "^4.2.1",
+    "next-mdx-remote": "^4.3.0",
     "next-remote-watch": "^2.0.0",
     "next-themes": "^0.2.1",
     "node-cache": "^5.1.2",
