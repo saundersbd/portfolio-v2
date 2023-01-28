@@ -40,7 +40,7 @@ export default function AboutPage() {
         <p className="mb-3">
           I&rsquo;m a Principal Product Designer at Paylocity. Right now
           I&rsquo;m leading the design for our next generation of mobile apps.
-          This is full stack project that involves extensive design systems
+          This is a full stack project that involves extensive design systems
           work.
         </p>
         <p>
@@ -62,9 +62,15 @@ export default function AboutPage() {
           April 2014–February 2016 (Chicago, IL)
         </p>
         <p>
-          Vokal is a design agency in Chicago that focuses creating mobile apps,
-          but most often I was asked to design flexible systems for products
-          with Android, iOS, and web components. The tight timelines and design
+          <a
+            className="underline text-mint-700 dark:text-mint-300"
+            href="https://www.vokal.io/"
+          >
+            Vokal
+          </a>{" "}
+          is a design agency in Chicago that focuses creating mobile apps, but
+          most often I was asked to design flexible systems for products with
+          Android, iOS, and web components. The tight timelines and design
           constraints necessitated that we work with design systems in order to
           apply a design language to apps on many platforms. Much of my work was
           around designing these systems, and figuring out how to make them work
