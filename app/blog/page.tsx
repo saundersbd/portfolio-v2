@@ -13,8 +13,8 @@ export default async function BlogPage() {
         <h1 className="mb-4 text-4xl font-semibold">Writing</h1>
         <p className="mb-12">
           My goal over the last year and a half has been to write and publish
-          more. I've been trying to hit publish even if the writing isn't
-          perfect.
+          more. I&rsquo;ve been trying to hit publish even if the writing
+          isn&rsquo;t perfect.
         </p>
 
         <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
