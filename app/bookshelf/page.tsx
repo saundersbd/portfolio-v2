@@ -97,8 +97,8 @@ export default async function BookshelfPage() {
       <ScrollUp />
       <h1 className="mb-4 text-4xl font-semibold">My bookshelf</h1>
       <p className="mb-12">
-        This is a collection of books I've read and enjoyed. Some of the books
-        have notes or highlights that stood out to me.
+        This is a collection of books I&rsquo;ve read and enjoyed. Some of the
+        books have notes or highlights that stood out to me.
       </p>
 
       <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
