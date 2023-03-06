@@ -39,7 +39,7 @@
     "react-medium-image-zoom": "^5.1.2",
     "remark-slug": "^7.0.1",
     "sharp": "^0.31.3",
-    "styled-components": "^5.3.6",
+    "styled-components": "^5.3.8",
     "tailwindcss": "^3.2.7",
     "use-delayed-render": "^0.0.7",
     "vfile": "^5.3.7",
