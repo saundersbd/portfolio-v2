@@ -162,7 +162,7 @@ const Header = () => {
 
   return (
     <Headroom pinStart={44}>
-      <header className="relative flex items-center justify-between p-4 bg-white border-b border-gray-300 dark:border-gray-800 dark:bg-gray-900">
+      <header className="relative flex items-center justify-between p-4 bg-white border-b border-gray-300 dark:border-gray-800 dark:bg-gray-950">
         <div>
           <MobileMenu />
           <nav className="hidden sm:flex">

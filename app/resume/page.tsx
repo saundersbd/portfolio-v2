@@ -9,7 +9,7 @@ export default function AboutPage() {
       <h1 className="mb-4 text-4xl font-bold leading-tight sm:text-5xl dark:text-white sm:leading-relaxed font-display">
         Brian Saunders
       </h1>
-      <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-300">
+      <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-400">
         <div className="flex items-center mr-3">
           <Icon icon="ID" className="w-5 mr-1.5" />
           Principal Product Designer

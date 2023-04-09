@@ -8,7 +8,7 @@ export default function ResumeLayout({
   return (
     <section className="py-8 sm:py-24">
       <article>{children}</article>
-      <hr className="my-8" />
+      <hr className="h-px my-8 border-none dark:bg-gray-800" />
       <DirectionLink direction="top" href="#top">
         Back to top
       </DirectionLink>

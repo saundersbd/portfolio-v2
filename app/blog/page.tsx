@@ -17,7 +17,7 @@ export default async function BlogPage() {
           isn&rsquo;t perfect.
         </p>
 
-        <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
+        <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
           2023
         </h2>
         <ul className="mb-12">
@@ -37,7 +37,7 @@ export default async function BlogPage() {
             })}
         </ul>
 
-        <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200">
+        <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
           2022
         </h2>
         <ul className="mb-12">

@@ -13,7 +13,7 @@ export default function BookLayout({
       <article className="prose dark:prose-invert prose-blockquote:font-normal prose-h1:font-semibold prose-h2:font-semibold">
         {children}
       </article>
-      <hr className="my-8" />
+      <hr className="h-px my-8 border-none dark:bg-gray-800" />
     </>
   );
 }

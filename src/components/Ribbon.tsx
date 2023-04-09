@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Ribbon = () => (
-  <div className="flex items-center justify-center w-full py-3 text-sm leading-5 text-center text-white bg-gray-900 dark:bg-gray-800 dark:text-gray-200">
+  <div className="flex items-center justify-center w-full py-3 text-sm leading-5 text-center text-white bg-gray-900 dark:bg-gray-900 dark:text-gray-200">
     Featured post:{" "}
     <Link
       href="/blog/2022/imposter-syndrome"

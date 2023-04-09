@@ -61,13 +61,13 @@ export default async function HomePage() {
       </section>
 
       <section className="pb-6 sm:pb-8">
-        <div className="flex flex-col overflow-hidden border border-gray-300 shadow-sm rounded-xl dark:border-gray-700">
-          <div className="px-4 py-2 bg-gray-100 dark:bg-gray-700">
+        <div className="flex flex-col overflow-hidden border border-gray-300 shadow-sm rounded-xl dark:border-gray-800">
+          <div className="px-4 py-2 bg-gray-100 dark:bg-gray-800">
             <h2 className="text-sm font-bold leading-6 font-display">
               Writing
             </h2>
           </div>
-          <div className="p-4 bg-white sm:p-8 dark:bg-gray-800">
+          <div className="p-4 bg-white sm:p-8 dark:bg-gray-900">
             {posts.slice(0, 5).map((post) => {
               return (
                 <PostAlt
@@ -88,10 +88,10 @@ export default async function HomePage() {
 
       <Link
         href="projects"
-        className="flex items-center p-8 transition-all bg-white border border-gray-300 shadow-sm dark:bg-gray-800 rounded-xl dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700"
+        className="flex items-center p-8 transition-all bg-white border border-gray-300 shadow-sm dark:bg-gray-900 rounded-xl dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800"
       >
         <div className="flex-grow">
-          <h3 className="mb-1 text-sm font-semibold underline sm:text-base font-display">
+          <h3 className="mb-1 text-sm font-semibold text-gray-100 underline sm:text-base font-display">
             Projects
           </h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
