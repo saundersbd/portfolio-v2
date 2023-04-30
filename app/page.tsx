@@ -91,7 +91,7 @@ export default async function HomePage() {
         className="flex items-center p-8 transition-all bg-white border border-gray-300 shadow-sm dark:bg-gray-900 rounded-xl dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800"
       >
         <div className="flex-grow">
-          <h3 className="mb-1 text-sm font-semibold text-gray-100 underline sm:text-base font-display">
+          <h3 className="mb-1 text-sm font-semibold underline dark:text-gray-100 sm:text-base font-display">
             Projects
           </h3>
           <p className="text-sm text-gray-700 dark:text-gray-300">
