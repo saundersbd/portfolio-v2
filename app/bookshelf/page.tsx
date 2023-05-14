@@ -28,7 +28,6 @@ export default async function BookshelfPage() {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}`,
     },
     next: { revalidate: 60 },
-    cache: "force-cache",
   })
     .then((d) => d.json())
     .then((d) => d.records)
