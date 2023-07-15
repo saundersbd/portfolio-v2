@@ -42,7 +42,7 @@ export default function AboutPage() {
         where I created cross-platform experiences, and the design systems
         required to support them. Before that I worked at Maddock Douglas, an
         innovation firm in the Chicago suburbs. At MD I used my prototyping
-        skills to help our clients see future opportunities for growth.
+        skills to help our clients see into the future.
       </p>
 
       <h2>My background</h2>
@@ -55,9 +55,9 @@ export default function AboutPage() {
         use Dreamweaver to build them. I knew that wasn&rsquo;t the proper way
         to make a website, so rather than learn Dreamweaver I learned how to
         write HTML and CSS. After school I taught myself PHP by hacking together
-        Wordpress themes, and eventually I taught learned Javascript. These
-        skills have led to every professional opportunity I&rsquo;ve ever had.
-        I&rsquo;ve continued to expand my front end skills and depend on them to
+        Wordpress themes, and eventually I learned JavaScript. These skills have
+        led to every professional opportunity I&rsquo;ve ever had. I&rsquo;ve
+        continued to expand my front end skills and depend on them to
         communicate with engineering teams and prototype ideas every day. I
         built this website using React and{" "}
         <a target="_blank" rel="noreferrer" href="https://nextjs.org">
