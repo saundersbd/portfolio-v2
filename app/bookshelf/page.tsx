@@ -105,13 +105,13 @@ export default async function BookshelfPage() {
       </h2>
 
       <CurrentBook
-        title="Lincoln at Cooper Union"
-        author="Harold Holzer"
-        imageUrl="/images/books/cooper-union.jpeg"
-        url="https://www.amazon.com/There-Was-Light-American-Struggle/dp/0553393960"
+        title="The Nature of Order, Book 2"
+        author="Christopher Alexander"
+        imageUrl="/images/books/nature-of-order-2.jpg"
+        url="https://www.amazon.com/Process-Creating-Life-Building-Universe/dp/0972652922"
         barClass="w-1/6"
         progressBarWidth="3/20"
-        date="04/09/23"
+        date="7/15/23"
       />
 
       <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
