@@ -18,7 +18,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.4.2",
+    "@next/mdx": "^13.4.13",
     "@tailwindcss/typography": "^0.5.9",
     "airtable": "^0.12.1",
     "autoprefixer": "^10.4.14",
@@ -26,29 +26,29 @@
     "classnames": "^2.3.2",
     "gray-matter": "^4.0.3",
     "hasha": "^5.2.2",
-    "next": "^13.4.2",
+    "next": "^13.4.13",
     "next-mdx-remote": "^4.4.1",
     "next-remote-watch": "^2.0.0",
     "next-themes": "^0.2.1",
     "node-cache": "^5.1.2",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.27",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1",
     "react-helmet": "^6.1.0",
-    "react-medium-image-zoom": "^5.1.3",
+    "react-medium-image-zoom": "^5.1.8",
     "remark-slug": "^7.0.1",
     "sharp": "^0.32.1",
     "styled-components": "^5.3.6",
-    "tailwindcss": "^3.3.2",
+    "tailwindcss": "^3.3.3",
     "use-delayed-render": "^0.0.7",
     "vfile": "^5.3.7",
     "zod": "^3.21.4"
   },
   "devDependencies": {
     "eslint": "^8.40.0",
-    "eslint-config-next": "^13.4.2",
+    "eslint-config-next": "^13.4.13",
     "prettier": "^2.8.8",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.6"
   }
 }
