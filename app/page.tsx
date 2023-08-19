@@ -93,7 +93,7 @@ export default async function HomePage() {
             Projects
           </h3>
           <p className="text-base text-gray-700 dark:text-gray-300">
-            A summary of things I've worked on.
+            A summary of things I&rsquo;ve worked on.
           </p>
         </div>
         <Icon
