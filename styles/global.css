@@ -5,12 +5,13 @@
 
 @layer base {
     [aria-current="page"] {
-        @apply text-black dark:text-white bg-gray-200 dark:bg-gray-700 font-semibold !important;
+        @apply text-black dark:text-white bg-gray-200 dark:bg-gray-700 font-medium !important;
     }
     [aria-current="false"] {
     }
     html {
         @apply bg-gray-900;
+        font-size: 18px;
     }
     html.dark .light-mode-image {
         display: none;
@@ -40,10 +41,16 @@
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
     .block-link {
-        @apply flex w-max items-center text-sm font-bold text-mint-700 dark:text-mint-300 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-900;
+        @apply flex w-max items-center text-sm font-medium font-sans text-mint-700 dark:text-mint-300 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-900;
     }
     a {
         @apply focus:outline-none focus:ring focus:ring-mint-400;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-sans !font-medium;
     }
 }
 

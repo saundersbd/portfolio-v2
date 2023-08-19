@@ -21,7 +21,7 @@ const Post = ({ slug, title, description }: PostProps) => {
       </Link>
 
       {description ? (
-        <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-400">
+        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400">
           {description}
         </p>
       ) : null}

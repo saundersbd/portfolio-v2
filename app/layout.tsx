@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import Ribbon from "../src/components/Ribbon";
+import { soehne, tiemposText } from "./fonts";
 import "../styles/global.css";
 
 export default function RootLayout({
@@ -10,8 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="font-sans text-black bg-gray-900 dark:text-white dark:bg-gray-900">
+    <html lang="en" className={`${soehne.variable} ${tiemposText.variable}`}>
+      <body className="font-serif text-black bg-gray-900 dark:text-white dark:bg-gray-900">
         <Ribbon />
         <div className="relative z-0 overflow-hidden shadow-xl bg-gradient-to-b from-white to-[#FCFCFD] dark:from-gray-950 dark:to-gray-950 rounded-t-2xl dark:shadow-none">
           <Header />

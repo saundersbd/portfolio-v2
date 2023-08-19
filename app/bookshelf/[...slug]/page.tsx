@@ -40,10 +40,10 @@ export default async function PostPage({ params }: BookPageProps) {
           />
         </div>
         <div>
-          <h1 className="!mb-4 !text-3xl !sm:text-4xl !leading-snug font-semibold dark:text-gray-100">
+          <h1 className="!mb-2 !text-3xl !sm:text-4xl !leading-snug font-medium dark:text-gray-100">
             {post?.frontMatter?.title}
           </h1>
-          <p className="mt-0 !mb-4 text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          <p className="mt-0 !mb-2 text-base leading-relaxed text-gray-500 dark:text-gray-400 font-sans">
             By {post?.frontMatter?.author}
           </p>
           <p className="mt-0 mb-4 !text-base !leading-relaxed">
@@ -51,7 +51,7 @@ export default async function PostPage({ params }: BookPageProps) {
           </p>
           <Button
             href={post?.frontMatter?.url}
-            className="dark:!bg-gray-800 dark:!border-gray-700 dark:!text-gray-300 dark:hover:!bg-gray-700 dark:hover:!border-gray-700 not-prose"
+            className="dark:!bg-gray-800 dark:!border-gray-700 dark:!text-gray-300 dark:hover:!bg-gray-700 dark:hover:!border-gray-700 not-prose font-sans font-medium"
           >
             <Icon icon="external" className="w-4 mr-1.5 dark:text-gray-300" />
             {post?.frontMatter?.url.includes("amazon")

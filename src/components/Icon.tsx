@@ -17,6 +17,7 @@ import {
   mobile,
   puzzle,
   rocket,
+  star,
   thumbsUp,
   users,
 } from "./icons";
@@ -80,6 +81,9 @@ const Icon = ({ icon, className }: IconConfig) => {
   }
   if (icon === "rocket") {
     icon = rocket;
+  }
+  if (icon === "star") {
+    icon = star;
   }
   if (icon === "thumbs-up") {
     icon = thumbsUp;

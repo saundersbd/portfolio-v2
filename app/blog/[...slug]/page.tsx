@@ -32,7 +32,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <h1 className="mb-4 text-3xl font-semibold leading-snug text-black sm:text-4xl dark:text-white">
           {post?.frontMatter?.title}
         </h1>
-        <p className="italic text-gray-500 dark:text-gray-400">
+        <p className="font-sans italic text-gray-500 dark:text-gray-400">
           Published on {formatLongDate(post?.frontMatter?.published)}
         </p>
       </header>

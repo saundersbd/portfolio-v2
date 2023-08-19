@@ -94,27 +94,27 @@ export default async function BookshelfPage() {
   return (
     <>
       <ScrollUp />
-      <h1 className="mb-4 text-4xl font-semibold">My bookshelf</h1>
-      <p className="mb-12">
+      <h1 className="mb-4 text-4xl">My bookshelf</h1>
+      <p className="mb-12 leading-relaxed">
         This is a collection of books I&rsquo;ve read and enjoyed. Some of the
         books have notes or highlights that stood out to me.
       </p>
 
-      <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
+      <h2 className="pb-1 mb-8 text-xl border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
         Currently reading
       </h2>
 
       <CurrentBook
-        title="The Nature of Order, Book 2"
-        author="Christopher Alexander"
-        imageUrl="/images/books/nature-of-order-2.jpg"
-        url="https://www.amazon.com/Process-Creating-Life-Building-Universe/dp/0972652922"
+        title="The Search for Form in Art and Architecture"
+        author="Eliel Saarinen"
+        imageUrl="/images/books/search-for-form.jpg"
+        url="https://www.amazon.com/Search-Form-Architecture-Paperback-August/dp/B010EVWX1I"
         barClass="w-1/6"
         progressBarWidth="3/20"
-        date="7/15/23"
+        date="8/19/23"
       />
 
-      <h2 className="pb-1 mb-8 text-xl font-bold border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
+      <h2 className="pb-1 mb-8 text-xl border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
         Bookshelf
       </h2>
 
@@ -125,7 +125,7 @@ export default async function BookshelfPage() {
             className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-800"
           >
             <div className="px-4 py-2 bg-gray-100 dark:bg-gray-800">
-              <h2 className="text-sm font-bold leading-6">{category[0]}</h2>
+              <h2 className="text-sm leading-6">{category[0]}</h2>
             </div>
             <div className="p-4 pb-2 bg-white dark:bg-gray-900 sm:p-8 sm:pb-4">
               <ul>
@@ -139,7 +139,7 @@ export default async function BookshelfPage() {
                         <div className="flex items-center mb-1">
                           {URL ? (
                             <a
-                              className="sm:w-max text-sm font-semibold text-black dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline underline-offset-2 focus:outline-none focus:ring focus:ring-orange transition-all focus:bg-blue-50 dark:focus:bg-gray-900"
+                              className="sm:w-max text-sm font-medium font-sans text-black dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline underline-offset-2 focus:outline-none focus:ring focus:ring-orange transition-all focus:bg-blue-50 dark:focus:bg-gray-900"
                               href={URL}
                               target="_blank"
                               rel="noreferrer"
@@ -147,8 +147,8 @@ export default async function BookshelfPage() {
                               {Title}
                               {Recommended ? (
                                 <Icon
-                                  icon="thumbs-up"
-                                  className="inline-block w-5 h-5 pt-1 ml-1 text-mint-400 dark:text-mint-300"
+                                  icon="star"
+                                  className="inline-block w-4 h-4 pt-1 ml-1 text-yellow-400 dark:text-yellow-300"
                                 />
                               ) : null}
                             </a>
@@ -164,7 +164,7 @@ export default async function BookshelfPage() {
                       {NotesLink ? (
                         <Link
                           href={NotesLink}
-                          className="flex items-center justify-center px-2 py-2 mt-3 text-sm font-semibold tracking-wide text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white"
+                          className="flex items-center justify-center px-2 py-2 mt-3 font-sans text-sm font-medium text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white"
                           passHref
                         >
                           <Icon
