@@ -1,17 +1,6 @@
 const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-const mono = [
-  "ui-monospace",
-  "SFMono-Regular",
-  "Menlo",
-  "Monaco",
-  "Consolas",
-  "Liberation Mono",
-  "Courier New",
-  "monospace",
-];
-
 module.exports = {
   content: [
     "./pages/**/*.tsx",
@@ -56,38 +45,6 @@ module.exports = {
         xl: "1280px",
       },
     },
-    fontFamily: {
-      mono: ["'iA Writer Mono S'", ...mono],
-      sans: [
-        "Inter",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "San Francisco",
-        "Helvetica Neue",
-        "Helvetica",
-        "Ubuntu",
-        "Roboto",
-        "Noto",
-        "Segoe UI",
-        "Arial",
-        "sans-serif",
-      ],
-      serif: ["Newsreader", "IBM Plex Serif", "serif"],
-      display: [
-        "Albert Sans",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "San Francisco",
-        "Helvetica Neue",
-        "Helvetica",
-        "Ubuntu",
-        "Roboto",
-        "Noto",
-        "Segoe UI",
-        "Arial",
-        "sans-serif",
-      ],
-    },
     fontSize: {
       xxs: ".75rem",
       xs: ".8125rem",
@@ -101,6 +58,10 @@ module.exports = {
       "5xl": "3rem",
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sohne)"],
+        serif: ["var(--font-tiempos)"],
+      },
       lineHeight: {
         "extra-loose": "2.25",
       },

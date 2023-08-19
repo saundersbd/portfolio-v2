@@ -23,7 +23,7 @@ const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkConfig>(
     return (
       <a
         className={
-          `inline-block mr-2 text-base font-medium leading-6 px-3 py-1 rounded-full text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-mint-400 dark:focus:bg-gray-800 focus:bg-mint-50 ` +
+          `font-sans inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-mint-400 dark:focus:bg-gray-800 focus:bg-mint-50 ` +
           `${className}`
         }
         aria-current={ariaCurrent}
@@ -172,7 +172,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link
             href="/resume"
-            className="flex items-center px-1 mr-4 text-sm font-medium rounded hover:underline underline-offset-2 focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800"
+            className="flex items-center px-1 mr-4 font-sans text-sm rounded hover:underline underline-offset-2 focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800"
           >
             <Icon className="w-4 mr-1.5" />
             View my CV

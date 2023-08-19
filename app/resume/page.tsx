@@ -9,7 +9,7 @@ export default function AboutPage() {
       <h1 className="mb-4 text-4xl font-bold leading-tight sm:text-5xl dark:text-white sm:leading-relaxed font-display">
         Brian Saunders
       </h1>
-      <div className="flex flex-col mb-12 text-transparent text-gray-600 sm:flex-row dark:text-gray-400">
+      <div className="flex flex-col mb-12 font-sans text-gray-600 sm:flex-row dark:text-gray-400">
         <div className="flex items-center mr-3">
           <Icon icon="ID" className="w-5 mr-1.5" />
           Principal Product Designer
@@ -31,10 +31,10 @@ export default function AboutPage() {
       </h2>
 
       <div className="mb-6">
-        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
+        <h3 className="mb-2 text-xl leading-snug dark:text-white">
           Principal Product Designer, Paylocity
         </h3>
-        <p className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-400">
+        <p className="mb-3 font-sans text-sm text-gray-600 dark:text-gray-400">
           June 2016–Present (Chicago, IL / Remote)
         </p>
         <p className="mb-3">
@@ -58,7 +58,7 @@ export default function AboutPage() {
         <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
           Interaction Designer, Vokal
         </h3>
-        <p className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-400">
+        <p className="mb-3 font-sans text-sm text-gray-600 dark:text-gray-400">
           April 2014–February 2016 (Chicago, IL)
         </p>
         <p>
@@ -83,7 +83,7 @@ export default function AboutPage() {
         <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
           User Experience Designer, Maddock Douglas
         </h3>
-        <p className="mb-3 text-sm font-semibold text-gray-600 dark:text-gray-400">
+        <p className="mb-3 font-sans text-sm text-gray-600 dark:text-gray-400">
           2010–2014 (Elmhurst, IL)
         </p>
         <p>
