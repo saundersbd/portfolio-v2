@@ -6,7 +6,7 @@ interface NoteProps {
 }
 
 const PageNote = ({ title, description }: NoteProps) => (
-  <div className="px-6 py-4 border rounded-lg bg-blue-50 dark:bg-gray-800 dark:border dark:border-gray-700">
+  <div className="px-4 py-3 mt-8 font-sans border rounded-lg border-jade-5 bg-jade-2 dark:bg-jadeDark-3 dark:border dark:border-jadeDark-4">
     {title && (
       <h3 className="mt-0 mb-2 !text-base text-semibold dark:text-white">
         {title}

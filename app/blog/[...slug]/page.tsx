@@ -29,10 +29,10 @@ export default async function PostPage({ params }: PostPageProps) {
     <>
       <ScrollUp />
       <header className="not-prose">
-        <h1 className="mb-4 text-3xl font-semibold leading-snug text-black sm:text-4xl dark:text-white">
+        <h1 className="mb-4 text-3xl font-medium leading-snug text-slate-12 sm:text-4xl dark:text-slateDark-12">
           {post?.frontMatter?.title}
         </h1>
-        <p className="font-sans italic text-gray-500 dark:text-gray-400">
+        <p className="font-sans italic text-slate-11 dark:text-slateDark-11">
           Published on {formatLongDate(post?.frontMatter?.published)}
         </p>
       </header>

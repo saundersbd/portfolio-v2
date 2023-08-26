@@ -100,7 +100,7 @@ export default async function BookshelfPage() {
         books have notes or highlights that stood out to me.
       </p>
 
-      <h2 className="pb-1 mb-8 text-xl border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
+      <h2 className="pb-1 mb-8 text-xl border-b border-slate-6 dark:border-slateDark-4 dark:text-slateDark-12">
         Currently reading
       </h2>
 
@@ -114,7 +114,7 @@ export default async function BookshelfPage() {
         date="8/19/23"
       />
 
-      <h2 className="pb-1 mb-8 text-xl border-b border-gray-200 dark:border-gray-700 dark:text-gray-100">
+      <h2 className="pb-1 mb-8 text-xl border-b border-slate-6 dark:border-slateDark-4 dark:text-slateDark-12">
         Bookshelf
       </h2>
 
@@ -122,24 +122,24 @@ export default async function BookshelfPage() {
         {booksArray.map((category) => (
           <div
             key={category[0]}
-            className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-sm dark:border-gray-800"
+            className="flex flex-col mb-8 overflow-hidden border rounded-lg shadow-sm border-slate-6 dark:border-slateDark-4"
           >
-            <div className="px-4 py-2 bg-gray-100 dark:bg-gray-800">
+            <div className="px-4 py-2 bg-slate-3 dark:bg-slateDark-3">
               <h2 className="text-sm leading-6">{category[0]}</h2>
             </div>
-            <div className="p-4 pb-2 bg-white dark:bg-gray-900 sm:p-8 sm:pb-4">
+            <div className="p-4 pb-2 bg-slate-1 dark:bg-slateDark-1 sm:p-8 sm:pb-4">
               <ul>
                 {category[1].map(
                   ({ Title, Author, Date, Recommended, NotesLink, URL }) => (
                     <li
                       key={Title}
-                      className="flex flex-col items-start pb-4 mb-4 border-b border-gray-200 sm:flex-row sm:items-center dark:border-gray-800 last:border-none last:mb-0"
+                      className="flex flex-col items-start pb-4 mb-4 border-b border-slate-5 sm:flex-row sm:items-center dark:border-slateDark-4 last:border-none last:mb-0"
                     >
                       <div className="flex-grow mb-0 mr-0 sm:mr-4">
                         <div className="flex items-center mb-1">
                           {URL ? (
                             <a
-                              className="sm:w-max text-sm font-medium font-sans text-black dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline underline-offset-2 focus:outline-none focus:ring focus:ring-orange transition-all focus:bg-blue-50 dark:focus:bg-gray-900"
+                              className="sm:w-max text-sm font-medium font-sans text-slate-12 dark:text-slateDark-12 dark:hover:bg-slateDark-3 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline underline-offset-2 focus:outline-none transition-all"
                               href={URL}
                               target="_blank"
                               rel="noreferrer"
@@ -156,7 +156,7 @@ export default async function BookshelfPage() {
                             Title
                           )}
                         </div>
-                        <div className="flex items-center text-sm text-gray-700 dark:text-gray-400">
+                        <div className="flex items-center text-sm text-slate-11 dark:text-slateDark-11">
                           {Author} ({Date})
                         </div>
                       </div>
@@ -164,12 +164,12 @@ export default async function BookshelfPage() {
                       {NotesLink ? (
                         <Link
                           href={NotesLink}
-                          className="flex items-center justify-center px-2 py-2 mt-3 font-sans text-sm font-medium text-black no-underline transition-all border border-gray-300 rounded-lg shadow-sm sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white"
+                          className="flex items-center justify-center px-2 py-2 mt-3 font-sans text-sm font-medium no-underline transition-all border rounded-lg shadow-sm border-slate-6 text-slate-12 sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-slate-3 dark:border-slateDark-4 dark:bg-slateDark-3 dark:text-slateDark-12 dark:hover:bg-slateDark-4 dark:hover:text-slateDark-12"
                           passHref
                         >
                           <Icon
                             icon="doc"
-                            className="w-4 mr-1.5 dark:text-gray-200"
+                            className="w-4 mr-1.5 dark:text-slateDark-11"
                           />
                           Notes
                         </Link>

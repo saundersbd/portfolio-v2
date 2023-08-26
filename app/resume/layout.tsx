@@ -10,7 +10,7 @@ export default function ResumeLayout({
       <article className="prose dark:prose-invert prose-blockquote:font-normal">
         {children}
       </article>
-      <hr className="h-px my-8 border-none dark:bg-gray-800" />
+      <hr className="h-px my-8 border-none dark:bg-slateDark-4" />
       <DirectionLink direction="top" href="#top">
         Back to top
       </DirectionLink>
