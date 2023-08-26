@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${soehne.variable} ${tiemposText.variable}`}>
-      <body className="font-serif text-black bg-gray-900 dark:text-white dark:bg-gray-900">
+      <body className="font-serif text-black bg-gray-900 dark:text-white dark:bg-gray-950">
         <Ribbon />
         <div className="relative z-0 overflow-hidden shadow-xl bg-gradient-to-b from-white to-[#FCFCFD] dark:from-gray-950 dark:to-gray-950 rounded-t-2xl dark:shadow-none">
           <Header />

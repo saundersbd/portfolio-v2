@@ -174,7 +174,7 @@ const Header = () => {
             href="/resume"
             className="flex items-center px-1 mr-4 font-sans text-sm rounded hover:underline underline-offset-2 focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800"
           >
-            <Icon className="w-4 mr-1.5" />
+            <Icon icon="paper" className="w-5 mr-1.5" />
             View my CV
           </Link>
           {/* {mounted && <DarkModeToggle />} */}

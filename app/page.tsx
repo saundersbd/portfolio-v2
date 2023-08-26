@@ -36,23 +36,15 @@ export default async function HomePage() {
         <div className="flex flex-col font-sans text-sm sm:text-base sm:flex-row">
           <Link
             href="/about"
-            className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400"
+            className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400 dark:text-gray-400 dark:hover:text-mint-200"
             passHref
           >
-            <Icon icon="about" className="w-5 mr-1.5" />
+            <Icon icon="ID" className="w-5 mr-1.5" />
             More about me
-          </Link>
-          <Link
-            href="/resume"
-            className="flex items-center mb-1 mr-3 underline rounded sm:mb-0 underline-offset-2 hover:text-mint-400"
-            passHref
-          >
-            <Icon className="w-5 mr-1.5" />
-            View my CV
           </Link>
           <a
             href="mailto:saundersbd@gmail.com"
-            className="flex items-center underline rounded underline-offset-2 hover:text-mint-400"
+            className="flex items-center underline rounded underline-offset-2 hover:text-mint-400 dark:text-gray-400 dark:hover:text-mint-200"
           >
             <Icon icon="mailOutline" className="w-5 mr-1.5" />
             saundersbd@gmail.com

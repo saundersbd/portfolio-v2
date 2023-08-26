@@ -15,6 +15,7 @@ import {
   mailOutline,
   mailSolid,
   mobile,
+  paper,
   puzzle,
   rocket,
   star,
@@ -78,6 +79,9 @@ const Icon = ({ icon, className }: IconConfig) => {
   }
   if (icon === "component") {
     icon = puzzle;
+  }
+  if (icon === "paper") {
+    icon = paper;
   }
   if (icon === "rocket") {
     icon = rocket;
