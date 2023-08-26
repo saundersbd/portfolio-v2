@@ -23,7 +23,7 @@ const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkConfig>(
     return (
       <a
         className={
-          `font-sans inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all focus:outline-none focus:ring focus:ring-mint-400 dark:focus:bg-gray-800 focus:bg-mint-50 ` +
+          `font-sans inline-block mr-2 text-sm leading-6 px-3 py-1 rounded-full text-slate-11 hover:text-slate-12 dark:text-slate-4 dark:hover:text-slateDark-12 transition-all focus:outline-none focus:ring focus:ring-jade-10 dark:focus:ring-jadeDark-11 ` +
           `${className}`
         }
         aria-current={ariaCurrent}
@@ -65,7 +65,7 @@ const lightModeIcon = (
     viewBox="0 0 24 24"
     strokeWidth={2}
     stroke="currentColor"
-    className="w-4 text-black"
+    className="w-4 text-slate-12"
   >
     <path
       strokeLinecap="round"
@@ -162,7 +162,7 @@ const Header = () => {
 
   return (
     <Headroom pinStart={44}>
-      <header className="relative flex items-center justify-between p-4 bg-white border-b border-gray-300 dark:border-gray-800 dark:bg-gray-950">
+      <header className="relative flex items-center justify-between p-4 border-b bg-slate-1 border-slate-6 dark:border-slateDark-4 dark:bg-slateDark-1">
         <div>
           <MobileMenu />
           <nav className="hidden sm:flex">
@@ -172,7 +172,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link
             href="/resume"
-            className="flex items-center px-1 mr-4 font-sans text-sm rounded hover:underline underline-offset-2 focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-800"
+            className="flex items-center px-1 mr-4 font-sans text-sm rounded hover:underline underline-offset-2 focus:ring focus:ring-jade-10 dark:focus:ring-jadeDark-11"
           >
             <Icon icon="paper" className="w-5 mr-1.5" />
             View my CV

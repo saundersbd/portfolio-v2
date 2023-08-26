@@ -2,7 +2,7 @@
 
 @layer base {
     [aria-current="page"] {
-        @apply text-black dark:text-white bg-gray-200 dark:bg-gray-700 font-medium !important;
+        @apply text-slate-12 dark:text-slateDark-12 bg-slate-5 dark:bg-slateDark-5 font-medium !important;
     }
     [aria-current="false"] {
     }
@@ -38,10 +38,10 @@
         @apply bg-blue-100 dark:bg-gray-700 transition !important;
     }
     .block-link {
-        @apply flex w-max items-center text-sm font-medium font-sans text-mint-700 dark:text-mint-300 hover:bg-gray-100 transition dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-900;
+        @apply flex w-max items-center text-sm font-medium font-sans text-jade-10 dark:text-jadeDark-11 hover:bg-slate-3 transition dark:hover:bg-slateDark-3 rounded -mx-1 -my-0.5 px-1 py-0.5 hover:no-underline focus:outline-none focus:ring focus:ring-jade-9 dark:focus:ring-jadeDark-11;
     }
     a {
-        @apply focus:outline-none focus:ring focus:ring-mint-400;
+        @apply focus:outline-none focus:ring focus:ring-jade-9 dark:focus:ring-jadeDark-11;
     }
     h1,
     h2,
@@ -51,7 +51,7 @@
     }
     .prose,
     .prose blockquote {
-        @apply !text-black dark:!text-white;
+        @apply !text-slate-12 dark:!text-slateDark-12;
     }
 }
 

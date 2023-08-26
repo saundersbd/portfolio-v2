@@ -6,10 +6,10 @@ export default function AboutPage() {
   return (
     <>
       <ScrollUp />
-      <h1 className="mb-4 text-4xl font-bold leading-tight sm:text-5xl dark:text-white sm:leading-relaxed font-display">
+      <h1 className="mb-4 text-4xl font-bold leading-tight dark:text-white sm:leading-relaxed">
         Brian Saunders
       </h1>
-      <div className="flex flex-col mb-12 font-sans text-gray-600 sm:flex-row dark:text-gray-400">
+      <div className="flex flex-col mb-12 font-sans text-slate-11 sm:flex-row dark:text-slateDark-11">
         <div className="flex items-center mr-3">
           <Icon icon="ID" className="w-5 mr-1.5" />
           Principal Product Designer
@@ -24,15 +24,15 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <h2 className="mb-6 text-3xl font-bold font-display dark:text-white">
+      <h2 className="mb-6 text-3xl font-medium dark:text-slateDark-12">
         Experience
       </h2>
 
       <div className="mb-6">
-        <h3 className="mb-2 text-xl leading-snug dark:text-white">
+        <h3 className="mb-2 text-xl leading-snug dark:text-slateDark-12">
           Principal Product Designer, Paylocity
         </h3>
-        <p className="mb-3 font-sans text-sm text-gray-600 dark:text-gray-400">
+        <p className="mb-3 font-sans text-sm text-slate-11 dark:text-slateDark-11">
           June 2016–Present (Chicago, IL / Remote)
         </p>
         <p className="mb-3">
@@ -53,15 +53,15 @@ export default function AboutPage() {
       </div>
 
       <div className="mb-6">
-        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
+        <h3 className="mb-2 text-xl font-medium leading-snug dark:text-slateDark-12">
           Interaction Designer, Vokal
         </h3>
-        <p className="mb-3 font-sans text-sm text-gray-600 dark:text-gray-400">
+        <p className="mb-3 font-sans text-sm text-slate-11 dark:text-slateDark-11">
           April 2014–February 2016 (Chicago, IL)
         </p>
         <p>
           <a
-            className="underline text-mint-700 dark:text-mint-300"
+            className="underline text-jade-10 dark:text-jadeDark-11"
             href="https://www.vokal.io/"
           >
             Vokal
@@ -78,10 +78,10 @@ export default function AboutPage() {
       </div>
 
       <div className="mb-10">
-        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
+        <h3 className="mb-2 text-xl font-medium leading-snug dark:text-slateDark-12">
           User Experience Designer, Maddock Douglas
         </h3>
-        <p className="mb-3 font-sans text-sm text-gray-600 dark:text-gray-400">
+        <p className="mb-3 font-sans text-sm text-slate-11 dark:text-slateDark-11">
           2010–2014 (Elmhurst, IL)
         </p>
         <p>
@@ -95,9 +95,11 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <h2 className="mb-6 text-3xl font-bold dark:text-white">Education</h2>
+      <h2 className="mb-6 text-3xl font-medium dark:text-slateDark-12">
+        Education
+      </h2>
       <div className="mb-10">
-        <h3 className="mb-2 text-xl font-semibold leading-snug dark:text-white">
+        <h3 className="mb-2 text-xl font-medium leading-snug dark:text-slateDark-12">
           BFA Visual Communications, Northern Illinois University
         </h3>
         <p className="mb-3">
@@ -106,7 +108,7 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <h2 className="mb-6 text-3xl font-bold dark:text-white">
+      <h2 className="mb-6 text-3xl font-medium dark:text-slateDark-12">
         Skills &amp; interests
       </h2>
       <div className="mb-12">

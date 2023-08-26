@@ -12,16 +12,16 @@ const Post = ({ slug, title, description }: PostProps) => {
     <li className="mb-6">
       <Link
         href={`/blog/${slug}`}
-        className="flex mb-1 sm:w-max text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded -mx-1 -my-0.5 px-1 py-0.5 underline underline-offset-2 focus:outline-none focus:ring focus:ring-mint-400 focus:bg-mint-50 dark:focus:bg-gray-900"
+        className="flex mb-1 sm:w-max text-slate-12 dark:text-slateDark-12 hover:bg-slate-3 dark:hover:bg-slateDark-3 rounded -mx-1 -my-0.5 px-1 py-0.5 underline underline-offset-2 focus:outline-none focus:ring focus:ring-jade-9 dark:focus:ring-jadeDark-11"
         passHref
       >
-        <h3 className="text-base font-semibold tracking-wide dark:text-gray-100 font-display">
+        <h3 className="text-base font-semibold tracking-wide dark:text-slateDark-12 font-display">
           {title}
         </h3>
       </Link>
 
       {description ? (
-        <p className="text-base leading-relaxed text-gray-700 dark:text-gray-400">
+        <p className="text-base leading-relaxed text-slate-11 dark:text-slateDark-11">
           {description}
         </p>
       ) : null}

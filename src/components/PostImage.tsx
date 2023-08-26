@@ -27,11 +27,11 @@ const PostImage = ({ alt, caption, src, width, height }: ImageProps) => {
             height={height}
             src={`${src}${resolvedTheme}.png`}
             width={width}
-            className="not-prose dark:border dark:border-gray-700"
+            className="not-prose dark:border dark:border-slateDark-4"
           />
         </Zoom>
         {caption && (
-          <figcaption className="mx-0 mt-2 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
+          <figcaption className="mx-0 mt-2 text-base leading-loose text-slate-11 md:mx-8 dark:text-slateDark-11">
             {caption}
           </figcaption>
         )}
@@ -47,11 +47,11 @@ const PostImage = ({ alt, caption, src, width, height }: ImageProps) => {
           height={height}
           src={`${src}light.png`}
           width={width}
-          className="not-prose dark:border dark:border-gray-700"
+          className="not-prose dark:border dark:border-slateDark-4"
         />
       </Zoom>
       {caption && (
-        <figcaption className="mx-0 text-base leading-loose text-gray-500 md:mx-8 dark:text-gray-300">
+        <figcaption className="mx-0 text-base leading-loose text-slate-11 md:mx-8 dark:text-slateDark-11">
           {caption}
         </figcaption>
       )}

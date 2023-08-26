@@ -52,13 +52,13 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            "absolute flex flex-col bg-white dark:bg-gray-900  p-8",
+            "absolute flex flex-col bg-slate-1 dark:bg-slateDark-1  p-8",
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
             onClick={toggleMenu}
-            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+            className="text-base font-bold border-b text-slate-12 border-slate-6 dark:text-slateDark-12 dark:border-slateDark-4"
           >
             <Link href="/" className="flex w-auto py-4" passHref>
               Home
@@ -67,7 +67,7 @@ export default function MobileMenu() {
 
           <li
             onClick={toggleMenu}
-            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+            className="text-base font-bold border-b text-slate-12 border-slate-6 dark:text-slateDark-12 dark:border-slateDark-4"
           >
             <Link href="/blog" className="flex w-auto py-4" passHref>
               Writing
@@ -76,7 +76,7 @@ export default function MobileMenu() {
 
           <li
             onClick={toggleMenu}
-            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+            className="text-base font-bold border-b text-slate-12 border-slate-6 dark:text-slateDark-12 dark:border-slateDark-4"
           >
             <Link href="/projects" className="flex w-auto py-4" passHref>
               Projects
@@ -85,7 +85,7 @@ export default function MobileMenu() {
 
           <li
             onClick={toggleMenu}
-            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+            className="text-base font-bold border-b text-slate-12 border-slate-6 dark:text-slateDark-12 dark:border-slateDark-4"
           >
             <Link href="/bookshelf" className="flex w-auto py-4" passHref>
               Bookshelf
@@ -94,7 +94,7 @@ export default function MobileMenu() {
 
           <li
             onClick={toggleMenu}
-            className="text-base font-bold text-black border-b border-gray-300 dark:text-white dark:border-gray-700"
+            className="text-base font-bold text-slate-12 dark:text-slateDark-12"
           >
             <Link href="/about" className="flex w-auto py-4" passHref>
               About
@@ -131,7 +131,7 @@ function CrossIcon(props: PropsWithChildren<Props>) {
     "svg",
     Object.assign(
       {
-        className: "h-5 w-5 absolute text-gray-900 dark:text-gray-100",
+        className: "h-5 w-5 absolute text-slate-12 dark:text-slateDark-12",
         viewBox: "0 0 20 20",
         width: "24",
         height: "24",
