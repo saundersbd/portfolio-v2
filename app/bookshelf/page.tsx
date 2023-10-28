@@ -111,7 +111,7 @@ export default async function BookshelfPage() {
         url="https://www.amazon.com/Search-Form-Architecture-Paperback-August/dp/B010EVWX1I"
         barClass="w-1/6"
         progressBarWidth="3/20"
-        date="8/19/23"
+        date="10/28/23"
       />
 
       <h2 className="pb-1 mb-8 text-xl border-b border-slate-6 dark:border-slateDark-4 dark:text-slateDark-12">
