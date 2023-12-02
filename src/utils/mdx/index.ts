@@ -1,6 +1,6 @@
 import glob from "fast-glob";
 import { promises as fs } from "fs";
-import hasha from "hasha";
+import { hashSync } from "hasha";
 import NodeCache from "node-cache";
 import path from "path";
 import { VFile } from "vfile";
@@ -56,7 +56,7 @@ export function createSource<T extends z.ZodType>(source: Source<T>) {
 
   async function getFileData(file: MdxFile): Promise<MdxFileData<z.infer<T>>> {
     const raw = await fs.readFile(file.filepath, "utf-8");
-    const hash = hasha(raw.toString());
+    const hash = hashSync(raw.toString());
 
     const cachedContent = mdxCache.get<MdxFileData<z.infer<T>>>(hash);
     if (cachedContent?.hash === hash) {
