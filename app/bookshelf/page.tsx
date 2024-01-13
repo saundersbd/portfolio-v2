@@ -100,7 +100,7 @@ export default async function BookshelfPage() {
         books have notes or highlights that stood out to me.
       </p>
 
-      <h2 className="pb-1 mb-8 text-xl border-b border-slate-6 dark:border-slateDark-4 dark:text-slateDark-12">
+      {/* <h2 className="pb-1 mb-8 text-xl border-b border-slate-6 dark:border-slateDark-4 dark:text-slateDark-12">
         Currently reading
       </h2>
 
@@ -112,7 +112,7 @@ export default async function BookshelfPage() {
         barClass="w-1/6"
         progressBarWidth="3/20"
         date="10/28/23"
-      />
+      /> */}
 
       <h2 className="pb-1 mb-8 text-xl border-b border-slate-6 dark:border-slateDark-4 dark:text-slateDark-12">
         Bookshelf
