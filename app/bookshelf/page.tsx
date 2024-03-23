@@ -1,5 +1,4 @@
 import Link from "next/link";
-import CurrentBook from "../../src/components/CurrentBook";
 import Icon from "../../src/components/Icon";
 import ScrollUp from "../components/ScrollUp";
 
@@ -119,68 +118,69 @@ export default async function BookshelfPage() {
       </h2>
 
       <div>
-        {booksArray.map((category) => (
-          <div
-            key={category[0]}
-            className="flex flex-col mb-8 overflow-hidden border rounded-lg shadow-sm border-slate-6 dark:border-slateDark-4"
-          >
-            <div className="px-4 py-2 bg-slate-3 dark:bg-slateDark-3">
-              <h2 className="text-sm leading-6">{category[0]}</h2>
-            </div>
-            <div className="p-4 pb-2 bg-slate-1 dark:bg-slateDark-1 sm:p-8 sm:pb-4">
-              <ul>
-                {category[1].map(
-                  ({ Title, Author, Date, Recommended, NotesLink, URL }) => (
-                    <li
-                      key={Title}
-                      className="flex flex-col items-start pb-4 mb-4 border-b border-slate-5 sm:flex-row sm:items-center dark:border-slateDark-4 last:border-none last:mb-0"
-                    >
-                      <div className="flex-grow mb-0 mr-0 sm:mr-4">
-                        <div className="flex items-center mb-1">
-                          {URL ? (
-                            <a
-                              className="sm:w-max text-sm font-medium font-sans text-slate-12 dark:text-slateDark-12 dark:hover:bg-slateDark-3 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline underline-offset-2 focus:outline-none transition-all"
-                              href={URL}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {Title}
-                              {Recommended ? (
-                                <Icon
-                                  icon="star"
-                                  className="inline-block w-4 h-4 pt-1 ml-1 text-yellow-400 dark:text-yellow-300"
-                                />
-                              ) : null}
-                            </a>
-                          ) : (
-                            Title
-                          )}
+        {booksArray &&
+          booksArray.map((category) => (
+            <div
+              key={category[0]}
+              className="flex flex-col mb-8 overflow-hidden border rounded-lg shadow-sm border-slate-6 dark:border-slateDark-4"
+            >
+              <div className="px-4 py-2 bg-slate-3 dark:bg-slateDark-3">
+                <h2 className="text-sm leading-6">{category[0]}</h2>
+              </div>
+              <div className="p-4 pb-2 bg-slate-1 dark:bg-slateDark-1 sm:p-8 sm:pb-4">
+                <ul>
+                  {category[1].map(
+                    ({ Title, Author, Date, Recommended, NotesLink, URL }) => (
+                      <li
+                        key={Title}
+                        className="flex flex-col items-start pb-4 mb-4 border-b border-slate-5 sm:flex-row sm:items-center dark:border-slateDark-4 last:border-none last:mb-0"
+                      >
+                        <div className="flex-grow mb-0 mr-0 sm:mr-4">
+                          <div className="flex items-center mb-1">
+                            {URL ? (
+                              <a
+                                className="sm:w-max text-sm font-medium font-sans text-slate-12 dark:text-slateDark-12 dark:hover:bg-slateDark-3 rounded -mx-1 -my-0.5 px-1 py-0.5 mb-0 underline underline-offset-2 focus:outline-none transition-all"
+                                href={URL}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {Title}
+                                {Recommended ? (
+                                  <Icon
+                                    icon="star"
+                                    className="inline-block w-4 h-4 pt-1 ml-1 text-yellow-400 dark:text-yellow-300"
+                                  />
+                                ) : null}
+                              </a>
+                            ) : (
+                              Title
+                            )}
+                          </div>
+                          <div className="flex items-center text-sm text-slate-11 dark:text-slateDark-11">
+                            {Author} ({Date})
+                          </div>
                         </div>
-                        <div className="flex items-center text-sm text-slate-11 dark:text-slateDark-11">
-                          {Author} ({Date})
-                        </div>
-                      </div>
 
-                      {NotesLink ? (
-                        <Link
-                          href={NotesLink}
-                          className="flex items-center justify-center px-2 py-2 mt-3 font-sans text-sm font-medium no-underline transition-all border rounded-lg shadow-sm border-slate-6 text-slate-12 sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-slate-3 dark:border-slateDark-4 dark:bg-slateDark-3 dark:text-slateDark-12 dark:hover:bg-slateDark-4 dark:hover:text-slateDark-12"
-                          passHref
-                        >
-                          <Icon
-                            icon="doc"
-                            className="w-4 mr-1.5 dark:text-slateDark-11"
-                          />
-                          Notes
-                        </Link>
-                      ) : null}
-                    </li>
-                  )
-                )}
-              </ul>
+                        {NotesLink ? (
+                          <Link
+                            href={NotesLink}
+                            className="flex items-center justify-center px-2 py-2 mt-3 font-sans text-sm font-medium no-underline transition-all border rounded-lg shadow-sm border-slate-6 text-slate-12 sm:mt-0 w-max hover:shadow-none hover:no-underline focus:outline-none focus:ring hover:bg-slate-3 dark:border-slateDark-4 dark:bg-slateDark-3 dark:text-slateDark-12 dark:hover:bg-slateDark-4 dark:hover:text-slateDark-12"
+                            passHref
+                          >
+                            <Icon
+                              icon="doc"
+                              className="w-4 mr-1.5 dark:text-slateDark-11"
+                            />
+                            Notes
+                          </Link>
+                        ) : null}
+                      </li>
+                    )
+                  )}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
     </>
   );
