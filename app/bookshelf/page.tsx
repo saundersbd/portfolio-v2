@@ -1,5 +1,4 @@
 import Link from "next/link";
-import CurrentBook from "../../src/components/CurrentBook";
 import Icon from "../../src/components/Icon";
 import ScrollUp from "../components/ScrollUp";
 
